@@ -88,7 +88,7 @@
 		. += "There are [orbiting_balls.len] mini-balls orbiting it."
 
 
-/obj/singularity/energy_ball/proc/move_the_basket_ball(var/move_amount)
+/obj/singularity/energy_ball/proc/move_the_basket_ball(move_amount)
 	//we face the last thing we zapped, so this lets us favor that direction a bit
 	var/move_bias = pick(GLOB.alldirs)
 	for(var/i in 0 to move_amount)
@@ -328,7 +328,7 @@
 		power /= 1.5
 
 	else
-		power = closest_atom.zap_act(power, zap_flags, shocked_targets)
+		power = closest_atom.zap_act(power, zap_flags)
 	if(prob(20))//I know I know
 		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags, shocked_targets.Copy())//No pass by ref, it's a bad play
 		tesla_zap(closest_atom, next_range, power * 0.5, zap_flags, shocked_targets.Copy())
