@@ -231,6 +231,16 @@
 	tastes = list("cobwebs" = 1)
 	foodtype = RAW | MEAT | TOXIC
 
+/obj/item/reagent_containers/food/snacks/meat/slab/roach
+	name = "roach meat"
+	desc = "A slab of sickly-green bubbling meat cut from a giant roach. ...Did it just twitch?"
+	icon_state = "xenomeat"
+	filling_color = "#E2FFDE"
+	list_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/toxin/bungotoxin = 6, /datum/reagent/consumable/nutriment/vitamin = 1)
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/steak/roach
+	slice_path = /obj/item/reagent_containers/food/snacks/meat/rawcutlet/roach
+	tastes = list("maintenance" = 1, "waste oil = 1")
+	foodtype = RAW | MEAT | TOXIC
 
 /obj/item/reagent_containers/food/snacks/meat/slab/goliath
 	name = "goliath meat"
@@ -366,6 +376,11 @@
 	name = "spider steak"
 	tastes = list("cobwebs" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/steak/roach
+	name = "roach steak"
+	tastes = list("maintenance" = 1, "waste oil" = 1)
+	foodtype = MEAT | GROSS
+
 /obj/item/reagent_containers/food/snacks/meat/steak/goliath
 	name = "goliath steak"
 	desc = "A delicious, lava cooked steak."
@@ -444,6 +459,11 @@
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/spider
 	tastes = list("cobwebs" = 1)
 
+/obj/item/reagent_containers/food/snacks/meat/rawcutlet/roach
+	name = "raw roach cutlet"
+	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/roach
+	tastes = list("maintenance" = 1, "waste oil" = 1)
+
 /obj/item/reagent_containers/food/snacks/meat/rawcutlet/gondola
 	name = "raw gondola cutlet"
 	cooked_type = /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola
@@ -494,6 +514,10 @@
 /obj/item/reagent_containers/food/snacks/meat/cutlet/spider
 	name = "spider cutlet"
 	tastes = list("cobwebs" = 1)
+
+/obj/item/reagent_containers/food/snacks/meat/cutlet/roach
+	name = "roach cutlet"
+	tastes = list("maintenance" = 1, "waste oil" = 1)
 
 /obj/item/reagent_containers/food/snacks/meat/cutlet/gondola
 	name = "gondola cutlet"
