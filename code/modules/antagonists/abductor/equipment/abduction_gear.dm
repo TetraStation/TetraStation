@@ -71,7 +71,7 @@
 /obj/item/clothing/suit/armor/abductor/vest/proc/ActivateStealth()
 	if(disguise == null)
 		return
-	stealth_active = 1
+	stealth_active = TRUE
 	if(ishuman(loc))
 		var/mob/living/carbon/human/M = loc
 		new /obj/effect/temp_visual/dir_setting/ninja/cloak(get_turf(M), M.dir)
@@ -85,7 +85,7 @@
 /obj/item/clothing/suit/armor/abductor/vest/proc/DeactivateStealth()
 	if(!stealth_active)
 		return
-	stealth_active = 0
+	stealth_active = FALSE
 	if(ishuman(loc))
 		var/mob/living/carbon/human/M = loc
 		new /obj/effect/temp_visual/dir_setting/ninja(get_turf(M), M.dir)
@@ -879,4 +879,4 @@ Congratulations! You are now trained for invasive xenobiology research!"}
 	inhand_icon_state = "bl_suit"
 	worn_icon = 'icons/mob/clothing/under/syndicate.dmi'
 	armor = list(melee = 0, bullet = 0, laser = 0, energy = 0, bomb = 10, bio = 10, rad = 0, fire = 0, acid = 0)
-	can_adjust = 0
+	can_adjust = FALSE

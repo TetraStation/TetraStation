@@ -759,7 +759,7 @@
 /obj/item/reagent_containers/food/snacks/canned/attack(mob/living/M, mob/user, def_zone)
 	if (!is_drainable())
 		to_chat(user, "<span class='warning'>[src]'s lid hasn't been opened!</span>")
-		return 0
+		return FALSE
 	return ..()
 
 /obj/item/reagent_containers/food/snacks/canned/beans

@@ -14,7 +14,7 @@ SUBSYSTEM_DEF(processing)
 	msg = "[stat_tag]:[length(processing)]"
 	return ..()
 
-/datum/controller/subsystem/processing/fire(resumed = 0)
+/datum/controller/subsystem/processing/fire(resumed = FALSE)
 	if (!resumed)
 		currentrun = processing.Copy()
 	//cache for sanic speed (lists are references anyways)

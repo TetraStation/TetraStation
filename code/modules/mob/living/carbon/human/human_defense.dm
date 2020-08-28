@@ -167,7 +167,7 @@
 
 /mob/living/carbon/human/attacked_by(obj/item/I, mob/living/user)
 	if(!I || !user)
-		return 0
+		return FALSE
 
 	var/obj/item/bodypart/affecting
 	if(user == src)
@@ -212,7 +212,7 @@
 		affecting = get_bodypart(BODY_ZONE_CHEST)
 	if(M.a_intent == INTENT_HELP)
 		..() //shaking
-		return 0
+		return FALSE
 
 	if(M.a_intent == INTENT_DISARM) //Always drop item in hand, if no item, get stunned instead.
 		var/obj/item/I = get_active_held_item()
@@ -243,7 +243,7 @@
 		if(..()) //successful monkey bite, this handles disease contraction.
 			var/damage = rand(1, 3)
 			if(check_shields(M, damage, "the [M.name]"))
-				return 0
+				return FALSE
 			if(stat != DEAD)
 				apply_damage(damage, BRUTE, affecting, run_armor_check(affecting, "melee"))
 		return 1
@@ -253,7 +253,33 @@
 		visible_message("<span class='danger'>[M] attempts to touch [src]!</span>", \
 						"<span class='danger'>[M] attempts to touch you!</span>", "<span class='hear'>You hear a swoosh!</span>", null, M)
 		to_chat(M, "<span class='warning'>You attempt to touch [src]!</span>")
-		return 0
+		return FALSE
+	. = ..()
+	if(!.)
+		return
+	if(M.a_intent == INTENT_HARM)
+		if (w_uniform)
+			w_uniform.add_fingerprint(M)
+		var/damage = prob(90) ? 20 : 0
+		if(!damage)
+			playsound(loc, 'sound/weapons/slashmiss.ogg', 50, TRUE, -1)
+			visible_message("<span class='danger'>[M] lunges at [src]!</span>", \
+							"<span class='userdanger'>[M] lunges at you!</span>", "<span class='hear'>You hear a swoosh!</span>", null, M)
+			to_chat(M, "<span class='danger'>You lunge at [src]!</span>")
+			return FALSE
+		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(M.zone_selected))
+		if(!affecting)
+			affecting = get_bodypart(BODY_ZONE_CHEST)
+		var/armor_block = run_armor_check(affecting, "melee","","",10)
+
+		playsound(loc, 'sound/weapons/slice.ogg', 25, TRUE, -1)
+		visible_message("<span class='danger'>[M] slashes at [src]!</span>", \
+						"<span class='userdanger'>[M] slashes at you!</span>", "<span class='hear'>You hear a sickening sound of a slice!</span>", null, M)
+		to_chat(M, "<span class='danger'>You slash at [src]!</span>")
+		log_combat(M, src, "attacked")
+		if(!dismembering_strike(M, M.zone_selected)) //Dismemberment successful
+			return TRUE
+		apply_damage(damage, BRUTE, affecting, armor_block)
 
 	if(..())
 		if(M.a_intent == INTENT_HARM)
@@ -328,19 +354,21 @@
 
 
 /mob/living/carbon/human/attack_slime(mob/living/simple_animal/slime/M)
-	if(..()) //successful slime attack
-		var/damage = rand(5, 25)
-		var/wound_mod = -45 // 25^1.4=90, 90-45=45
-		if(M.is_adult)
-			damage = rand(10, 35)
-			wound_mod = -90 // 35^1.4=145, 145-90=55
+	. = ..()
+	if(!.) // slime attack failed
+		return
+	var/damage = rand(5, 25)
+	var/wound_mod = -45 // 25^1.4=90, 90-45=45
+	if(M.is_adult)
+		damage = rand(10, 35)
+		wound_mod = -90 // 35^1.4=145, 145-90=55
 
-		if(check_shields(M, damage, "the [M.name]"))
-			return 0
+	if(check_shields(M, damage, "the [M.name]"))
+		return FALSE
 
-		var/dam_zone = dismembering_strike(M, pick(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
-		if(!dam_zone) //Dismemberment successful
-			return 1
+	var/dam_zone = dismembering_strike(M, pick(BODY_ZONE_HEAD, BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG))
+	if(!dam_zone) //Dismemberment successful
+		return TRUE
 
 		var/obj/item/bodypart/affecting = get_bodypart(ran_zone(dam_zone))
 		if(!affecting)
