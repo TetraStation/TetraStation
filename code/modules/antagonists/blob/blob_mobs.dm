@@ -73,6 +73,9 @@
 	return ..()
 
 /mob/living/simple_animal/hostile/blob/say(message, bubble_type, list/spans = list(), sanitize = TRUE, datum/language/language = null, ignore_spam = FALSE, forced = null)
+	if(!overmind)
+		..()
+		return
 	var/spanned_message = say_quote(message)
 	var/rendered = "<font color=\"#EE4000\"><b>\[Blob Telepathy\] [real_name]</b> [spanned_message]</font>"
 	for(var/M in GLOB.mob_list)
@@ -100,15 +103,15 @@
 	verb_yell = "psychically screams"
 	melee_damage_lower = 2
 	melee_damage_upper = 4
-	environment_smash = ENVIRONMENT_SMASH_NONE
-	obj_damage = 0
+	obj_damage = 20
+	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	attack_verb_continuous = "hits"
 	attack_verb_simple = "hit"
 	attack_sound = 'sound/weapons/genhit1.ogg'
 	movement_type = FLYING
 	del_on_death = TRUE
 	deathmessage = "explodes into a cloud of gas!"
-	gold_core_spawnable = NO_SPAWN //gold slime cores should only spawn the independent subtype
+	gold_core_spawnable = HOSTILE_SPAWN
 	var/death_cloud_size = 1 //size of cloud produced from a dying spore
 	var/mob/living/carbon/human/oldguy
 	var/is_zombie = FALSE
@@ -165,8 +168,6 @@
 	mob_biotypes |= MOB_HUMANOID
 	melee_damage_lower += 8
 	melee_damage_upper += 11
-	obj_damage = 20 //now that it has a corpse to puppet, it can properly attack structures
-	environment_smash = ENVIRONMENT_SMASH_STRUCTURES
 	movement_type = GROUND
 	death_cloud_size = 0
 	icon = H.icon
@@ -226,13 +227,6 @@
 		color = initial(color)//looks better.
 		add_overlay(blob_head_overlay)
 
-/mob/living/simple_animal/hostile/blob/blobspore/add_cell_sample()
-	AddElement(/datum/element/swabable, CELL_LINE_TABLE_BLOBSPORE, CELL_VIRUS_TABLE_GENERIC_MOB, 1, 5)
-
-/mob/living/simple_animal/hostile/blob/blobspore/independent
-	gold_core_spawnable = HOSTILE_SPAWN
-	independent = TRUE
-
 /mob/living/simple_animal/hostile/blob/blobspore/weak
 	name = "fragile blob spore"
 	health = 15
@@ -241,6 +235,7 @@
 	melee_damage_upper = 2
 	death_cloud_size = 0
 	is_weak = TRUE
+	gold_core_spawnable = NO_SPAWN
 
 /////////////////
 // BLOBBERNAUT //
