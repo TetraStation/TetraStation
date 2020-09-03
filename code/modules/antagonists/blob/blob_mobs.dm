@@ -12,7 +12,7 @@
 	speak_emote = null //so we use verb_yell/verb_say/etc
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox" = 0, "min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	minbodytemp = 0
-	maxbodytemp = 360
+	maxbodytemp = INFINITY
 	unique_name = 1
 	a_intent = INTENT_HARM
 	see_in_dark = 8
@@ -31,7 +31,7 @@
 /mob/living/simple_animal/hostile/blob/Initialize()
 	. = ..()
 	if(!independent) //no pulling people deep into the blob
-		verbs -= /mob/living/verb/pulled
+		remove_verb(src, /mob/living/verb/pulled)
 	else
 		pass_flags &= ~PASSBLOB
 
@@ -40,10 +40,10 @@
 		overmind.blob_mobs -= src
 	return ..()
 
-/mob/living/simple_animal/hostile/blob/Stat()
-	..()
-	if(overmind && statpanel("Status"))
-		stat(null, "Blobs to Win: [overmind.blobs_legit.len]/[overmind.blobwincount]")
+/mob/living/simple_animal/hostile/blob/get_status_tab_items()
+	. = ..()
+	if(overmind)
+		. += "Blobs to Win: [overmind.blobs_legit.len]/[overmind.blobwincount]"
 
 /mob/living/simple_animal/hostile/blob/blob_act(obj/structure/blob/B)
 	if(stat != DEAD && health < maxHealth)
@@ -115,6 +115,8 @@
 	var/death_cloud_size = 1 //size of cloud produced from a dying spore
 	var/mob/living/carbon/human/oldguy
 	var/is_zombie = FALSE
+	///Whether or not this is a fragile spore from Distributed Neurons
+	var/is_weak = FALSE
 
 /mob/living/simple_animal/hostile/blob/blobspore/Initialize(mapload, obj/structure/blob/factory/linked_node)
 	. = ..()
@@ -127,7 +129,7 @@
 /mob/living/simple_animal/hostile/blob/blobspore/Life()
 	if(!is_zombie && isturf(src.loc))
 		for(var/mob/living/carbon/human/H in view(src,1)) //Only for corpse right next to/on same tile
-			if(H.stat == DEAD)
+			if(!is_weak && H.stat == DEAD)
 				Zombify(H)
 				break
 	if(factory && z != factory.z)
@@ -232,6 +234,8 @@
 	melee_damage_lower = 1
 	melee_damage_upper = 2
 	death_cloud_size = 0
+	is_weak = TRUE
+	gold_core_spawnable = NO_SPAWN
 
 /////////////////
 // BLOBBERNAUT //
