@@ -420,7 +420,7 @@
 	if(!reclaiming)
 		reclaiming = TRUE
 		START_PROCESSING(SSfluids, src)
-		process()
+		process(SSFLUIDS_DT)
 
 /obj/structure/sink/kitchen
 	name = "kitchen sink"
