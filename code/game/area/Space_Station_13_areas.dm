@@ -584,6 +584,11 @@ NOTE: there are two lists of areas in the end of this file: centcom and station 
 	name = "Transit Tube"
 	icon_state = "transit_tube"
 
+/area/engine/ptl_chamber
+	name = "Power Transmission Room"
+	icon = 'icons/obj/power_transfer.dmi'
+	icon_state = "ptl-room"
+
 
 //Solars
 
