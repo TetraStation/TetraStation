@@ -114,3 +114,27 @@
 			A.visible_message("<span class='notice'>[A] squashes [src], not even noticing its spike.</span>", "<span class='notice'>You squashed [src], not even noticing its spike.</span>")
 			adjustBruteLoss(1) //kills a normal cockroach
 	..()
+
+/mob/living/simple_animal/hostile/cockroach/xl
+	name = "extra-large cockroach"
+	desc = "Holy shit, did you see the size of that thing?!"
+	health = 4
+	mob_size = MOB_SIZE_SMALL
+	density = TRUE
+	squish_chance = 25
+	del_on_death = FALSE
+	response_harm_continuous = "crunches"
+	response_harm_simple = "crunch"
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/roach = 1)
+
+/mob/living/simple_animal/hostile/cockroach/giant
+	name = "giant cockroach"
+	desc = "Oh god, oh shit, what the fuck?"
+	health = 10
+	mob_size = MOB_SIZE_HUMAN
+	pass_flags = PASSTABLE
+	squish_chance = 0
+	del_on_death = FALSE
+	response_harm_continuous = "smacks"
+	response_harm_simple = "smack"
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/roach = 3)
