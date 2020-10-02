@@ -33,6 +33,36 @@
 	if(contents.len)
 		. += "folder_paper"
 
+/obj/item/folder/equipped(mob/living/user)
+	. = ..()
+	var/clumsy = HAS_TRAIT(user, TRAIT_CLUMSY)
+	// When we pick up a folder, make sure it's rotated the right way for the in-hand view.
+	// Unless you're clumsy, in which case good fucking luck.
+
+	// TODO: prob(50) under the clumsy branch, for dropping the contents.
+
+	if(clumsy && prob(50))
+		setDir(pick(NORTH, EAST, WEST))
+	else
+		setDir(SOUTH)
+
+/obj/item/folder/dropped(mob/living/user)
+	. = ..()
+	// Yeah, this is arse about face. Unfortunately, the original icon was set so that it was
+	// set to SOUTH, and I've just maintained that inverse alignment. Such is life.
+	if(istype(user))
+		switch(user.dir)
+			if(SOUTH)
+				setDir(NORTH)
+				return
+			if(EAST)
+				setDir(WEST)
+				return
+			if(WEST)
+				setDir(EAST)
+				return
+	setDir(SOUTH) // Default is same as how it was before
+
 
 /obj/item/folder/attackby(obj/item/W, mob/user, params)
 	if(burn_paper_product_attackby_check(W, user))
