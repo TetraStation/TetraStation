@@ -6,10 +6,11 @@
 	var/lootdoubles = TRUE	//if the same item can be spawned twice
 	var/list/loot			//a list of possible items to spawn e.g. list(/obj/item, /obj/structure, /obj/effect)
 	var/fan_out_items = FALSE //Whether the items should be distributed to offsets 0,1,-1,2,-2,3,-3.. This overrides pixel_x/y on the spawner itself
+	var/chance = 80 // % Chance that any particular lootdrop spawner actually drops anything at all.
 
 /obj/effect/spawner/lootdrop/Initialize(mapload)
 	..()
-	if(loot && loot.len)
+	if(loot && loot.len && prob(chance))
 		var/loot_spawned = 0
 		while((lootcount-loot_spawned) && loot.len)
 			var/lootspawn = pickweight(loot)
@@ -78,6 +79,16 @@
 				/obj/item/grenade/clusterbuster,
 				/obj/item/storage/box/syndie_kit/throwing_weapons = 3,
 				/obj/item/gun/ballistic/revolver/mateba)
+
+/obj/effect/spawner/lootdrop/dormitory_contraband
+	name = "dormitory contraband loot spawner"
+	chance = 25
+	loot = list(/obj/item/reagent_containers/food/drinks/beer = 8,
+				/obj/item/reagent_containers/food/drinks/bottle/moonshine = 4,
+				/obj/item/reagent_containers/food/drinks/bottle/vodka = 4,
+				/obj/item/reagent_containers/syringe/contraband/space_drugs = 1,
+				/obj/item/storage/pill_bottle/happy = 1
+				)
 
 /obj/effect/spawner/lootdrop/prison_contraband
 	name = "prison contraband loot spawner"
@@ -261,6 +272,7 @@
 
 /obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner
 	name = "2% chance xeno egg spawner"
+	chance = 100
 	loot = list(
 		/obj/effect/decal/remains/xeno = 49,
 		/obj/effect/spawner/xeno_egg_delivery = 1)
