@@ -17,6 +17,14 @@
 		piping_layer = 3;				\
 		icon_state = Iconbase + "-3";	\
 	}									\
+	##Fulltype/visible/layer4 {			\
+		piping_layer = 4;				\
+		icon_state = Iconbase + "-4";	\
+	}									\
+	##Fulltype/visible/layer5 {			\
+		piping_layer = 5;				\
+		icon_state = Iconbase + "-5";	\
+	}									\
 	##Fulltype/hidden {					\
 		hide = TRUE;					\
 	}									\
@@ -27,6 +35,14 @@
 	##Fulltype/hidden/layer3 {			\
 		piping_layer = 3;				\
 		icon_state = Iconbase + "-3";	\
+	}									\
+	##Fulltype/hidden/layer4 {			\
+		piping_layer = 4;				\
+		icon_state = Iconbase + "-4";	\
+	}									\
+	##Fulltype/hidden/layer5 {			\
+		piping_layer = 5;				\
+		icon_state = Iconbase + "-5";	\
 	}
 
 #define HELPER_PARTIAL_NAMED(Fulltype, Iconbase, Name, Color) \
