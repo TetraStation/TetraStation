@@ -1,29 +1,52 @@
-/obj/machinery/atmospherics/pipe/simple/multiz ///This is an atmospherics pipe which can relay air up a deck (Z+1). It currently only supports being on pipe layer 1
+/// This is an atmospherics pipe which can relay air up/down a deck.
+/obj/machinery/atmospherics/pipe/multiz
 	name = "multi deck pipe adapter"
 	desc = "An adapter which allows pipes to connect to other pipenets on different decks."
-	icon_state = "multiz_pipe"
-	icon = 'icons/obj/atmos.dmi'
+	icon_state = "adapter-3"
+	icon = 'icons/obj/atmospherics/pipes/multiz.dmi'
 
-/obj/machinery/atmospherics/pipe/simple/multiz/update_icon()
-	. = ..()
-	cut_overlays() //This adds the overlay showing it's a multiz pipe. This should go above turfs and such
-	var/image/multiz_overlay_node = new(src) //If we have a firing state, light em up!
-	multiz_overlay_node.icon = 'icons/obj/atmos.dmi'
-	multiz_overlay_node.icon_state = "multiz_pipe"
-	multiz_overlay_node.layer = HIGH_OBJ_LAYER
-	add_overlay(multiz_overlay_node)
+	dir = SOUTH
+	initialize_directions = SOUTH
+
+	layer = HIGH_OBJ_LAYER
+	device_type = UNARY
+
+	construction_type = /obj/item/pipe/directional
+	pipe_state = "multiz"
+
+	var/mutable_appearance/center = null
+	var/mutable_appearance/pipe = null
+	var/obj/machinery/atmospherics/front_node = null
+
+/* We use New() instead of Initialize() because these values are used in update_icon()
+ * in the mapping subsystem init before Initialize() is called in the atoms subsystem init.
+ * This is true for the other manifolds (the 4 ways and the heat exchanges) too.
+ */
+/obj/machinery/atmospherics/pipe/multiz/New()
+	icon_state = ""
+	center = mutable_appearance(icon, "adapter_center", layer = HIGH_OBJ_LAYER)
+	pipe = mutable_appearance(icon, "pipe-[piping_layer]")
+	return ..()
+
+/obj/machinery/atmospherics/pipe/multiz/SetInitDirections()
+	initialize_directions = dir
+
+/obj/machinery/atmospherics/pipe/multiz/update_icon()
+	cut_overlays()
+	pipe.color = front_node ? front_node.pipe_color : rgb(255, 255, 255)
+	pipe.icon_state = "pipe-[piping_layer]"
+	center.pixel_x = PIPING_LAYER_P_X * (piping_layer - PIPING_LAYER_DEFAULT)
+	add_overlay(pipe)
+	add_overlay(center)
 
 ///Attempts to locate a multiz pipe that's above us, if it finds one it merges us into its pipenet
-/obj/machinery/atmospherics/pipe/simple/multiz/pipeline_expansion()
-	icon = 'icons/obj/atmos.dmi' //Just to refresh.
+/obj/machinery/atmospherics/pipe/multiz/pipeline_expansion()
 	var/turf/T = get_turf(src)
-	var/obj/machinery/atmospherics/pipe/simple/multiz/above = locate(/obj/machinery/atmospherics/pipe/simple/multiz) in(SSmapping.get_turf_above(T))
-	var/obj/machinery/atmospherics/pipe/simple/multiz/below = locate(/obj/machinery/atmospherics/pipe/simple/multiz) in(SSmapping.get_turf_below(T))
+	var/obj/machinery/atmospherics/pipe/multiz/above = locate(/obj/machinery/atmospherics/pipe/multiz) in(SSmapping.get_turf_above(T))
+	var/obj/machinery/atmospherics/pipe/multiz/below = locate(/obj/machinery/atmospherics/pipe/multiz) in(SSmapping.get_turf_below(T))
 	if(below)
 		below.pipeline_expansion() //If we've got one below us, force it to add us on facebook
 	if(above)
 		nodes += above
 		above.nodes += src //Two way travel :)
-		return ..()
-	else
-		return ..()
+	return ..()
