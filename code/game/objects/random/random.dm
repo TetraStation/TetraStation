@@ -2,7 +2,7 @@
        Random Object Spawners - Ripped pretty shamelessly from Discordia
 *******************************************************************************/
 
-/obj/effect/spawner/random
+/obj/random
 	name = "random object"
 	icon_state = "random_loot"
 	alpha = 64
@@ -15,7 +15,7 @@
 	invisibility = INVISIBILITY_MAXIMUM
 
 // Create a new object and delete itself
-/obj/effect/spawner/random/Initialize()
+/obj/random/Initialize()
 	..()
 	if(!prob(spawn_nothing_percentage))
 		var/list/spawns = spawn_item()
@@ -24,15 +24,15 @@
 	return INITIALIZE_HINT_QDEL
 
 // Return a specific item to spawn
-/obj/effect/spawner/random/proc/item_to_spawn()
+/obj/random/proc/item_to_spawn()
 	return
 
 // Return a specific item to spawn
-/obj/effect/spawner/random/proc/post_spawn(var/list/spawns)
+/obj/random/proc/post_spawn(var/list/spawns)
 	return
 
 // Create the random item
-/obj/effect/spawner/random/proc/spawn_item()
+/obj/random/proc/spawn_item()
 	var/list/points_for_spawn = list()
 	var/list/spawns = list()
 
@@ -54,27 +54,27 @@
 		spawns.Add(A)
 	return spawns
 
-/obj/effect/spawner/random/single
+/obj/random/single
 	name = "randomly spawned object"
 	var/spawn_object = null
 
-/obj/effect/spawner/random/single/item_to_spawn()
+/obj/random/single/item_to_spawn()
 	return ispath(spawn_object) ? spawn_object : text2path(spawn_object)
 
-/obj/effect/spawner/randomcatcher
+/obj/randomcatcher
 	name = "Random Catcher Object"
 	desc = "How do you see this? You should not see this. Alert a coder."
 	icon = 'icons/misc/mark.dmi'
 	icon_state = "rup"
 
-/obj/effect/spawner/randomcatcher/proc/get_item(type)
+/obj/randomcatcher/proc/get_item(type)
 	new type(src)
 	if(contents.len)
 		. = pick(contents)
 	else
 		return null
 
-/obj/effect/spawner/randomcatcher/proc/get_items(type)
+/obj/randomcatcher/proc/get_items(type)
 	new type(src)
 	if(contents.len)
 		return contents
