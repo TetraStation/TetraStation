@@ -7,6 +7,14 @@
 	layer = WALL_OBJ_LAYER
 	var/list/hit_sounds = list('sound/weapons/genhit1.ogg', 'sound/weapons/genhit2.ogg', 'sound/weapons/genhit3.ogg',\
 	'sound/weapons/punch1.ogg', 'sound/weapons/punch2.ogg', 'sound/weapons/punch3.ogg', 'sound/weapons/punch4.ogg')
+	var/obj/item/grenade/grenade // Surprise!
+	var/obj/item/reagent_containers/syringe/syringe // Even more Surprise!
+	var/slit
+
+/obj/structure/punching_bag/Destroy()
+	QDEL_NULL(grenade)
+	QDEL_NULL(syringe)
+	..()
 
 /obj/structure/punching_bag/attack_hand(mob/user as mob)
 	. = ..()
@@ -18,6 +26,74 @@
 		var/mob/living/L = user
 		SEND_SIGNAL(user, COMSIG_ADD_MOOD_EVENT, "exercise", /datum/mood_event/exercise)
 		L.apply_status_effect(STATUS_EFFECT_EXERCISED)
+	if(syringe)
+		debug_world("Syringe in [src]; [user] hit it.")
+		if(!syringe.reagents.total_volume)
+			return
+		if(user.reagents.total_volume >= user.reagents.maximum_volume)
+			return
+		var/contained = syringe.reagents.log_list()
+		syringe.reagents.trans_to(user, syringe.amount_per_transfer_from_this, methods = INJECT)
+		var/turf/bag_turf = get_turf(src)
+		user.log_message("hit a hidden syringe ([contained]) in [src.name] at [AREACOORD(bag_turf)].", LOG_ATTACK, \
+		color="orange")
+		to_chat(user, "<span class='danger'>You feel a sharp prick!</span>")
+		return
+
+	if(grenade && !grenade.active)
+		log_game("[key_name(user)] activated a hidden grenade in [src].")
+		grenade.preprime(user, msg = FALSE, volume = 10)
+
+/obj/structure/punching_bag/attackby(obj/item/I, mob/living/user, params)
+	if(istype(I, /obj/item/reagent_containers/syringe))
+		if(syringe)
+			to_chat(user, "<span class='warning'>[src] already has a syringe!</span>")
+			return
+		if(grenade)
+			to_chat(user, "<span class='danger'>Holy shit, someone's put a grenade in this [src]!</span>")
+			return
+		if(!user.transferItemToLoc(I, src))
+			return
+		user.visible_message("<span class='warning'>[user] slides [I] into [src].</span>", \
+		"<span class='danger'>You slide [I] into [src].</span>")
+		syringe = I
+		var/turf/syringe_turf = get_turf(src)
+		log_game("[key_name(user)] added a syringe ([I.name]) to [src] at [AREACOORD(syringe_turf)].")
+		return
+
+	if(istype(I, /obj/item/grenade))
+		if(grenade)
+			to_chat(user, "<span class='warning'>[src] already has a grenade!</span>")
+			return
+		if(syringe)
+			to_chat(user, "<span class='warning'>What the hell, someone's put a syringe in this [src]!</span>")
+			return
+		if(!user.transferItemToLoc(I, src))
+			return
+		user.visible_message("<span class='warning'>[user] slides [I] into [src].</span>", \
+		"<span class='danger'>You slide [I] into [src].</span>")
+		grenade = I
+		var/turf/grenade_turf = get_turf(src)
+		log_game("[key_name(user)] added a grenade ([I.name]) to [src] at [AREACOORD(grenade_turf)].")
+		return
+
+
+	if(I.get_sharpness())
+		if(grenade)
+			to_chat(user, "<span class='notice'>You remove the grenade from [src].</span>")
+			user.put_in_hands(grenade)
+			grenade = null
+			return
+		if(syringe)
+			to_chat(user, "<span class='notice'>You remove the syringe from [src].</span>")
+			user.put_in_hands(syringe)
+			syringe = null
+			return
+
+		if(!slit)
+			to_chat(user, "<span class='notice'>You cut a slit in the [src].</span>")
+			slit = TRUE
+	return
 
 /obj/structure/weightmachine
 	name = "weight machine"
