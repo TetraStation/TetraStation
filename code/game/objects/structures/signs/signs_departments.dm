@@ -84,6 +84,13 @@
 	icon_state = "nanites"
 	is_editable = TRUE
 
+/obj/structure/sign/departments/genetics
+	name = "\improper Genetics Lab sign"
+	sign_change_name = "Department - Science: Genetics"
+	desc = "A sign labelling an area where genetic modification research is performed."
+	icon_state = "genetics"
+	is_editable = TRUE
+
 ///////SERVICE
 
 /obj/structure/sign/departments/botany

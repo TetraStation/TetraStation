@@ -16,6 +16,16 @@
 	desc = "A direction sign, pointing out which way the Science department is."
 	icon_state = "direction_sci"
 
+/obj/structure/sign/directions/science/xenobio
+	name = "xenobiology lab sign"
+	desc = "A direction sign, pointing out which way the xenobiology lab is."
+	icon_state = "direction_sci_xeno"
+
+/obj/structure/sign/directions/science/nano
+	name = "nanite lab sign"
+	desc = "A direction sign, pointing out which way the nanite lab is."
+	icon_state = "direction_sci_nano"
+
 /obj/structure/sign/directions/engineering
 	name = "engineering department sign"
 	desc = "A direction sign, pointing out which way the Engineering department is."
