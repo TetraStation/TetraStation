@@ -182,3 +182,10 @@
 	desc = "A sign labelling the courtroom, where the ever sacred Space Law is upheld."
 	icon_state = "court"
 	is_editable = TRUE
+
+/obj/structure/sign/departments/tcomms
+	name = "\improper Telecomms sign"
+	sign_change_name = "Location - Telecomms"
+	desc = "A sign labelling the telecomms department, where communications are maintained."
+	icon_state = "tcomms"
+	is_editable = TRUE
