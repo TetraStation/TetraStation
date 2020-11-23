@@ -662,6 +662,8 @@ GENE SCANNER
 
 			var/list/cached_gases = air_contents.gases
 			for(var/id in cached_gases)
+				if(cached_gases[id][MOLES] < 0.005)
+					continue
 				var/gas_concentration = cached_gases[id][MOLES]/total_moles
 				render_list += "<span class='notice'>[cached_gases[id][GAS_META][META_GAS_NAME]]: [round(gas_concentration*100, 0.01)] % ([round(cached_gases[id][MOLES], 0.01)] mol)</span>"
 			render_list += "<span class='notice'>Temperature: [round(temperature - T0C,0.01)] &deg;C ([round(temperature, 0.01)] K)</span>"
