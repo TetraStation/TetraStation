@@ -2,6 +2,7 @@
 //Keep this sorted alphabetically
 
 #ifdef UNIT_TESTS
+
 /// Asserts that a condition is true
 /// If the condition is not true, fails the test
 #define TEST_ASSERT(assertion, reason) if (!(assertion)) { return Fail("Assertion failed: [reason || "No reason"]") }
@@ -9,6 +10,11 @@
 /// Asserts that the two parameters passed are equal, fails otherwise
 /// Optionally allows an additional message in the case of a failure
 #define TEST_ASSERT_EQUAL(a, b, message) if ((a) != (b)) { return Fail("Expected [a] to be equal to [b].[message ? " [message]" : ""]") }
+
+/// *Only* run the test provided within the parentheses
+/// This is useful for debugging when you want to reduce noise, but should never be pushed
+/// Intended to be used in the manner of `TEST_FOCUS(/datum/unit_test/math)`
+#define TEST_FOCUS(test_path) ##test_path { focus = TRUE; }
 
 #include "anchored_mobs.dm"
 #include "bespoke_id.dm"
