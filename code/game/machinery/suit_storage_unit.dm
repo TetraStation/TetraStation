@@ -48,7 +48,7 @@
 	/// How long it takes to break out of the SSU.
 	var/breakout_time = 300
 	/// How fast it charges cells in a suit
-	var/charge_rate = 500
+	var/charge_rate = 250
 
 /obj/machinery/suit_storage_unit/standard_unit
 	suit_type = /obj/item/clothing/suit/space/eva
@@ -254,7 +254,9 @@
 				mob_occupant.adjustFireLoss(rand(20, 36))
 			else
 				mob_occupant.adjustFireLoss(rand(10, 16))
-			mob_occupant.emote("scream")
+			if(iscarbon(mob_occupant) && mob_occupant.stat < UNCONSCIOUS)
+				//Awake, organic and screaming
+				mob_occupant.emote("scream")
 		addtimer(CALLBACK(src, .proc/cook), 50)
 	else
 		uv_cycles = initial(uv_cycles)
@@ -303,7 +305,7 @@
 		if(occupant)
 			dump_contents()
 
-/obj/machinery/suit_storage_unit/process()
+/obj/machinery/suit_storage_unit/process(delta_time)
 	if(!suit)
 		return
 	if(!istype(suit, /obj/item/clothing/suit/space))
@@ -312,8 +314,8 @@
 		return
 
 	var/obj/item/stock_parts/cell/C = suit.cell
-	use_power(charge_rate)
-	C.give(charge_rate)
+	use_power(charge_rate * delta_time)
+	C.give(charge_rate * delta_time)
 
 /obj/machinery/suit_storage_unit/proc/shock(mob/user, prb)
 	if(!prob(prb))

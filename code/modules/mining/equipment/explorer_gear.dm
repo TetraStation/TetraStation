@@ -69,15 +69,11 @@
 	armor = list("melee" = 70, "bullet" = 40, "laser" = 10, "energy" = 20, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
 	allowed = list(/obj/item/flashlight, /obj/item/tank/internals, /obj/item/resonator, /obj/item/mining_scanner, /obj/item/t_scanner/adv_mining_scanner, /obj/item/gun/energy/kinetic_accelerator, /obj/item/pickaxe)
 
-/obj/item/clothing/suit/space/hostile_environment/Initialize()
-	. = ..()
-	AddComponent(/datum/component/spraycan_paintable)
-
-/obj/item/clothing/suit/space/hostile_environment/process()
+/obj/item/clothing/suit/space/hostile_environment/process(delta_time)
 	. = ..()
 	var/mob/living/carbon/C = loc
-	if(istype(C) && prob(2)) //cursed by bubblegum
-		if(prob(15))
+	if(istype(C) && DT_PROB(1, delta_time)) //cursed by bubblegum
+		if(DT_PROB(7.5, delta_time))
 			new /datum/hallucination/oh_yeah(C)
 			to_chat(C, "<span class='colossus'><b>[pick("I AM IMMORTAL.","I SHALL TAKE BACK WHAT'S MINE.","I SEE YOU.","YOU CANNOT ESCAPE ME FOREVER.","DEATH CANNOT HOLD ME.")]</b></span>")
 		else
