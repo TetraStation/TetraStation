@@ -1,8 +1,9 @@
 ## TetraStation Codebase
 
 * **Website:** https://tetra.furryhelix.co.uk
-* **Code:** https://git.furryhelix.co.uk/tetrastation
-* **Wiki:** https://tgstation13.org/wiki/Main_Page is a good place to start
+* **Code:** https://github.com/TamberP/TetraStation
+* **Code (Mirror)**: https://git.furryhelix.co.uk/tetrastation
+* **Wiki:** https://tgstation13.org/wiki/Main_Page is a good place to start for the basics, but the codebases have diverged quite a way now, and the differences will only continue to increase.
 * **Codedocs:** https://codedocs.tgstation13.org/
 
 This is the codebase for TetraStation, a fork of the /tg/station flavour of SpaceStation 13.
