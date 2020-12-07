@@ -211,6 +211,27 @@
 	initialize_dirs = DISP_DIR_LEFT | DISP_DIR_RIGHT
 	flip_type = null
 
+// A four-way junction with dir being the dominant direction
+/obj/structure/disposalpipe/junction4w
+	icon_state = "pipe-4w"
+	initialize_dirs = DISP_DIR_RIGHT | DISP_DIR_FLIP | DISP_DIR_LEFT
+	flip_type = null
+
+/obj/structure/disposalpipe/junction4w/nextdir(obj/structure/disposalholder/H)
+	var/entrydir = turn(H.dir, 180)
+	if(entrydir != dir)
+		 // Came from a secondary direction, exit through primary.
+		return dir
+	else
+		// Came from the primary direction, choose a secondary exit.
+		var/mask = dpdir & (~dir)
+		for(var/D in GLOB.cardinals)
+			if(D & mask)
+				if(prob(50))
+					return D
+		// Oops, we didn't pick a direction. Fuck it, left you go.
+		return DISP_DIR_LEFT
+
 
 //a trunk joining to a disposal bin or outlet on the same turf
 /obj/structure/disposalpipe/trunk
