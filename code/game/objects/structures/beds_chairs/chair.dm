@@ -198,6 +198,9 @@
 /obj/structure/chair/comfy/lime
 	color = rgb(255,251,0)
 
+/obj/structure/chair/comfy/theatre
+	color = rgb(141,19,5)
+
 /obj/structure/chair/comfy/shuttle
 	name = "shuttle seat"
 	desc = "A comfortable, secure seat. It has a more sturdy looking buckling system, for smoother flights."
