@@ -27,6 +27,9 @@
 	desc = "A white folder."
 	icon_state = "folder_white"
 
+/obj/item/folder/science
+	desc = "A white and purple folder."
+	icon_state = "folder_science"
 
 /obj/item/folder/update_overlays()
 	. = ..()

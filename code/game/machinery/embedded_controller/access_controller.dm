@@ -11,6 +11,7 @@
 	active_power_usage = 4
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | UNACIDABLE | ACID_PROOF
 	var/idSelf
+	var/safety = TRUE
 
 /obj/machinery/door_buttons/attackby(obj/O, mob/user)
 	return attack_hand(user)
@@ -31,6 +32,7 @@
 	obj_flags |= EMAGGED
 	req_access = list()
 	req_one_access = list()
+	safety = FALSE
 	playsound(src, "sparks", 100, TRUE)
 	to_chat(user, "<span class='warning'>You short out the access controller.</span>")
 
@@ -94,8 +96,6 @@
 /obj/machinery/door_buttons/access_button/removeMe(obj/O)
 	if(O == door)
 		door = null
-
-
 
 /obj/machinery/door_buttons/airlock_controller
 	icon = 'icons/obj/airlock_machines.dmi'
@@ -260,7 +260,7 @@
 /obj/machinery/door_buttons/airlock_controller/proc/returnText()
 	var/output
 	if(!exteriorAirlock && !interiorAirlock)
-		return "ERROR ERROR ERROR ERROR"
+		return "ERROR: No linked airlocks detected!"
 	if(lostPower)
 		output = "Initializing..."
 	else
@@ -300,6 +300,283 @@
 		output += "<B>Interior Door: </B> [interiorAirlock.density ? "closed" : "open"]<BR>"
 
 	return output
+
+/*******************************************************************************
+			The all-new pod-door controller
+*******************************************************************************/
+
+/obj/machinery/door_buttons/airlock_controller/poddoor
+	name = "pod-bay access console"
+	desc = "A small console that can cycle opening of pod-bay airlocks"
+	var/obj/machinery/door/poddoor/interiorDoors[0]
+	var/obj/machinery/door/poddoor/exteriorDoors[0]
+	var/error
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/removeMe(obj/O)
+	if(O in interiorDoors)
+		interiorDoors -= O
+	if(O in exteriorDoors)
+		exteriorDoors -= O
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/Destroy()
+	for(var/obj/machinery/door_buttons/access_button/poddoor/C in GLOB.machines)
+		if(C.controller == src)
+			C.controller = null
+	return ..()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/LateInitialize()
+	syncDoors()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/doorError()
+	error = TRUE
+	playsound(src, 'sound/machines/buzz-two.ogg', 50, FALSE, 3)
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/syncDoors()
+	. = ..()
+	for(var/obj/machinery/door/poddoor/D in GLOB.machines)
+		if(D.id == idExterior)
+			exteriorDoors += D
+		if(D.id == idInterior)
+			interiorDoors += D
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/exteriorClosed()
+	for(var/obj/machinery/door/poddoor/D in exteriorDoors)
+		if(!D.density)
+			return FALSE // If even one is open, then there's no point checking 'em all.
+	return TRUE
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/interiorClosed()
+	for(var/obj/machinery/door/poddoor/D in interiorDoors)
+		if(!D.density)
+			return FALSE
+	return TRUE
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/examine(user)
+	. = ..()
+	if(lostPower)
+		. += "It doesn't appear to be powered."
+		return
+	if(error)
+		. += "A tiny, red service light is illuminated on the control panel."
+		. += "...surely that should be a bit bigger, so you can see it?"
+
+	. += "The control panel reports that the exterior doors are [exteriorClosed() ? "closed" : "open"]"
+	. += "and the interior doors are [interiorClosed() ? "closed" : "open"]"
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/ui_interact(mob/user, datum/tgui/ui)
+	if(!allowed(user))
+		to_chat(user, "<span class='warning'>Access denied.</span>")
+		return
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "Podbay")
+		ui.open()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/ui_data()
+	var/list/data = list(
+		"exteriorClosed" = exteriorClosed(),
+		"interiorClosed" = interiorClosed(),
+	)
+	return data
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/openDoors(list/obj/machinery/door/poddoor/D)
+	if(!D || !(D.len > 0))
+		return
+	for(var/obj/machinery/door/poddoor/I in D)
+		if(lostPower || !I || QDELETED(I) || error)
+			// Oopsie
+			doorError()
+			break
+		else
+			I.unlock()
+			I.open()
+			I.lock()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeDoors(list/obj/machinery/door/poddoor/D)
+	if(!D || !(D.len > 0))
+		return
+	for(var/obj/machinery/door/poddoor/I in D)
+		if(lostPower || !I || QDELETED(I) || error)
+			// Oh dear.
+			doorError()
+			break
+
+		I.safe = FALSE	// Prevents delays by someone standing underneath one and making it take
+				// forever to close. Don't stand underneath them.
+		I.unlock()
+		if(I.close())
+			I.lock()
+		else
+			error = TRUE
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside(var/override)
+	if(!interiorClosed())
+		return TRUE
+	busy = OPENING
+	update_icon()
+	if(!exteriorClosed() && safety && !override)
+		busy = CYCLE_INTERIOR
+		update_icon()
+		say("Stand clear, exterior doors closing.")
+		sleep(1)
+		closeDoors(exteriorDoors)
+		sleep(1)
+		if(!exteriorClosed() && safety && !override)
+			busy = FALSE
+			doorError()
+			return FALSE
+	sleep(1)
+	openDoors(interiorDoors)
+	busy = FALSE
+	update_icon()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeInside(var/override)
+	busy = CLOSING
+	say("Caution, interior doors closing.")
+	// No requirement for a safety check here, because closing a door will always
+	// leave the airlock in a safe state, regardless of the state of the other door...
+	closeDoors(interiorDoors)
+	sleep(2)
+	if(!interiorClosed() && safety && !override)
+		// ... so long as it actually closes.
+		doorError()
+		busy = FALSE
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside(var/override)
+	if(!exteriorClosed())
+		return TRUE
+	busy = OPENING
+	update_icon()
+	if(!interiorClosed() && safety && !override)
+		busy = CYCLE_EXTERIOR
+		update_icon()
+		say("Stand clear, interior doors closing.")
+		sleep(1)
+		closeDoors(interiorDoors)
+		sleep(1)
+		if(!interiorClosed() && safety && !override)
+			busy = FALSE
+			doorError()
+			return FALSE
+	sleep(1)
+	openDoors(exteriorDoors)
+	busy = FALSE
+	update_icon()
+
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeOutside(var/override)
+	busy = CLOSING
+	update_icon()
+	say("Caution, exterior doors closing.")
+	sleep(1)
+	// No requirement for a safety check here, because closing a door will always
+	// leave the airlock in a safe state, regardless of the state of the other door...
+	closeDoors(exteriorDoors)
+	sleep(1)
+	if(!exteriorClosed() && safety && !override)
+		// ... so long as it actually closes.
+		doorError()
+
+	busy = FALSE
+	update_icon()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/cycleDoors()
+	// Maintains the automatic cycle of one open/one close, and a delay for safety
+	// between them, with one push of a button! If both sides are closed, it opens
+	// the inner first.
+	if(interiorClosed())
+		busy = CYCLE_INTERIOR
+		update_icon()
+		openInside()
+	else
+		busy = CYCLE_EXTERIOR
+		update_icon()
+		openOutside()
+	sleep(3)
+	busy = FALSE
+	update_icon()
+
+/obj/machinery/door_buttons/airlock_controller/poddoor/ui_act(action, params)
+	if(..())
+		return
+	if(busy)
+		return
+
+	update_icon()
+
+	switch(action)
+		if("open_interior")
+			INVOKE_ASYNC(src, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside)
+		if("close_interior")
+			INVOKE_ASYNC(src, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeInside)
+		if("open_exterior")
+			INVOKE_ASYNC(src, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside)
+		if("close_exterior")
+			INVOKE_ASYNC(src, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeOutside)
+		if("cycle")
+			INVOKE_ASYNC(src, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/cycleDoors)
+	. = TRUE
+	return
+
+
+
+// Variant of Access Button for controlling a bank of pod-doors
+/obj/machinery/door_buttons/access_button/poddoor
+	name = "pod-bay access button"
+	desc = "A button used for the explicit purpose of opening a pod-bay door, HAL"
+	var/doorSide
+	var/obj/machinery/door_buttons/airlock_controller/poddoor/podController
+	var/unsafe = FALSE
+
+/obj/machinery/door_buttons/access_button/poddoor/examine(user)
+	. = ..()
+	if(machine_stat & NOPOWER)
+		. += "It doesn't appear to be powered."
+	if(podController.lostPower || !podController.safety || unsafe)
+		. += "A small red light with a wrench icon is lit."
+
+/obj/machinery/door_buttons/access_button/poddoor/LateInitialize()
+	for(var/obj/machinery/door_buttons/airlock_controller/poddoor/C in GLOB.machines)
+		if(C.idSelf == idSelf)
+			podController = C
+			break
+
+/obj/machinery/door_buttons/access_button/poddoor/emag_act(mob/user)
+	..()
+	unsafe = TRUE // Override the safety on controller actions.
+
+/obj/machinery/door_buttons/access_button/poddoor/interact(mob/user)
+	if(busy)
+		return
+	if(!allowed(user))
+		to_chat(user, "<span class='warning'>Access denied.</span>")
+		playsound(src, 'sound/machines/deniedbeep.ogg', FALSE, 3)
+		return
+
+	if(podController & !podController.busy & doorSide)
+		if(podController.lostPower)
+			to_chat(user, "<span class='info'>a small red light, with a wrench icon, lights up on [src].")
+			return
+		busy = TRUE
+		update_icon()
+
+		switch(doorSide)
+			if("internal")
+				if(podController.interiorClosed())
+					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside, unsafe)
+					goto skip_cycle
+			if("external")
+				if(podController.exteriorClosed())
+					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside, unsafe)
+					goto skip_cycle
+
+		INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/cycleDoors)
+		skip_cycle:
+			sleep(2)
+	busy = FALSE
+	update_icon()
+
+
 
 #undef CLOSING
 #undef OPENING

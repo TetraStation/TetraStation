@@ -176,19 +176,19 @@
 
 /obj/machinery/airalarm/directional/north //Pixel offsets get overwritten on New()
 	dir = SOUTH
-	pixel_y = 24
+	pixel_y = 28
 
 /obj/machinery/airalarm/directional/south
 	dir = NORTH
-	pixel_y = -24
+	pixel_y = -28
 
 /obj/machinery/airalarm/directional/east
 	dir = WEST
-	pixel_x = 24
+	pixel_x = 28
 
 /obj/machinery/airalarm/directional/west
 	dir = EAST
-	pixel_x = -24
+	pixel_x = -28
 
 //all air alarms in area are connected via magic
 /area

@@ -32,6 +32,59 @@
 			loot_spawned++
 	return INITIALIZE_HINT_QDEL
 
+/obj/effect/spawner/lootdrop/department
+	name = "Department items spawner"
+
+/obj/effect/spawner/lootdrop/department/engineering
+	name = "Engineering dept items spawner"
+	lootcount = 3
+	loot = list(
+		/obj/item/stack/cable_coil = 5,
+		/obj/item/stack/cable_coil/five = 2,
+		/obj/item/stack/sheet/glass = 5,
+		/obj/item/stack/sheet/metal/ten = 5,
+		/obj/item/stack/sheet/metal/twenty = 2,
+		/obj/item/stack/sheet/plastic = 5,
+		/obj/item/stack/sheet/plastic/five = 2,
+		/obj/item/stack/sheet/plasteel = 1,
+		/obj/item/screwdriver = 3,
+		/obj/item/wrench = 3,
+		/obj/item/stack/rods = 5,
+		/obj/item/stack/rods/ten = 2,
+		/obj/item/transfer_valve = 1,
+		/obj/item/t_scanner = 2,
+		/obj/item/storage/box/stockparts
+		)
+
+/obj/effect/spawner/lootdrop/department/science
+	name = "Science dept items spawner"
+	lootcount = 3
+	loot = list(
+		/obj/item/storage/box/beakers,
+		/obj/item/storage/box/syringes,
+		/obj/item/storage/box/masks,
+		/obj/item/storage/box/gloves
+	)
+
+/obj/effect/spawner/lootdrop/department/medical
+	name = "Medical dept items spawner"
+	lootcount = 3
+	loot = list(
+		/obj/item/storage/box/syringes,
+		/obj/item/storage/box/masks,
+		/obj/item/storage/box/gloves,
+		/obj/item/storage/box/pillbottles,
+		/obj/item/storage/firstaid/regular,
+		/obj/item/storage/firstaid/brute,
+		/obj/item/storage/firstaid/fire,
+		/obj/item/storage/firstaid/medical,
+		/obj/item/storage/firstaid/o2,
+		/obj/item/storage/firstaid/toxin,
+		/obj/item/storage/pill_bottle/epinephrine,
+		/obj/item/storage/pill_bottle/probital,
+		/obj/item/storage/pill_bottle/mannitol
+	)
+
 /obj/effect/spawner/lootdrop/donkpockets
 	name = "donk pocket box spawner"
 	lootdoubles = FALSE

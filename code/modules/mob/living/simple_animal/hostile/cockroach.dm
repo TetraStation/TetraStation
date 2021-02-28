@@ -118,6 +118,7 @@
 /mob/living/simple_animal/hostile/cockroach/xl
 	name = "extra-large cockroach"
 	desc = "Holy shit, did you see the size of that thing?!"
+	icon_state = "cockroach_xl"
 	health = 4
 	mob_size = MOB_SIZE_SMALL
 	density = TRUE
@@ -130,6 +131,7 @@
 /mob/living/simple_animal/hostile/cockroach/giant
 	name = "giant cockroach"
 	desc = "Oh god, oh shit, what the fuck?"
+	icon_state = "cockroach_monster"
 	health = 10
 	mob_size = MOB_SIZE_HUMAN
 	pass_flags = PASSTABLE
