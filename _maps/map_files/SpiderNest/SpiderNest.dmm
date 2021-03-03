@@ -27902,6 +27902,14 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
+"dMo" = (
+/obj/machinery/door_buttons/access_button/poddoor{
+	doorSide = "external";
+	idSelf = "mechbay_airlock_controller";
+	pixel_x = 28
+	},
+/turf/open/space/basic,
+/area/space)
 "dNh" = (
 /obj/machinery/conveyor{
 	dir = 8;
@@ -28807,6 +28815,11 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/central)
+"gDN" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/sticky_tape,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
 "gEP" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -30813,6 +30826,11 @@
 /obj/effect/spawner/lootdrop/donkpockets,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+"nOT" = (
+/obj/structure/table/reinforced,
+/obj/item/pen,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
 "nPO" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/carpet/red,
@@ -31340,6 +31358,14 @@
 	step_y = 0
 	},
 /obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/hand_labeler_refill{
+	pixel_w = -4
+	},
+/obj/item/hand_labeler_refill{
+	pixel_w = 5
+	},
+/obj/item/pen,
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
 "pJq" = (
@@ -31763,6 +31789,14 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
+"qWR" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/package_wrap{
+	pixel_z = 8
+	},
+/obj/item/stack/package_wrap,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
 "qXk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing{
@@ -32178,6 +32212,11 @@
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+"sOV" = (
+/obj/structure/table/reinforced,
+/obj/item/stack/package_wrap,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
 "sPJ" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/snacks/badrecipe,
@@ -33081,6 +33120,11 @@
 /obj/item/wrench,
 /turf/open/floor/plasteel,
 /area/engine/storage_shared)
+"vTM" = (
+/obj/structure/table/reinforced,
+/obj/item/hand_labeler,
+/turf/open/floor/plasteel,
+/area/quartermaster/sorting)
 "vVo" = (
 /obj/structure/cable,
 /obj/effect/spawner/structure/window/reinforced,
@@ -61569,7 +61613,7 @@ aaa
 aaa
 aaa
 aaa
-aaa
+dMo
 aaa
 aaa
 aaa
@@ -77360,7 +77404,7 @@ aaa
 lLS
 gXr
 eyS
-fkJ
+qWR
 fkJ
 eyS
 pll
@@ -77663,7 +77707,7 @@ lLS
 mvG
 eyS
 fkJ
-fkJ
+gDN
 eyS
 pll
 lLS
@@ -77964,8 +78008,8 @@ agD
 lLS
 ljv
 eyS
-fkJ
-fkJ
+nOT
+sOV
 eyS
 pll
 lLS
@@ -78571,7 +78615,7 @@ eyS
 xoE
 eyS
 eyS
-fkJ
+vTM
 lLS
 aaa
 aFd
