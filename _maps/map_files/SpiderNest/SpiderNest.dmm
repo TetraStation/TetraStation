@@ -27797,6 +27797,18 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+"doM" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/door_buttons/access_button/poddoor{
+	doorSide = "external";
+	idSelf = "mechbay_airlock_control";
+	pixel_x = -8;
+	pixel_y = 28
+	},
+/turf/open/floor/engine,
+/area/science/robotics/mechbay)
 "doQ" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 8
@@ -27905,8 +27917,9 @@
 "dMo" = (
 /obj/machinery/door_buttons/access_button/poddoor{
 	doorSide = "external";
-	idSelf = "mechbay_airlock_controller";
-	pixel_x = 28
+	idSelf = "mechbay_airlock_control";
+	pixel_x = 24;
+	pixel_y = -4
 	},
 /turf/open/space/basic,
 /area/space)
@@ -29593,8 +29606,9 @@
 "jiK" = (
 /obj/machinery/door_buttons/access_button/poddoor{
 	doorSide = "internal";
-	idSelf = "mechbay_airlock_controller";
-	pixel_x = -28
+	idSelf = "mechbay_airlock_control";
+	pixel_x = -24;
+	pixel_y = -4
 	},
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
@@ -30948,6 +30962,19 @@
 	pixel_y = -28
 	},
 /obj/structure/cable,
+/turf/open/floor/engine,
+/area/science/robotics/mechbay)
+"opQ" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door_buttons/access_button/poddoor{
+	pixel_x = 0;
+	pixel_y = 28;
+	pixel_w = 8;
+	idSelf = "mechbay_airlock_control";
+	doorSide = "internal"
+	},
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
 "opR" = (
@@ -62218,7 +62245,7 @@ aaa
 aaa
 aaa
 rDj
-gQl
+doM
 gQl
 gQl
 rDj
@@ -62520,7 +62547,7 @@ aaa
 aaa
 aaa
 rDj
-bTd
+opQ
 bTd
 bTd
 rDj

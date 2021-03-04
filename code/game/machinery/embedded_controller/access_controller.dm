@@ -201,6 +201,9 @@
 		openDoor(A)
 
 /obj/machinery/door_buttons/airlock_controller/proc/openDoor(obj/machinery/door/airlock/A)
+	if(!A)
+		goIdle(TRUE)
+		return
 	if(exteriorAirlock && interiorAirlock && (!exteriorAirlock.density || !interiorAirlock.density))
 		goIdle(TRUE)
 		return
@@ -303,6 +306,8 @@
 
 /*******************************************************************************
 			The all-new pod-door controller
+
+       `idSelf` must match, between the controller and all linked buttons.
 *******************************************************************************/
 
 /obj/machinery/door_buttons/airlock_controller/poddoor
@@ -528,32 +533,51 @@
 	var/obj/machinery/door_buttons/airlock_controller/poddoor/podController
 	var/unsafe = FALSE
 
-/obj/machinery/door_buttons/access_button/poddoor/examine(user)
-	. = ..()
-	if(machine_stat & NOPOWER)
-		. += "It doesn't appear to be powered."
-	if(podController.lostPower || !podController.safety || unsafe)
-		. += "A small red light with a wrench icon is lit."
+/*
+	doorSide: "internal" or "external"
 
-/obj/machinery/door_buttons/access_button/poddoor/LateInitialize()
+	idSelf: set to the id of the controller responsible for these
+	doors. e.g. if it's the mechbay airlock, and the controller
+	has the id "mechbay_airlock_controller", then that's what goes
+	here.
+
+*/
+
+/obj/machinery/door_buttons/access_button/poddoor/Initialize()
+	. = ..()
 	for(var/obj/machinery/door_buttons/airlock_controller/poddoor/C in GLOB.machines)
 		if(C.idSelf == idSelf)
 			podController = C
 			break
+
+/obj/machinery/door_buttons/access_button/poddoor/examine(user)
+	. = ..()
+	if(machine_stat & NOPOWER)
+		. += "It doesn't appear to be powered."
+	if(podController)
+		if(podController.lostPower || !podController.safety || unsafe)
+			. += "A small red light with a wrench icon is lit."
+	else
+		. += "A small yellow light with the word 'SYNC' is lit"
 
 /obj/machinery/door_buttons/access_button/poddoor/emag_act(mob/user)
 	..()
 	unsafe = TRUE // Override the safety on controller actions.
 
 /obj/machinery/door_buttons/access_button/poddoor/interact(mob/user)
-	if(busy)
-		return
 	if(!allowed(user))
 		to_chat(user, "<span class='warning'>Access denied.</span>")
 		playsound(src, 'sound/machines/deniedbeep.ogg', FALSE, 3)
 		return
 
-	if(podController & !podController.busy & doorSide)
+	if(!podController || !doorSide)
+		to_chat(user, "<span class='info'>The button does nothing.</span>")
+		return
+
+	if(busy)
+		say("Please wait...")
+
+	if(!podController.busy)
 		if(podController.lostPower)
 			to_chat(user, "<span class='info'>a small red light, with a wrench icon, lights up on [src].")
 			return
@@ -563,13 +587,16 @@
 		switch(doorSide)
 			if("internal")
 				if(podController.interiorClosed())
+					say("Stand clear, opening internal doors.")
 					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside, unsafe)
 					goto skip_cycle
 			if("external")
 				if(podController.exteriorClosed())
+					say("Stand clear, opening external doors.")
 					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside, unsafe)
 					goto skip_cycle
 
+		say("Stand clear, cycling doors.")
 		INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/cycleDoors)
 		skip_cycle:
 			sleep(2)
