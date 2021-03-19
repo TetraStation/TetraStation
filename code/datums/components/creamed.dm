@@ -58,6 +58,10 @@ GLOBAL_LIST_INIT(creamable, typecacheof(list(
 
 ///Callback to remove pieface
 /datum/component/creamed/proc/clean_up(datum/source, clean_types)
-	if(clean_types & CLEAN_TYPE_BLOOD)
-		qdel(src)
-		return TRUE
+	SIGNAL_HANDLER
+
+	. = NONE
+	if(!(clean_types & CLEAN_TYPE_BLOOD))
+		return
+	qdel(src)
+	return COMPONENT_CLEANED
