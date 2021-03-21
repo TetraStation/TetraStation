@@ -14071,6 +14071,11 @@
 	dir = 1;
 	pixel_y = -28
 	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
 /turf/open/floor/wood,
 /area/hallway/secondary/command)
 "aKn" = (
@@ -19557,6 +19562,11 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
 /turf/open/floor/wood,
 /area/hallway/secondary/command)
 "aWZ" = (
@@ -27335,6 +27345,15 @@
 	},
 /turf/open/floor/carpet/black,
 /area/crew_quarters/theatre)
+"bAG" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/light/small/warning{
+	idSelf = "mechbay_airlock_control"
+	},
+/turf/open/floor/engine,
+/area/science/robotics/mechbay)
 "bBF" = (
 /obj/structure/table/wood,
 /obj/item/instrument/guitar,
@@ -27405,6 +27424,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"bPF" = (
+/obj/machinery/light/small/warning{
+	dir = 8;
+	idSelf = "mechbay_airlock_control"
+	},
+/turf/open/floor/engine,
+/area/science/robotics/mechbay)
 "bPY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/structure/cable,
@@ -27803,9 +27829,14 @@
 	},
 /obj/machinery/door_buttons/access_button/poddoor{
 	doorSide = "external";
+	frequency = 1449;
 	idSelf = "mechbay_airlock_control";
 	pixel_x = -8;
 	pixel_y = 28
+	},
+/obj/machinery/light/small/warning{
+	dir = 1;
+	idSelf = "mechbay_airlock_control"
 	},
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
@@ -27917,6 +27948,7 @@
 "dMo" = (
 /obj/machinery/door_buttons/access_button/poddoor{
 	doorSide = "external";
+	frequency = 1449;
 	idSelf = "mechbay_airlock_control";
 	pixel_x = 24;
 	pixel_y = -4
@@ -29606,9 +29638,14 @@
 "jiK" = (
 /obj/machinery/door_buttons/access_button/poddoor{
 	doorSide = "internal";
+	frequency = 1449;
 	idSelf = "mechbay_airlock_control";
 	pixel_x = -24;
 	pixel_y = -4
+	},
+/obj/machinery/light/small/warning{
+	dir = 8;
+	idSelf = "mechbay_airlock_control"
 	},
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
@@ -30969,11 +31006,12 @@
 	dir = 4
 	},
 /obj/machinery/door_buttons/access_button/poddoor{
-	pixel_x = 0;
-	pixel_y = 28;
-	pixel_w = 8;
+	doorSide = "internal";
+	frequency = 1449;
 	idSelf = "mechbay_airlock_control";
-	doorSide = "internal"
+	pixel_w = 8;
+	pixel_x = 0;
+	pixel_y = 28
 	},
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
@@ -31999,6 +32037,23 @@
 "rIm" = (
 /turf/closed/wall,
 /area/crew_quarters/theatre/backstage)
+"rJf" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 9
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 9
+	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "rJB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/carpet/black,
@@ -32251,6 +32306,7 @@
 /area/crew_quarters/kitchen)
 "sQF" = (
 /obj/machinery/door_buttons/airlock_controller/poddoor{
+	frequency = 1449;
 	idExterior = "mechbay_airlock_exterior";
 	idInterior = "mechbay_airlock_interior";
 	idSelf = "mechbay_airlock_control";
@@ -32326,10 +32382,10 @@
 /obj/machinery/light/dim{
 	dir = 4
 	},
-/obj/structure/sign/poster/official{
+/obj/structure/cable,
+/obj/structure/sign/poster/official/work_for_a_future{
 	pixel_x = 32
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
 "sYE" = (
@@ -32580,6 +32636,20 @@
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
 /area/science/robotics/lab)
+"tJG" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 10
+	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "tLi" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
@@ -32763,6 +32833,14 @@
 	},
 /turf/closed/wall,
 /area/maintenance/aft)
+"usG" = (
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "uur" = (
 /obj/machinery/light/dim,
 /obj/structure/table/wood,
@@ -62247,7 +62325,7 @@ aaa
 rDj
 doM
 gQl
-gQl
+bAG
 rDj
 aaa
 aaa
@@ -63154,7 +63232,7 @@ jiK
 gQl
 gQl
 gQl
-wQF
+bPF
 wQF
 oxv
 rDj
@@ -82706,7 +82784,7 @@ aaa
 aaa
 aaa
 abp
-aeh
+usG
 aRJ
 aeB
 aeB
@@ -83312,7 +83390,7 @@ bgS
 aUm
 aUm
 aeh
-aIS
+tJG
 aKG
 aeB
 aeB
@@ -83326,7 +83404,7 @@ aeB
 aLJ
 ieZ
 aPn
-aeh
+usG
 abp
 acI
 acI
@@ -83626,7 +83704,7 @@ aeB
 aeB
 aLJ
 aPn
-aeh
+usG
 aeh
 aeh
 abp
@@ -83918,7 +83996,7 @@ bpy
 aUm
 aUm
 aeh
-aIS
+tJG
 aKG
 aeB
 aeB
@@ -83926,7 +84004,7 @@ aVL
 aeB
 aeB
 aLJ
-aPn
+rJf
 aeh
 aeh
 aeh
@@ -84524,11 +84602,11 @@ bpx
 aUm
 aUm
 aeh
-aIS
+tJG
 aUs
 aQz
 kkx
-aPn
+rJf
 aeh
 abp
 abp
