@@ -7,6 +7,8 @@ export const Podbay = (props, context) => {
   const {
     exteriorClosed,
     interiorClosed,
+    busy,
+    error,
   } = data;
   return (
     <Window
@@ -15,6 +17,18 @@ export const Podbay = (props, context) => {
       <Window.Content>
         <Section title="Airlock Status">
           <LabeledList>
+            <LabeledList.Item label="Controller">
+              <Button
+                content="Busy"
+                icon="sync"
+                color="yellow"
+                disabled={!busy} />
+              <Button
+                content="Error"
+                icon="wrench"
+                color="red"
+                disabled={!error} />
+            </LabeledList.Item>
             <LabeledList.Item label="Internal Door">
               <Button
                 content="Close"

@@ -3,6 +3,7 @@
 #define CYCLE			3
 #define CYCLE_EXTERIOR	4
 #define CYCLE_INTERIOR	5
+#define AIRLOCK_CONTROL_RANGE   10
 
 /obj/machinery/door_buttons
 	power_channel = AREA_USAGE_ENVIRON
@@ -316,6 +317,8 @@
 	var/obj/machinery/door/poddoor/interiorDoors[0]
 	var/obj/machinery/door/poddoor/exteriorDoors[0]
 	var/error
+	var/frequency
+	var/datum/radio_frequency/radio_connection
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/removeMe(obj/O)
 	if(O in interiorDoors)
@@ -323,7 +326,15 @@
 	if(O in exteriorDoors)
 		exteriorDoors -= O
 
+/obj/machinery/door_buttons/airlock_controller/poddoor/proc/set_frequency(new_frequency)
+	SSradio.remove_object(src, frequency)
+	if(new_frequency)
+		frequency = new_frequency
+		radio_connection = SSradio.add_object(src, frequency, RADIO_AIRLOCK)
+
 /obj/machinery/door_buttons/airlock_controller/poddoor/Destroy()
+	if(frequency)
+		SSradio.remove_object(src, frequency)
 	for(var/obj/machinery/door_buttons/access_button/poddoor/C in GLOB.machines)
 		if(C.controller == src)
 			C.controller = null
@@ -331,6 +342,8 @@
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/LateInitialize()
 	syncDoors()
+	syncLights()
+	set_frequency(frequency)
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/doorError()
 	error = TRUE
@@ -363,10 +376,10 @@
 		return
 	if(error)
 		. += "A tiny, red service light is illuminated on the control panel."
-		. += "...surely that should be a bit bigger, so you can see it?"
+		. += "...surely that should be a bit bigger, so you can see it better?"
 
 	. += "The control panel reports that the exterior doors are [exteriorClosed() ? "closed" : "open"]"
-	. += "and the interior doors are [interiorClosed() ? "closed" : "open"]"
+	. += "the interior doors are [interiorClosed() ? "closed" : "open"]"
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/ui_interact(mob/user, datum/tgui/ui)
 	if(!allowed(user))
@@ -381,6 +394,8 @@
 	var/list/data = list(
 		"exteriorClosed" = exteriorClosed(),
 		"interiorClosed" = interiorClosed(),
+		"busy" = busy,
+		"error" = error
 	)
 	return data
 
@@ -419,6 +434,8 @@
 		return TRUE
 	busy = OPENING
 	update_icon()
+	warningLights(TRUE)
+	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	if(!exteriorClosed() && safety && !override)
 		busy = CYCLE_INTERIOR
 		update_icon()
@@ -431,13 +448,20 @@
 			doorError()
 			return FALSE
 	sleep(1)
+	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
+	say("Stand clear, interior doors opening.")
 	openDoors(interiorDoors)
+	sleep(1)
+	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeInside(var/override)
 	busy = CLOSING
 	say("Caution, interior doors closing.")
+	warningLights(TRUE)
+	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
+	sleep(1)
 	// No requirement for a safety check here, because closing a door will always
 	// leave the airlock in a safe state, regardless of the state of the other door...
 	closeDoors(interiorDoors)
@@ -445,17 +469,21 @@
 	if(!interiorClosed() && safety && !override)
 		// ... so long as it actually closes.
 		doorError()
-		busy = FALSE
+	else
+		warningLights(FALSE)
+	busy = FALSE
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside(var/override)
 	if(!exteriorClosed())
 		return TRUE
 	busy = OPENING
 	update_icon()
+	warningLights(TRUE)
 	if(!interiorClosed() && safety && !override)
 		busy = CYCLE_EXTERIOR
 		update_icon()
 		say("Stand clear, interior doors closing.")
+		playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 		sleep(1)
 		closeDoors(interiorDoors)
 		sleep(1)
@@ -464,7 +492,9 @@
 			doorError()
 			return FALSE
 	sleep(1)
+	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	openDoors(exteriorDoors)
+	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 
@@ -472,6 +502,8 @@
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeOutside(var/override)
 	busy = CLOSING
 	update_icon()
+	warningLights(TRUE)
+	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	say("Caution, exterior doors closing.")
 	sleep(1)
 	// No requirement for a safety check here, because closing a door will always
@@ -482,6 +514,7 @@
 		// ... so long as it actually closes.
 		doorError()
 
+	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 
@@ -523,6 +556,37 @@
 	. = TRUE
 	return
 
+/obj/machinery/door_buttons/airlock_controller/poddoor/receive_signal(datum/signal/signal)
+	. = ..()
+	if(!signal)
+		return
+	var/received_id   = signal.data["whoami"]
+	var/received_side = signal.data["doorSide"]
+
+	if(received_id != idSelf)
+		return // Signal isn't for us. Ignore it.
+
+	if(signal.data["unsafety"])
+		safety = FALSE // Receiving a signal from an emagged button, sets the controller to unsafe
+
+	switch(received_side)
+		if("internal")
+			if(interiorClosed())
+				INVOKE_ASYNC(src,\
+					/obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside)
+			else
+				INVOKE_ASYNC(src,\
+					/obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeInside)
+			return
+		if("external")
+			if(exteriorClosed())
+				INVOKE_ASYNC(src,\
+					/obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside)
+			else
+				INVOKE_ASYNC(src,\
+					/obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeOutside)
+			return
+	. = TRUE
 
 
 // Variant of Access Button for controlling a bank of pod-doors
@@ -532,6 +596,8 @@
 	var/doorSide
 	var/obj/machinery/door_buttons/airlock_controller/poddoor/podController
 	var/unsafe = FALSE
+	var/frequency
+	var/datum/radio_frequency/radio_connection
 
 /*
 	doorSide: "internal" or "external"
@@ -549,12 +615,18 @@
 		if(C.idSelf == idSelf)
 			podController = C
 			break
+	set_frequency(frequency)
+
+/obj/machinery/door_buttons/access_button/poddoor/proc/set_frequency(new_frequency)
+	SSradio.remove_object(src, frequency)
+	frequency = new_frequency
+	radio_connection = SSradio.add_object(src, frequency, RADIO_AIRLOCK)
 
 /obj/machinery/door_buttons/access_button/poddoor/examine(user)
 	. = ..()
 	if(machine_stat & NOPOWER)
 		. += "It doesn't appear to be powered."
-	if(podController)
+	if(podController && radio_connection)
 		if(podController.lostPower || !podController.safety || unsafe)
 			. += "A small red light with a wrench icon is lit."
 	else
@@ -571,7 +643,7 @@
 		return
 
 	if(!podController || !doorSide)
-		to_chat(user, "<span class='info'>The button does nothing.</span>")
+		to_chat(user, "<span class='info'>a small red light, with a wrench icon, lights up on [src].")
 		return
 
 	if(busy)
@@ -584,27 +656,22 @@
 		busy = TRUE
 		update_icon()
 
-		switch(doorSide)
-			if("internal")
-				if(podController.interiorClosed())
-					say("Stand clear, opening internal doors.")
-					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openInside, unsafe)
-					goto skip_cycle
-			if("external")
-				if(podController.exteriorClosed())
-					say("Stand clear, opening external doors.")
-					INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside, unsafe)
-					goto skip_cycle
+		if(radio_connection)
+			// Send simple radio signal with our idSelf and doorside, on our set frequency.
+			var/datum/signal/signal = new(list("whoami" = idSelf,
+				"doorSide" = doorSide, "unsafety" = unsafe))
 
-		say("Stand clear, cycling doors.")
-		INVOKE_ASYNC(podController, /obj/machinery/door_buttons/airlock_controller/poddoor/proc/cycleDoors)
-		skip_cycle:
-			sleep(2)
+			radio_connection.post_signal(src, signal, range = AIRLOCK_CONTROL_RANGE, \
+				filter = RADIO_AIRLOCK)
+	else
+		playsound(src, 'sound/machines/buzz-two.ogg', FALSE, 3)
+
 	busy = FALSE
 	update_icon()
 
 
 
+#undef AIRLOCK_CONTROL_RANGE
 #undef CLOSING
 #undef OPENING
 #undef CYCLE
