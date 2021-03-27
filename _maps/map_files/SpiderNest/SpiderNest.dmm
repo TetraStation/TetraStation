@@ -27464,6 +27464,10 @@
 /obj/machinery/light/dim{
 	dir = 1
 	},
+/obj/structure/extinguisher_cabinet{
+	pixel_y = 28;
+	pixel_w = 10
+	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
 "bXv" = (
@@ -27917,6 +27921,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
+"dDe" = (
+/obj/machinery/button/door{
+	id = "Skynet_Launch";
+	name = "Mech Bay Access";
+	pixel_w = 0;
+	pixel_x = -8;
+	pixel_y = -26;
+	req_one_access_txt = "29"
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/port)
 "dGu" = (
 /obj/structure/disposalpipe/segment{
 	dir = 9
@@ -29908,6 +29923,13 @@
 	},
 /turf/open/floor/sepia,
 /area/maintenance/disposal)
+"kjk" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "Skynet_launch";
+	name = "Mech Bay"
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/robotics/mechbay)
 "kkx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
@@ -32868,8 +32890,13 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "uBq" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 28
+/obj/machinery/button/door{
+	id = "Skynet_Launch";
+	name = "Mech Bay Access";
+	pixel_w = 0;
+	pixel_x = 24;
+	pixel_y = 26;
+	req_one_access_txt = "29"
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
@@ -66551,7 +66578,7 @@ ahk
 abh
 abh
 abh
-rDj
+kjk
 uBq
 vvQ
 ukf
@@ -66852,7 +66879,7 @@ aaa
 ahk
 abh
 abh
-abh
+dDe
 rDj
 bWq
 wgA
