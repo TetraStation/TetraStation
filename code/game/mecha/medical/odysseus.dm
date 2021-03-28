@@ -10,6 +10,11 @@
 	deflect_chance = 15
 	step_energy_drain = 6
 
+/obj/mecha/medical/odysseus/tgmc
+	desc ="Built by Vey-Med, for the TerraGov Marine Corps, these exosuits served corpsmen in the Marine Corps well through multiple conflicts."
+	name = "\improper TGMC Odysseus"
+	icon_state = "odysseus_tgmc"
+
 /obj/mecha/medical/odysseus/moved_inside(mob/living/carbon/human/H)
 	. = ..()
 	if(.)

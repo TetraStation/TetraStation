@@ -26,6 +26,13 @@
 	/// How much things Ripley can carry in their Cargo Compartment
 	var/cargo_capacity = 15
 
+/obj/mecha/working/ripley/tgmc
+	desc = "The Combat Engineer's Autonomous Power Loader Unit (Mk I). Designed around lifting, the Ripley can be outfitted with utility equipment, to fill a variety of roles in the field."
+	name = "\improper TGMC APLU Mk I \"Ripley\""
+	icon_state = "ripley_tgmc"
+	silicon_icon_state = "ripley_tgmc-empty"
+	wreckage = /obj/structure/mecha_wreckage/ripley/tgmc
+
 /obj/mecha/working/ripley/Move()
 	. = ..()
 	update_pressure()
