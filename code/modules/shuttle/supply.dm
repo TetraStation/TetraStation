@@ -196,6 +196,7 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 
 	var/msg = ""
 	var/matched_bounty = FALSE
+	var/matched_WO = FALSE
 
 	var/datum/export_report/ex = new
 
@@ -204,6 +205,8 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 		for(var/atom/movable/AM in shuttle_area)
 			if(iscameramob(AM))
 				continue
+			if(work_order_ship_item_and_contents(AM, dry_run = FALSE))
+				matched_WO = TRUE
 			if(bounty_ship_item_and_contents(AM, dry_run = FALSE))
 				matched_bounty = TRUE
 			if(!AM.anchored || istype(AM, /obj/mecha))
@@ -211,6 +214,9 @@ GLOBAL_LIST_INIT(blacklisted_cargo_types, typecacheof(list(
 
 	if(ex.exported_atoms)
 		ex.exported_atoms += "." //ugh
+
+	if(matched_WO)
+		msg += "Ordered items received. The work-order has been updated."
 
 	if(matched_bounty)
 		msg += "Bounty items received. An update has been sent to all bounty consoles. "
