@@ -154,6 +154,10 @@
 				/obj/item/mecha_parts/part/ripley_left_leg,
 				/obj/item/mecha_parts/part/ripley_right_leg)
 
+/obj/structure/mecha_wreckage/ripley/tgmc
+	name = "\improper TGMC Ripley wreckage"
+	icon_state = "ripley_tgmc-broken"
+
 /obj/structure/mecha_wreckage/ripley/mkii
 	name = "\improper Ripley MK-II wreckage"
 	icon_state = "ripleymkii-broken"
@@ -196,6 +200,10 @@
 			/obj/item/mecha_parts/part/durand_left_leg,
 			/obj/item/mecha_parts/part/durand_right_leg)
 
+/obj/structure/mecha_wreckage/durand/tgmc
+	name = "\improper TGMC Durand wreckage"
+	icon_state = "durand_tgmc-broken"
+
 /obj/structure/mecha_wreckage/phazon
 	name = "\improper Phazon wreckage"
 	icon_state = "phazon-broken"
@@ -219,3 +227,7 @@
 			/obj/item/mecha_parts/part/odysseus_right_arm,
 			/obj/item/mecha_parts/part/odysseus_left_leg,
 			/obj/item/mecha_parts/part/odysseus_right_leg)
+
+/obj/structure/mecha_wreckage/odysseus/tgmc
+	name = "\improper TGMC Odysseus wreckage"
+	icon_state = "odysseus_tgmc-broken"

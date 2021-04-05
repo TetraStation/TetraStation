@@ -342,7 +342,6 @@
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/LateInitialize()
 	syncDoors()
-	syncLights()
 	set_frequency(frequency)
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/doorError()
@@ -434,7 +433,6 @@
 		return TRUE
 	busy = OPENING
 	update_icon()
-	warningLights(TRUE)
 	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	if(!exteriorClosed() && safety && !override)
 		busy = CYCLE_INTERIOR
@@ -452,14 +450,12 @@
 	say("Stand clear, interior doors opening.")
 	openDoors(interiorDoors)
 	sleep(1)
-	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeInside(var/override)
 	busy = CLOSING
 	say("Caution, interior doors closing.")
-	warningLights(TRUE)
 	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	sleep(1)
 	// No requirement for a safety check here, because closing a door will always
@@ -469,8 +465,6 @@
 	if(!interiorClosed() && safety && !override)
 		// ... so long as it actually closes.
 		doorError()
-	else
-		warningLights(FALSE)
 	busy = FALSE
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/openOutside(var/override)
@@ -478,7 +472,6 @@
 		return TRUE
 	busy = OPENING
 	update_icon()
-	warningLights(TRUE)
 	if(!interiorClosed() && safety && !override)
 		busy = CYCLE_EXTERIOR
 		update_icon()
@@ -494,7 +487,6 @@
 	sleep(1)
 	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	openDoors(exteriorDoors)
-	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 
@@ -502,7 +494,6 @@
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/closeOutside(var/override)
 	busy = CLOSING
 	update_icon()
-	warningLights(TRUE)
 	playsound(src, 'sound/machines/warning-buzzer.ogg', 10, FALSE)
 	say("Caution, exterior doors closing.")
 	sleep(1)
@@ -514,7 +505,6 @@
 		// ... so long as it actually closes.
 		doorError()
 
-	warningLights(FALSE)
 	busy = FALSE
 	update_icon()
 

@@ -13,6 +13,11 @@
 	wreckage = /obj/structure/mecha_wreckage/durand
 	var/obj/durand_shield/shield
 
+/obj/mecha/combat/durand/tgmc
+	desc = "An aging combat exosuit utilised by the TerraGov Marine Corps. Originally developed to combat hostile alien lifeforms, it has seen use in combat and peacekeeping operations."
+	name = "\improper TGMC Durand"
+	icon_state = "durand_tgmc"
+	wreckage = /obj/structure/mecha_wreckage/durand/tgmc
 
 /obj/mecha/combat/durand/Initialize()
 	. = ..()
