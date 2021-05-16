@@ -615,4 +615,75 @@
 	desc = "A poster advertising the escapades of Dick Gumshue, mouse detective. Encouraging crew to bring the might of justice down upon wire saboteurs."
 	icon_state = "poster36_legit"
 
+/obj/structure/sign/poster/pride
+	name = "Pride flag"
+	desc = "A pride flag for LGBT+ folks. We're here, we're queer..."
+	icon_state = "poster_pride1"
+
+/obj/structure/sign/poster/pride/random
+	name = "random pride flag"
+	icon_state = "random_pride"
+	never_random = TRUE
+	random_basetype = /obj/structure/sign/poster/pride
+
+/obj/structure/sign/poster/pride/agender
+	name = "Agender pride flag"
+	desc = "A pride flag for the gender-free."
+	icon_state = "poster_pride2"
+
+/obj/structure/sign/poster/pride/aromantic
+	name = "Aromantic pride flag"
+	desc = "A pride flag for folks who aren't romantically attracted."
+	icon_state = "poster_pride3"
+
+/obj/structure/sign/poster/pride/asexual
+	name = "Ace pride flag"
+	desc = "Folks who don't experience sexual attraction are pretty damn cool too, y'know!"
+	icon_state = "poster_pride4"
+
+/obj/structure/sign/poster/pride/bisexual
+	name = "Bisexual pride flag"
+	desc = "A pride flag for those attracted to more than one sex or gender."
+	icon_state = "poster_pride5"
+
+/obj/structure/sign/poster/pride/genderfluid
+	name = "Genderfluid pride flag"
+	desc = "Change your gender more often than your socks? You're pretty cool in my book."
+	icon_state = "poster_pride6"
+
+/obj/structure/sign/poster/pride/genderqueer
+	name = "Genderqueer pride flag"
+	desc = "Steadfastly refusing to fit in the neatly labelled boxes, since forever!"
+	icon_state = "poster_pride7"
+
+/obj/structure/sign/poster/pride/intersex
+	name = "Intersex pride flag"
+	desc = "Born outside a neatly labelled box, and refusing to be confined to one."
+	icon_state = "poster_pride8"
+
+/obj/structure/sign/poster/pride/lesbian
+	name = "Lesbian pride flag"
+	desc = "Jean is a nice person. She happens to like girls instead of guys. Some people like cats instead of dogs! Frankly, I'd rather live with a lesbian than a cat. Unless the lesbian sheds; that, I don't know."
+	icon_state = "poster_pride9"
+
+/obj/structure/sign/poster/pride/nonbinary
+	name = "Nonbinary pride flag"
+	desc = "Clear of mind; Pure of heart; None of binary"
+	icon_state = "poster_pride10"
+
+/obj/structure/sign/poster/pride/pansexual
+	name = "Pansexual pride flag"
+	desc = "Pride flag for those who have attractions to people regardless of their sex or gender."
+	icon_state = "poster_pride11"
+
+/obj/structure/sign/poster/pride/polysexual
+	name = "Polysexual pride flag"
+	desc = "Sexual attraction to many, or all, genders."
+	icon_state = "poster_pride12"
+
+/obj/structure/sign/poster/pride/transgender
+	name = "Transgender pride flag"
+	desc = "Who you are comes from inside, and you get to say who that is."
+	icon_state = "poster_pride13"
+
 #undef PLACE_SPEED
