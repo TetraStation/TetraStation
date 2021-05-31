@@ -42,6 +42,11 @@
 	poster_type = /obj/structure/sign/poster/official/random
 	icon_state = "rolled_legit"
 
+/obj/item/poster/random_pride
+	name = "random pride poster"
+	poster_type = /obj/structure/sign/poster/pride/random
+	icon_state = "rolled_poster_pride"
+
 // The poster sign/structure
 
 /obj/structure/sign/poster
@@ -620,6 +625,11 @@
 	desc = "A pride flag for LGBT+ folks. We're here, we're queer..."
 	icon_state = "poster_pride1"
 
+/obj/item/poster/pride
+	name = "A rolled-up pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride
+
 /obj/structure/sign/poster/pride/random
 	name = "random pride flag"
 	icon_state = "random_pride"
@@ -631,59 +641,131 @@
 	desc = "A pride flag for the gender-free."
 	icon_state = "poster_pride2"
 
+/obj/item/poster/pride/agender
+	name = "A rolled-up agender pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/agender
+
 /obj/structure/sign/poster/pride/aromantic
 	name = "Aromantic pride flag"
 	desc = "A pride flag for folks who aren't romantically attracted."
 	icon_state = "poster_pride3"
+
+/obj/item/poster/pride/aromantic
+	name = "A rolled-up aromantic pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/aromantic
 
 /obj/structure/sign/poster/pride/asexual
 	name = "Ace pride flag"
 	desc = "Folks who don't experience sexual attraction are pretty damn cool too, y'know!"
 	icon_state = "poster_pride4"
 
+/obj/item/poster/pride/asexual
+	name = "A rolled-up asexual pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/asexual
+
 /obj/structure/sign/poster/pride/bisexual
 	name = "Bisexual pride flag"
 	desc = "A pride flag for those attracted to more than one sex or gender."
 	icon_state = "poster_pride5"
+
+/obj/item/poster/pride/bisexual
+	name = "A rolled-up bisexual pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/bisexual
 
 /obj/structure/sign/poster/pride/genderfluid
 	name = "Genderfluid pride flag"
 	desc = "Change your gender more often than your socks? You're pretty cool in my book."
 	icon_state = "poster_pride6"
 
+/obj/item/poster/pride/genderfluid
+	name = "A rolled-up genderfluid pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/genderfluid
+
 /obj/structure/sign/poster/pride/genderqueer
 	name = "Genderqueer pride flag"
 	desc = "Steadfastly refusing to fit in the neatly labelled boxes, since forever!"
 	icon_state = "poster_pride7"
+
+/obj/item/poster/pride/genderqueer
+	name = "A rolled-up genderqueer pride flag"
+	icon_state = "rolled_poster_pride"
+	poster_type = /obj/structure/sign/poster/pride/genderqueer
 
 /obj/structure/sign/poster/pride/intersex
 	name = "Intersex pride flag"
 	desc = "Born outside a neatly labelled box, and refusing to be confined to one."
 	icon_state = "poster_pride8"
 
+/obj/item/poster/pride/intersex
+	name = "A rolled-up intersex pride flag"
+	poster_type = /obj/structure/sign/poster/pride/intersex
+	icon_state = "rolled_poster_pride"
+
 /obj/structure/sign/poster/pride/lesbian
 	name = "Lesbian pride flag"
-	desc = "Jean is a nice person. She happens to like girls instead of guys. Some people like cats instead of dogs! Frankly, I'd rather live with a lesbian than a cat. Unless the lesbian sheds; that, I don't know."
+	desc = "\"Jean is a nice person. She happens to like girls instead of guys.\
+	Some people like cats instead of dogs! Frankly, I'd rather live with a lesbian\
+	than a cat. Unless the lesbian sheds; that, I don't know.\""
 	icon_state = "poster_pride9"
+
+/obj/item/poster/pride/lesbian
+	name = "A rolled-up lesbian pride flag"
+	poster_type = /obj/structure/sign/poster/pride/lesbian
+	icon_state = "rolled_poster_pride"
 
 /obj/structure/sign/poster/pride/nonbinary
 	name = "Nonbinary pride flag"
 	desc = "Clear of mind; Pure of heart; None of binary"
 	icon_state = "poster_pride10"
 
+/obj/item/poster/pride/nonbinary
+	name = "A rolled-up nonbinary pride flag"
+	poster_type = /obj/structure/sign/poster/pride/nonbinary
+	icon_state = "rolled_poster_pride"
+
 /obj/structure/sign/poster/pride/pansexual
 	name = "Pansexual pride flag"
 	desc = "Pride flag for those who have attractions to people regardless of their sex or gender."
 	icon_state = "poster_pride11"
+
+/obj/item/poster/pride/pansexual
+	name = "A rolled-up pansexual pride flag"
+	poster_type = /obj/structure/sign/poster/pride/pansexual
+	icon_state = "rolled_poster_pride"
 
 /obj/structure/sign/poster/pride/polysexual
 	name = "Polysexual pride flag"
 	desc = "Sexual attraction to many, or all, genders."
 	icon_state = "poster_pride12"
 
+/obj/item/poster/pride/polysexual
+	name = "A rolled-up polysexual pride flag"
+	poster_type = /obj/structure/sign/poster/pride/polysexual
+	icon_state = "rolled_poster_pride"
+
 /obj/structure/sign/poster/pride/transgender
 	name = "Transgender pride flag"
 	desc = "Who you are comes from inside, and you get to say who that is."
 	icon_state = "poster_pride13"
+
+/obj/item/poster/pride/transgender
+	name = "A rolled up transgender pride flag"
+	poster_type = /obj/structure/sign/poster/pride/transgender
+	icon_state = "rolled_poster_pride"
+
+/obj/structure/sign/poster/pride/queer_villain
+	name = "Queer Villain pride flag"
+	desc = "Chaos, and rebellian, against an oppressive -- and, quite frankly, incredibly boring -- status quo! Passion, community, queer history, ...and EVIL! Mwahaha"
+	icon_state = "poster_pride14"
+
+/obj/item/poster/pride/queer_villain
+	name = "A rolled up queer villain pride flag"
+	poster_type = /obj/structure/sign/poster/pride/queer_villain
+	icon_state = "rolled_poster_pride"
 
 #undef PLACE_SPEED
