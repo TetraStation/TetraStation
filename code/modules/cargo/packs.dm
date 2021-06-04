@@ -2570,6 +2570,27 @@
 					/obj/item/toner)
 	crate_name = "toner crate"
 
+/datum/supply_pack/misc/pride_flags
+	name = "Pride Flags"
+	desc = "It's a weird and wonderful world out there; why not show off who you are, and why that makes you awesome?"
+	cost = 600
+	contains = list(/obj/item/poster/pride,
+					/obj/item/poster/pride,
+					/obj/item/poster/pride/agender,
+					/obj/item/poster/pride/aromantic,
+					/obj/item/poster/pride/asexual,
+					/obj/item/poster/pride/bisexual,
+					/obj/item/poster/pride/genderfluid,
+					/obj/item/poster/pride/genderqueer,
+					/obj/item/poster/pride/intersex,
+					/obj/item/poster/pride/lesbian,
+					/obj/item/poster/pride/nonbinary,
+					/obj/item/poster/pride/pansexual,
+					/obj/item/poster/pride/polysexual,
+					/obj/item/poster/pride/transgender,
+					/obj/item/poster/pride/queer_villain)
+	crate_name = "pride poster crate"
+
 /datum/supply_pack/misc/blackmarket_telepad
 	name = "Black Market LTSRBT"
 	desc = "Need a faster and better way of transporting your illegal goods from and to the station? Fear not, the Long-To-Short-Range-Bluespace-Transceiver (LTSRBT for short) is here to help. Contains a LTSRBT circuit, two bluespace crystals, and one ansible."
