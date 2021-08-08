@@ -501,6 +501,7 @@
 		/obj/machinery/vending/boozeomat = "Booze-O-Mat",
 		/obj/machinery/vending/coffee = "Solar's Best Hot Drinks",
 		/obj/machinery/vending/snack = "Getmore Chocolate Corp",
+		/obj/machinery/vending/donut = "Dunk 'em Donuts",
 		/obj/machinery/vending/cola = "Robust Softdrinks",
 		/obj/machinery/vending/cigarette = "ShadyCigs Deluxe",
 		/obj/machinery/vending/games = "\improper Good Clean Fun",

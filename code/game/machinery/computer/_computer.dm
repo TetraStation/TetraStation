@@ -12,6 +12,7 @@
 	var/brightness_on = 1
 	var/icon_keyboard = "generic_key"
 	var/icon_screen = "generic"
+	var/theme = ""
 	var/time_to_screwdrive = 20
 	var/authenticated = 0
 
@@ -22,6 +23,9 @@
 		qdel(circuit)
 		circuit = C
 		C.moveToNullspace()
+	if(theme)
+		icon_state="computer[theme]"
+		update_overlays()
 
 /obj/machinery/computer/process()
 	if(machine_stat & (NOPOWER|BROKEN))

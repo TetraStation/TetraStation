@@ -348,6 +348,11 @@
 	icon_state = "science"
 	build_path = /obj/machinery/computer/robotics
 
+/obj/item/circuitboard/computer/mechbay
+	name = "Robotics Work Order Console (Computer Board)"
+	icon_state = "science"
+	build_path = /obj/machinery/computer/mechbay
+
 /obj/item/circuitboard/computer/teleporter
 	name = "Teleporter (Computer Board)"
 	icon_state = "science"
