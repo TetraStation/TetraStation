@@ -368,6 +368,12 @@
 
 //HELPERS
 #define PIPING_LAYER_SHIFT(T, PipingLayer) \
+	if(PipingLayer == 4) {									\
+		PipingLayer = 0;\
+	}													\
+	if(PipingLayer == 5) {									\
+		PipingLayer = 4;\
+	}													\
 	if(T.dir & (NORTH|SOUTH)) {									\
 		T.pixel_x = (PipingLayer - PIPING_LAYER_DEFAULT) * PIPING_LAYER_P_X;\
 	}																		\
