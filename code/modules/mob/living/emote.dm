@@ -503,3 +503,128 @@
 	key = "exhale"
 	key_third_person = "exhales"
 	message = "breathes out."
+
+/* Look, it's just not the same without a good ol' fart now and again */
+/datum/emote/living/fart
+	key = "fart"
+	key_third_person = "farts"
+	message = "farts."
+	message_param = "takes careful aim and farts towards %t!"
+	message_AI = "plays a crunchy sound-file of a fart!"
+	message_robot = "plays a crunchy sound-file of a fart!"
+	stat_allowed = UNCONSCIOUS
+	emote_type = EMOTE_AUDIBLE
+
+#define FART_COEFFICIENT 1000
+
+/datum/emote/living/fart/get_sound(mob/living/user)
+	if(issilicon(user))
+		return pick('sound/voice/human/farts/robo_fart.ogg',\
+			'sound/voice/human/farts/robo_fart2.ogg')
+	return pick('sound/voice/human/farts/fart.ogg', 'sound/voice/human/farts/fart2.ogg', \
+		'sound/voice/human/farts/fart3.ogg', 'sound/voice/human/farts/fart4.ogg')
+
+/datum/emote/living/fart/run_emote(mob/user, params, type_override, intentional)
+	. = TRUE
+	var/datum/gas_mixture/air
+	var/list/cached_gases
+	if(!can_run_emote(user, TRUE, intentional))
+		return FALSE
+
+	var/msg = select_message_type(user, intentional)
+	if(isturf(user.loc))
+		air = user.return_air()
+		cached_gases = air.gases
+
+	if(issilicon(user))
+		/* Crunchy OGG fartz */
+		msg = "plays a crunchy sound-file of a fart"
+		if(params)
+			msg += " at %t!"
+		else
+			msg += "!"
+	if(ishuman(user))
+		if(prob(1))
+			/* Unusual farts */
+			switch(rand(100))
+				if(1 to 75)
+					/* Pure oxygen */
+					msg = pick("farts out pure oxygen. ...what?", \
+						"decides to be a breath of fresh air.");
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/oxygen, air)
+						cached_gases[/datum/gas/oxygen][MOLES] += (rand(20, 100) / FART_COEFFICIENT);
+				if(76 to 80)
+					/* Carbon dioxide */
+					msg = pick("befouls the station's air supply!", \
+						"toots! Phew, someone light a match!")
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/carbon_dioxide, air)
+						cached_gases[/datum/gas/carbon_dioxide][MOLES] += (rand(20, 100) / FART_COEFFICIENT)
+				if(81 to 86)
+					/* Straight up stank! */
+					msg = pick("befouls the station's air supply!", \
+						"lets out an eyewateringly foul fart!", \
+						"farts! ...holy hell, what died up there?!")
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/miasma, air)
+						cached_gases[/datum/gas/miasma][MOLES] += (rand(20, 100) / FART_COEFFICIENT)
+				if(87 to 95)
+					/* Hydrogen */
+					msg = pick("lets out a light toot!",\
+						"toots! Phew, someone light a match!")
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/hydrogen, air)
+						cached_gases[/datum/gas/hydrogen][MOLES] += (rand(20, 100) / FART_COEFFICIENT)
+				if(96 to 99)
+					/* Plasma! Jesus, what have you been eating?! */
+					msg = pick("Farts pure plasma. HOLY SHIT!", \
+						"blows off a plume of suffering!")
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/plasma, air)
+						cached_gases[/datum/gas/plasma][MOLES] += (rand(10, 300) / FART_COEFFICIENT)
+				if(100)
+					/* Tritium. May god have mercy on your arsehole. */
+					msg = pick("Farts out tritium?! JESUS CHRIST!",
+						"reveals their bowels to actually be a fusion reactor in disguise")
+					if(air && cached_gases)
+						ASSERT_GAS(/datum/gas/tritium, air)
+						cached_gases[/datum/gas/tritium][MOLES] += (rand(10, 150) / FART_COEFFICIENT)
+		else
+			/* Normal farts */
+			ASSERT_GAS(/datum/gas/nitrogen, air)
+			cached_gases[/datum/gas/nitrogen][MOLES] += (rand(200, 900) / FART_COEFFICIENT);
+			ASSERT_GAS(/datum/gas/hydrogen, air)
+			cached_gases[/datum/gas/nitrogen][MOLES] += (rand(500) / FART_COEFFICIENT);
+			ASSERT_GAS(/datum/gas/carbon_dioxide, air)
+			cached_gases[/datum/gas/carbon_dioxide][MOLES] += (rand(100, 300) / FART_COEFFICIENT);
+			ASSERT_GAS(/datum/gas/oxygen, air)
+			cached_gases[/datum/gas/oxygen][MOLES] += (rand(300) / FART_COEFFICIENT);
+			ASSERT_GAS(/datum/gas/miasma, air)
+			cached_gases[/datum/gas/miasma][MOLES] += (rand(200) / FART_COEFFICIENT);
+
+			msg = pick("farts", "strains, grunts, and squeezes out a fart", \
+				"lets slip a colossal ass-blast")
+			if(params)
+				msg += " at %t!"
+			else
+				msg += "!"
+
+		msg = replace_pronoun(usr, msg)
+	if(isliving(usr))
+		var/mob/living/L = user
+		for(var/obj/item/implant/I in L.implants)
+			I.trigger(key, L)
+
+	user.log_message(msg, LOG_EMOTE)
+	var/dchatmsg = "<b>[user]</b> [msg]"
+
+	playsound(user, get_sound(user), 50, FALSE)
+	user.audible_message(msg, audible_message_flags = EMOTE_MESSAGE)
+
+	for(var/mob/M in GLOB.dead_mob_list)
+		if(!M.client || isnewplayer(M))
+			continue
+		var/T = get_turf(user)
+		if(M.stat == DEAD && M.client && (M.client.prefs.chat_toggles & CHAT_GHOSTSIGHT) && !(M in viewers(T, null)))
+			M.show_message("[FOLLOW_LINK(M, user)] [dchatmsg]")
