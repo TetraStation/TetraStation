@@ -11943,12 +11943,6 @@
 /area/janitor)
 "aEs" = (
 /obj/structure/cable,
-/obj/machinery/power/apc{
-	areastring = "/area/janitor";
-	name = "Janitorial Closet APC";
-	pixel_y = 28;
-	req_one_access_txt = "10;11"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 10
 	},
@@ -11958,6 +11952,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 10
 	},
+/obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plating,
 /area/janitor)
 "aEt" = (
@@ -23395,7 +23390,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/wood,
 /area/medical/psychology)
 "bgG" = (
@@ -26702,7 +26696,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/power/apc{
 	areastring = "/area/crew_quarters/fitness";
-	name = "GYM APC";
+	name = "Gym APC";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
@@ -34105,6 +34099,11 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall,
 /area/quartermaster/sorting)
+"xCi" = (
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/south,
+/turf/open/floor/carpet,
+/area/medical/psychology)
 "xFE" = (
 /obj/machinery/conveyor/inverted{
 	dir = 9;
@@ -73370,7 +73369,7 @@ bgy
 bgo
 bgp
 bgp
-bgp
+xCi
 bgn
 abh
 bgD
