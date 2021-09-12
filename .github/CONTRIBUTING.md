@@ -3,11 +3,15 @@
 ## Reporting Issues
 
 
-If you ever encounter a bug in-game, the best way to let a coder know about it is with our GitHub Issue Tracker. Please make sure you use the supplied issue template, and include the round ID for the server.
+If you ever encounter a bug in-game, the best way to let a coder know
+about it is with our GitHub Issue Tracker. Please make sure you use
+the supplied issue template, and include the round ID for the server.
 
-(If you don't have an account, making a new one takes only one minute.)
+(If you don't have an account, making a new one takes only one
+minute.)
 
-If you have difficulty, ask for help in the #coding-general channel on our discord.
+If you have difficulty, ask for help in the #testing-n-bugs channel on
+our discord.
 
 ## Introduction
 
@@ -50,8 +54,10 @@ Git](http://tgstation13.org/wiki/Setting_up_git) so you can download
 the source code.
 
 After setting it up, optionally navigate your git commandline to the
-project folder and run the command: 'git config blame.ignoreRevsFile
-.git-blame-ignore-revs'
+project folder and run the command:
+`git config blame.ignoreRevsFile .git-blame-ignore-revs`
+This hides commits that were only whitespace changes, so that
+git-blame gives more useful information.
 
 There are a [list of guides on the
 wiki](http://www.tgstation13.org/wiki/index.php/Guides#Development_and_Contribution_Guides)
