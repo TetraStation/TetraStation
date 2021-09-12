@@ -3,12 +3,31 @@
 * **Website:** https://tetra.furryhelix.co.uk
 * **Code:** https://github.com/TamberP/TetraStation
 * **Code (Mirror)**: https://git.furryhelix.co.uk/tetrastation
-* **Wiki:** https://tgstation13.org/wiki/Main_Page is a good place to start for the basics, but the codebases have diverged quite a way now, and the differences will only continue to increase.
+* **Wiki:** https://tgstation13.org/wiki/Main_Page is a good place to
+  start for the basics, but the codebases have diverged quite a way
+  now, and the differences will only continue to increase.
 * **Codedocs:** https://codedocs.tgstation13.org/
+  Though this will also have diverged by now.
 
-This is the codebase for TetraStation, a fork of the /tg/station flavour of SpaceStation 13.
+This is the codebase for TetraStation, a distressingly "Thanksgiving
+at your Grandparents'"-themed fork of the /tg/station flavour of
+SpaceStation 13.
 
-Space Station 13 is a paranoia-laden round-based roleplaying game set against the backdrop of a nonsensical, metal death trap masquerading as a space station, with charming spritework designed to represent the sci-fi setting and its dangerous undertones. Have fun, and survive!
+Space Station 13 is a paranoia-laden round-based roleplaying game set
+against the backdrop of a nonsensical, plastic and metal death trap
+masquerading as a space station, with charming spritework designed to
+represent the "old and worn out" sci-fi setting and its dangerous
+undertones. Have fun, and survive!
+
+"My god, it's even more rickety and rusty than my last posting..."
+
+--
+
+"CMO to Bridge; All the drugs have broken down from age and exposure."
+"Bridge to CMO; ...exposure to what?"
+"CMO to Bridge; The crew, mostly."
+"Bridge to CMO; ...That's fair. I also have breakdowns when I'm exposed
+to the crew for too long."
 
 ## DOWNLOADING
 [Downloading](.github/DOWNLOADING.md)
@@ -19,8 +38,6 @@ Space Station 13 is a paranoia-laden round-based roleplaying game set against th
 
 ## Requirements for contributors
 [Guidelines for Contributors](.github/CONTRIBUTING.md)
-
-[/tg/station HACKMD account](https://hackmd.io/@tgstation) - Design documentation here
 
 [Documenting your code](.github/AUTODOC_GUIDE.md)
 
