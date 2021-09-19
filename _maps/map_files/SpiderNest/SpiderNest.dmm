@@ -28861,7 +28861,7 @@
 "fFs" = (
 /obj/machinery/rnd/production/circuit_imprinter/department/science,
 /obj/effect/turf_decal/stripes/line{
-	dir = 5
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
@@ -30372,9 +30372,6 @@
 /obj/machinery/computer/rdconsole/production{
 	dir = 4
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
@@ -31232,6 +31229,14 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/aft)
+"nGn" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/machinery/mecha_part_fabricator,
+/obj/effect/turf_decal/stripes/line{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/science/robotics/lab)
 "nIA" = (
 /obj/machinery/computer/telecomms/server,
 /obj/machinery/airalarm/directional/north,
@@ -33976,13 +33981,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/engine,
 /area/science/robotics/mechbay)
-"wIL" = (
-/obj/machinery/mecha_part_fabricator,
-/obj/effect/turf_decal/stripes/line{
-	dir = 9
-	},
-/turf/open/floor/plasteel/dark,
-/area/science/robotics/lab)
 "wIX" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -68632,9 +68630,9 @@ rxv
 rxv
 dHz
 mAQ
-mAQ
+nGn
 ieg
-wIL
+tMk
 aMH
 bde
 bdo
@@ -68933,10 +68931,10 @@ pZT
 pZT
 yil
 flb
-wzD
-tMk
 tMk
 eiU
+tMk
+wzD
 aMH
 bdf
 bdp
