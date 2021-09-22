@@ -1279,10 +1279,6 @@
 "aee" = (
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/command)
-"aef" = (
-/obj/machinery/door/airlock/maintenance,
-/turf/open/floor/plating,
-/area/hallway/secondary/command)
 "aeg" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -14741,6 +14737,11 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
 /turf/open/floor/wood,
 /area/hallway/secondary/command)
 "aLK" = (
@@ -16464,6 +16465,13 @@
 	},
 /obj/structure/chair/comfy/black{
 	dir = 1
+	},
+/obj/machinery/button{
+	id = "ticket_machine_default";
+	name = "Increment Ticket Counter";
+	pixel_w = 0;
+	pixel_x = 24;
+	pixel_y = 32
 	},
 /turf/open/floor/wood,
 /area/crew_quarters/heads/hop)
@@ -27287,13 +27295,6 @@
 /obj/effect/landmark/start/station_engineer,
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
-"bqn" = (
-/obj/structure/bed,
-/obj/item/bedsheet/nanotrasen,
-/obj/effect/spawner/lootdrop/dormitory_contraband,
-/obj/effect/landmark/latejoin,
-/turf/open/floor/plasteel,
-/area/crew_quarters/dorms)
 "bqo" = (
 /obj/structure/bed,
 /obj/item/bedsheet/nanotrasen,
@@ -27768,6 +27769,19 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"cwK" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/machinery/vending/coffee,
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "cyw" = (
 /obj/machinery/door/airlock/public/glass,
 /obj/machinery/door/firedoor,
@@ -27864,6 +27878,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre/stage)
+"cTi" = (
+/obj/machinery/ticket_machine{
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/box,
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "cTM" = (
 /obj/effect/landmark/start/cargo_technician,
 /obj/effect/decal/cleanable/dirt,
@@ -28458,6 +28479,15 @@
 /obj/item/radio,
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
+"eSV" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/structure/sign/poster/random{
+	pixel_x = 32
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "eUx" = (
 /obj/machinery/light/dim{
 	dir = 1;
@@ -30257,6 +30287,17 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/disposal)
+"kCw" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "kDA" = (
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
@@ -31036,6 +31077,12 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"mZm" = (
+/obj/effect/turf_decal/loading_area{
+	dir = 4
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "mZu" = (
 /obj/machinery/air_sensor/atmos/oxygen_tank,
 /turf/open/floor/engine/o2,
@@ -32179,6 +32226,26 @@
 /obj/item/stack/cable_coil/five,
 /turf/open/floor/plating,
 /area/maintenance/solars/starboard/fore)
+"qMn" = (
+/obj/machinery/door/airlock/maintenance,
+/turf/open/floor/plating,
+/area/maintenance/department/bridge)
+"qMH" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/item/kirbyplants/random,
+/obj/structure/sign/poster/official/pda_ad{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "qMN" = (
 /obj/machinery/light/floor{
 	brightness = 2;
@@ -32453,23 +32520,6 @@
 "rIm" = (
 /turf/closed/wall,
 /area/crew_quarters/theatre/backstage)
-"rJf" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 9
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
-	dir = 9
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 9
-	},
-/obj/machinery/light/floor{
-	brightness = 2;
-	name = "dim floor light";
-	nightshift_brightness = 2
-	},
-/turf/open/floor/wood,
-/area/hallway/secondary/command)
 "rJB" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/carpet/black,
@@ -32705,6 +32755,21 @@
 /obj/item/gps/mining,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
+"sHp" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/sign/poster/official/love_ian{
+	pixel_y = 32
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "sIF" = (
 /obj/machinery/recharge_station,
 /obj/machinery/light/dim,
@@ -33237,6 +33302,20 @@
 /obj/machinery/vending/autodrobe,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre/backstage)
+"uiN" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/obj/machinery/light/floor{
+	brightness = 2;
+	name = "dim floor light";
+	nightshift_brightness = 2
+	},
+/obj/structure/sign/poster/official/random{
+	pixel_x = 32
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "uiR" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/condiment/soysauce,
@@ -33756,6 +33835,22 @@
 	},
 /turf/closed/wall/r_wall/rust,
 /area/engine/atmos)
+"vVV" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
+	dir = 6
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 6
+	},
+/obj/structure/table,
+/obj/item/clipboard,
+/obj/item/folder/yellow,
+/obj/item/pen,
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "vWi" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -34079,6 +34174,12 @@
 /obj/machinery/microwave,
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
+"xcE" = (
+/obj/structure/chair{
+	dir = 8
+	},
+/turf/open/floor/wood,
+/area/hallway/secondary/command)
 "xdr" = (
 /obj/structure/closet/secure_closet/security/sec,
 /obj/machinery/light/dim,
@@ -82739,7 +82840,7 @@ aeC
 aHh
 aeC
 aeB
-yew
+sHp
 aeh
 aRI
 aPD
@@ -83945,7 +84046,7 @@ aXm
 aZH
 aeB
 aeB
-aLJ
+cwK
 ieZ
 aPn
 usG
@@ -84246,9 +84347,9 @@ aTm
 aRW
 aeB
 aeB
-aLJ
+qMH
 aPn
-usG
+aeh
 aeh
 aeh
 abp
@@ -84547,8 +84648,8 @@ aeB
 aVL
 aeB
 aeB
-aLJ
-rJf
+vVV
+aPn
 aeh
 aeh
 aeh
@@ -84586,7 +84687,7 @@ aXX
 aMw
 agy
 aXX
-bqn
+aQi
 aQR
 aXX
 bqp
@@ -84851,10 +84952,10 @@ aeB
 aLJ
 aPn
 aeh
-abp
-abp
-abp
-abp
+usG
+aeh
+aeh
+usG
 abp
 aaa
 aaa
@@ -85150,14 +85251,14 @@ tJG
 aUs
 aQz
 kkx
-rJf
+aPn
 aeh
+aeh
+aeh
+xcE
+xcE
+xcE
 abp
-abp
-aaa
-aaa
-aaa
-aaa
 aaa
 aaa
 aaa
@@ -85453,13 +85554,13 @@ aeh
 aPY
 rGV
 aeh
+aeh
+mZm
+aeh
+aeh
+aeh
+aeh
 abp
-acI
-acI
-acI
-acI
-acI
-acI
 acI
 acI
 acI
@@ -85754,15 +85855,15 @@ abp
 aeh
 aWY
 rGV
+aeh
 abp
+cTi
+kCw
+eSV
+xcE
+uiN
 abp
-acI
-aeJ
-aHw
-aeJ
 aHv
-aeJ
-aeJ
 aeJ
 aeJ
 aeJ
@@ -86056,15 +86157,15 @@ aee
 aee
 aKd
 uZF
-axY
+aee
 abp
 acI
+acI
+acI
+acI
+acI
+acI
 aeJ
-acI
-acI
-acI
-acI
-acI
 acI
 acI
 acI
@@ -86359,15 +86460,15 @@ aee
 aKd
 uZF
 aee
+axY
 aee
+aee
+qMn
+kmN
+aeJ
+aeJ
+aHw
 acI
-aef
-acI
-aaa
-aaa
-aaa
-aaa
-aaa
 aaa
 acI
 acI
@@ -86665,11 +86766,11 @@ raf
 nSJ
 aee
 abp
-aaa
-aaa
-aaa
-aaa
-aaa
+acI
+acI
+acI
+acI
+acI
 aaa
 aaa
 aaa
@@ -89983,7 +90084,7 @@ aee
 aee
 aee
 aee
-aee
+ayg
 abp
 abp
 auu
@@ -90284,7 +90385,7 @@ aee
 aee
 aee
 aee
-ayg
+aee
 abp
 abp
 auu
