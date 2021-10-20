@@ -80,7 +80,7 @@ export const Ptl = (props, context) => {
                     icon="backward"
                     disabled={inputLevel === 0}
                     onClick={() => act('input', {
-                      adjust: -1000,
+                      adjust: -10000,
                     })} />
                 </Flex.Item>
                 <Flex.Item grow={1} mx={1}>
@@ -101,7 +101,7 @@ export const Ptl = (props, context) => {
                     icon="forward"
                     disabled={inputLevel === inputLevelMax}
                     onClick={() => act('input', {
-                      adjust: 1000,
+                      adjust: 10000,
                     })} />
                   <Button
                     icon="fast-forward"
@@ -150,7 +150,7 @@ export const Ptl = (props, context) => {
                     icon="backward"
                     disabled={outputLevel === 0}
                     onClick={() => act('output', {
-                      adjust: -1000,
+                      adjust: -10000,
                     })} />
                 </Flex.Item>
                 <Flex.Item grow={1} mx={1}>
@@ -170,7 +170,7 @@ export const Ptl = (props, context) => {
                     icon="forward"
                     disabled={outputLevel === outputLevelMax}
                     onClick={() => act('output', {
-                      adjust: 1000,
+                      adjust: 10000,
                     })} />
                   <Button
                     icon="fast-forward"

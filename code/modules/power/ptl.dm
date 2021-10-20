@@ -326,10 +326,10 @@
 				target = 0
 				. = TRUE
 			else if(target == "max")
-				target = input_level_max
+				target = transmit_level_max
 				. = TRUE
 			else if(adjust)
-				target = input_level + adjust
+				target = transmit_level + adjust
 				. = TRUE
 			else if(text2num(target) != null)
 				target = text2num(target)
