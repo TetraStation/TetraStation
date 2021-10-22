@@ -227,7 +227,7 @@
 	if(transmit_active && (charge > 0))
 		if(transmitting)
 			var/lazed
-			output_used = min(transmit_level, charge)
+			output_used = (min(transmit_level, charge) * CHGRATE)
 			charge -= output_used
 			lazed = output_used * efficiency
 
@@ -380,3 +380,70 @@
 		if(WEST)
 			return locate(x-1, y, z)
 	return get_turf(src)
+
+
+/obj/item/book/manual/ptl_operation
+        name = "Power Transfer Laser manual"
+        icon_state ="book"
+        author = "Applied Power Dynamics Inc"
+        title = "Mk 3 Power Transfer Laser: Operation and Maintenance"
+        dat = {"<html>
+                <head>
+                <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+                <style>
+                h1 {font-size: 18px; margin: 15px 0px 5px;}
+                h2 {font-size: 15px; margin: 15px 0px 5px;}
+                li {margin: 2px 0px 2px 15px;}
+                ul {list-style: none; margin: 5px; padding: 0px;}
+                ol {margin: 5px; padding: 0px 15px;}
+                </style>
+                </head>
+                <body>
+                <center>
+                <b style='font-size: 12px;'>Applied Power Dynamics Inc.</b>
+                <h1>Mk 3 Power Transfer Laser</h1>
+		<h2>Operation and Maintenance</h2>
+                </center>
+                <h2>Introduction</h2>
+		<p>The Mark 3 Power Transfer Laser is the latest in the APD line-up of power
+		transfer systems, consuming power from a standard NanoTrasen-compatible power
+		terminal, and transmitting it by way of a highly-energetic beam of energy.</p>
+		<p><b>Caution</b>: Do not stand in the beam-line when the PTL system is
+		in operation. Equipment damage, death, or interruption of power transmission
+		will occur, and APD Inc. cannot be held liable for damages or resulting loss
+		of profits, equipment, or staff.</p>
+		<p><b>Caution</b>: The case of the equipment may become hot during operation.</p>
+		<h2>Specifications</h2>
+		<ul>
+		<li><b>Storage Capacity</b>: 5,000,000</li>
+		<li><b>Charge Capacity (Max)</b>: 1MW</li>
+		<li><b>Transmission Capacity</b>: 1MW</li>
+		<li><b>Transmission Efficiency</b>: 80%</li>
+		</ul>
+		<h2>Operation</h2>
+		<p>The Mark 3 Power Transfer Laser is remarkably easy and simple to use, requiring
+		only a few simple steps; so easy, even a Staff Assistant could use it!</p>
+		<ol>
+		<li>Precisely aim the beam-path, during initial installation, to point to your
+		desired energy-beam receiver. Careful alignment ensures the best reception,
+		and the least wasted power!</li>
+		<li>Ensure the path of the beam is free from obstruction before use, to prevent
+		property damage or injury.</li>
+		<li>Connect the Mk3 PTL to a power feed using a standard NanoTrasen-compatible
+		power terminal.</li>
+		<li>(Optional) Connect the external heat transfer unit, to permit remote cooling
+		during high-power operation. Operation on higher power settings <i>without</i> the
+		use of the external heat transfer unit will void your warranty, and may cause damage
+		or injury.</li>
+		<li>Using the simple, user-friendly interface, enable charging and set the charge
+		rate as desired.</li>
+		<li>Once the internal storage has reached a safe level, set the desired output
+		level and enable transmission.</li>
+		<li>Sit back, and watch as the credits roll in from your station's otherwise
+		wasted power output! The more power you transmit, the more profitable your
+		installation!</li>
+		</ol>
+		<h2>Assembling the Optional Heat Transfer Unit</h2>
+		<center><i>This page is covered with a large oilstain, and is unreadable.</i></center>
+		</body>
+		</html>"}
