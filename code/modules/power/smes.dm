@@ -13,6 +13,8 @@
 #define SMES_NOT_OUTPUTTING 7
 #define SMES_INPUTTING		8
 #define SMES_INPUT_ATTEMPT	9
+#define SMES_MAX_INPUT		200000
+#define SMES_MAX_OUTPUT		200000
 
 /obj/machinery/power/smes
 	name = "power storage unit"
@@ -28,16 +30,17 @@
 	var/input_attempt = TRUE // TRUE = attempting to charge, FALSE = not attempting to charge
 	var/inputting = TRUE // TRUE = actually inputting, FALSE = not inputting
 	var/input_level = 50000 // amount of power the SMES attempts to charge by
-	var/input_level_max = 200000 // cap on input_level
+	var/input_level_max = SMES_MAX_INPUT // cap on input_level
 	var/input_available = 0 // amount of charge available from input last tick
 
 	var/output_attempt = TRUE // TRUE = attempting to output, FALSE = not attempting to output
 	var/outputting = TRUE // TRUE = actually outputting, FALSE = not outputting
 	var/output_level = 50000 // amount of power the SMES attempts to output
-	var/output_level_max = 200000 // cap on output_level
+	var/output_level_max = SMES_MAX_OUTPUT // cap on output_level
 	var/output_used = 0 // amount of power actually outputted. may be less than output_level if the powernet returns excess power
 
 	var/obj/machinery/power/terminal/terminal = null
+	var/tampered
 
 /obj/machinery/power/smes/examine(user)
 	. = ..()
@@ -166,6 +169,23 @@
 		terminal.dismantle(user, I)
 		return TRUE
 
+/obj/machinery/power/smes/multitool_act(mob/living/user, obj/item/I)
+	. = ..()
+	if(panel_open)
+		do_sparks(5, TRUE, src)
+		if(!tampered)
+			input_level_max = INFINITY
+			output_level_max = INFINITY
+			tampered = TRUE
+			user.visible_message("<span class='alert'>[user.name] shorts out the safeties!</span.",\
+				"<span class='alert'>You short out the safeties!</span>")
+		else
+			input_level_max = SMES_MAX_INPUT
+			output_level_max = SMES_MAX_OUTPUT
+			tampered = FALSE
+			user.visible_message("<span class='alert'>[user.name] resets the safeties.</span>",\
+				"<span class='alert'>You reset the safeties.</span>")
+
 
 /obj/machinery/power/smes/default_deconstruction_crowbar(obj/item/crowbar/C)
 	if(istype(C) && terminal)
@@ -255,6 +275,15 @@
 				charge += load * SMESRATE	// increase the charge
 
 				terminal.add_load(load) // add the load to the terminal side network
+				if(input_level > SMES_MAX_INPUT && prob(50))
+					var/overcharge = round(input_level / SMES_MAX_INPUT)
+					do_sparks(max(1, overcharge/5), FALSE, src)
+					if(prob(overcharge))
+						// Bang! Overloaded too much and it popped
+						investigate_log("Overloaded and went BANG.",\
+							INVESTIGATE_SINGULO)
+						explosion(src.loc, (overcharge/2),\
+							(overcharge/2), overcharge, (overcharge * 1.5))
 
 			else					// if not enough capcity
 				inputting = FALSE		// stop inputting
@@ -272,6 +301,15 @@
 
 			if (add_avail(output_used))				// add output to powernet if it exists (smes side)
 				charge -= output_used*SMESRATE		// reduce the storage (may be recovered in /restore() if excessive)
+				if(output_level > SMES_MAX_OUTPUT && prob(50))
+					var/overcharge = round(output_level / SMES_MAX_OUTPUT)
+					do_sparks(max(1, overcharge/5), FALSE, src)
+					if(prob(overcharge))
+						// Overloaded it too much, kaboom
+						investigate_log("Overloaded and went BANG.",\
+							INVESTIGATE_SINGULO)
+						explosion(src.loc, (overcharge/2), \
+							(overcharge/2), overcharge, (overcharge * 1.5))
 			else
 				outputting = FALSE
 
