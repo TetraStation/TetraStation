@@ -150,7 +150,10 @@
 		return FALSE
 	return TRUE
 
-
+/obj/machinery/power/generator/examine(mob/user)
+	var/msg = ..()
+	msg += "The display shows it producing [DisplayPower(lastgenlev)]."
+	return msg
 
 /obj/machinery/power/generator/proc/find_circs()
 	kill_circs()
