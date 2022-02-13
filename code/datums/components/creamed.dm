@@ -64,4 +64,4 @@ GLOBAL_LIST_INIT(creamable, typecacheof(list(
 	if(!(clean_types & CLEAN_TYPE_BLOOD))
 		return
 	qdel(src)
-	return COMPONENT_CLEANED
+	return TRUE
