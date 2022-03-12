@@ -27,7 +27,7 @@
 /obj/random/equipment/atmospherics/canister/dangerous
 	name = "random dangerous canister"
 
-/obj/random/equipment/atmospherics/canister/item_to_spawn()
+/obj/random/equipment/atmospherics/canister/dangerous/item_to_spawn()
 	return pickweight(list(
 		/obj/machinery/portable_atmospherics/canister/carbon_dioxide = 7,
 		/obj/machinery/portable_atmospherics/canister/toxins = 6,

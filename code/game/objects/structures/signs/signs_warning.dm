@@ -47,6 +47,7 @@
 	name = "\improper EXTERNAL AIRLOCK sign"
 	sign_change_name = "Warning - External Airlock"
 	desc = "A warning sign which reads 'EXTERNAL AIRLOCK'."
+	icon_state = "space_ext"
 	layer = MOB_LAYER
 	is_editable = TRUE
 
@@ -98,6 +99,7 @@
 	name = "\improper RADIOACTIVE AREA sign"
 	sign_change_name = "Warning - Radioactive Area"
 	desc = "A warning sign which reads 'RADIOACTIVE AREA'."
+	icon_state = "radiation_area"
 	is_editable = TRUE
 
 /obj/structure/sign/warning/xeno_mining
@@ -179,3 +181,4 @@
 	desc = "A warning sign which reads 'ESCAPE PODS'."
 	icon_state = "pods"
 	is_editable = TRUE
+
