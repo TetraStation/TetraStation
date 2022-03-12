@@ -1,11 +1,11 @@
 ## TetraStation Codebase
 
 * **Website:** https://tetra.furryhelix.co.uk
-* **Code:** https://github.com/TamberP/TetraStation
-* **Code (Mirror)**: https://git.furryhelix.co.uk/tetrastation
+* **Code:** https://github.com/TetraStation/TetraStation
 * **Wiki:** https://tgstation13.org/wiki/Main_Page is a good place to
   start for the basics, but the codebases have diverged quite a way
   now, and the differences will only continue to increase.
+  I will put up a wiki eventually, I promise.
 * **Codedocs:** https://codedocs.tgstation13.org/
   Though this will also have diverged by now.
 
@@ -13,8 +13,12 @@ This is the codebase for TetraStation, a distressingly "Thanksgiving
 at your Grandparents'"-themed fork of the /tg/station flavour of
 SpaceStation 13.
 
+At least, if Thanksgiving at your grandparents involved fire,
+explosions, murder, the cold vacuum of space, and cops beating
+everyone in sight.
+
 Space Station 13 is a paranoia-laden round-based roleplaying game set
-against the backdrop of a nonsensical, plastic and metal death trap
+against the backdrop of a nonsensical, plastic and metal death-trap
 masquerading as a space station, with charming spritework designed to
 represent the "old and worn out" sci-fi setting and its dangerous
 undertones. Have fun, and survive!
@@ -24,10 +28,13 @@ undertones. Have fun, and survive!
 --
 
 "CMO to Bridge; All the drugs have broken down from age and exposure."
+
 "Bridge to CMO; ...exposure to what?"
+
 "CMO to Bridge; The crew, mostly."
-"Bridge to CMO; ...That's fair. I also have breakdowns when I'm exposed
-to the crew for too long."
+
+"Bridge to CMO; ...That's fair. I also have breakdowns when I'm
+exposed to the crew for too long."
 
 ## DOWNLOADING
 [Downloading](.github/DOWNLOADING.md)
