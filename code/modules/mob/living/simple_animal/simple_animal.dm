@@ -163,8 +163,8 @@
 /mob/living/simple_animal/Initialize()
 	. = ..()
 	GLOB.simple_animals[AIStatus] += src
-	if(gender == PLURAL)
-		gender = pick(MALE,FEMALE)
+	if(gender == RANDOM_GENDER)
+		gender = pick(MALE,FEMALE,NEUTER,PLURAL)
 	if(!real_name)
 		real_name = name
 	if(!loc)
