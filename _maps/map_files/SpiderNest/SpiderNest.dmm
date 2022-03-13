@@ -1233,7 +1233,6 @@
 /turf/open/floor/plasteel/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "adW" = (
-/obj/machinery/door/airlock/maintenance,
 /obj/machinery/door/airlock/maintenance{
 	req_one_access_txt = "ACCESS_MAINT_TUNNELS"
 	},
@@ -1242,9 +1241,6 @@
 "adX" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Canteen Maintenance"
-	},
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "ACCESS_MAINT_TUNNELS"
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/cafeteria)
@@ -4788,6 +4784,7 @@
 "amT" = (
 /obj/structure/sign/nanotrasen{
 	desc = "A floor-mat with the Nanotrasen logo on it. Glory to Nanotrasen!";
+	dir = 8;
 	name = "\improper Nanotrasen logo floor-mat";
 	pixel_x = 4;
 	pixel_y = 2
@@ -9606,6 +9603,9 @@
 	dir = 4
 	},
 /obj/effect/landmark/start/chief_engineer,
+/obj/structure/chair/comfy/beige{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/chief)
 "azb" = (
@@ -16736,9 +16736,6 @@
 /area/hallway/primary/central)
 "aQu" = (
 /obj/machinery/door/airlock/maintenance,
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "ACCESS_MAINT_TUNNELS"
-	},
 /turf/open/floor/plating,
 /area/hallway/primary/central)
 "aQv" = (
@@ -17299,9 +17296,6 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
-	},
-/obj/machinery/door/airlock/maintenance{
-	req_one_access_txt = "ACCESS_MAINT_TUNNELS"
 	},
 /turf/open/floor/plating,
 /area/hallway/primary/central)
