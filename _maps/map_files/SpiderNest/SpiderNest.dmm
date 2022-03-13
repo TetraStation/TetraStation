@@ -4859,7 +4859,6 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/vending/coffee,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -4953,7 +4952,7 @@
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/vending/snack/random,
+/obj/machinery/vending/coffee,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "anm" = (
@@ -9296,7 +9295,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/vending/donut,
+/obj/machinery/vending/snack/random,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "ayu" = (
@@ -36423,6 +36422,14 @@
 /obj/machinery/light/dim,
 /turf/open/floor/plasteel,
 /area/security/main)
+"xhJ" = (
+/obj/structure/cable,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/vending/donut,
+/turf/open/floor/plasteel,
+/area/engine/break_room)
 "xiv" = (
 /obj/machinery/light/dim{
 	dir = 4
@@ -87104,7 +87111,7 @@ aAm
 ana
 anl
 ayt
-aAM
+xhJ
 axr
 ank
 amI
