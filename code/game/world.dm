@@ -307,7 +307,6 @@ GLOBAL_VAR(restart_counter)
 	s += "Website"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
 	s += ")<br>"
-	s += "We have <a href=\"https://discord.gg/egPTMwSHxx\">a discord</a>, too! (of course we do!)<br>"
 
 	var/players = GLOB.clients.len
 
