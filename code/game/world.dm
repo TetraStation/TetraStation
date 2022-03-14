@@ -300,12 +300,14 @@ GLOBAL_VAR(restart_counter)
 			features += "AI allowed"
 		hostedby = CONFIG_GET(string/hostedby)
 
-	s += "<b>[station_name()]</b>";
-	s += " ("
-	s += "<a href=\"http://\">" //Change this to wherever you want the hub to link to.
-	s += "Default"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
+	s += "<b>[station_name()]</b><br>";
+	s += "<b>TetraStation13</b>: Smells like Thanksgiving at your Grandmother's!<br>"
+	s += "("
+	s += "<a href=\"http://tetra.furryhelix.co.uk\">" //Change this to wherever you want the hub to link to.
+	s += "Website"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
 	s += "</a>"
-	s += ")"
+	s += ")<br>"
+	s += "We have <a href=\"https://discord.gg/egPTMwSHxx\">a discord</a>, too! (of course we do!)<br>"
 
 	var/players = GLOB.clients.len
 
@@ -322,10 +324,10 @@ GLOBAL_VAR(restart_counter)
 	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
 
 	if (!host && hostedby)
-		features += "hosted by <b>[hostedby]</b>"
+		s += "Hosted by <b>[hostedby]</b><br>"
 
 	if (features)
-		s += ": [jointext(features, ", ")]"
+		s += "Feeping creatures: [jointext(features, ", ")]"
 
 	status = s
 

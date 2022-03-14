@@ -214,10 +214,10 @@
 	config_entry_value = "--"
 
 /datum/config_entry/string/rulesurl
-	config_entry_value = "http://www.tgstation13.org/wiki/Rules"
+	config_entry_value = "http://tetra.furryhelix.co.uk/rules.html"
 
 /datum/config_entry/string/githuburl
-	config_entry_value = "https://www.github.com/TamberP/TetraStation"
+	config_entry_value = "https://www.github.com/TetraStation/TetraStation"
 
 /datum/config_entry/string/roundstatsurl
 
