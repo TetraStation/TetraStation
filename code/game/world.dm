@@ -297,11 +297,11 @@ GLOBAL_VAR(restart_counter)
 		if(CONFIG_GET(flag/allow_vote_mode))
 			features += "vote"
 		if(CONFIG_GET(flag/allow_ai))
-			features += "AI allowed"
+			features += "AI: yup"
 		hostedby = CONFIG_GET(string/hostedby)
 
 	s += "<b>[station_name()]</b><br>";
-	s += "<b>TetraStation13</b>: Smells like Thanksgiving at your Grandmother's!<br>"
+	s += "<b>Intrigue! Survival! Beige!</b><br>"
 	s += "("
 	s += "<a href=\"http://tetra.furryhelix.co.uk\">" //Change this to wherever you want the hub to link to.
 	s += "Website"  //Replace this with something else. Or ever better, delete it and uncomment the game version.
@@ -322,11 +322,16 @@ GLOBAL_VAR(restart_counter)
 
 	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
 
-	if (!host && hostedby)
-		s += "Hosted by <b>[hostedby]</b><br>"
+	if(map_name)
+		s += "Map: [map_name] "
 
 	if (features)
-		s += "Feeping creatures: [jointext(features, ", ")]"
+		s += "([jointext(features, ", ")])"
+
+	if (!host && hostedby)
+		hoststring = "Hosted by <b>[hostedby]</b><br>"
+		if((len(s) + len(hoststring)) <= 255)
+			s += hoststring
 
 	status = s
 
