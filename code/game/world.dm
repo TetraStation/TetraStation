@@ -322,15 +322,12 @@ GLOBAL_VAR(restart_counter)
 
 	game_state = (CONFIG_GET(number/extreme_popcap) && players >= CONFIG_GET(number/extreme_popcap)) //tells the hub if we are full
 
-	if(map_name)
-		s += "Map: [map_name] "
-
 	if (features)
 		s += "([jointext(features, ", ")])"
 
 	if (!host && hostedby)
-		hoststring = "Hosted by <b>[hostedby]</b><br>"
-		if((len(s) + len(hoststring)) <= 255)
+		var/hoststring = "Hosted by <b>[hostedby]</b><br>"
+		if((length(s) + length(hoststring)) <= 255)
 			s += hoststring
 
 	status = s
