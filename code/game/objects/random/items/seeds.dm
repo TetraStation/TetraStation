@@ -7,6 +7,7 @@
 	icon = 'icons/obj/hydroponics/seeds.dmi'
 	icon_state = "seed"
 	alpha = 128
+	spread_range = 3
 
 /obj/random/items/seeds/item_to_spawn()
 	return pickweight(list(
@@ -28,3 +29,8 @@
 		/obj/item/seeds/chili,
 		/obj/item/seeds/cherry,
 		/obj/item/seeds/coffee))
+
+/obj/random/items/seeds/few
+	name = "a few random seed packets"
+	min_amount = 2
+	max_amount = 5
