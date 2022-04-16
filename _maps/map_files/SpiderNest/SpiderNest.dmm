@@ -93,7 +93,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/reagent_dispensers/watertank/high,
 /turf/open/floor/plasteel,
@@ -108,7 +108,7 @@
 /obj/structure/table/glass,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/item/radio/intercom{
 	pixel_y = 30
@@ -539,7 +539,7 @@
 /area/crew_quarters/kitchen)
 "abL" = (
 /obj/effect/landmark/start/cook{
-	pixel_z = -2
+	pixel_y = -2
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
@@ -579,7 +579,7 @@
 "abS" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/carpet/red,
 /area/crew_quarters/bar)
@@ -704,13 +704,13 @@
 	areastring = "/area/tcommsat/server";
 	dir = 8;
 	name = "Telecomms Server Room APC";
-	pixel_z = 32
+	pixel_y = 32
 	},
 /obj/structure/cable,
 /obj/machinery/power/smes,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/telecomms,
 /area/tcommsat/server)
@@ -826,7 +826,7 @@
 "acG" = (
 /obj/structure/table/reinforced,
 /obj/machinery/processor{
-	pixel_z = 6
+	pixel_y = 6
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
@@ -903,7 +903,7 @@
 "acR" = (
 /obj/structure/sink{
 	pixel_y = 16;
-	pixel_z = 3
+	pixel_y = 3
 	},
 /obj/structure/mirror{
 	pixel_y = 32
@@ -1177,7 +1177,7 @@
 /area/crew_quarters/kitchen)
 "adM" = (
 /obj/effect/landmark/start/bartender{
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -1268,7 +1268,7 @@
 "aec" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/cafeteria)
@@ -1701,7 +1701,7 @@
 "afq" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/effect/decal/cleanable/blood/drip,
 /obj/effect/decal/cleanable/dirt,
@@ -1754,10 +1754,10 @@
 "afw" = (
 /obj/structure/table/greyscale,
 /obj/item/storage/box/gloves{
-	pixel_w = -1
+	pixel_x = -1
 	},
 /obj/item/storage/box/masks{
-	pixel_w = 2
+	pixel_x = 2
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -1781,10 +1781,10 @@
 "afA" = (
 /obj/structure/table/greyscale,
 /obj/item/storage/box/beakers{
-	pixel_w = 3
+	pixel_x = 3
 	},
 /obj/item/storage/box/syringes/variety{
-	pixel_z = 4
+	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
@@ -1887,7 +1887,7 @@
 	dir = 1;
 	pixel_x = -32;
 	pixel_y = -6;
-	pixel_z = -2
+	pixel_y = -2
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -1923,7 +1923,7 @@
 /obj/structure/sign/directions/command{
 	dir = 1;
 	pixel_x = 32;
-	pixel_z = -5
+	pixel_y = -5
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -1969,7 +1969,7 @@
 	},
 /obj/structure/sink{
 	pixel_y = 16;
-	pixel_z = 3
+	pixel_y = 3
 	},
 /obj/random/mob/roaches,
 /turf/open/floor/plasteel,
@@ -2047,7 +2047,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/reagent_dispensers/plumbed,
 /turf/open/floor/plasteel,
@@ -2198,7 +2198,7 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/engine,
 /area/engine/engine_room/external)
@@ -2956,7 +2956,7 @@
 	id = "prisoner_mass";
 	name = "Transfer Prisoner";
 	pixel_x = 24;
-	pixel_z = -2
+	pixel_y = -2
 	},
 /obj/structure/chair/stool,
 /turf/open/floor/plating,
@@ -2992,7 +2992,7 @@
 /obj/structure/table/glass,
 /obj/item/stack/sheet/mineral/plasma,
 /obj/item/stack/sheet/mineral/plasma{
-	step_y = 4
+	pixel_y = 4
 	},
 /obj/item/reagent_containers/glass/beaker,
 /obj/item/reagent_containers/dropper,
@@ -3032,21 +3032,21 @@
 /obj/item/assembly/igniter,
 /obj/item/assembly/igniter,
 /obj/item/assembly/timer{
-	step_x = 2;
-	step_y = 3
+	pixel_x = 2;
+	pixel_y = 3
 	},
 /obj/item/assembly/timer{
-	step_x = 2;
-	step_y = 3
+	pixel_x = 2;
+	pixel_y = 3
 	},
 /obj/item/assembly/timer{
-	step_x = 2;
-	step_y = 3
+	pixel_x = 2;
+	pixel_y = 3
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/cable_coil,
 /obj/item/screwdriver{
-	step_y = 4
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
@@ -3307,11 +3307,11 @@
 "ajs" = (
 /obj/machinery/stasis,
 /obj/machinery/defibrillator_mount{
-	pixel_z = 32
+	pixel_y = 32
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/exam_room)
@@ -3513,7 +3513,7 @@
 /obj/structure/table,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -3643,7 +3643,7 @@
 	name = "Medical Bed"
 	},
 /obj/machinery/defibrillator_mount{
-	pixel_z = -32
+	pixel_y = -32
 	},
 /obj/machinery/light/dim,
 /turf/open/floor/plasteel/white,
@@ -3821,7 +3821,7 @@
 /area/medical/medbay/central)
 "akV" = (
 /obj/machinery/shower{
-	pixel_z = 20
+	pixel_y = 20
 	},
 /obj/effect/turf_decal/trimline/green/filled/warning{
 	dir = 4
@@ -3832,7 +3832,7 @@
 /area/medical/virology)
 "akW" = (
 /obj/structure/sink{
-	pixel_z = 28
+	pixel_y = 28
 	},
 /obj/effect/turf_decal/trimline/green/filled/warning{
 	dir = 8
@@ -3902,7 +3902,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -4268,7 +4268,7 @@
 /obj/item/bedsheet/medical,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms)
@@ -4300,7 +4300,7 @@
 /obj/structure/curtain,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/patients_rooms)
@@ -4332,7 +4332,7 @@
 "amd" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -4714,8 +4714,8 @@
 /obj/machinery/button/door{
 	id = "ceprivacy";
 	name = "Privacy Shutters";
-	pixel_w = -5;
-	pixel_z = -2
+	pixel_x = -5;
+	pixel_y = -2
 	},
 /obj/machinery/button/door{
 	desc = "A remote control-switch for the engineering security doors.";
@@ -4734,8 +4734,8 @@
 /obj/machinery/button/door{
 	id = "secure_tech_storage";
 	name = "Secure Tech Storage Lockdown";
-	pixel_w = 7;
-	pixel_z = 8
+	pixel_x = 7;
+	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/chief)
@@ -4785,7 +4785,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/item/storage/secure/safe{
 	pixel_y = 28
@@ -4900,7 +4900,7 @@
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -5223,7 +5223,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
@@ -6296,7 +6296,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/power/terminal{
 	dir = 4
@@ -6537,7 +6537,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/engine/engine_room/external)
@@ -6641,7 +6641,7 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -6761,7 +6761,7 @@
 "asf" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_room/external)
@@ -6865,7 +6865,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/engine,
 /area/engine/supermatter)
@@ -7006,7 +7006,7 @@
 /obj/structure/cable,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
@@ -7120,7 +7120,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/power/apc/auto_name/north{
 	areastring = "/area/engine/engine_room/external"
@@ -7220,7 +7220,7 @@
 "atk" = (
 /obj/machinery/vending/wallmed{
 	pixel_y = -28;
-	pixel_z = -2
+	pixel_y = -2
 	},
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -7752,7 +7752,7 @@
 /obj/machinery/button/door{
 	id = "bridge_lockdown";
 	name = "Bridge Lockdown";
-	pixel_z = 4
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -7794,7 +7794,7 @@
 /obj/machinery/button/door{
 	id = "bridge_lockdown";
 	name = "Bridge Lockdown";
-	pixel_z = 4
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/bridge)
@@ -7952,7 +7952,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -8143,11 +8143,11 @@
 /obj/structure/table,
 /obj/item/radio/off,
 /obj/item/geiger_counter{
-	pixel_w = -5
+	pixel_x = -5
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/engineering)
@@ -8497,7 +8497,7 @@
 "awp" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
@@ -9206,7 +9206,7 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/security/checkpoint/engineering)
@@ -9494,7 +9494,7 @@
 "ayR" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -9563,7 +9563,7 @@
 	pixel_y = 3
 	},
 /obj/item/paper/crumpled{
-	pixel_z = 1
+	pixel_y = 1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -9655,7 +9655,7 @@
 /obj/structure/cable,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/item/kirbyplants/random,
 /obj/structure/disposalpipe/segment{
@@ -9702,7 +9702,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/computer/atmos_alert,
 /turf/open/floor/plasteel/dark,
@@ -9752,7 +9752,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
@@ -9767,11 +9767,11 @@
 	},
 /obj/structure/sign/directions/science{
 	dir = 8;
-	pixel_z = 24
+	pixel_y = 24
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/door/firedoor,
 /obj/effect/decal/cleanable/dirt,
@@ -10207,7 +10207,7 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
@@ -10474,7 +10474,7 @@
 /obj/structure/table/wood,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/item/storage/fancy/cigarettes/cigars/cohiba,
 /obj/item/storage/fancy/cigarettes/cigars/cohiba{
@@ -10619,7 +10619,7 @@
 "aBr" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/rxglasses{
-	pixel_z = 3
+	pixel_y = 3
 	},
 /obj/item/storage/box/syringes,
 /obj/item/storage/box/bodybags,
@@ -10919,12 +10919,12 @@
 /obj/structure/rack,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/drinks/beer{
-	step_x = -7;
-	step_y = 1
+	pixel_x = -7;
+	pixel_y = 1
 	},
 /obj/item/reagent_containers/food/drinks/beer{
-	step_x = -1;
-	step_y = 2
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
@@ -11109,7 +11109,7 @@
 "aCs" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/plasteel/white,
@@ -11189,7 +11189,7 @@
 "aCB" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/plasteel/white,
@@ -11255,7 +11255,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -11265,7 +11265,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/central)
@@ -11300,7 +11300,7 @@
 /obj/machinery/light/dim{
 	dir = 1;
 	on = FALSE;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/exam_room)
@@ -11383,7 +11383,7 @@
 "aCZ" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
@@ -11917,7 +11917,7 @@
 	},
 /obj/structure/sink{
 	pixel_y = 16;
-	pixel_z = 5
+	pixel_y = 5
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plating,
@@ -12202,7 +12202,7 @@
 "aFw" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
@@ -12416,15 +12416,15 @@
 /obj/machinery/button/door{
 	id = "cargoload";
 	name = "Cargo Doors";
-	pixel_w = 22;
-	pixel_z = 7
+	pixel_x = 22;
+	pixel_y = 7
 	},
 /obj/machinery/button/door{
 	id = "cargounload";
 	name = "Cargo Doors";
-	pixel_w = 4;
+	pixel_x = 4;
 	pixel_x = 18;
-	pixel_z = -5
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -12593,7 +12593,7 @@
 "aGr" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/conveyor_switch/oneway{
 	id = "QMLoad";
@@ -12640,7 +12640,7 @@
 "aGx" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /turf/open/floor/plasteel,
@@ -12908,7 +12908,7 @@
 "aHk" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/wood,
 /area/quartermaster/qm)
@@ -12918,7 +12918,7 @@
 /obj/machinery/button/door{
 	id = "qm_shutter";
 	name = "Privacy Shutters";
-	pixel_z = 9
+	pixel_y = 9
 	},
 /turf/open/floor/carpet/red,
 /area/quartermaster/qm)
@@ -13050,7 +13050,7 @@
 "aHL" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/vending/coffee,
 /turf/open/floor/plasteel,
@@ -13091,7 +13091,7 @@
 "aHS" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/wardrobe/yellow,
 /turf/open/floor/plasteel,
@@ -13215,7 +13215,7 @@
 "aIk" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/chair,
 /turf/open/floor/plasteel,
@@ -13385,7 +13385,7 @@
 "aIE" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/emcloset,
 /turf/open/floor/plasteel,
@@ -13539,10 +13539,10 @@
 /obj/structure/table/wood/fancy/blue,
 /obj/item/folder/yellow{
 	dir = 1;
-	pixel_z = 5
+	pixel_y = 5
 	},
 /obj/item/cigbutt/cigarbutt{
-	pixel_z = 6
+	pixel_y = 6
 	},
 /turf/open/floor/wood,
 /area/bridge/meeting_room/council)
@@ -14221,8 +14221,8 @@
 	},
 /obj/structure/table/wood,
 /obj/machinery/recharger{
-	pixel_w = -8;
-	pixel_z = 5
+	pixel_x = -8;
+	pixel_y = 5
 	},
 /obj/item/storage/box/deputy,
 /obj/item/flashlight/seclite,
@@ -14688,7 +14688,7 @@
 	},
 /obj/structure/table/glass,
 /obj/item/screwdriver{
-	step_y = 5
+	pixel_y = 5
 	},
 /obj/item/grenade/chem_grenade,
 /obj/item/grenade/chem_grenade,
@@ -14899,7 +14899,7 @@
 "aMm" = (
 /obj/machinery/vending/wallmed{
 	pixel_y = -28;
-	pixel_z = -2
+	pixel_y = -2
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -14910,12 +14910,12 @@
 /obj/structure/table,
 /obj/item/hand_labeler_refill,
 /obj/item/hand_labeler_refill{
-	pixel_w = 5;
+	pixel_x = 5;
 	pixel_x = 3
 	},
 /obj/item/hand_labeler_refill{
-	pixel_w = 4;
-	pixel_z = 6
+	pixel_x = 4;
+	pixel_y = 6
 	},
 /obj/item/hand_labeler,
 /obj/item/stack/package_wrap,
@@ -14991,7 +14991,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/sepia,
 /area/security/prison)
@@ -15317,10 +15317,10 @@
 /area/crew_quarters/heads/cmo)
 "aNp" = (
 /obj/item/stock_parts/micro_laser{
-	step_x = 31
+	pixel_x = 31
 	},
 /obj/item/stock_parts/matter_bin{
-	step_x = 28
+	pixel_x = 28
 	},
 /turf/closed/wall,
 /area/science/lab)
@@ -15340,20 +15340,20 @@
 /obj/structure/table/glass,
 /obj/item/stock_parts/capacitor,
 /obj/item/stock_parts/manipulator{
-	step_x = 4;
-	step_y = -2
+	pixel_x = 4;
+	pixel_y = -2
 	},
 /obj/item/stock_parts/manipulator{
 	pixel_x = 2;
 	pixel_y = 3
 	},
 /obj/item/stock_parts/scanning_module{
-	step_x = -7;
-	step_y = 6
+	pixel_x = -7;
+	pixel_y = 6
 	},
 /obj/item/stock_parts/matter_bin{
-	step_x = 6;
-	step_y = 12
+	pixel_x = 6;
+	pixel_y = 12
 	},
 /obj/machinery/light/dim{
 	dir = 8
@@ -15394,8 +15394,8 @@
 /obj/item/stack/package_wrap,
 /obj/item/stack/package_wrap,
 /obj/item/disk/tech_disk{
-	step_x = -3;
-	step_y = 7
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /obj/item/disk/tech_disk,
 /turf/open/floor/plasteel/white,
@@ -15417,8 +15417,8 @@
 /obj/machinery/cell_charger,
 /obj/item/stock_parts/cell/high,
 /obj/item/disk/tech_disk{
-	step_x = 7;
-	step_y = 8
+	pixel_x = 7;
+	pixel_y = 8
 	},
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/white,
@@ -15511,7 +15511,7 @@
 "aNN" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/ore_box,
 /turf/open/floor/plasteel,
@@ -15562,12 +15562,12 @@
 /area/crew_quarters/heads/captain)
 "aNT" = (
 /obj/item/storage/toolbox/mechanical{
-	step_x = 3;
-	step_y = 6
+	pixel_x = 3;
+	pixel_y = 6
 	},
 /obj/item/storage/toolbox/mechanical{
-	step_x = -3;
-	step_y = -5
+	pixel_x = -3;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/white,
 /area/science/lab)
@@ -16250,7 +16250,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -16367,7 +16367,7 @@
 /obj/machinery/button/flasher{
 	id = "hop_queue_flash";
 	name = "Flash Queue";
-	pixel_w = 2;
+	pixel_x = 2;
 	pixel_x = 32;
 	pixel_y = 22
 	},
@@ -16601,7 +16601,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
@@ -17103,8 +17103,8 @@
 "aRv" = (
 /obj/structure/table/greyscale,
 /obj/item/folder/red{
-	pixel_w = -1;
-	pixel_z = 2
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
@@ -17857,7 +17857,7 @@
 "aTp" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/rack,
 /obj/item/construction/plumbing,
@@ -17941,8 +17941,8 @@
 /area/security/prison)
 "aTz" = (
 /obj/item/stack/ducts/fifty{
-	step_x = 29;
-	step_y = 8
+	pixel_x = 29;
+	pixel_y = 8
 	},
 /turf/closed/wall/r_wall,
 /area/science/research)
@@ -18013,8 +18013,8 @@
 	},
 /obj/structure/table,
 /obj/item/storage/toolbox/mechanical{
-	step_x = -2;
-	step_y = 5
+	pixel_x = -2;
+	pixel_y = 5
 	},
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/white,
@@ -18043,12 +18043,12 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table,
 /obj/item/clothing/head/welding{
-	step_x = -4;
-	step_y = 8
+	pixel_x = -4;
+	pixel_y = 8
 	},
 /obj/item/clothing/head/welding,
 /turf/open/floor/plasteel/white,
@@ -18087,16 +18087,16 @@
 "aTQ" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/rack,
 /obj/item/stack/ducts/fifty{
-	step_x = -1;
-	step_y = 2
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /obj/item/stack/ducts/fifty{
-	step_x = 2;
-	step_y = -1
+	pixel_x = 2;
+	pixel_y = -1
 	},
 /obj/item/stack/ducts/fifty,
 /obj/item/stack/ducts/fifty,
@@ -18120,12 +18120,12 @@
 	},
 /obj/structure/table,
 /obj/item/book/manual/wiki/plumbing{
-	step_x = 28;
-	step_y = 3
+	pixel_x = 28;
+	pixel_y = 3
 	},
 /obj/item/clothing/glasses/science{
-	step_x = -2;
-	step_y = 5
+	pixel_x = -2;
+	pixel_y = 5
 	},
 /obj/item/clothing/glasses/science,
 /turf/open/floor/plasteel/white,
@@ -18157,7 +18157,7 @@
 	},
 /obj/structure/table,
 /obj/item/book/manual/wiki/grenades{
-	step_x = 5
+	pixel_x = 5
 	},
 /obj/item/book/manual/wiki/chemistry,
 /turf/open/floor/plasteel/white,
@@ -18525,7 +18525,7 @@
 "aUM" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/item/folder/syndicate/red{
-	pixel_z = 3
+	pixel_y = 3
 	},
 /obj/item/coin/antagtoken{
 	pixel_x = 7;
@@ -18704,7 +18704,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -18873,7 +18873,7 @@
 /obj/machinery/reagentgrinder,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -18990,7 +18990,7 @@
 /obj/machinery/chem_master,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -19019,12 +19019,12 @@
 	pixel_y = -28
 	},
 /obj/item/seeds/potato{
-	step_x = 27;
-	step_y = 4
+	pixel_x = 27;
+	pixel_y = 4
 	},
 /obj/item/seeds/wheat{
-	step_x = 27;
-	step_y = -1
+	pixel_x = 27;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -19096,7 +19096,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/tank_dispenser,
 /turf/open/floor/plasteel/dark,
@@ -19122,12 +19122,12 @@
 /obj/machinery/light/dim,
 /obj/item/seeds/apple,
 /obj/item/seeds/carrot{
-	step_x = 3;
-	step_y = 3
+	pixel_x = 3;
+	pixel_y = 3
 	},
 /obj/item/seeds/tomato{
-	step_x = 8;
-	step_y = -1
+	pixel_x = 8;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -19317,8 +19317,8 @@
 "aWE" = (
 /obj/structure/table/greyscale,
 /obj/item/folder/red{
-	pixel_w = 2;
-	pixel_z = -1
+	pixel_x = 2;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
@@ -19411,7 +19411,7 @@
 "aWQ" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/chair{
 	dir = 8
@@ -19513,7 +19513,7 @@
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/drinks/bottle/tequila{
-	step_x = 25
+	pixel_x = 25
 	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
@@ -19634,8 +19634,8 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/drinks/soda_cans/air,
 /obj/item/reagent_containers/food/drinks/soda_cans/space_up{
-	step_x = 8;
-	step_y = 2
+	pixel_x = 8;
+	pixel_y = 2
 	},
 /obj/machinery/light/dim{
 	dir = 8
@@ -19677,8 +19677,8 @@
 "aXt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/reagent_containers/food/drinks/beer{
-	step_x = 4;
-	step_y = 31
+	pixel_x = 4;
+	pixel_y = 31
 	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
@@ -20336,7 +20336,7 @@
 	},
 /obj/structure/sign/directions/supply{
 	pixel_x = 32;
-	pixel_z = -9
+	pixel_y = -9
 	},
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
@@ -20492,7 +20492,7 @@
 "aZw" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on{
 	dir = 4
@@ -20676,7 +20676,7 @@
 "aZU" = (
 /obj/structure/table/glass,
 /obj/item/storage/secure/briefcase{
-	pixel_w = 2
+	pixel_x = 2
 	},
 /obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/white,
@@ -20746,7 +20746,7 @@
 "baf" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/glass,
 /turf/open/floor/plasteel,
@@ -20755,7 +20755,7 @@
 /obj/structure/closet/secure_closet/hydroponics,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/hydroponics)
@@ -21003,7 +21003,7 @@
 "bbc" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/grass,
 /area/hydroponics/garden)
@@ -21122,8 +21122,8 @@
 "bbu" = (
 /obj/structure/table,
 /obj/item/storage/box/beakers{
-	step_x = -5;
-	step_y = 9
+	pixel_x = -5;
+	pixel_y = 9
 	},
 /obj/item/storage/box/beakers,
 /turf/open/floor/plasteel,
@@ -21263,12 +21263,12 @@
 /obj/structure/table/glass,
 /obj/item/cartridge/rd,
 /obj/item/cartridge/signal/toxins{
-	step_x = 5;
-	step_y = 7
+	pixel_x = 5;
+	pixel_y = 7
 	},
 /obj/item/cartridge/signal/toxins{
-	step_x = 5;
-	step_y = 7
+	pixel_x = 5;
+	pixel_y = 7
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
@@ -21290,8 +21290,8 @@
 /area/crew_quarters/heads/hor)
 "bbN" = (
 /obj/item/cartridge/signal/toxins{
-	step_x = -5;
-	step_y = 30
+	pixel_x = -5;
+	pixel_y = 30
 	},
 /turf/closed/wall/r_wall,
 /area/crew_quarters/heads/hor)
@@ -21598,7 +21598,7 @@
 "bcA" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/purple/visible/layer5,
@@ -21811,17 +21811,17 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/item/storage/box/monkeycubes{
-	step_x = 28
+	pixel_x = 28
 	},
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
 "bda" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/spray/cleaner{
-	step_y = 11
+	pixel_y = 11
 	},
 /obj/item/storage/box/monkeycubes{
-	step_x = 4
+	pixel_x = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
@@ -21891,7 +21891,7 @@
 "bdk" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 6
@@ -22333,7 +22333,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /obj/structure/extinguisher_cabinet{
@@ -22500,7 +22500,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -22514,7 +22514,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /obj/structure/extinguisher_cabinet{
@@ -23051,13 +23051,13 @@
 "bgb" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/gravity_generator)
 "bgc" = (
 /obj/item/radio/intercom{
-	pixel_w = 32
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/sepia,
 /area/engine/gravity_generator)
@@ -23288,7 +23288,7 @@
 /area/medical/psychology)
 "bgN" = (
 /obj/structure/sign/departments/psychology{
-	pixel_z = 32
+	pixel_y = 32
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
@@ -23326,14 +23326,14 @@
 	name = "Security Post Flash";
 	pixel_x = -24;
 	pixel_y = -3;
-	pixel_z = -5
+	pixel_y = -5
 	},
 /obj/machinery/button/door{
 	id = "bridge_sec_shutter";
 	name = "Security Post Shutter";
-	pixel_w = 4;
+	pixel_x = 4;
 	pixel_x = -28;
-	pixel_z = 1
+	pixel_y = 1
 	},
 /obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel,
@@ -23369,7 +23369,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
@@ -23611,7 +23611,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
@@ -23800,7 +23800,7 @@
 "bij" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/plasteel/white,
@@ -23808,7 +23808,7 @@
 "bik" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/secure_closet/medical2,
 /turf/open/floor/plasteel/white,
@@ -23964,7 +23964,7 @@
 "biG" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/glass,
 /obj/item/reagent_containers/glass/beaker,
@@ -24495,7 +24495,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/sign/directions/science/nano{
 	dir = 8;
@@ -24513,7 +24513,7 @@
 /obj/structure/flora/ausbushes/leafybush,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/grass,
 /area/medical/virology)
@@ -24863,7 +24863,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/wood,
 /turf/open/floor/wood,
@@ -25189,7 +25189,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/wood,
 /turf/open/floor/wood,
@@ -25241,7 +25241,7 @@
 	},
 /obj/machinery/button/door{
 	id = "chapel_launcher";
-	pixel_w = -5;
+	pixel_x = -5;
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/dark,
@@ -25398,16 +25398,16 @@
 /obj/machinery/button/door{
 	id = "security_frontdesk";
 	name = "Front Desk Shutter";
-	pixel_w = 2;
+	pixel_x = 2;
 	pixel_x = -28;
-	pixel_z = 6
+	pixel_y = 6
 	},
 /obj/machinery/button/flasher{
 	id = "security_frontdesk_flash";
 	name = "Front Desk Flash";
-	pixel_w = 2;
+	pixel_x = 2;
 	pixel_x = -28;
-	pixel_z = -3
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel,
 /area/security)
@@ -25449,7 +25449,7 @@
 "bmc" = (
 /obj/machinery/flasher{
 	pixel_x = 22;
-	pixel_z = -12
+	pixel_y = -12
 	},
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
@@ -25498,9 +25498,9 @@
 /obj/machinery/button/door{
 	id = "Prison Gate";
 	name = "Prison Wing Lockdown";
-	pixel_w = -21;
+	pixel_x = -21;
 	pixel_x = 26;
-	pixel_z = -3;
+	pixel_y = -3;
 	req_access_txt = "2"
 	},
 /turf/open/floor/plasteel,
@@ -25734,7 +25734,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
@@ -25756,7 +25756,7 @@
 /obj/machinery/vending/snack/random,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -26388,8 +26388,8 @@
 /obj/item/storage/fancy/donut_box,
 /obj/item/folder/blue,
 /obj/item/folder/red{
-	pixel_w = -6;
-	pixel_z = -1
+	pixel_x = -6;
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -27135,8 +27135,8 @@
 /obj/structure/table/wood,
 /obj/item/folder/red{
 	dir = 1;
-	pixel_w = -1;
-	pixel_z = 2
+	pixel_x = -1;
+	pixel_y = 2
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/disposalpipe/segment{
@@ -27174,7 +27174,7 @@
 "bqz" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/vending/dinnerware,
 /turf/open/floor/plasteel/cafeteria,
@@ -27487,10 +27487,10 @@
 /obj/machinery/mechpad,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/extinguisher_cabinet{
-	pixel_w = 10;
+	pixel_x = 10;
 	pixel_y = 28
 	},
 /turf/open/floor/plasteel/dark,
@@ -27571,8 +27571,8 @@
 /obj/structure/table/greyscale,
 /obj/item/relic,
 /obj/item/storage/toolbox/electrical{
-	pixel_w = -3;
-	pixel_z = 6
+	pixel_x = -3;
+	pixel_y = 6
 	},
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel/dark,
@@ -27695,7 +27695,7 @@
 "cqE" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/cable_coil{
-	pixel_z = 5
+	pixel_y = 5
 	},
 /obj/item/stack/cable_coil,
 /obj/item/stack/pipe_cleaner_coil,
@@ -27758,7 +27758,7 @@
 "cus" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -28055,7 +28055,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/meter,
 /obj/structure/extinguisher_cabinet{
@@ -28137,7 +28137,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/misc_lab)
@@ -28381,7 +28381,7 @@
 /obj/structure/table/greyscale,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/security/main)
@@ -28398,7 +28398,7 @@
 /obj/structure/cable,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
@@ -28758,8 +28758,8 @@
 /obj/structure/table/wood,
 /obj/item/phone,
 /obj/item/radio{
-	pixel_w = 11;
-	pixel_z = 12
+	pixel_x = 11;
+	pixel_y = 12
 	},
 /obj/item/taperecorder,
 /obj/machinery/keycard_auth{
@@ -28822,7 +28822,7 @@
 "eUx" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -29041,7 +29041,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/bombcloset,
 /obj/structure/disposalpipe/segment{
@@ -29082,7 +29082,7 @@
 /obj/structure/table/reinforced,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/science/research/abandoned)
@@ -29372,25 +29372,25 @@
 "fOJ" = (
 /obj/structure/table/greyscale,
 /obj/item/assembly/igniter{
-	pixel_w = 6;
-	pixel_z = -5
+	pixel_x = 6;
+	pixel_y = -5
 	},
 /obj/item/assembly/igniter{
-	pixel_w = -5;
-	pixel_z = -5
+	pixel_x = -5;
+	pixel_y = -5
 	},
 /obj/item/assembly/igniter{
-	pixel_w = -5;
-	pixel_z = 2
+	pixel_x = -5;
+	pixel_y = 2
 	},
 /obj/item/assembly/igniter{
-	pixel_w = 5;
-	pixel_z = 2
+	pixel_x = 5;
+	pixel_y = 2
 	},
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/mixing)
@@ -29525,20 +29525,20 @@
 /area/crew_quarters/theatre/stage)
 "glQ" = (
 /obj/item/storage/box/ingredients/vegetarian{
-	pixel_w = -2;
-	pixel_z = 5
+	pixel_x = -2;
+	pixel_y = 5
 	},
 /obj/item/storage/box/ingredients/vegetarian{
-	pixel_w = -2;
-	pixel_z = 5
+	pixel_x = -2;
+	pixel_y = 5
 	},
 /obj/item/storage/box/ingredients/grains{
-	pixel_w = 3;
-	pixel_z = 2
+	pixel_x = 3;
+	pixel_y = 2
 	},
 /obj/item/storage/box/ingredients/carnivore{
-	pixel_w = 5;
-	pixel_z = -3
+	pixel_x = 5;
+	pixel_y = -3
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
@@ -29705,7 +29705,7 @@
 "gFD" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/chair/sofa/left{
 	dir = 4
@@ -29915,7 +29915,7 @@
 	},
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/telecomms,
 /area/tcommsat/server)
@@ -29956,8 +29956,8 @@
 	dir = 4
 	},
 /obj/item/assembly/igniter{
-	pixel_w = -5;
-	pixel_z = -5
+	pixel_x = -5;
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel,
 /area/science/research/abandoned)
@@ -30274,7 +30274,7 @@
 "hZj" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/reinforced,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
@@ -30320,7 +30320,7 @@
 "ifk" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/table/reinforced,
 /obj/item/book/manual/ptl_operation,
@@ -30333,7 +30333,7 @@
 "igP" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/status_display/evac{
 	pixel_y = 32
@@ -30411,14 +30411,14 @@
 	name = "Counter shutters";
 	pixel_x = 28;
 	pixel_y = 3;
-	pixel_z = 3
+	pixel_y = 3
 	},
 /obj/machinery/button/door{
 	id = "robotics_entrance";
 	name = "Entrance Door";
 	pixel_x = 28;
 	pixel_y = -3;
-	pixel_z = -2
+	pixel_y = -2
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
@@ -31188,7 +31188,7 @@
 "kcd" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -31711,7 +31711,7 @@
 "lqC" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -31898,8 +31898,8 @@
 "lLm" = (
 /obj/structure/table/reinforced,
 /obj/item/stamp{
-	pixel_w = 6;
-	pixel_z = -4
+	pixel_x = 6;
+	pixel_y = -4
 	},
 /obj/item/stamp/denied,
 /turf/open/floor/plasteel,
@@ -31932,7 +31932,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/miningoffice)
@@ -32083,11 +32083,11 @@
 "mhs" = (
 /obj/machinery/button/ignition/incinerator/toxmix{
 	pixel_x = -24;
-	pixel_z = 7
+	pixel_y = 7
 	},
 /obj/machinery/button/door/incinerator_vent_toxmix{
 	pixel_x = -24;
-	pixel_z = -8
+	pixel_y = -8
 	},
 /obj/machinery/airalarm/directional/north,
 /obj/machinery/atmospherics/components/binary/valve{
@@ -32286,7 +32286,7 @@
 "myl" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -32395,7 +32395,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
@@ -32660,7 +32660,7 @@
 "nvH" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /obj/machinery/door/airlock/engineering{
@@ -32972,7 +32972,7 @@
 	doorSide = "internal";
 	frequency = 1449;
 	idSelf = "mechbay_airlock_control";
-	pixel_w = 8;
+	pixel_x = 8;
 	pixel_y = 28
 	},
 /turf/open/floor/engine,
@@ -33121,7 +33121,7 @@
 "oEN" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/closet/secure_closet/chemical,
 /turf/open/floor/plasteel,
@@ -33172,20 +33172,20 @@
 /obj/machinery/button/ignition/incinerator{
 	id = "disposal_incinerator_ignitor";
 	name = "incinerator ignition switch";
-	pixel_w = 7;
-	pixel_z = -3
+	pixel_x = 7;
+	pixel_y = -3
 	},
 /obj/machinery/button/door{
 	id = "disposal_incinerator_ext";
 	name = "Incinerator Exhaust Shutter";
-	pixel_w = -6;
-	pixel_z = 7
+	pixel_x = -6;
+	pixel_y = 7
 	},
 /obj/machinery/button/door{
 	id = "disposal_incinerator_blastdoor";
 	name = "Incinerator Blast Shield";
-	pixel_w = -6;
-	pixel_z = -3
+	pixel_x = -6;
+	pixel_y = -3
 	},
 /obj/machinery/camera{
 	c_tag = "Incinerator Control";
@@ -33207,7 +33207,7 @@
 "oMQ" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/cable,
 /turf/open/floor/mech_bay_recharge_floor,
@@ -33216,7 +33216,7 @@
 /obj/machinery/firealarm{
 	dir = 8;
 	pixel_x = 24;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = 32
@@ -33530,10 +33530,10 @@
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
 /obj/item/hand_labeler_refill{
-	pixel_w = -4
+	pixel_x = -4
 	},
 /obj/item/hand_labeler_refill{
-	pixel_w = 5
+	pixel_x = 5
 	},
 /obj/item/pen,
 /turf/open/floor/plasteel,
@@ -33580,7 +33580,7 @@
 /area/engine/storage)
 "pLJ" = (
 /obj/structure/sink{
-	pixel_z = 18
+	pixel_y = 18
 	},
 /obj/structure/mirror{
 	pixel_y = 32
@@ -33746,7 +33746,7 @@
 "qlS" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/emergency{
-	pixel_z = 6
+	pixel_y = 6
 	},
 /obj/item/storage/toolbox/emergency,
 /turf/open/floor/plasteel,
@@ -34140,7 +34140,7 @@
 "qWR" = (
 /obj/structure/table/reinforced,
 /obj/item/stack/package_wrap{
-	pixel_z = 8
+	pixel_y = 8
 	},
 /obj/item/stack/package_wrap,
 /turf/open/floor/plasteel,
@@ -34373,7 +34373,7 @@
 "rLn" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/item/radio/intercom{
 	pixel_y = 28
@@ -34442,7 +34442,7 @@
 /obj/item/nanite_scanner,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
@@ -34833,7 +34833,7 @@
 /obj/effect/turf_decal/box/white,
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = -32
@@ -35493,8 +35493,8 @@
 "uns" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/toolbox/electrical{
-	pixel_w = -3;
-	pixel_z = 7
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /obj/item/storage/toolbox/mechanical,
 /turf/open/floor/plasteel,
@@ -35894,7 +35894,7 @@
 "vqk" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /obj/structure/sign/directions/evac{
 	dir = 4;
@@ -36034,8 +36034,8 @@
 	},
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
-	pixel_w = 6;
-	pixel_z = 8
+	pixel_x = 6;
+	pixel_y = 8
 	},
 /obj/item/reagent_containers/food/drinks/drinkingglass/shotglass,
 /turf/open/floor/wood,
@@ -36235,7 +36235,7 @@
 "wkN" = (
 /obj/machinery/light/dim{
 	dir = 1;
-	pixel_z = -1
+	pixel_y = -1
 	},
 /turf/open/floor/sepia,
 /area/maintenance/disposal)
