@@ -258,3 +258,5 @@
 	fixed_underlay = list("space"=1)
 
 
+/turf/closed/wall/r_wall/retro
+	icon = 'icons/turf/walls/retrinforced_wall.dmi'
