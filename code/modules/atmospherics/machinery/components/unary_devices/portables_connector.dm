@@ -19,7 +19,7 @@
 	..()
 	var/datum/gas_mixture/air_contents = airs[1]
 	air_contents.volume = 0
-	spawn(10 SECONDS) // Don't try connect right away. Atmos needs to set up first.
+	spawn(30 SECONDS) // Don't try connect right away. Atmos needs to set up first.
 		var/obj/machinery/portable_atmospherics/P = locate(/obj/machinery/portable_atmospherics) in loc
 		if(P)
 			P.connect(src)
