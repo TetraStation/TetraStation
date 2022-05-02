@@ -264,11 +264,8 @@
 	status = LIGHT_BROKEN
 	icon_state = "bulb-broken"
 
-/obj/machinery/light/small/warning
-	var/idSelf // So we can be linked to things
-	bulb_emergency_pow_mul = 1
-	bulb_emergency_pow_min = 0.75
-	bulb_emergency_brightness_mul = 1
+/obj/machinery/light/small/red
+	bulb_colour = "#DD0000"
 
 /obj/machinery/light/Move()
 	if(status != LIGHT_BROKEN)
