@@ -119,7 +119,8 @@
 	name = "extra-large cockroach"
 	desc = "Holy shit, did you see the size of that thing?!"
 	icon_state = "cockroach_xl"
-	health = 4
+	icon_dead = "cockroach_xl-dead"
+	health = 10
 	mob_size = MOB_SIZE_SMALL
 	density = TRUE
 	squish_chance = 25
@@ -132,7 +133,8 @@
 	name = "giant cockroach"
 	desc = "Oh god, oh shit, what the fuck?"
 	icon_state = "cockroach_monster"
-	health = 10
+	icon_dead = "cockroach_xl-dead"
+	health = 20
 	mob_size = MOB_SIZE_HUMAN
 	pass_flags = PASSTABLE
 	squish_chance = 0
