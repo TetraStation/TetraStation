@@ -918,3 +918,7 @@
 	layer = 2.5
 	light_type = /obj/item/light/bulb
 	fitting = "bulb"
+
+/obj/machinery/light/floor/red
+	name = "red floor light"
+	bulb_colour = "#DD0000"
