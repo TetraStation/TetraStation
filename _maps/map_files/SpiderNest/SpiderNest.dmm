@@ -13011,6 +13011,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/random/mob/roaches/monster/low_chance,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "aHI" = (
@@ -27464,6 +27465,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"bVE" = (
+/obj/random/mob/roaches/monster/low_chance,
+/turf/open/floor/plating,
+/area/engine/ptl_chamber)
 "bWb" = (
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
@@ -27779,6 +27784,10 @@
 	},
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
+"csJ" = (
+/obj/random/mob/roaches/monster/low_chance,
+/turf/open/floor/plating,
+/area/maintenance/department/science)
 "ctF" = (
 /obj/structure/window/reinforced{
 	dir = 1;
@@ -28219,6 +28228,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
+/obj/random/mob/roaches/monster/low_chance,
 /turf/open/floor/plating,
 /area/maintenance/aft)
 "dnC" = (
@@ -28482,6 +28492,10 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/science/research)
+"dQf" = (
+/obj/random/mob/roaches/monster,
+/turf/open/floor/plating,
+/area/maintenance/department/science)
 "dQD" = (
 /obj/effect/turf_decal/box/red,
 /obj/random/equipment/atmospherics/canister/dangerous,
@@ -28575,9 +28589,6 @@
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel,
 /area/security/main)
-"eaP" = (
-/turf/open/floor/plating,
-/area/space)
 "ebl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
 	dir = 8
@@ -33515,6 +33526,10 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/central)
+"omO" = (
+/obj/random/mob/roaches/monster/low_chance,
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
 "opl" = (
 /obj/machinery/door/airlock/maintenance{
 	name = "Theatre Backstage";
@@ -35469,6 +35484,10 @@
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/retro,
 /area/security/checkpoint/customs)
+"sEX" = (
+/obj/random/mob/roaches/monster/low_chance,
+/turf/open/floor/plating,
+/area/maintenance/central)
 "sFq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/warning/electricshock{
@@ -37428,6 +37447,13 @@
 "wMj" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/aisat/foyer)
+"wMm" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/random/mob/roaches/monster/low_chance,
+/turf/open/floor/plating,
+/area/maintenance/department/engine)
 "wOd" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/sign/directions/evac{
@@ -65107,7 +65133,7 @@ aaa
 aaa
 aaa
 aEg
-aEi
+dQf
 iWj
 aEi
 aEi
@@ -72080,7 +72106,7 @@ aEi
 aEi
 aEi
 aEi
-aEi
+csJ
 aEg
 aaa
 aaa
@@ -79956,7 +79982,7 @@ aaa
 aaa
 oNs
 wwl
-hNF
+bVE
 lex
 oNs
 aaa
@@ -80219,8 +80245,8 @@ aQY
 aQY
 aRn
 gPq
-eaP
-gGy
+any
+eED
 aaa
 aaa
 aaa
@@ -80542,7 +80568,7 @@ aaa
 aqi
 aaa
 agF
-gFa
+wMm
 agF
 aaa
 aaa
@@ -85646,7 +85672,7 @@ aaa
 aaa
 pBf
 pBf
-agg
+sEX
 ase
 ase
 pBf
@@ -87815,7 +87841,7 @@ api
 any
 aHF
 any
-any
+omO
 anC
 aFw
 bvF
@@ -98330,7 +98356,7 @@ agv
 agx
 agu
 pBf
-agg
+sEX
 agg
 agg
 pBf
