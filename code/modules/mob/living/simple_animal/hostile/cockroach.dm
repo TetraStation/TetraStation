@@ -59,6 +59,7 @@
 /mob/living/simple_animal/hostile/cockroach/death(gibbed)
 	if(SSticker.mode && SSticker.mode.station_was_nuked) //If the nuke is going off, then cockroaches are invincible. Keeps the nuke from killing them, cause cockroaches are immune to nukes.
 		return
+	squish_chance = 99
 	..()
 
 /mob/living/simple_animal/hostile/cockroach/Crossed(atom/movable/AM)
@@ -115,35 +116,3 @@
 			adjustBruteLoss(1) //kills a normal cockroach
 	..()
 
-// Giant cockroaches. But wait, there's more!
-/mob/living/simple_animal/hostile/cockroach/xl
-	name = "extra-large cockroach"
-	desc = "Holy shit, did you see the size of that thing?!"
-	icon_state = "cockroach_xl"
-	icon_dead = "cockroach_xl_dead"
-	health = 10
-	mob_size = MOB_SIZE_SMALL
-	density = TRUE
-	squish_chance = 25
-	del_on_death = FALSE
-	response_harm_continuous = "crunches"
-	response_harm_simple = "crunch"
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/roach = 1)
-	melee_damage_lower = 5
-	melee_damage_upper = 8
-
-/mob/living/simple_animal/hostile/cockroach/giant
-	name = "giant cockroach"
-	desc = "Oh god, oh shit, what the fuck?"
-	icon_state = "cockroach_monster"
-	icon_dead = "cockroach_monster_dead"
-	health = 20
-	mob_size = MOB_SIZE_HUMAN
-	pass_flags = PASSTABLE
-	squish_chance = 0
-	del_on_death = FALSE
-	response_harm_continuous = "smacks"
-	response_harm_simple = "smack"
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/roach = 3)
-	melee_damage_lower = 6
-	melee_damage_upper = 12

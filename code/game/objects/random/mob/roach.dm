@@ -10,9 +10,9 @@
 
 /obj/random/mob/roaches/item_to_spawn()
 	return pickweight(list(/mob/living/simple_animal/hostile/cockroach = 9,
-				/mob/living/simple_animal/hostile/cockroach/xl = 4,
 				/mob/living/simple_animal/hostile/cockroach/hauberoach = 4,
-				/mob/living/simple_animal/hostile/cockroach/giant = 1))
+				/mob/living/simple_animal/hostile/cockroach/xl = 2,
+			))
 
 /obj/random/mob/roaches/low_chance
 	name = "low chance random roach"
@@ -29,8 +29,7 @@
 /obj/random/mob/roaches/monster/item_to_spawn()
 	return pickweight(list(/mob/living/simple_animal/hostile/cockroach/xl = 9,
 				/mob/living/simple_animal/hostile/cockroach/giant = 4,
-				/mob/living/simple_animal/hostile/cockroach/tank = 2,
-				/mob/living/simple_animal/hostile/cockroach/hunter = 2,
+				/mob/living/simple_animal/hostile/cockroach/hunter = 1,
 			))
 
 /obj/random/cluster/roaches
