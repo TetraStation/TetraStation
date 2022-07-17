@@ -33266,6 +33266,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "mKk" = (
@@ -33511,7 +33512,6 @@
 /obj/machinery/ai_slipper{
 	uses = 10
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/circuit/red/anim,
 /area/ai_monitored/turret_protected/ai)
@@ -37240,6 +37240,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"uYE" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/open/floor/circuit/red/anim,
+/area/ai_monitored/turret_protected/ai)
 "uYL" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -37827,6 +37833,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
+"wmW" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
+/turf/open/floor/circuit/red/anim,
+/area/ai_monitored/turret_protected/ai)
 "wnc" = (
 /obj/effect/turf_decal/box,
 /obj/machinery/portable_atmospherics/canister/oxygen,
@@ -110934,10 +110944,10 @@ yhq
 cgp
 cgp
 jPm
-fjs
-fjs
-qan
-fjs
+oko
+oko
+uYE
+oko
 oko
 oko
 oko
@@ -111236,7 +111246,7 @@ yhq
 cgp
 cgp
 gLI
-fTl
+wmW
 epX
 wKb
 nmX
@@ -111538,7 +111548,7 @@ yhq
 wQQ
 wQQ
 fus
-fjs
+oko
 vBK
 yeT
 emF
