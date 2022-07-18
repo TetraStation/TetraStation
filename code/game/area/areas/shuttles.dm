@@ -24,6 +24,13 @@
 
 ////////////////////////////Multi-area shuttles////////////////////////////
 
+/area/shuttle/dropship
+	name = "TGMC Drop Ship"
+	area_flags = NOTELEPORT
+
+/area/shuttle/dropship/cockpit
+	name = "Drop-ship cockpit"
+
 ////////////////////////////Syndicate infiltrator////////////////////////////
 
 /area/shuttle/syndicate
