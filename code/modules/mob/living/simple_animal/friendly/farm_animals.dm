@@ -439,3 +439,35 @@
 	blood_volume = BLOOD_VOLUME_NORMAL
 	food_type = list(/obj/item/reagent_containers/food/snacks/grown/apple)
 	footstep_type = FOOTSTEP_MOB_SHOE
+
+/mob/living/simple_animal/pig
+	name = "sow"
+	desc = "A gentle, peaceful farm animal. How did this get into space?"
+	icon_state = "pig"
+	icon_living = "pig"
+	icon_dead = "pig-dead"
+	gender = FEMALE
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	speak = list("Weeenk?", "Weeeeeeee", "Oink")
+	speak_emote = list("grunts", "grunts softly", "oinks")
+	emote_hear = list("oinks.")
+	emote_see = list("shakes its head.",
+			"wiggles its curly tail.")
+	speak_chance = 1
+	turns_per_move = 5
+	see_in_dark = 6
+	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 3)
+	response_help_continuous = "pets"
+	response_help_simple = "pet"
+	response_disarm_continuous = "gently nudges"
+	response_disarm_simple = "gently nudges aside"
+	response_harm_continuous = "kicks"
+	response_harm_simple = "kick"
+	attack_verb_continuous = "bites"
+	attack_verb_simple = "bite"
+	attack_sound = 'sound/weapons/punch1.ogg'
+	health = 75
+	maxHealth = 75
+	blood_volume = BLOOD_VOLUME_NORMAL
+	food_type = list(/obj/item/reagent_containers/food)
+	footstep_type = FOOTSTEP_MOB_SHOE
