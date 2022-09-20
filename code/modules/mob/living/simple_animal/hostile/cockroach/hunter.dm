@@ -6,7 +6,7 @@
 	icon_state = "hunteroach"
 	icon_dead = "hunteroach_dead"
 	mob_size = MOB_SIZE_HUMAN
-	health = 15            // Less health than a giant cockroach
+	health = 50            // Not as strong as the tank
 	speed = -2             // But faster
 	melee_damage_lower = 8 // And does more damage
 	melee_damage_upper = 16

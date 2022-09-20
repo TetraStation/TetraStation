@@ -20,17 +20,17 @@
 	var/list/nanite_swarms = list()
 	var/max_swarms = 5 // Adjust this for balance as required, I guess?
 
-/mob/living/simple_animal/hostile/cockroach/nanite/UnarmedAttack(atom/A, var/proximity)
-	. = ..()
-
-	if(isliving(A))
-		var/mob/living/L = A
-		if(istype(L) && prob(25) && nanite_swarms.len < max_swarms)
-			// Do a little noise, make a little swarm, kick ass tonight
+/mob/living/simple_animal/hostile/cockroach/nanite/AttackingTarget()
+	SEND_SIGNAL(src, COMSIG_HOSTILE_ATTACKINGTARGET, target)
+	in_melee = TRUE
+	if(prob(25) && nanite_swarms.len < max_swarms)
+		// Do a little noise, make a little swarm, kick ass tonight
+		spawn(0)
 			var/mob/living/simple_animal/hostile/cockroach/naniteswarm/M =\
 				 new /mob/living/simple_animal/hostile/cockroach/naniteswarm(get_turf(src), src)
-			nanite_swarms.Add(M)
+			src.nanite_swarms.Add(M)
 			M.friends += src.friends
+	target.attack_animal(src)
 
 /mob/living/simple_animal/hostile/cockroach/nanite/death()
 	for(var/mob/living/simple_animal/hostile/cockroach/naniteswarm/NS in nanite_swarms)

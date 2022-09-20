@@ -6,8 +6,8 @@
 	faction = list("roach")
 
 	turns_per_move = 4
-	maxHealth = 150
-	health = 150
+	maxHealth = 250
+	health = 250
 
 	melee_damage_lower = 12
 	melee_damage_upper = 25
