@@ -260,3 +260,4 @@
 
 /turf/closed/wall/r_wall/retro
 	icon = 'icons/turf/walls/retrinforced_wall.dmi'
+	icon_state = "wall"
