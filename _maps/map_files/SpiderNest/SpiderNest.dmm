@@ -12407,24 +12407,23 @@
 "aFN" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment,
-/obj/machinery/conveyor/inverted{
+/obj/machinery/conveyor{
 	dir = 5;
-	id = "QMLoad"
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aFQ" = (
 /obj/machinery/conveyor{
-	dir = 1;
-	id = "QMLoad"
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aFT" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/conveyor{
-	dir = 8;
-	id = "QMUnload"
+	dir = 4;
+	id = "cargoload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -12448,14 +12447,14 @@
 	},
 /obj/effect/turf_decal/box/red,
 /obj/machinery/button/door{
-	id = "cargoload";
-	name = "Cargo Doors";
+	id = "1cargounload";
+	name = "Cargo Unloading Door";
 	pixel_x = 22;
 	pixel_y = 7
 	},
 /obj/machinery/button/door{
-	id = "cargounload";
-	name = "Cargo Doors";
+	id = "1cargoload";
+	name = "Cargo Loading Door";
 	pixel_x = 22;
 	pixel_y = -5
 	},
@@ -12463,24 +12462,25 @@
 /area/quartermaster/storage)
 "aFY" = (
 /obj/structure/cable,
-/obj/machinery/conveyor/inverted{
+/obj/machinery/conveyor{
 	dir = 6;
-	id = "QMLoad"
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aFZ" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/conveyor{
-	id = "QMLoad"
+	dir = 1;
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "aGb" = (
 /obj/structure/disposalpipe/segment,
 /obj/machinery/conveyor{
-	dir = 4;
-	id = "QMLload"
+	dir = 9;
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -27744,13 +27744,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/aisat)
-"cmT" = (
-/obj/machinery/conveyor{
-	dir = 4;
-	id = "QMLload"
-	},
-/turf/open/floor/plasteel,
-/area/quartermaster/storage)
 "cnh" = (
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -28144,8 +28137,8 @@
 	},
 /obj/structure/fans/tiny,
 /obj/machinery/conveyor{
-	dir = 8;
-	id = "QMUnload"
+	dir = 4;
+	id = "cargoload"
 	},
 /obj/effect/turf_decal/caution/red{
 	dir = 8
@@ -28606,8 +28599,8 @@
 /area/aisat)
 "dNh" = (
 /obj/machinery/conveyor{
-	dir = 8;
-	id = "QMUnload"
+	dir = 4;
+	id = "cargoload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -28784,6 +28777,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
+"eet" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor_switch/oneway{
+	id = "cargoload";
+	name = "Cargo Shuttle Load"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "eeL" = (
 /obj/machinery/camera{
 	c_tag = "Bridge Hallway";
@@ -29044,9 +29046,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/tcommsat/computer)
 "eCW" = (
-/obj/effect/turf_decal/loading_area{
-	dir = 1
-	},
+/obj/effect/turf_decal/loading_area,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -29627,6 +29627,9 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/railing/corner{
+	dir = 8
+	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "fEJ" = (
@@ -31702,14 +31705,6 @@
 /obj/random/equipment/atmospherics/canister,
 /turf/open/floor/plating,
 /area/maintenance/disposal)
-"jDb" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/loading_area{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel,
-/area/quartermaster/storage)
 "jDU" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/retro,
@@ -32198,8 +32193,8 @@
 "kIc" = (
 /obj/structure/cable,
 /obj/machinery/conveyor{
-	dir = 8;
-	id = "QMLoad"
+	dir = 4;
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -35096,6 +35091,15 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/security)
+"qEh" = (
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/conveyor_switch/oneway{
+	id = "cargounload";
+	name = "Cargo Shuttle Unload"
+	},
+/turf/open/floor/plasteel,
+/area/quartermaster/storage)
 "qFn" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 1
@@ -37403,8 +37407,7 @@
 "vor" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/conveyor{
-	dir = 1;
-	id = "QMLoad"
+	id = "cargounload"
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
@@ -38078,8 +38081,8 @@
 	},
 /obj/structure/fans/tiny,
 /obj/machinery/conveyor{
-	dir = 4;
-	id = "QMLload"
+	dir = 8;
+	id = "cargounload"
 	},
 /obj/effect/turf_decal/caution/red{
 	dir = 8
@@ -87023,11 +87026,11 @@ dSU
 fOp
 sYE
 fOp
-aGe
+sYE
 aTv
 sYE
 fOp
-jDb
+aGe
 aQo
 sYE
 psx
@@ -87325,7 +87328,7 @@ ddw
 cTM
 vwJ
 vwJ
-cmT
+vwJ
 vwJ
 vwJ
 vwJ
@@ -87628,9 +87631,9 @@ aFZ
 aFZ
 aFZ
 aGb
-bNY
+qEh
 aFW
-bNY
+eet
 aFT
 uTP
 bNY
