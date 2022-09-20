@@ -14142,7 +14142,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/structure/sign/departments/evac{
-	dir = 8;
+	dir = 4;
 	pixel_x = 32
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer3,
@@ -30535,6 +30535,13 @@
 /obj/structure/closet/secure_closet/freezer,
 /turf/open/floor/plasteel/white,
 /area/medical/surgery/room_d)
+"hoC" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/sign/departments/evac{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "hpV" = (
 /obj/structure/cable,
 /obj/effect/decal/cleanable/dirt,
@@ -32033,6 +32040,16 @@
 	},
 /turf/open/floor/wood,
 /area/hallway/secondary/command)
+"kkM" = (
+/obj/machinery/camera{
+	c_tag = "Aft Hallway";
+	dir = 4
+	},
+/obj/structure/sign/departments/evac{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
 "kkV" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -35636,6 +35653,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
+"rIh" = (
+/obj/machinery/light/dim{
+	dir = 8
+	},
+/obj/structure/sign/departments/evac{
+	pixel_x = -32
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "rIk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/grimy,
@@ -90225,7 +90251,7 @@ rDQ
 lIZ
 vXQ
 odb
-xQD
+hoC
 xQD
 xQD
 aOf
@@ -92365,7 +92391,7 @@ abv
 abv
 bXv
 abv
-ayE
+rIh
 abv
 bcM
 bcN
@@ -92382,7 +92408,7 @@ awc
 agz
 agz
 agz
-hNO
+kkM
 awc
 wdK
 avT
