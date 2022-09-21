@@ -16,11 +16,14 @@
 	atmos_requirements = list("min_oxy" = 0, "max_oxy" = 0, "min_tox" = 0, "max_tox"=0,\
 				"min_co2" = 0, "max_co2" = 0, "min_n2" = 0, "max_n2" = 0)
 	unsuitable_atmos_damage = 0
+	minimum_distance = 5 // Try to stay out of melee range
+	retreat_distance = 3
 
 /mob/living/simple_animal/hostile/cockroach/bluespace/AttackingTarget()
 	SEND_SIGNAL(src, COMSIG_HOSTILE_ATTACKINGTARGET, target)
 	in_melee = TRUE
 	var/turf/open/T = get_ranged_target_turf(src, src.dir, rand(2,5))
+	src.say("Yeet!")
 	return do_teleport(target, T, 8, channel=TELEPORT_CHANNEL_BLUESPACE)
 
 /mob/living/simple_animal/hostile/cockroach/bluespace/bullet_act()
@@ -42,3 +45,8 @@
 	var/turf/open/T = get_ranged_target_turf(src, direction, flee_range)
 	src.say("Yeet!")
 	do_teleport(src, T, channel=TELEPORT_CHANNEL_BLUESPACE)
+	if(prob(1)) // Oops, teleporter malfunction. Now there's TWO of them!
+		spawn(0)
+			var/mob/living/simple_animal/hostile/cockroach/bluespace/M =\
+				new /mob/living/simple_animal/hostile/cockroach/bluespace(get_turf(src), src)
+			M.friends += src.friends
