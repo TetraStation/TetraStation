@@ -4,7 +4,8 @@
 	desc = "Holy shit, did you see the size of that thing?!"
 	icon_state = "cockroach_xl"
 	icon_dead = "cockroach_xl_dead"
-	health = 10
+	health = 25
+	maxHealth = 25
 	mob_size = MOB_SIZE_SMALL
 	density = TRUE
 	squish_chance = 25
@@ -15,6 +16,8 @@
 
 	melee_damage_lower = 5
 	melee_damage_upper = 8
+
+	retreat_distance = 2
 //	faction = list("roach")
 
 	var/fed = 0

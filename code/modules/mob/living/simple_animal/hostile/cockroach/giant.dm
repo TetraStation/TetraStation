@@ -3,7 +3,8 @@
 	desc = "Oh god, oh shit, what the fuck?"
 	icon_state = "cockroach_monster"
 	icon_dead = "cockroach_monster_dead"
-	health = 20
+	health = 50
+	maxHealth = 50
 	mob_size = MOB_SIZE_HUMAN
 	pass_flags = PASSTABLE
 	squish_chance = 0
