@@ -22,7 +22,11 @@
 		if(1)
 			if(prob(2))
 				affected_mob.emote("burp")
+			if(affected_mob?.reagents.has_reagent(/datum/reagent/toxin/fentanyl) && prob(1))
+				affected_mob.emote(pick("faint", "twitch"))
 		if(2)
+			if(affected_mob?.reagents.has_reagent(/datum/reagent/toxin/fentanyl) && prob(2))
+				affected_mob.emote(pick("faint", "twitch"))
 			if(prob(4))
 				affected_mob.emote("groan")
 			if(prob(5))
@@ -43,6 +47,8 @@
 					affected_mob.adjustBruteLoss(3)
 			if(prob(5))
 				affected_mob.emote("groan")
+			if(affected_mob?.reagents.has_reagent(/datum/reagent/toxin/fentanyl) && prob(5))
+				affected_mob.emote(pick("twitch", "faint"))
 
 		if(4)
 			if(prob(5))
@@ -56,7 +62,8 @@
 					affected_mob.emote("fart")
 					affected_mob.adjustBruteLoss(15)
 					affected_mob.add_splatter_floor(get_turf(src))
-					/* Spawn pig here. Well, when we have one, anyway... */
 					new /mob/living/simple_animal/pig(get_turf(affected_mob)) // Some pig!
 					to_chat(affected_mob, "<span class='notice'>Finally, your torment is over... You wonder if this job is worth this sort of pigshit...</span>")
 					remove_disease()
+			if(affected_mob?.reagents.has_reagent(/datum/reagent/toxin/fentanyl) && prob(5))
+				affected_mob.emote(pick("scream","twitch","faint"))
