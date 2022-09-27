@@ -17792,6 +17792,7 @@
 "aTe" = (
 /obj/machinery/light/dim,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/suit_storage_unit/mining,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "aTf" = (
@@ -31112,6 +31113,11 @@
 /obj/machinery/teleport/station,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat/foyer)
+"ipM" = (
+/obj/effect/turf_decal/box/white,
+/obj/structure/closet/secure_closet/armory1,
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "iqE" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer1,
@@ -32871,13 +32877,6 @@
 /obj/structure/disposalpipe/junction/flip,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
-"lSD" = (
-/obj/machinery/power/apc/auto_name/north{
-	areastring = "/area/maintenance/disposal/incinerator"
-	},
-/obj/structure/cable,
-/turf/open/floor/sepia,
-/area/maintenance/disposal)
 "lTO" = (
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
@@ -33331,6 +33330,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
+"mGk" = (
+/obj/machinery/atmospherics/pipe/layer_manifold{
+	dir = 4
+	},
+/turf/open/floor/sepia,
+/area/maintenance/disposal)
 "mJT" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -35986,13 +35991,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/sorting)
-"srx" = (
-/obj/structure/cable,
-/obj/machinery/atmospherics/pipe/layer_manifold{
-	dir = 4
-	},
-/turf/open/floor/sepia,
-/area/maintenance/disposal)
 "stC" = (
 /obj/structure/chair/comfy/black{
 	dir = 4
@@ -36686,6 +36684,15 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"tDR" = (
+/obj/effect/turf_decal/box/white,
+/obj/machinery/light/dim{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/machinery/suit_storage_unit/security,
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "tEn" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -37060,6 +37067,11 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/mechbay)
+"ukq" = (
+/obj/effect/turf_decal/box/white,
+/obj/machinery/suit_storage_unit/security,
+/turf/open/floor/plasteel,
+/area/ai_monitored/security/armory)
 "ukC" = (
 /obj/machinery/light/dim,
 /obj/structure/table/glass,
@@ -37581,6 +37593,11 @@
 /obj/effect/landmark/start/cargo_technician,
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
+"vun" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningdock)
 "vuz" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
 	dir = 9
@@ -38057,6 +38074,15 @@
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
+"wuF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light/dim{
+	dir = 1;
+	pixel_y = -1
+	},
+/obj/machinery/suit_storage_unit/mining,
+/turf/open/floor/plasteel,
+/area/quartermaster/miningoffice)
 "wuM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera{
@@ -84125,7 +84151,7 @@ qrp
 aYS
 aLL
 mfm
-mfm
+vun
 agD
 lLS
 tVt
@@ -84745,9 +84771,9 @@ aFi
 rBl
 aFe
 aFd
-lSD
+vEa
+mGk
 uCm
-srx
 cCz
 pfO
 cCz
@@ -85631,7 +85657,7 @@ dej
 aPa
 agz
 aEP
-lNN
+wuF
 kLI
 aOS
 aEQ
@@ -102414,7 +102440,7 @@ aQr
 afh
 aOg
 abe
-bmv
+ipM
 bnW
 afb
 bmA
@@ -102716,7 +102742,7 @@ aPP
 afh
 aOg
 abe
-bmM
+tDR
 bnX
 bob
 boc
@@ -103018,7 +103044,7 @@ aig
 afh
 aOm
 abe
-bmv
+ukq
 bmI
 abx
 bmB
