@@ -18,6 +18,7 @@
 	unsuitable_atmos_damage = 0
 	minimum_distance = 5 // Try to stay out of melee range
 	retreat_distance = 3
+	var/flee_range = 8 // Max range to teleport-flee
 
 /mob/living/simple_animal/hostile/cockroach/bluespace/AttackingTarget()
 	SEND_SIGNAL(src, COMSIG_HOSTILE_ATTACKINGTARGET, target)
@@ -41,8 +42,8 @@
 	roach warps away to a nearby safer space up to 8 tiles
 	away. This should have an exponential cooldown, stamina-like
 	kinda thing. */
-	var/flee_range = 8
-	var/turf/open/T = get_ranged_target_turf(src, direction, flee_range)
+
+	var/turf/open/T = get_ranged_target_turf(src, direction, src.flee_range)
 	src.say("Yeet!")
 	do_teleport(src, T, channel=TELEPORT_CHANNEL_BLUESPACE)
 	if(prob(1)) // Oops, teleporter malfunction. Now there's TWO of them!
