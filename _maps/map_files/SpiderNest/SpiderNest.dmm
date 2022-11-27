@@ -27509,6 +27509,14 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
+"bKj" = (
+/obj/structure/table/reinforced,
+/obj/structure/cable,
+/obj/machinery/power/apc/auto_name/north{
+	areastring = "/area/engine/engine_room/external"
+	},
+/turf/open/floor/plasteel,
+/area/engine/engineering)
 "bKn" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
 	dir = 8
@@ -89581,7 +89589,7 @@ aAH
 aqP
 asp
 xPf
-fBB
+bKj
 anu
 gvB
 aou
