@@ -5849,7 +5849,7 @@
 /area/engine/engine_room/external)
 "apS" = (
 /obj/structure/lattice,
-/obj/machinery/atmospherics/components/unary/outlet_injector/on{
+/obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 4
 	},
 /turf/open/space/basic,
@@ -30888,6 +30888,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
+"hXe" = (
+/obj/structure/lattice,
+/obj/machinery/atmospherics/components/unary/passive_vent,
+/turf/open/space/basic,
+/area/space/nearstation)
 "hYF" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
@@ -72252,7 +72257,7 @@ aaa
 aaa
 aaa
 aaa
-aoG
+hXe
 avN
 avN
 avN
