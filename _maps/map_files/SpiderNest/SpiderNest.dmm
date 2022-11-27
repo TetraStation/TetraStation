@@ -2324,6 +2324,7 @@
 /area/engine/gravity_generator)
 "agZ" = (
 /obj/structure/cable,
+/obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/sepia,
 /area/engine/gravity_generator)
 "aha" = (
@@ -4974,7 +4975,7 @@
 /obj/item/screwdriver/nuke{
 	pixel_y = 8
 	},
-/obj/item/storage/firstaid,
+/obj/item/storage/firstaid/regular,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/chief)
 "ans" = (
@@ -7081,6 +7082,14 @@
 "asP" = (
 /obj/machinery/light/dim,
 /obj/structure/table/reinforced,
+/obj/machinery/button/door{
+	desc = "A remote control-switch for the engineering security doors.";
+	id = "Engineering";
+	name = "Engineering Lockdown";
+	pixel_x = -5;
+	pixel_y = 8;
+	req_one_access_txt = "1;10"
+	},
 /turf/open/floor/plasteel,
 /area/engine/engineering)
 "asQ" = (
@@ -7151,9 +7160,6 @@
 /obj/machinery/light/dim{
 	dir = 1;
 	pixel_y = -1
-	},
-/obj/machinery/power/apc/auto_name/north{
-	areastring = "/area/engine/engine_room/external"
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -13152,7 +13158,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aHW" = (
-/obj/structure/closet/wardrobe/science_white,
+/obj/structure/closet/wardrobe/white,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aHX" = (
@@ -16448,6 +16454,13 @@
 	},
 /obj/structure/filingcabinet,
 /obj/structure/disposalpipe/segment,
+/obj/machinery/power/apc{
+	areastring = "/area/crew_quarters/heads/hor";
+	dir = 1;
+	name = "R&D Head Office APC";
+	pixel_y = 30
+	},
+/obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
 "aPG" = (
@@ -18327,19 +18340,11 @@
 /obj/effect/turf_decal/trimline/purple/filled/line{
 	dir = 5
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
-	},
-/obj/machinery/power/apc{
-	areastring = "/area/crew_quarters/heads/hor";
-	dir = 1;
-	name = "R&D Head Office APC";
-	pixel_x = 30;
-	pixel_y = 30
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
@@ -18589,6 +18594,7 @@
 /area/crew_quarters/heads/hor)
 "aUP" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hor)
 "aUQ" = (
@@ -32023,6 +32029,16 @@
 "keg" = (
 /turf/open/floor/plasteel,
 /area/science/research/abandoned)
+"keh" = (
+/obj/machinery/power/apc{
+	areastring = "/area/ai_monitored/turret_protected/aisat_interior";
+	dir = 4;
+	name = "MiniSat Antechamber APC";
+	pixel_x = 24
+	},
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
 "kfs" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -33692,6 +33708,14 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/security)
+"nur" = (
+/obj/structure/cable,
+/obj/machinery/light/dim{
+	dir = 1;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/aft)
 "nuU" = (
 /obj/machinery/air_sensor/atmos/toxin_tank,
 /turf/open/floor/engine/plasma,
@@ -33707,10 +33731,6 @@
 /turf/open/floor/carpet/black,
 /area/crew_quarters/theatre)
 "nvH" = (
-/obj/machinery/light/dim{
-	dir = 1;
-	pixel_y = -1
-	},
 /obj/structure/cable,
 /obj/machinery/door/airlock/engineering{
 	name = "Cargo Substation"
@@ -34948,6 +34968,10 @@
 	},
 /turf/open/floor/circuit/red/anim,
 /area/ai_monitored/turret_protected/ai)
+"qaD" = (
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hor)
 "qaL" = (
 /obj/structure/lattice,
 /obj/machinery/atmospherics/pipe/simple/cyan/visible{
@@ -35574,7 +35598,6 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "rnC" = (
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /turf/open/floor/circuit/red/anim,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -36030,6 +36053,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
 /turf/open/floor/plasteel/dark,
 /area/science/mixing)
+"svH" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hor)
 "swa" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -36852,7 +36880,6 @@
 	name = "MiniSat Antechamber";
 	req_one_access_txt = "32;19"
 	},
-/obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
@@ -36984,17 +37011,6 @@
 /obj/item/reagent_containers/food/condiment/milk,
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen)
-"ubd" = (
-/obj/structure/cable,
-/obj/machinery/power/apc{
-	areastring = "/area/ai_monitored/turret_protected/aisat_interior";
-	dir = 4;
-	name = "MiniSat Antechamber APC";
-	pixel_x = 24
-	},
-/obj/machinery/light/floor/red,
-/turf/open/floor/plasteel/dark,
-/area/ai_monitored/turret_protected/aisat_interior)
 "ubj" = (
 /obj/machinery/disposal/delivery_chute{
 	dir = 4
@@ -37143,6 +37159,10 @@
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/cafeteria)
+"urC" = (
+/obj/structure/cable,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/turret_protected/ai)
 "urJ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -78650,7 +78670,7 @@ kVH
 fgI
 swC
 aPF
-sSi
+svH
 sSi
 sSi
 fuR
@@ -78952,7 +78972,7 @@ bjV
 aOn
 aOD
 aQg
-aPL
+qaD
 aPL
 aPL
 bbK
@@ -90185,7 +90205,7 @@ mQS
 api
 any
 anC
-aqV
+nur
 agz
 hNO
 wdK
@@ -112356,7 +112376,7 @@ iME
 ehH
 jMq
 jsh
-ubd
+jMq
 dKX
 clM
 aeI
@@ -112948,12 +112968,12 @@ fjs
 fjs
 qan
 fjs
-oko
-oko
-oko
-oko
-jPm
-jPm
+fjs
+fjs
+fjs
+fjs
+urC
+keh
 cgp
 dKX
 rrH
