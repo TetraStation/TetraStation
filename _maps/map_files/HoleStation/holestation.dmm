@@ -763,6 +763,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "adK" = (
@@ -7894,6 +7895,7 @@
 /area/crew_quarters/heads/cmo)
 "aLD" = (
 /obj/machinery/power/apc/auto_name/north,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "aLH" = (
@@ -12895,6 +12897,10 @@
 "gzM" = (
 /turf/open/floor/plating,
 /area/tcommsat/server/upper)
+"gAQ" = (
+/obj/structure/cable,
+/turf/open/floor/plating,
+/area/maintenance/department/cargo)
 "gBI" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -113302,7 +113308,7 @@ akS
 akS
 akS
 akS
-aKZ
+hSv
 akS
 akS
 aJl
@@ -113816,7 +113822,7 @@ lFz
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -114073,7 +114079,7 @@ eLx
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -114330,7 +114336,7 @@ lFz
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -114587,7 +114593,7 @@ aLs
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -114844,7 +114850,7 @@ ckA
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -115101,7 +115107,7 @@ ckA
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 acV
@@ -115358,7 +115364,7 @@ ckA
 aFz
 aww
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -115615,7 +115621,7 @@ ckA
 aFz
 bhM
 aww
-aww
+gAQ
 aww
 aww
 afh
@@ -115871,8 +115877,8 @@ ckA
 ckA
 aFz
 aLD
-aww
-aww
+gAQ
+gAQ
 aww
 aww
 afh
