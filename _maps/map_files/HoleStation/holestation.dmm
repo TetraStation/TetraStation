@@ -497,6 +497,10 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
+	},
 /turf/open/floor/carpet/blue,
 /area/library)
 "acs" = (
@@ -1368,6 +1372,10 @@
 /area/crew_quarters/heads/captain)
 "ahb" = (
 /obj/effect/turf_decal/tile/brown,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
 /turf/open/floor/plasteel/mil,
 /area/quartermaster/storage)
 "ahd" = (
@@ -5242,6 +5250,9 @@
 /obj/structure/railing/corner,
 /obj/effect/turf_decal/stripes/corner,
 /obj/structure/cable/layer3,
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
 /turf/open/floor/plasteel/mil,
 /area/ai_monitored/turret_protected/ai)
 "ayX" = (
@@ -6585,7 +6596,7 @@
 /area/engine/engine_room)
 "aFE" = (
 /obj/machinery/firealarm{
-	pixel_y = 24
+	pixel_y = 28
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 4
@@ -7344,7 +7355,7 @@
 "aIW" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/sink{
-	dir = 4;
+	dir = 8;
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -8365,6 +8376,10 @@
 "aNX" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /obj/effect/turf_decal/delivery,
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
+	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/kitchen/coldroom)
 "aNY" = (
@@ -10722,6 +10737,10 @@
 /area/engine/supermatter)
 "aYo" = (
 /obj/structure/closet/crate/internals,
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -28
+	},
 /turf/open/floor/plasteel/mil/cargo,
 /area/quartermaster/warehouse)
 "aYp" = (
@@ -12334,6 +12353,14 @@
 /obj/structure/cable/layer3,
 /turf/open/floor/plasteel/mil,
 /area/ai_monitored/turret_protected/ai)
+"flj" = (
+/obj/structure/cable,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/turf/open/floor/plasteel/white,
+/area/medical/medbay/lobby)
 "fmX" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
 	dir = 8
@@ -12814,6 +12841,10 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -28
 	},
 /turf/open/floor/plasteel,
 /area/science/lab)
@@ -14746,6 +14777,9 @@
 /turf/open/floor/plasteel/mil,
 /area/medical/sleeper)
 "mgU" = (
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
 /turf/open/floor/plasteel/white,
 /area/medical)
 "miy" = (
@@ -14915,6 +14949,10 @@
 /obj/item/storage/firstaid/regular,
 /obj/machinery/camera/autoname{
 	dir = 1
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
 	},
 /turf/open/floor/plasteel/white,
 /area/hallway/primary/central)
@@ -15301,6 +15339,10 @@
 	},
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
 	},
 /turf/open/floor/plasteel/mil,
 /area/medical/sleeper)
@@ -15693,6 +15735,19 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"oUV" = (
+/obj/structure/closet/secure_closet/miner,
+/obj/item/tank/internals/oxygen/yellow,
+/obj/effect/turf_decal/tile/yellow,
+/obj/effect/turf_decal/tile/brown{
+	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/turf/open/floor/plasteel/mil,
+/area/quartermaster/miningdock)
 "oVB" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
@@ -16214,6 +16269,10 @@
 /obj/structure/window/reinforced/spawner/west,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
 	},
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
@@ -17775,6 +17834,10 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 1
 	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
+	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
 "vwT" = (
@@ -18237,6 +18300,10 @@
 "wzr" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 6
+	},
+/obj/machinery/firealarm{
+	dir = 4;
+	pixel_x = -28
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
@@ -18807,6 +18874,16 @@
 /obj/structure/cable,
 /turf/open/floor/engine/hull/reinforced,
 /area/space/nearstation)
+"xTF" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 4
+	},
+/obj/machinery/firealarm{
+	dir = 1;
+	pixel_y = -28
+	},
+/turf/open/floor/plasteel,
+/area/hallway/primary/central)
 "xVp" = (
 /obj/machinery/vending/wardrobe/chem_wardrobe,
 /obj/structure/window/reinforced,
@@ -46742,7 +46819,7 @@ aKq
 faO
 nWu
 whi
-fxQ
+xTF
 aSd
 smV
 fJP
@@ -52910,7 +52987,7 @@ aRP
 fUL
 fUL
 aWD
-anL
+oUV
 aOz
 qEK
 nIK
@@ -55477,7 +55554,7 @@ aLu
 aNr
 azn
 aRZ
-aWm
+flj
 aQh
 aNl
 jdI
