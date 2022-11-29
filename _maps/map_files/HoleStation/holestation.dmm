@@ -2095,6 +2095,7 @@
 /obj/structure/railing{
 	dir = 1
 	},
+/turf/open/transparent/openspace,
 /area/security/nuke_storage)
 "akf" = (
 /obj/structure/tank_dispenser/oxygen,
@@ -2365,6 +2366,7 @@
 /obj/structure/railing{
 	dir = 8
 	},
+/turf/open/transparent/openspace,
 /area/security/nuke_storage)
 "alm" = (
 /obj/machinery/power/supermatter_crystal/shard/engine,
@@ -3581,8 +3583,6 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/prison)
-"aqy" = (
-/area/maintenance/central)
 "aqz" = (
 /turf/closed/wall/r_wall,
 /area/engine/engine_room)
@@ -5638,6 +5638,7 @@
 	dir = 4
 	},
 /obj/machinery/light,
+/turf/open/transparent/openspace,
 /area/security/nuke_storage)
 "aAL" = (
 /obj/machinery/power/apc/auto_name/west,
@@ -7341,6 +7342,7 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/engine/supermatter)
 "aIJ" = (
+/turf/open/transparent/openspace,
 /area/security/nuke_storage)
 "aIL" = (
 /obj/structure/closet/emcloset/anchored,
@@ -11105,6 +11107,7 @@
 /area/science/xenobiology)
 "aZw" = (
 /obj/machinery/light,
+/turf/open/transparent/openspace,
 /area/security/nuke_storage)
 "aZy" = (
 /obj/machinery/door/firedoor,
@@ -11777,11 +11780,6 @@
 /obj/structure/lattice/catwalk,
 /turf/open/transparent/openspace,
 /area/maintenance/starboard/aft/secondary)
-"ddh" = (
-/obj/structure/lattice/catwalk,
-/obj/structure/cable,
-/turf/open/space/basic,
-/area/maintenance/central)
 "deh" = (
 /obj/machinery/airalarm/directional/south,
 /obj/structure/table/optable,
@@ -115961,7 +115959,7 @@ aww
 afh
 tSm
 akS
-aqy
+akS
 aZt
 aGq
 aSE
@@ -116218,7 +116216,7 @@ aww
 afh
 tSm
 hSv
-ddh
+hSv
 aeX
 cyP
 scH
@@ -116475,7 +116473,7 @@ aww
 afh
 tSm
 akS
-aqy
+akS
 aSE
 aSE
 aSE
@@ -116732,7 +116730,7 @@ afh
 afh
 tSm
 akS
-aqy
+akS
 aSE
 lFz
 lFz
@@ -116989,7 +116987,7 @@ afh
 wTs
 tSm
 akS
-aqy
+akS
 aSE
 aHA
 aaf
