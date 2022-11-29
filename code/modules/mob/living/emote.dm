@@ -547,7 +547,7 @@
 		if(prob(1))
 			/* Unusual farts */
 			switch(rand(100))
-				if(1 to 75)
+				if(0 to 75)
 					/* Pure oxygen */
 					msg = pick("farts out pure oxygen. ...what?", \
 						"decides to be a breath of fresh air.");
