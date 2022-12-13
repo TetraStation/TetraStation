@@ -844,14 +844,6 @@
 	},
 /turf/open/floor/plasteel/dark/airless,
 /area/tcommsat/server/upper)
-"aee" = (
-/obj/structure/cable,
-/obj/effect/turf_decal/tile/bar,
-/obj/effect/turf_decal/tile/bar{
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/bar/atrium)
 "aeh" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/heavy,
@@ -2965,7 +2957,6 @@
 /area/ai_monitored/turret_protected/ai)
 "anT" = (
 /obj/machinery/door/airlock/public/glass,
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
 	},
@@ -3529,8 +3520,6 @@
 	dir = 8
 	},
 /obj/effect/landmark/start/assistant,
-/obj/machinery/power/apc/auto_name/south,
-/obj/structure/cable,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -6208,7 +6197,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 1
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aDI" = (
@@ -13935,7 +13923,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "jqB" = (
@@ -16127,14 +16114,12 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/west,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 5
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "pQy" = (
@@ -18518,7 +18503,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
 	},
-/obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/brig)
 "wtJ" = (
@@ -46797,8 +46781,8 @@ ahS
 aiU
 akZ
 fEi
-aee
-aee
+qbc
+qbc
 aqo
 ask
 ask
@@ -47054,7 +47038,7 @@ aGt
 omQ
 kdx
 jiF
-aee
+qbc
 qbc
 qbc
 aCv
@@ -47311,7 +47295,7 @@ wnF
 iSt
 gKk
 fvt
-aee
+qbc
 kFu
 asN
 des
