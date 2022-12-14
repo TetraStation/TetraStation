@@ -13,35 +13,57 @@
 	name = "blue corner"
 	color = "#52B4E9"
 
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/blue)
+
 /obj/effect/turf_decal/tile/green
 	name = "green corner"
 	color = "#9FED58"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/green)
 
 /obj/effect/turf_decal/tile/yellow
 	name = "yellow corner"
 	color = "#EFB341"
 
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/yellow)
+
 /obj/effect/turf_decal/tile/red
 	name = "red corner"
 	color = "#DE3A3A"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/red)
 
 /obj/effect/turf_decal/tile/bar
 	name = "bar corner"
 	color = "#791500"
 	alpha = 130
 
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/bar)
+
 /obj/effect/turf_decal/tile/purple
 	name = "purple corner"
 	color = "#D381C9"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/purple)
 
 /obj/effect/turf_decal/tile/brown
 	name = "brown corner"
 	color = "#A46106"
 
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/brown)
+
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral corner"
 	color = "#D4D4D4"
 	alpha = 50
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/neutral)
+
+/obj/effect/turf_decal/tile/dark
+	name = "dark corner"
+	color = "#0e0f0f"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/dark)
 
 /obj/effect/turf_decal/tile/random // so many colors
 	name = "colorful corner"
@@ -51,6 +73,7 @@
 	color = "#[random_short_color()]"
 	. = ..()
 
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/random)
 
 /obj/effect/turf_decal/trimline
 	layer = TURF_PLATING_DECAL_LAYER
