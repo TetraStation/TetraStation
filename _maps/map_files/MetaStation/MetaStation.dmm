@@ -56,7 +56,7 @@
 	name = "Fore-Port Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/fore)
 "aam" = (
 /obj/structure/table/wood,
@@ -794,7 +794,7 @@
 	name = "Fore-Starboard Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/fore)
 "abx" = (
 /obj/effect/turf_decal/trimline/red/filled/line{
@@ -52946,7 +52946,7 @@
 	name = "Aft-Port Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/aft)
 "cuk" = (
 /obj/effect/turf_decal/tile/green{
@@ -63100,7 +63100,7 @@
 	name = "Aft-Starboard Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/aft)
 "dbN" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -79983,7 +79983,7 @@
 	id = "aftport";
 	name = "Aft-Port Solar Array"
 	},
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/aft)
 "xVe" = (
 /obj/structure/table/wood/fancy/orange,

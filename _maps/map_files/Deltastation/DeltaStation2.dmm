@@ -18,7 +18,7 @@
 "aae" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/fore)
 "aaf" = (
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -40,7 +40,7 @@
 	name = "Fore-Starboard Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/fore)
 "aah" = (
 /obj/structure/rack,
@@ -4326,7 +4326,7 @@
 "alS" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/fore)
 "alT" = (
 /turf/closed/wall/r_wall,
@@ -5723,7 +5723,7 @@
 	name = "Fore-Port Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/fore)
 "aoH" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -97799,7 +97799,7 @@
 	name = "Aft-Starboard Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/aft)
 "dFz" = (
 /obj/structure/chair/office{
@@ -104809,7 +104809,7 @@
 "dTk" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/starboard/aft)
 "dTl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -110179,7 +110179,7 @@
 	name = "Aft-Port Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/aft)
 "eff" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -110828,7 +110828,7 @@
 "ehs" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/plasteel/airless/solarpanel,
+/turf/open/floor/plasteel/solarpanel/airless,
 /area/solar/port/aft)
 "eht" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
