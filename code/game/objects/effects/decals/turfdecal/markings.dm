@@ -381,6 +381,9 @@
 /obj/effect/turf_decal/siding/wideplating_new/dark/end
 	icon_state = "siding_wideplating_new_end"
 
+/obj/effect/turf_decal/recharge_port
+	icon_state = "recharge"
+
 /// SYNDICATE EMBLEM ///
 
 //Bottom

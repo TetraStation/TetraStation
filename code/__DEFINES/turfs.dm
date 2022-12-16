@@ -6,3 +6,21 @@
 #define CHANGETURF_RECALC_ADJACENT 32 //Immediately recalc adjacent atmos turfs instead of queuing.
 
 #define IS_OPAQUE_TURF(turf) (turf.directional_opacity == ALL_CARDINALS)
+
+/// Create tile subtypes for a path to simplify mapping.
+#define TURF_ATMOS_SUBTYPE_HELPER(path) \
+##path/airless {\
+	initial_gas_mix = AIRLESS_ATMOS; \
+} \
+##path/telecomms {\
+	initial_gas_mix = TCOMMS_ATMOS; \
+} \
+##path/lavaland {\
+	initial_gas_mix = LAVALAND_DEFAULT_ATMOS; \
+} \
+##path/icemoon {\
+	initial_gas_mix = ICEMOON_DEFAULT_ATMOS; \
+} \
+##path/kitchen_coldroom {\
+	initial_gas_mix = KITCHEN_COLDROOM_ATMOS; \
+} \
