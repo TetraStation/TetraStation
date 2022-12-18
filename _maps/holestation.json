@@ -8,15 +8,5 @@
 		"whiteship": "whiteship_box",
 		"emergency": "emergency_holestation"
 	},
-	"traits": [{"Up" : 1, "Linkage" : "Cross"}, {"Down" : -1, "Baseturf" : "/turf/open/transparent/openspace", "Linkage" : "Cross"}],
-	"job_changes": {
-		"Lawyer": {
-			"total_positions": 0,
-			"spawn_positions": 0
-		},
-		"Psychologist": {
-			"total_positions": 0,
-			"spawn_positions": 0
-		}
-	}
+	"traits": [{"Up" : 1, "Linkage" : "Cross"}, {"Down" : -1, "Baseturf" : "/turf/open/transparent/openspace", "Linkage" : "Cross"}]
 }
