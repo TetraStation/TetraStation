@@ -56,7 +56,7 @@
 	starting_node = TRUE
 	display_name = "Basic Medical Equipment"
 	description = "Basic medical tools and equipment."
-	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs","cybernetic_stomach", "scalpel", "circular_saw", "bonesetter", "surgicaldrill", "retractor", "cautery", "hemostat", "stethoscope", 
+	design_ids = list("cybernetic_liver", "cybernetic_heart", "cybernetic_lungs","cybernetic_stomach", "scalpel", "circular_saw", "bonesetter", "surgicaldrill", "retractor", "cautery", "hemostat", "stethoscope",
 					"surgical_drapes", "syringe", "plumbing_rcd", "beaker", "large_beaker", "xlarge_beaker", "dropper", "defibmountdefault", "surgical_tape", "portable_chem_mixer")
 
 /////////////////////////Biotech/////////////////////////
@@ -139,6 +139,14 @@
 	"apc_control", "cell_charger", "power control", "airlock_board", "firelock_board", "airalarm_electronics", "firealarm_electronics", "cell_charger", "stack_console", "stack_machine",
 	"oxygen_tank", "plasma_tank", "emergency_oxygen", "emergency_oxygen_engi", "plasmaman_tank_belt", "electrolyzer", "adv_electrolite")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 7500)
+
+/datum/techweb_node/spec_eng
+	id = "spec_eng"
+	display_name = "Specialized Engineering"
+	description = "Conventional wisdom has deemed these engineering products 'technically' safe, but far too dangerous to traditionally condone."
+	prereq_ids = list("engineering")
+	design_ids = list("lava_rods", "eng_gloves")
+	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 
 /datum/techweb_node/adv_engi
 	id = "adv_engi"
@@ -980,16 +988,6 @@
 	description = "Some of our smartest lab guys got together on a Friday and improved our office efficiency by 350%. Here's how."
 	prereq_ids = list("base")
 	design_ids = list("rolling_table", "mauna_mug")
-	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
-	hidden = TRUE
-	experimental = TRUE
-
-/datum/techweb_node/spec_eng
-	id = "spec_eng"
-	display_name = "Specialized Engineering"
-	description = "Conventional wisdom has deemed these engineering products 'technically' safe, but far too dangerous to traditionally condone."
-	prereq_ids = list("base")
-	design_ids = list("lava_rods", "eng_gloves")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	hidden = TRUE
 	experimental = TRUE

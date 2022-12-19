@@ -96,15 +96,11 @@
 
 /obj/structure/lattice/lava
 	name = "heatproof support lattice"
-	desc = "A specialized support beam for building across lava. Watch your step."
+	desc = "A specialized support beam for building across lava and flammable operating environments. Watch your step."
 	icon = 'icons/obj/smooth_structures/catwalk.dmi'
 	icon_state = "catwalk"
 	number_of_mats = 1
 	color = "#5286b9ff"
-	smoothing_flags = SMOOTH_CORNERS
-	smoothing_groups = null
-	canSmoothWith = null
-	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN | BLOCK_Z_IN_UP
 	resistance_flags = FIRE_PROOF | LAVA_PROOF
 
 /obj/structure/lattice/lava/deconstruction_hints(mob/user)
