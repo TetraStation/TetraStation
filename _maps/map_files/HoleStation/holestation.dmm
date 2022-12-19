@@ -660,10 +660,7 @@
 	external_pressure_bound = 140;
 	pressure_checks = 0
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
-/obj/structure/lattice/catwalk,
+/obj/structure/lattice/lava,
 /turf/open/transparent/openspace,
 /area/engine/supermatter)
 "acV" = (
@@ -2844,6 +2841,9 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/circuit/green{
 	luminosity = 2
 	},
@@ -4701,7 +4701,7 @@
 /area/engine/gravity_generator)
 "awa" = (
 /obj/machinery/power/supermatter_crystal/shard/engine,
-/obj/structure/lattice/catwalk,
+/obj/structure/lattice/lava,
 /turf/open/transparent/openspace,
 /area/engine/supermatter)
 "awb" = (
@@ -5625,6 +5625,9 @@
 	dir = 4
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /turf/open/floor/circuit/green{
 	luminosity = 2
 	},
@@ -6999,15 +7002,12 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/research)
 "aGW" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8;
 	external_pressure_bound = 140;
 	pressure_checks = 0
 	},
-/obj/structure/lattice/catwalk,
+/obj/structure/lattice/lava,
 /turf/open/transparent/openspace,
 /area/engine/supermatter)
 "aGY" = (
@@ -8343,6 +8343,9 @@
 	dir = 5
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/circuit/green{
 	luminosity = 2
 	},
@@ -9426,6 +9429,9 @@
 	dir = 9
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /turf/open/floor/circuit/green{
 	luminosity = 2
 	},
@@ -13573,7 +13579,7 @@
 /turf/open/floor/engine/n2,
 /area/engine/atmos)
 "hxW" = (
-/obj/structure/lattice/catwalk,
+/obj/structure/lattice/lava,
 /turf/open/transparent/openspace,
 /area/engine/supermatter)
 "hEQ" = (
