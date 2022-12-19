@@ -1230,7 +1230,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/kitchen/coldroom)
 "adV" = (
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "adW" = (
 /obj/machinery/door/airlock/maintenance{
@@ -3461,11 +3461,11 @@
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
 "ajO" = (
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/medical/coldroom)
 "ajP" = (
 /obj/structure/closet/crate/freezer/blood,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/medical/coldroom)
 "ajQ" = (
 /obj/effect/turf_decal/trimline/blue/filled/warning{
@@ -11135,7 +11135,7 @@
 /obj/machinery/power/apc/auto_name/south{
 	areastring = "/area/medical/coldroom"
 	},
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/medical/coldroom)
 "aCq" = (
 /obj/structure/cable,
@@ -27493,7 +27493,7 @@
 /obj/machinery/light/dim{
 	dir = 8
 	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "bKe" = (
 /obj/structure/table/reinforced,
@@ -28343,7 +28343,7 @@
 /area/hallway/primary/aft)
 "dfi" = (
 /obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/medical/coldroom)
 "dfA" = (
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/on{
@@ -29605,7 +29605,7 @@
 /obj/machinery/light/dim{
 	dir = 4
 	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "fAl" = (
 /obj/structure/disposalpipe/segment,
@@ -32058,7 +32058,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 /obj/item/reagent_containers/food/snacks/meat/slab/gorilla,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "kgL" = (
 /obj/machinery/computer/mech_bay_power_console,
@@ -32391,7 +32391,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "kVv" = (
 /obj/structure/lattice/catwalk,
@@ -33227,7 +33227,7 @@
 "mvJ" = (
 /obj/structure/closet/crate/freezer,
 /obj/item/storage/box/monkeycubes,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "mwE" = (
 /obj/machinery/light/floor/red,
@@ -33310,7 +33310,7 @@
 /obj/machinery/light/dim{
 	dir = 8
 	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "mDO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -33465,7 +33465,7 @@
 /area/science/research)
 "mTR" = (
 /obj/machinery/gibber,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "mUq" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
@@ -35094,7 +35094,7 @@
 "qtP" = (
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/effect/turf_decal/box/white,
-/turf/open/floor/plasteel/kitchen_coldroom/freezerfloor,
+/turf/open/floor/plasteel/freezer,
 /area/medical/coldroom)
 "quR" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -35939,7 +35939,7 @@
 /area/crew_quarters/theatre/backstage)
 "sfJ" = (
 /obj/structure/closet/secure_closet/freezer/kitchen,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "sga" = (
 /obj/structure/disposalpipe/segment,
@@ -37141,7 +37141,7 @@
 	dir = 1;
 	name = "Kitchen Deliveries"
 	},
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "uoN" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer1{
@@ -37902,7 +37902,7 @@
 /area/hallway/primary/port)
 "waq" = (
 /obj/structure/closet/crate/freezer,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "wcN" = (
 /obj/machinery/porta_turret/ai,
@@ -38493,7 +38493,7 @@
 	dir = 4
 	},
 /mob/living/simple_animal/hostile/retaliate/goat,
-/turf/open/floor/plasteel/kitchen_coldroom,
+/turf/open/floor/plasteel/freezer/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "xiF" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1{
