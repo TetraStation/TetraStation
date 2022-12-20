@@ -8115,7 +8115,7 @@
 	id = "engsm";
 	name = "Radiation Chamber Shutters"
 	},
-/obj/structure/cable/multilayer/connected,
+/obj/structure/cable/layer1,
 /turf/open/floor/plating,
 /area/engine/supermatter)
 "aMh" = (
@@ -11594,7 +11594,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/cable,
+/obj/structure/cable/multilayer/connected,
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "bRl" = (
@@ -14217,7 +14217,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/cable,
+/obj/structure/cable/multilayer/connected,
 /turf/open/floor/engine,
 /area/engine/supermatter)
 "jky" = (
@@ -16409,7 +16409,7 @@
 	id = "engsm";
 	name = "Radiation Chamber Shutters"
 	},
-/obj/structure/cable/multilayer/connected,
+/obj/structure/cable/layer1,
 /turf/open/floor/plating,
 /area/engine/supermatter)
 "oTB" = (
