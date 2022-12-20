@@ -387,7 +387,10 @@
 	},
 /area/shuttle/syndicate/medical)
 "dQ" = (
-/turf/open/floor/plasteel/dark,
+/obj/item/folder/syndicate,
+/obj/structure/filingcabinet,
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate/armory)
 "er" = (
 /obj/effect/turf_decal/tile/red{
@@ -395,6 +398,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/airlock)
+"eL" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "eZ" = (
 /turf/closed/wall/r_wall/syndicate,
 /area/shuttle/syndicate/eva)
@@ -500,16 +509,37 @@
 /obj/item/storage/toolbox/syndicate,
 /obj/item/assembly/voice,
 /obj/item/crowbar/red,
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
 "kr" = (
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/airlock)
+"ks" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "ml" = (
 /turf/open/floor/plasteel/dark/edge,
 /area/shuttle/syndicate/hallway)
 "mq" = (
 /obj/structure/table/reinforced,
+/obj/item/paper_bin,
+/obj/item/pen,
+/obj/item/stamp/syndicate,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
 "nw" = (
@@ -526,6 +556,15 @@
 	},
 /turf/open/floor/plasteel/dark/whole,
 /area/shuttle/syndicate/hallway)
+"qC" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/dark{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate/armory)
 "qE" = (
 /obj/machinery/sleeper/syndie{
 	dir = 8
@@ -752,6 +791,15 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate/armory)
+"CL" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/dark{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate/armory)
 "Di" = (
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
@@ -794,6 +842,15 @@
 	dir = 4
 	},
 /area/shuttle/syndicate/medical)
+"Fh" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "Fr" = (
 /obj/machinery/suit_storage_unit/syndicate,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
@@ -866,6 +923,10 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/syndicate/medical)
+"KX" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark,
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "Lc" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/shuttle/syndicate/armory)
@@ -882,6 +943,19 @@
 	},
 /turf/closed/wall/r_wall/syndicate,
 /area/shuttle/syndicate/airlock)
+"LL" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/dark,
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate/armory)
+"Ma" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "Mb" = (
 /obj/structure/sign/departments/medbay/alt{
 	pixel_y = 32
@@ -979,6 +1053,13 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/syndicate/eva)
+"Ua" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/dark{
+	dir = 1
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/shuttle/syndicate/armory)
 "Ux" = (
 /obj/machinery/porta_turret/syndicate/shuttle{
 	dir = 6
@@ -999,6 +1080,10 @@
 	},
 /obj/item/storage/box/handcuffs{
 	pixel_y = 2
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark/corner,
+/obj/effect/turf_decal/tile/red{
+	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
@@ -1053,9 +1138,18 @@
 	},
 /turf/open/floor/plasteel/mil/sterile/plain,
 /area/shuttle/syndicate/medical)
+"XO" = (
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/shuttle/syndicate/armory)
 "Yb" = (
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
@@ -1407,8 +1501,8 @@ bH
 Lc
 UO
 mq
-dQ
-dQ
+XO
+Fh
 Lc
 In
 In
@@ -1430,10 +1524,10 @@ bg
 kr
 kr
 Ss
-dQ
-dQ
-dQ
-dQ
+KX
+Ua
+CL
+Ma
 CH
 Vb
 Eb
@@ -1455,10 +1549,10 @@ bg
 FS
 Lc
 Lc
-dQ
-dQ
-dQ
-dQ
+KX
+qC
+LL
+Ma
 Hl
 gX
 Eb
@@ -1480,8 +1574,8 @@ bg
 bg
 Lc
 dQ
-dQ
-dQ
+ks
+eL
 Yb
 jR
 im
