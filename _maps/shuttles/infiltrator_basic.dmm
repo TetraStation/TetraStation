@@ -1108,6 +1108,16 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark,
 /turf/open/floor/plasteel/dark/anticorner,
 /area/shuttle/syndicate/airlock)
+"PH" = (
+/obj/effect/turf_decal/tile/dark/half,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
+	dir = 1
+	},
+/obj/machinery/firealarm{
+	pixel_y = 28
+	},
+/turf/open/floor/plasteel/dark/edge,
+/area/shuttle/syndicate/airlock)
 "Qe" = (
 /obj/item/toy/figure/syndie{
 	pixel_x = 6;
@@ -1389,7 +1399,7 @@ bg
 ax
 bg
 bg
-eL
+PH
 kr
 Cm
 yi
@@ -1639,7 +1649,7 @@ bg
 Di
 bg
 bg
-eL
+PH
 kr
 Ss
 KX
