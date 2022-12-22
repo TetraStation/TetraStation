@@ -25,7 +25,7 @@
 		. += "<span class='notice'>It looks like the dents could be <i>welded</i> smooth.</span>"
 		return
 	if(attachment_holes)
-		. += "<span class='notice'>There are a few attachment holes for a new <i>tile</i> or reinforcement <i>rods</i>.</span>"
+		. += "<span class='notice'>There are a few attachment holes for a new <i>tile</i>, reinforcement <i>sheets</i> or catwalk <i>rods</i>.</span>"
 	else
 		. += "<span class='notice'>You might be able to build ontop of it with some <i>tiles</i>...</span>"
 
@@ -56,20 +56,33 @@
 			else
 				to_chat(user, "<span class='warning'>Repair the plating first! Use a welding tool or a plating repair tool to fix the damage.</span>") //we don't need to confuse humans by giving them a message about plating repair tools, since only janiborgs should have access to them outside of Christmas presents or admin intervention
 			return
-		var/obj/item/stack/rods/R = C
-		if (R.get_amount() < 2)
-			to_chat(user, "<span class='warning'>You need two rods to make a reinforced floor!</span>")
+		if(locate(/obj/structure/lattice/catwalk/over, src))
+			return
+		if (istype(C, /obj/item/stack/rods))
+			var/obj/item/stack/rods/R = C
+			if (R.use(2))
+				to_chat(user, "<span class='notice'>You lay down the catwalk.</span>")
+				playsound(src, 'sound/weapons/Genhit.ogg', 50, TRUE)
+				new /obj/structure/lattice/catwalk/over(src)
+				return
+	if(istype(C, /obj/item/stack/sheet/metal) && attachment_holes)
+		if(broken || burnt)
+			to_chat(user, "<span class='warning'>Repair the plating first!</span>")
+			return
+		var/obj/item/stack/sheet/metal/R = C
+		if (R.get_amount() < 1)
+			to_chat(user, "<span class='warning'>You need one sheet to make a reinforced floor!</span>")
 			return
 		else
 			to_chat(user, "<span class='notice'>You begin reinforcing the floor...</span>")
 			if(do_after(user, 30, target = src))
-				if (R.get_amount() >= 2 && !istype(src, /turf/open/floor/engine))
+				if (R.get_amount() >= 1 && !istype(src, /turf/open/floor/engine))
 					PlaceOnTop(/turf/open/floor/engine, flags = CHANGETURF_INHERIT_AIR)
 					playsound(src, 'sound/items/deconstruct.ogg', 80, TRUE)
-					R.use(2)
+					R.use(1)
 					to_chat(user, "<span class='notice'>You reinforce the floor.</span>")
 				return
-	else if(istype(C, /obj/item/stack/tile))
+	else if(istype(C, /obj/item/stack/tile) && !locate(/obj/structure/lattice/catwalk, src))
 		if(!broken && !burnt)
 			for(var/obj/O in src)
 				for(var/M in O.buckled_mobs)

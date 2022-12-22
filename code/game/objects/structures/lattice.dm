@@ -82,17 +82,23 @@
 /obj/structure/lattice/catwalk/deconstruction_hints(mob/user)
 	return "<span class='notice'>The supporting rods look like they could be <b>cut</b>.</span>"
 
-/obj/structure/lattice/catwalk/Move()
+/obj/structure/lattice/catwalk/proc/cablecheck()
 	var/turf/T = loc
-	for(var/obj/structure/cable/C in T)
+	for(var/obj/structure/cable/C in T && layer >> WIRE_TERMINAL_LAYER)
 		C.deconstruct()
+
+/obj/structure/lattice/catwalk/Move()
+	cablecheck()
 	..()
 
 /obj/structure/lattice/catwalk/deconstruct()
-	var/turf/T = loc
-	for(var/obj/structure/cable/C in T)
-		C.deconstruct()
+	cablecheck()
 	..()
+
+/// A variant of catwalks placed over plating.
+/obj/structure/lattice/catwalk/over
+	layer = LOW_OBJ_LAYER
+	plane = GAME_PLANE
 
 /obj/structure/lattice/lava
 	name = "heatproof support lattice"
