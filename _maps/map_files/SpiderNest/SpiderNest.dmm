@@ -710,7 +710,9 @@
 	pixel_y = 32
 	},
 /obj/structure/cable,
-/obj/machinery/power/smes,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /obj/machinery/light/dim{
 	dir = 1;
 	pixel_y = -1
@@ -738,7 +740,9 @@
 /turf/open/floor/wood,
 /area/crew_quarters/bar)
 "acs" = (
-/obj/machinery/power/smes,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /obj/structure/cable,
 /turf/open/floor/plasteel/telecomms,
 /area/tcommsat/server)
@@ -989,7 +993,9 @@
 /area/tcommsat/server)
 "adg" = (
 /obj/structure/cable,
-/obj/machinery/power/smes,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /turf/open/floor/plasteel/telecomms,
 /area/tcommsat/server)
 "adh" = (
@@ -6760,8 +6766,10 @@
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
 "asc" = (
-/obj/machinery/power/smes,
 /obj/structure/cable,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /turf/open/floor/plating,
 /area/maintenance/central)
 "asd" = (
@@ -7226,8 +7234,10 @@
 /turf/open/floor/plasteel/dark,
 /area/hallway/secondary/command)
 "ath" = (
-/obj/machinery/power/smes,
 /obj/structure/cable,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /turf/open/floor/plating,
 /area/bridge)
 "ati" = (
@@ -27493,7 +27503,7 @@
 /obj/machinery/light/dim{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer/kitchen_coldroom,
+/turf/open/floor/plasteel/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "bKe" = (
 /obj/structure/table/reinforced,
@@ -29066,6 +29076,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/server)
+"eBt" = (
+/obj/structure/closet/crate/freezer,
+/turf/open/floor/plasteel/kitchen_coldroom,
+/area/crew_quarters/kitchen/coldroom)
 "eBT" = (
 /obj/machinery/power/apc/auto_name/north{
 	areastring = "/area/crew_quarters/theatre/backstage"
@@ -29637,6 +29651,9 @@
 	},
 /turf/open/floor/plasteel,
 /area/science/research)
+"fAP" = (
+/turf/open/floor/plasteel/kitchen_coldroom,
+/area/crew_quarters/kitchen/coldroom)
 "fBB" = (
 /obj/structure/table/reinforced,
 /obj/structure/cable,
@@ -29728,7 +29745,9 @@
 /area/bridge)
 "fGA" = (
 /obj/structure/cable,
-/obj/machinery/power/smes,
+/obj/machinery/power/smes{
+	charge = 1e+006
+	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/aft)
 "fGQ" = (
@@ -32058,7 +32077,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 /obj/item/reagent_containers/food/snacks/meat/slab/chicken,
 /obj/item/reagent_containers/food/snacks/meat/slab/gorilla,
-/turf/open/floor/plasteel/freezer/kitchen_coldroom,
+/turf/open/floor/plasteel/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "kgL" = (
 /obj/machinery/computer/mech_bay_power_console,
@@ -32391,7 +32410,7 @@
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
 /obj/item/reagent_containers/food/snacks/meat/slab/monkey,
-/turf/open/floor/plasteel/freezer/kitchen_coldroom,
+/turf/open/floor/plasteel/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "kVv" = (
 /obj/structure/lattice/catwalk,
@@ -33310,7 +33329,7 @@
 /obj/machinery/light/dim{
 	dir = 8
 	},
-/turf/open/floor/plasteel/freezer/kitchen_coldroom,
+/turf/open/floor/plasteel/kitchen_coldroom,
 /area/crew_quarters/kitchen/coldroom)
 "mDO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -87734,12 +87753,12 @@ uiR
 lOM
 waq
 bIL
-waq
-adV
+eBt
+fAP
 kVk
 kfG
 mDK
-adV
+fAP
 agh
 aZd
 ase
@@ -88035,13 +88054,13 @@ abK
 abK
 lOM
 adV
-adV
-adV
-adV
-adV
-adV
-adV
-adV
+fAP
+fAP
+fAP
+fAP
+fAP
+fAP
+fAP
 lOM
 lOM
 agg
