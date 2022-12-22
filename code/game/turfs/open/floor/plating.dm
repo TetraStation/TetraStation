@@ -62,7 +62,7 @@
 			var/obj/item/stack/rods/R = C
 			if (R.use(2))
 				to_chat(user, "<span class='notice'>You lay down the catwalk.</span>")
-				playsound(src, 'sound/weapons/Genhit.ogg', 50, 1)
+				playsound(src, 'sound/weapons/Genhit.ogg', 50, TRUE)
 				new /obj/structure/lattice/catwalk/over(src)
 				return
 	if(istype(C, /obj/item/stack/sheet/metal) && attachment_holes)
