@@ -5,7 +5,7 @@
 	icon_state = "engine"
 	thermal_conductivity = 0.025
 	heat_capacity = INFINITY
-	floor_tile = /obj/item/stack/metal
+	floor_tile = /obj/item/stack/sheet/metal
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
