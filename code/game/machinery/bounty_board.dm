@@ -19,6 +19,8 @@ GLOBAL_LIST_EMPTY(request_list)
 	///Text of the currently written bounty
 	var/bounty_text = ""
 
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/bounty_board, 30)
+
 /obj/machinery/bounty_board/Initialize(mapload, ndir, building)
 	. = ..()
 	GLOB.allbountyboards += src

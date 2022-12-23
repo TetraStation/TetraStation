@@ -170,7 +170,7 @@
 /obj/item/stack/sheet/mineral/wood,
 /obj/item/stack/package_wrap,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -381,7 +381,7 @@
 "aZ" = (
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
@@ -819,7 +819,7 @@
 /area/ruin/space/has_grav/deepstorage/hydroponics)
 "ch" = (
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden,
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -874,7 +874,7 @@
 /area/ruin/space/has_grav/deepstorage)
 "cm" = (
 /obj/structure/table,
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -927,7 +927,7 @@
 /area/ruin/space/has_grav/deepstorage)
 "cs" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /turf/open/floor/plasteel/freezer,
@@ -1538,7 +1538,7 @@
 /obj/item/radio{
 	pixel_x = 4
 	},
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -2098,7 +2098,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 8
 	},
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2141,7 +2141,7 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -2454,7 +2454,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -2772,7 +2772,7 @@
 /obj/machinery/atmospherics/pipe/simple/supplymain/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/away{
+/obj/machinery/airalarm/ruin_access{
 	pixel_y = 23
 	},
 /turf/open/floor/light,

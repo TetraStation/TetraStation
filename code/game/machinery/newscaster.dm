@@ -203,9 +203,13 @@ GLOBAL_LIST_EMPTY(allCasters)
 	var/datum/newscaster/feed_channel/viewing_channel = null
 	var/allow_comments = 1
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster, 30)
+
 /obj/machinery/newscaster/security_unit
 	name = "security newscaster"
 	securityCaster = 1
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/machinery/newscaster/Initialize(mapload, ndir, building)
 	. = ..()

@@ -33702,7 +33702,7 @@
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
-/obj/machinery/airalarm/mixingchamber{
+/obj/machinery/airalarm/unlocked/mixingchamber{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -52119,7 +52119,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
-/obj/machinery/airalarm/engine{
+/obj/machinery/airalarm/unlocked/engine{
 	pixel_y = 24
 	},
 /turf/open/floor/engine,

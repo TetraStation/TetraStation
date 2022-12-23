@@ -33345,7 +33345,7 @@
 /turf/open/floor/plasteel/dark/telecomms,
 /area/science/server)
 "bAz" = (
-/obj/machinery/airalarm/server{
+/obj/machinery/airalarm/no_alarm{
 	dir = 4;
 	pixel_x = -22
 	},
@@ -44575,7 +44575,7 @@
 /obj/machinery/power/terminal{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -46577,7 +46577,7 @@
 	dir = 1;
 	name = "Gas to Filter"
 	},
-/obj/machinery/airalarm/engine{
+/obj/machinery/airalarm/unlocked/engine{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -51195,7 +51195,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/mixingchamber{
+/obj/machinery/airalarm/unlocked/mixingchamber{
 	dir = 4;
 	pixel_x = -24
 	},

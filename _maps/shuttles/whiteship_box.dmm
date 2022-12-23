@@ -47,7 +47,7 @@
 	dir = 1
 	},
 /obj/structure/bed,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/item/bedsheet,
@@ -169,7 +169,7 @@
 	pixel_x = -6;
 	pixel_y = 6
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/item/storage/backpack/duffelbag/med/surgery{
@@ -230,7 +230,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/turf_decal/tile/neutral{
@@ -599,7 +599,7 @@
 /area/shuttle/abandoned/engine)
 "aV" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -688,7 +688,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/closet/crate/bin,
 /obj/item/trash/pistachios,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -780,7 +780,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/machinery/light/small/built{
@@ -831,7 +831,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -898,7 +898,7 @@
 /obj/structure/closet/secure_closet/medical2{
 	anchored = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -963,7 +963,7 @@
 /obj/structure/closet/firecloset{
 	anchored = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -1527,7 +1527,7 @@
 /obj/item/pen{
 	pixel_x = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/item/flashlight/pen{
@@ -1597,7 +1597,7 @@
 /obj/machinery/vending/medical{
 	req_access = null
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/white,
@@ -1991,7 +1991,7 @@
 /obj/machinery/light/small/built{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
