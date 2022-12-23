@@ -95,7 +95,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -354,7 +354,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/cobweb,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -479,7 +479,7 @@
 /obj/structure/sign/warning/electricshock{
 	pixel_y = 32
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -732,7 +732,7 @@
 /obj/structure/sign/warning/vacuum/external{
 	pixel_x = -32
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -777,7 +777,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/suit_storage_unit/standard_unit,
 /obj/effect/turf_decal/delivery,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -1108,7 +1108,7 @@
 "bX" = (
 /obj/structure/bed,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -1126,7 +1126,7 @@
 "bZ" = (
 /obj/structure/bed,
 /obj/effect/turf_decal/stripes/line,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -1148,7 +1148,7 @@
 	pixel_x = -8;
 	pixel_y = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 22
 	},
 /turf/open/floor/carpet,
@@ -1194,7 +1194,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/bot,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -1710,7 +1710,7 @@
 	icon_state = "trimline_fill";
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -1811,7 +1811,7 @@
 	pixel_x = 12;
 	pixel_y = 6
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},

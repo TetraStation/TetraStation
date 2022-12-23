@@ -34,6 +34,8 @@
 	var/index1			// display index for scrolling messages or 0 if non-scrolling
 	var/index2
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/status_display, 32)
+
 /// Immediately blank the display.
 /obj/machinery/status_display/proc/remove_display()
 	cut_overlays()
@@ -160,6 +162,8 @@
 	var/friendc = FALSE      // track if Friend Computer mode
 	var/last_picture  // For when Friend Computer mode is undone
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/status_display/evac, 32)
+
 /obj/machinery/status_display/evac/Initialize()
 	. = ..()
 	// register for radio system
@@ -225,6 +229,8 @@
 /obj/machinery/status_display/supply
 	name = "supply display"
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/status_display/supply, 32)
+
 /obj/machinery/status_display/supply/process()
 	if(machine_stat & NOPOWER)
 		// No power, no processing.
@@ -269,6 +275,8 @@
 	name = "shuttle display"
 	var/shuttle_id
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/status_display/shuttle, 32)
+
 /obj/machinery/status_display/shuttle/process()
 	if(!shuttle_id || (machine_stat & NOPOWER))
 		// No power, no processing.
@@ -305,6 +313,8 @@
 
 	var/mode = SD_BLANK
 	var/emotion = "Neutral"
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/status_display/ai, 32)
 
 /obj/machinery/status_display/ai/Initialize()
 	. = ..()

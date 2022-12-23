@@ -380,7 +380,7 @@
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/dropper,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -38356,7 +38356,7 @@
 /turf/open/floor/engine/n2o,
 /area/engine/atmos)
 "bMo" = (
-/obj/machinery/airalarm/server{
+/obj/machinery/airalarm/no_alarm{
 	dir = 4;
 	pixel_x = -22
 	},
@@ -51093,7 +51093,7 @@
 	dir = 8;
 	network = list("ss13","engine")
 	},
-/obj/machinery/airalarm/engine{
+/obj/machinery/airalarm/unlocked/engine{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -54511,7 +54511,7 @@
 	},
 /area/science/mixing)
 "czH" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -55795,7 +55795,7 @@
 /turf/closed/wall/r_wall,
 /area/science/mixing/chamber)
 "cDm" = (
-/obj/machinery/airalarm/mixingchamber{
+/obj/machinery/airalarm/unlocked/mixingchamber{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -57712,7 +57712,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/airalarm/server{
+/obj/machinery/airalarm/no_alarm{
 	dir = 8;
 	pixel_x = 22
 	},

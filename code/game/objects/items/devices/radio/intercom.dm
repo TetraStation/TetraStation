@@ -8,6 +8,8 @@
 	dog_fashion = null
 	unscrewed = FALSE
 
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 26)
+
 /obj/item/radio/intercom/unscrewed
 	unscrewed = TRUE
 

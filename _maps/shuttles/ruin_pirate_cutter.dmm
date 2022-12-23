@@ -92,7 +92,7 @@
 "fS" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -191,7 +191,7 @@
 /area/shuttle/caravan/pirate)
 "jo" = (
 /obj/structure/table,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/item/ammo_box/a40mm,
@@ -714,7 +714,7 @@
 	pixel_x = -25
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -723,7 +723,7 @@
 /area/shuttle/caravan/pirate)
 "DY" = (
 /obj/structure/closet/crate/secure/loot,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/dark,
@@ -861,7 +861,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/delivery,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
