@@ -1,3 +1,4 @@
+/// PLASTEEL TILES ///
 /turf/open/floor/plasteel
 	icon_state = "floor"
 	floor_tile = /obj/item/stack/tile/plasteel
@@ -42,6 +43,35 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/anticorner)
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/whole)
 
+
+/// TEXTURED PLASTEEL TILES ///
+/turf/open/floor/plasteel/textured
+	icon_state = "floor_tex"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured)
+
+/turf/open/floor/plasteel/textured/edge
+	icon_state = "floor_tex_edge"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured/edge)
+
+/turf/open/floor/plasteel/textured/half
+	icon_state = "floor_tex_half"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured/half)
+
+/turf/open/floor/plasteel/textured/anticorner
+	icon_state = "floor_tex_anticorner"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured/anticorner)
+
+/turf/open/floor/plasteel/textured/whole
+	icon_state = "floor_tex_whole"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured/whole)
+
+
+/// DARK PLASTEEL TILES ///
 /turf/open/floor/plasteel/dark
 	icon_state = "darkfull"
 
@@ -77,11 +107,39 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/side)
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/corner)
 
+/// TEXTURED DARK PLASTEEL TILES ///
+/turf/open/floor/plasteel/dark/textured
+	icon_state = "dark_tex"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/textured)
+
+/turf/open/floor/plasteel/dark/textured/edge
+	icon_state = "dark_tex_edge"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/textured/edge)
+
+/turf/open/floor/plasteel/dark/textured/half
+	icon_state = "dark_tex_half"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/textured/half)
+
+/turf/open/floor/plasteel/dark/textured/anticorner
+	icon_state = "dark_tex_anticorner"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/textured/anticorner)
+
+/turf/open/floor/plasteel/dark/textured/whole
+	icon_state = "dark_tex_whole"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/dark/textured/whole)
+
 /turf/open/floor/plasteel/checker
 	icon_state = "checker"
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/checker)
 
+
+/// WHITE PLASTEEL TILES ///
 /turf/open/floor/plasteel/white
 	icon_state = "white"
 
@@ -116,6 +174,32 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/side)
 	icon_state = "whitecorner"
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/corner)
+
+/// TEXTURED WHITE PLASTEEL TILES ///
+/turf/open/floor/plasteel/white/textured
+	icon_state = "white_tex"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/textured)
+
+/turf/open/floor/plasteel/white/textured/edge
+	icon_state = "white_tex_edge"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/textured/edge)
+
+/turf/open/floor/plasteel/white/textured/half
+	icon_state = "white_tex_half"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/textured/half)
+
+/turf/open/floor/plasteel/white/textured/anticorner
+	icon_state = "white_tex_anticorner"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/textured/anticorner)
+
+/turf/open/floor/plasteel/white/textured/whole
+	icon_state = "white_tex_whole"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/white/textured/whole)
 
 /turf/open/floor/plasteel/yellowsiding
 	icon_state = "yellowsiding"
