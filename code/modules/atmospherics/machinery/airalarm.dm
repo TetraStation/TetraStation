@@ -104,7 +104,11 @@
 		/datum/gas/hydrogen			= new/datum/tlv/dangerous
 	)
 
-/obj/machinery/airalarm/server // No checks here.
+/// Pixel offsets are overwritten by new() ATM
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm, 28)
+
+/// Air alarm variant that doesn't perform any checks, for use in server rooms or other extreme environments.
+/obj/machinery/airalarm/no_alarm
 	TLV = list(
 		"pressure"					= new/datum/tlv/no_checks,
 		"temperature"				= new/datum/tlv/no_checks,
@@ -125,7 +129,10 @@
 		/datum/gas/hydrogen			= new/datum/tlv/no_checks
 	)
 
-/obj/machinery/airalarm/kitchen_cold_room // Kitchen cold rooms start off at -80°C or 193.15°K.
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/no_alarm, 28)
+
+/// Air alarm variant for freezers - Kitchen cold rooms start off at -80°C or 193.15°K.
+/obj/machinery/airalarm/kitchen_cold_room
 	TLV = list(
 		"pressure"					= new/datum/tlv(ONE_ATMOSPHERE * 0.8, ONE_ATMOSPHERE*  0.9, ONE_ATMOSPHERE * 1.1, ONE_ATMOSPHERE * 1.2), // kPa
 		"temperature"				= new/datum/tlv(T0C-273.15, T0C-100, T0C-60, T0C),
@@ -146,49 +153,48 @@
 		/datum/gas/hydrogen			= new/datum/tlv/dangerous
 	)
 
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/kitchen_cold_room, 28)
+
 /obj/machinery/airalarm/unlocked
 	locked = FALSE
 
-/obj/machinery/airalarm/engine
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/unlocked, 28)
+
+/// Also allows engineers to access it.
+/obj/machinery/airalarm/unlocked/engine
 	name = "engine air alarm"
-	locked = FALSE
 	req_access = null
 	req_one_access = list(ACCESS_ATMOSPHERICS, ACCESS_ENGINE)
 
-/obj/machinery/airalarm/mixingchamber
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/unlocked/engine, 28)
+
+/// Also allows toxins scientists to access it.
+/obj/machinery/airalarm/unlocked/mixingchamber
 	name = "chamber air alarm"
-	locked = FALSE
 	req_access = null
 	req_one_access = list(ACCESS_ATMOSPHERICS, ACCESS_TOXINS)
 
-/obj/machinery/airalarm/all_access
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/unlocked/mixingchamber, 28)
+
+/obj/machinery/airalarm/unlocked/all_access
 	name = "all-access air alarm"
 	desc = "This particular atmos control unit appears to have no access restrictions."
-	locked = FALSE
 	req_access = null
 	req_one_access = null
 
-/obj/machinery/airalarm/syndicate //general syndicate access
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/unlocked/all_access, 28)
+
+/// Allows anyone with Syndicate Access (150) to unlock/lock it.
+/obj/machinery/airalarm/syndicate
 	req_access = list(ACCESS_SYNDICATE)
 
-/obj/machinery/airalarm/away //general away mission access
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/syndicate, 28)
+
+/// General Away Mission / Ruin Access
+/obj/machinery/airalarm/ruin_access
 	req_access = list(ACCESS_AWAY_GENERAL)
 
-/obj/machinery/airalarm/directional/north //Pixel offsets get overwritten on New()
-	dir = SOUTH
-	pixel_y = 28
-
-/obj/machinery/airalarm/directional/south
-	dir = NORTH
-	pixel_y = -28
-
-/obj/machinery/airalarm/directional/east
-	dir = WEST
-	pixel_x = 28
-
-/obj/machinery/airalarm/directional/west
-	dir = EAST
-	pixel_x = -28
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/ruin_access, 28)
 
 //all air alarms in area are connected via magic
 /area

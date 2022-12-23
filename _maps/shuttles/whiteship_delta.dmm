@@ -87,7 +87,7 @@
 /obj/structure/bed,
 /obj/item/bedsheet/centcom,
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -101,7 +101,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -417,7 +417,7 @@
 "aT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/machinery/firealarm{
@@ -646,7 +646,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -748,7 +748,7 @@
 	pixel_x = -3;
 	pixel_y = 5
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -905,7 +905,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/abandoned/bar)
 "bL" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -1016,7 +1016,7 @@
 "bU" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -1246,7 +1246,7 @@
 /obj/item/megaphone,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -1518,7 +1518,7 @@
 /obj/item/extinguisher,
 /obj/item/extinguisher,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/turf_decal/box/white/corners{
@@ -1564,7 +1564,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -1660,7 +1660,7 @@
 	pixel_y = 3
 	},
 /obj/item/radio/off,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on,
@@ -2052,7 +2052,7 @@
 /obj/machinery/light/small/built{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -2174,7 +2174,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},

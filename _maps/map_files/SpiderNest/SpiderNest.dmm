@@ -1015,7 +1015,7 @@
 /turf/open/floor/circuit/green/telecomms/mainframe,
 /area/tcommsat/server)
 "adl" = (
-/obj/machinery/airalarm/server{
+/obj/machinery/airalarm/no_alarm{
 	dir = 8;
 	pixel_x = 28
 	},
@@ -5305,7 +5305,7 @@
 /obj/machinery/atmospherics/pipe/manifold/green/visible{
 	dir = 4
 	},
-/obj/machinery/airalarm/engine{
+/obj/machinery/airalarm/unlocked/engine{
 	dir = 4;
 	pixel_x = -24
 	},

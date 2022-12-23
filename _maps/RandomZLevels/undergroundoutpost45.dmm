@@ -537,7 +537,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "bt" = (
 /obj/machinery/light/small,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -23
 	},
@@ -1004,7 +1004,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -1040,7 +1040,7 @@
 	},
 /area/awaymission/undergroundoutpost45/central)
 "cz" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -1064,7 +1064,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -1184,7 +1184,7 @@
 "cM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 5;
-	
+
 	},
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
@@ -1529,7 +1529,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -1616,7 +1616,7 @@
 	},
 /area/awaymission/undergroundoutpost45/central)
 "dE" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/light{
@@ -2649,7 +2649,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -2885,7 +2885,7 @@
 /area/awaymission/undergroundoutpost45/central)
 "fR" = (
 /obj/machinery/light/small,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -23
 	},
@@ -3322,7 +3322,7 @@
 	},
 /area/awaymission/undergroundoutpost45/research)
 "gY" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/light/small{
@@ -3406,7 +3406,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "hg" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -3528,7 +3528,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "hs" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -3798,7 +3798,7 @@
 "hU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
-	
+
 	},
 /obj/structure/table,
 /obj/item/book/manual/chef_recipes,
@@ -3811,7 +3811,7 @@
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
-	
+
 	},
 /turf/open/floor/plating{
 	heat_capacity = 1e+006
@@ -3859,7 +3859,7 @@
 	},
 /area/awaymission/undergroundoutpost45/gateway)
 "ic" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -4365,7 +4365,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -4431,7 +4431,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "jg" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -4714,7 +4714,7 @@
 	},
 /area/awaymission/undergroundoutpost45/gateway)
 "jK" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -5046,7 +5046,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "ko" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /turf/open/floor/plasteel{
@@ -5284,7 +5284,7 @@
 	},
 /area/awaymission/undergroundoutpost45/gateway)
 "kJ" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/light/small{
@@ -5394,7 +5394,7 @@
 	},
 /area/awaymission/undergroundoutpost45/research)
 "kT" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/light/small{
@@ -5594,7 +5594,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -23
 	},
@@ -5666,7 +5666,7 @@
 	},
 /area/awaymission/undergroundoutpost45/gateway)
 "lr" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -6265,7 +6265,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /turf/open/floor/carpet{
@@ -6292,7 +6292,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/structure/chair/wood{
@@ -7052,7 +7052,7 @@
 	},
 /area/awaymission/undergroundoutpost45/research)
 "nO" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -7133,7 +7133,7 @@
 	},
 /area/awaymission/undergroundoutpost45/research)
 "nT" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -7195,7 +7195,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -7328,7 +7328,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "oh" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/structure/disposalpipe/segment{
@@ -7797,7 +7797,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "oT" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -8513,7 +8513,7 @@
 /area/awaymission/undergroundoutpost45/research)
 "qp" = (
 /obj/structure/table,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
@@ -8549,7 +8549,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -8567,7 +8567,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "qv" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -8579,7 +8579,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -8808,7 +8808,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/airalarm/server{
+/obj/machinery/airalarm/no_alarm{
 	dir = 4;
 	pixel_x = -22
 	},
@@ -9287,7 +9287,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4;
-	
+
 	},
 /obj/machinery/door/airlock/maintenance{
 	name = "Research Maintenance";
@@ -9445,7 +9445,7 @@
 	},
 /area/awaymission/undergroundoutpost45/crew_quarters)
 "rT" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/structure/disposalpipe/segment{
@@ -10799,7 +10799,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible{
 	dir = 5
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -23
 	},
@@ -11194,7 +11194,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 23
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -12031,7 +12031,7 @@
 	},
 /area/awaymission/undergroundoutpost45/engineering)
 "wC" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},
@@ -12254,7 +12254,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -12560,7 +12560,7 @@
 /area/awaymission/undergroundoutpost45/mining)
 "xp" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 23
 	},
@@ -12887,7 +12887,7 @@
 	},
 /area/awaymission/undergroundoutpost45/mining)
 "xZ" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -23
 	},

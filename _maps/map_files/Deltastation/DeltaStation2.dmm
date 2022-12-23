@@ -13743,7 +13743,7 @@
 /area/engine/atmospherics_engine)
 "aEt" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/airalarm/engine{
+/obj/machinery/airalarm/unlocked/engine{
 	pixel_y = 23
 	},
 /obj/effect/turf_decal/stripes/line{
@@ -111290,7 +111290,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/airalarm/mixingchamber{
+/obj/machinery/airalarm/unlocked/mixingchamber{
 	pixel_y = 24
 	},
 /obj/structure/cable,

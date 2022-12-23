@@ -6,7 +6,7 @@
 /obj/machinery/light/small{
 	dir = 8
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -91,7 +91,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/shuttle/pirate)
 "ak" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 4;
 	pixel_x = -24
 	},
@@ -173,7 +173,7 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -321,7 +321,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 1;
 	pixel_y = -24
 	},
@@ -562,7 +562,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -678,7 +678,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/pirate)
 "bC" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	dir = 8;
 	pixel_x = 24
 	},
@@ -1020,7 +1020,7 @@
 "np" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/bot,
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -1111,7 +1111,7 @@
 /turf/open/floor/plasteel,
 /area/shuttle/pirate)
 "OD" = (
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/structure/sign/poster/contraband/random{
@@ -1142,7 +1142,7 @@
 /obj/effect/mob_spawn/human/pirate/captain{
 	dir = 4
 	},
-/obj/machinery/airalarm/all_access{
+/obj/machinery/airalarm/unlocked/all_access{
 	pixel_y = 24
 	},
 /obj/effect/decal/cleanable/dirt,

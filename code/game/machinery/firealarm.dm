@@ -38,6 +38,8 @@
 	var/last_alarm = 0
 	var/area/myarea = null
 
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/firealarm, 28)
+
 /obj/machinery/firealarm/Initialize(mapload, dir, building)
 	. = ..()
 	if(dir)
@@ -325,6 +327,8 @@
 	name = "\improper PARTY BUTTON"
 	desc = "Cuban Pete is in the house!"
 	var/static/party_overlay
+
+INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/firealarm/partyalarm, 28)
 
 /obj/machinery/firealarm/partyalarm/reset()
 	if (machine_stat & (NOPOWER|BROKEN))
