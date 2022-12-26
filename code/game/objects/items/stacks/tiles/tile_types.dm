@@ -16,30 +16,15 @@
 	var/turf_type = null
 	/// Determines certain welder interactions.
 	var/mineralType = null
-	/// What dir will the turf have?
-	var/turf_dir = SOUTH
-	/// Cached associative lazy list to hold the radial options for tile reskinning. See tile_reskinning.dm for more information. Pattern: list[type] -> image
-	var/list/tile_reskin_types
-	/// Cached associative lazy list to hold the radial options for tile dirs. See tile_reskinning.dm for more information.
-	var/list/tile_rotate_dirs
 	var/human_maxHealth = 100
 
 /obj/item/stack/tile/Initialize(mapload, amount)
 	. = ..()
 	pixel_x = rand(-3, 3)
 	pixel_y = rand(-3, 3) //randomize a little
-	if(tile_reskin_types)
-		tile_reskin_types = tile_reskin_list(tile_reskin_types)
-	if(tile_rotate_dirs)
-		var/list/values = list()
-		for(var/set_dir in tile_rotate_dirs)
-			values += dir2text(set_dir)
-		tile_rotate_dirs = tile_dir_list(values, turf_type)
 
 /obj/item/stack/tile/examine(mob/user)
 	. = ..()
-	if(tile_reskin_types || tile_rotate_dirs)
-		. += "<span class='notice'>Use while in your hand to change what type of [src] you want.</span>"
 	if(throwforce && !is_cyborg) //do not want to divide by zero or show the message to borgs who can't throw
 		var/verb
 		switch(CEILING(human_maxHealth / throwforce, 1)) //throws to crit a human
