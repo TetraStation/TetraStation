@@ -100,6 +100,7 @@
 					var/obj/item/stack/tile/light/L = W
 					var/turf/open/floor/light/F = T
 					F.state = L.state
+				T.setDir(W.turf_dir)
 
 			playsound(src, 'sound/weapons/genhit.ogg', 50, TRUE)
 		else
