@@ -11,35 +11,18 @@
 	throw_speed = 3
 	throw_range = 7
 	max_amount = 60
-	novariants = TRUE
-	/// What type of turf does this tile produce.
 	var/turf_type = null
-	/// Determines certain welder interactions.
 	var/mineralType = null
-	/// What dir will the turf have?
-	var/turf_dir = SOUTH
-	/// Cached associative lazy list to hold the radial options for tile reskinning. See tile_reskinning.dm for more information. Pattern: list[type] -> image
-	var/list/tile_reskin_types
-	/// Cached associative lazy list to hold the radial options for tile dirs. See tile_reskinning.dm for more information.
-	var/list/tile_rotate_dirs
+	novariants = TRUE
 	var/human_maxHealth = 100
 
 /obj/item/stack/tile/Initialize(mapload, amount)
 	. = ..()
 	pixel_x = rand(-3, 3)
 	pixel_y = rand(-3, 3) //randomize a little
-	if(tile_reskin_types)
-		tile_reskin_types = tile_reskin_list(tile_reskin_types)
-	if(tile_rotate_dirs)
-		var/list/values = list()
-		for(var/set_dir in tile_rotate_dirs)
-			values += dir2text(set_dir)
-		tile_rotate_dirs = tile_dir_list(values, turf_type)
 
 /obj/item/stack/tile/examine(mob/user)
 	. = ..()
-	if(tile_reskin_types || tile_rotate_dirs)
-		. += "<span class='notice'>Use while in your hand to change what type of [src] you want.</span>"
 	if(throwforce && !is_cyborg) //do not want to divide by zero or show the message to borgs who can't throw
 		var/verb
 		switch(CEILING(human_maxHealth / throwforce, 1)) //throws to crit a human
@@ -340,6 +323,28 @@
 	desc = "A darkly colored grooved floor tile."
 	icon_state = "tile_poddark"
 	turf_type = /turf/open/floor/pod/dark
+
+//Plasteel (normal)
+/obj/item/stack/tile/plasteel
+	name = "floor tile"
+	singular_name = "floor tile"
+	desc = "The ground you walk on."
+	icon_state = "tile"
+	inhand_icon_state = "tile"
+	force = 6
+	custom_materials = list(/datum/material/iron=500)
+	throwforce = 10
+	flags_1 = CONDUCT_1
+	turf_type = /turf/open/floor/plasteel
+	mineralType = "metal"
+	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 70)
+	resistance_flags = FIRE_PROOF
+	matter_amount = 1
+
+/obj/item/stack/tile/plasteel/cyborg
+	custom_materials = null // All other Borg versions of items have no Metal or Glass - RR
+	is_cyborg = 1
+	cost = 125
 
 /obj/item/stack/tile/plastic
 	name = "plastic tile"
