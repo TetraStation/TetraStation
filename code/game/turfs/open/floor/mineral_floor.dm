@@ -102,25 +102,21 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium)
 
 /turf/open/floor/mineral/titanium/yellow
 	icon_state = "titanium_yellow"
-	floor_tile = /obj/item/stack/tile/mineral/titanium/yellow
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/yellow)
 
 /turf/open/floor/mineral/titanium/blue
 	icon_state = "titanium_blue"
-	floor_tile = /obj/item/stack/tile/mineral/titanium/blue
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/blue)
 
 /turf/open/floor/mineral/titanium/white
 	icon_state = "titanium_white"
-	floor_tile = /obj/item/stack/tile/mineral/titanium/white
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/white)
 
 /turf/open/floor/mineral/titanium/purple
 	icon_state = "titanium_purple"
-	floor_tile = /obj/item/stack/tile/mineral/titanium/purple
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/purple)
 
