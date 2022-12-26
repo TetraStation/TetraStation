@@ -39,6 +39,8 @@
 	floor_tile = /obj/item/stack/tile/mineral/plasma
 	icons = list("plasma","plasma_dam")
 
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/plasma)
+
 /turf/open/floor/mineral/plasma/temperature_expose(datum/gas_mixture/air, exposed_temperature, exposed_volume)
 	if(exposed_temperature > 300)
 		PlasmaBurn(exposed_temperature)
@@ -73,6 +75,8 @@
 	floor_tile = /obj/item/stack/tile/mineral/gold
 	icons = list("gold","gold_dam")
 
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/gold)
+
 //SILVER
 
 /turf/open/floor/mineral/silver
@@ -80,6 +84,8 @@
 	icon_state = "silver"
 	floor_tile = /obj/item/stack/tile/mineral/silver
 	icons = list("silver","silver_dam")
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/silver)
 
 //TITANIUM (shuttle)
 
@@ -92,32 +98,55 @@
 /turf/open/floor/mineral/titanium/rust_heretic_act()
 	return // titanium does not rust
 
-/turf/open/floor/mineral/titanium/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium)
 
 /turf/open/floor/mineral/titanium/yellow
 	icon_state = "titanium_yellow"
 
-/turf/open/floor/mineral/titanium/yellow/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/yellow)
 
 /turf/open/floor/mineral/titanium/blue
 	icon_state = "titanium_blue"
 
-/turf/open/floor/mineral/titanium/blue/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/blue)
 
 /turf/open/floor/mineral/titanium/white
 	icon_state = "titanium_white"
 
-/turf/open/floor/mineral/titanium/white/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/white)
 
 /turf/open/floor/mineral/titanium/purple
 	icon_state = "titanium_purple"
 
-/turf/open/floor/mineral/titanium/purple/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/purple)
+
+// OLD TITANIUM (titanium floor tiles before PR #50454)
+/turf/open/floor/mineral/titanium/tiled
+	name = "titanium tile"
+	icon_state = "titanium_old"
+	broken_states = list("titanium_dam1_old","titanium_dam2_old","titanium_dam3_old","titanium_dam4_old","titanium_dam5_old")
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/tiled)
+
+/turf/open/floor/mineral/titanium/tiled/yellow
+	icon_state = "titanium_yellow_old"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/tiled/yellow)
+
+/turf/open/floor/mineral/titanium/tiled/blue
+	icon_state = "titanium_blue_old"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/tiled/blue)
+
+/turf/open/floor/mineral/titanium/tiled/white
+	icon_state = "titanium_white_old"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/tiled/white)
+
+/turf/open/floor/mineral/titanium/tiled/purple
+	icon_state = "titanium_purple_old"
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/titanium/tiled/purple)
 
 //PLASTITANIUM (syndieshuttle)
 /turf/open/floor/mineral/plastitanium
@@ -129,15 +158,14 @@
 /turf/open/floor/mineral/plastitanium/rust_heretic_act()
 	return // plastitanium does not rust
 
-/turf/open/floor/mineral/plastitanium/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/plastitanium)
 
 /turf/open/floor/mineral/plastitanium/red
 	icon_state = "plastitanium_red"
 
-/turf/open/floor/mineral/plastitanium/red/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/plastitanium/red)
 
+/// For the escape shuttle.
 /turf/open/floor/mineral/plastitanium/red/brig
 	name = "brig floor"
 
@@ -181,8 +209,7 @@
 		playsound(src, "clownstep", 50, TRUE)
 		sound_cooldown = world.time + 10
 
-/turf/open/floor/mineral/bananium/airless
-	initial_gas_mix = AIRLESS_ATMOS
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/bananium)
 
 //DIAMOND
 
@@ -191,6 +218,8 @@
 	icon_state = "diamond"
 	floor_tile = /obj/item/stack/tile/mineral/diamond
 	icons = list("diamond","diamond_dam")
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/diamond)
 
 //URANIUM
 
@@ -202,6 +231,8 @@
 	icons = list("uranium","uranium_dam")
 	var/last_event = 0
 	var/active = null
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/uranium)
 
 /turf/open/floor/mineral/uranium/Entered(atom/movable/AM)
 	.=..()
@@ -242,6 +273,8 @@
 	floor_tile = /obj/item/stack/tile/mineral/abductor
 	icons = list("alienpod1", "alienpod2", "alienpod3", "alienpod4", "alienpod5", "alienpod6", "alienpod7", "alienpod8", "alienpod9")
 	baseturfs = /turf/open/floor/plating/abductor2
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/mineral/abductor)
 
 /turf/open/floor/mineral/abductor/Initialize()
 	. = ..()
