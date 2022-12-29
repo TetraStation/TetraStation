@@ -48,7 +48,7 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/whole)
 
 /// TEXTURED PLASTEEL TILES ///
 /turf/open/floor/plasteel/textured
-	base_icon_state = "floor_text"
+	base_icon_state = "floor_tex"
 	icon_state = "floor_tex"
 
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/textured)

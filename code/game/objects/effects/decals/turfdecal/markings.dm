@@ -195,65 +195,52 @@
 /obj/effect/turf_decal/siding/white
 	color = "#BCBCBC"
 
-/obj/effect/turf_decal/siding/white/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/white/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/white)
 
 /obj/effect/turf_decal/siding/red
 	color = "#DE3A3A"
 
-/obj/effect/turf_decal/siding/red/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/red/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/red)
 
 /obj/effect/turf_decal/siding/green
 	color = "#9FED58"
 
-/obj/effect/turf_decal/siding/green/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/green/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/green)
 
 /obj/effect/turf_decal/siding/blue
 	color = "#52B4E9"
 
-/obj/effect/turf_decal/siding/blue/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/blue/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/blue)
 
 /obj/effect/turf_decal/siding/yellow
 	color = "#EFB341"
 
-/obj/effect/turf_decal/siding/yellow/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/yellow/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/yellow)
 
 /obj/effect/turf_decal/siding/purple
 	color = "#D381C9"
 
-/obj/effect/turf_decal/siding/purple/corner
-	icon_state = "siding_corner"
-
-/obj/effect/turf_decal/siding/purple/end
-	icon_state = "siding_end"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/purple)
 
 /obj/effect/turf_decal/siding/brown
 	color = "#A46106"
 
-/obj/effect/turf_decal/siding/brown/corner
-	icon_state = "siding_corner"
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/brown)
 
-/obj/effect/turf_decal/siding/brown/end
-	icon_state = "siding_end"
+/obj/effect/turf_decal/siding/beige
+	color = "#F0EFD0"
+
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/beige)
+
+/obj/effect/turf_decal/siding/orange
+	color = "#CF7C23"
+
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/orange)
+
+/obj/effect/turf_decal/siding/dark
+	color = "#0e0f0f"
+
+SIDING_SUBTYPE_HELPER(obj/effect/turf_decal/siding/dark)
 
 /obj/effect/turf_decal/siding/wood
 	icon_state = "siding_wood_line"

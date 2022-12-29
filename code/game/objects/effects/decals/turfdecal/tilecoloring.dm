@@ -52,6 +52,18 @@ TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/purple)
 
 TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/brown)
 
+/obj/effect/turf_decal/tile/beige
+	name = "beige corner"
+	color = "#F0EFD0"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/beige)
+
+/obj/effect/turf_decal/tile/orange
+	name = "orange corner"
+	color = "#CF7C23"
+
+TILECOLORING_SUBTYPE_HELPER(/obj/effect/turf_decal/tile/orange)
+
 /obj/effect/turf_decal/tile/neutral
 	name = "neutral corner"
 	color = "#D4D4D4"
