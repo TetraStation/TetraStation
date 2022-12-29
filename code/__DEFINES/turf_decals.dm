@@ -21,3 +21,11 @@
 ##path/diagonal {\
 	icon_state = "tile_diagonal"; \
 } \
+
+#define SIDING_SUBTYPE_HELPER(path) \
+##path/corner {\
+	icon_state = "siding_corner"; \
+} \
+##path/end {\
+	icon_state = "siding_end"; \
+} \
