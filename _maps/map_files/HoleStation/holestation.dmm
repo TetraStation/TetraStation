@@ -615,6 +615,9 @@
 	pixel_y = 7
 	},
 /obj/item/ai_module/reset,
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -875,7 +878,8 @@
 /obj/machinery/atmospherics/components/unary/passive_vent{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/airless,
+/obj/structure/cable,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
 /area/tcommsat/server/upper)
 "aeh" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -1838,6 +1842,7 @@
 /obj/machinery/door/airlock/engineering{
 	req_access_txt = "61"
 	},
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/server/upper)
 "ajc" = (
@@ -2906,7 +2911,7 @@
 "anK" = (
 /obj/structure/closet/secure_closet/engineering_personal,
 /obj/effect/turf_decal/delivery,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/storage)
 "anL" = (
 /obj/structure/closet/secure_closet/miner,
@@ -3413,7 +3418,7 @@
 	dir = 1
 	},
 /obj/machinery/ntnet_relay,
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
 /area/tcommsat/server)
 "apY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -4024,9 +4029,7 @@
 /obj/item/ai_module/toy_ai{
 	pixel_y = 10
 	},
-/turf/open/floor/plasteel/dark/edge{
-	dir = 4
-	},
+/turf/open/floor/plasteel/mil/telecomms,
 /area/ai_monitored/turret_protected/ai_upload)
 "asN" = (
 /obj/machinery/light{
@@ -4042,7 +4045,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
 /area/tcommsat/server)
 "asT" = (
 /obj/structure/railing/corner{
@@ -4093,7 +4096,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "atm" = (
 /obj/machinery/light{
@@ -4126,6 +4129,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/thinplating/light,
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 8
+	},
 /turf/open/floor/plating,
 /area/maintenance/central/secondary)
 "atu" = (
@@ -4136,6 +4143,9 @@
 /turf/open/floor/plasteel/textured/half,
 /area/hallway/primary/central)
 "atw" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -4245,7 +4255,7 @@
 "atY" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/atmos)
 "atZ" = (
 /obj/structure/ladder,
@@ -4399,6 +4409,9 @@
 	pixel_y = 7
 	},
 /obj/item/ai_module/core/full/corp,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -4437,7 +4450,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark/telecomms,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
 /area/tcommsat/server)
 "auJ" = (
 /turf/open/floor/plasteel/dark/edge,
@@ -4618,9 +4631,7 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
-/turf/open/floor/plasteel/dark/edge{
-	dir = 4
-	},
+/turf/open/floor/plasteel/mil/telecomms,
 /area/ai_monitored/turret_protected/ai_upload)
 "avK" = (
 /obj/structure/table,
@@ -4690,7 +4701,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/tile/neutral/anticorner/contrast,
 /obj/effect/turf_decal/box/corners,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "awa" = (
 /obj/machinery/power/supermatter_crystal/shard/engine,
@@ -4714,6 +4725,7 @@
 "awf" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/tcommsat/server/upper)
 "awh" = (
@@ -5002,7 +5014,7 @@
 	dir = 4
 	},
 /obj/machinery/portable_atmospherics/canister/nitrogen,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/atmos)
 "axv" = (
 /obj/structure/shuttle/engine/heater,
@@ -5246,7 +5258,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrast{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "ayH" = (
 /obj/machinery/power/apc/auto_name/west,
@@ -5435,7 +5447,7 @@
 "azu" = (
 /obj/machinery/vending/engivend,
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/storage)
 "azw" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
@@ -5682,12 +5694,11 @@
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "aAP" = (
-/turf/open/floor/plasteel/dark/airless,
+/obj/structure/closet/emcloset,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
 /area/tcommsat/server/upper)
 "aAS" = (
-/turf/open/floor/plasteel/dark/edge{
-	dir = 8
-	},
+/turf/open/floor/plasteel/mil/telecomms,
 /area/ai_monitored/turret_protected/ai_upload)
 "aAT" = (
 /turf/closed/wall/r_wall,
@@ -6088,10 +6099,9 @@
 /turf/open/space/basic,
 /area/space/nearstation)
 "aCW" = (
-/turf/open/floor/plasteel/dark/edge{
-	dir = 4
-	},
-/area/ai_monitored/turret_protected/ai_upload)
+/obj/structure/cable,
+/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/area/tcommsat/server/upper)
 "aCY" = (
 /obj/effect/landmark/start/atmospheric_technician,
 /turf/open/floor/plating,
@@ -6482,6 +6492,9 @@
 /turf/open/floor/plating,
 /area/crew_quarters/kitchen)
 "aEF" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
 	},
@@ -6817,9 +6830,7 @@
 /area/maintenance/port/aft)
 "aFX" = (
 /obj/machinery/porta_turret/ai,
-/turf/open/floor/plasteel/dark/edge{
-	dir = 8
-	},
+/turf/open/floor/plasteel/mil/telecomms,
 /area/ai_monitored/turret_protected/ai_upload)
 "aFZ" = (
 /obj/item/clothing/under/rank/prisoner,
@@ -8420,7 +8431,7 @@
 /area/crew_quarters/heads/cmo)
 "aNu" = (
 /obj/effect/turf_decal/bot,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/atmos)
 "aNw" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrous_output{
@@ -8562,6 +8573,7 @@
 "aOi" = (
 /obj/machinery/door/airlock/external,
 /obj/structure/fans/tiny,
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/quartermaster/storage)
 "aOj" = (
@@ -8665,6 +8677,7 @@
 	shuttledocked = 1
 	},
 /obj/structure/fans/tiny,
+/obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/quartermaster/miningdock)
 "aOE" = (
@@ -8994,7 +9007,7 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
 	dir = 10
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/atmos)
 "aPT" = (
 /obj/machinery/newscaster/directional/south,
@@ -9214,9 +9227,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/ai_module/core/full/asimov,
-/turf/open/floor/plasteel/dark/edge{
-	dir = 8
-	},
+/turf/open/floor/plasteel/mil/telecomms,
 /area/ai_monitored/turret_protected/ai_upload)
 "aQL" = (
 /obj/machinery/hydroponics/constructable,
@@ -10076,7 +10087,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "aUs" = (
 /obj/structure/janitorialcart,
@@ -10303,7 +10314,7 @@
 /obj/effect/turf_decal/box/corners{
 	dir = 1
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "aVA" = (
 /obj/structure/lattice/catwalk,
@@ -10397,7 +10408,7 @@
 /obj/machinery/vending/tool,
 /obj/effect/turf_decal/delivery,
 /obj/machinery/airalarm/directional/east,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/storage)
 "aWf" = (
 /obj/machinery/atmospherics/components/binary/pump{
@@ -10565,7 +10576,7 @@
 /obj/effect/turf_decal/bot,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/space_heater,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/textured,
 /area/engine/atmos)
 "aWS" = (
 /turf/open/floor/plating,
@@ -11727,6 +11738,9 @@
 /obj/structure/railing{
 	dir = 1
 	},
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/medical)
 "crx" = (
@@ -12096,7 +12110,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrast{
 	dir = 4
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "dwj" = (
 /obj/effect/decal/cleanable/dirt/dust,
@@ -12327,7 +12341,7 @@
 /obj/effect/turf_decal/tile/neutral/half/contrast{
 	dir = 8
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "edh" = (
 /obj/structure/sign/departments/medbay/alt{
@@ -13180,7 +13194,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /obj/effect/turf_decal/tile/neutral/half/contrast,
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "ggi" = (
 /mob/living/carbon/monkey,
@@ -14115,6 +14129,9 @@
 "iJg" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -15431,6 +15448,9 @@
 /obj/machinery/vending/wallmed{
 	pixel_x = -28
 	},
+/obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
 /turf/open/floor/plating,
 /area/medical)
 "lWB" = (
@@ -15995,7 +16015,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 10
 	},
-/turf/open/floor/plasteel/dark,
+/turf/open/floor/plasteel/mil/black/full,
 /area/engine/gravity_generator)
 "nIK" = (
 /obj/effect/turf_decal/tile/neutral{
@@ -17885,6 +17905,9 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
 	dir = 8
 	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 4
 	},
@@ -18536,6 +18559,9 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/white/corner{
+	dir = 1
+	},
 /turf/open/floor/plasteel/white,
 /area/medical)
 "tOS" = (
@@ -18728,6 +18754,9 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /obj/machinery/atmospherics/components/unary/portables_connector/visible,
 /obj/structure/railing{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/white{
 	dir = 1
 	},
 /turf/open/floor/plating,
@@ -19818,6 +19847,15 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/security/brig)
+"wYJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
+/obj/structure/cable,
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
+/turf/open/floor/plasteel/white,
+/area/medical)
 "wYV" = (
 /obj/effect/turf_decal/tile/green,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -19891,6 +19929,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /obj/structure/cable,
+/obj/effect/turf_decal/siding/white{
+	dir = 8
+	},
 /turf/open/floor/plasteel/white,
 /area/medical)
 "xhc" = (
@@ -118147,7 +118188,7 @@ apC
 anR
 axx
 asM
-aCW
+aAS
 avJ
 aVE
 jow
@@ -122788,7 +122829,7 @@ xZv
 xOb
 cSg
 att
-rUZ
+wYJ
 xfZ
 tNI
 rUZ
@@ -122821,7 +122862,7 @@ lFz
 aPa
 awf
 aed
-aAP
+aCW
 aAP
 aod
 aod
