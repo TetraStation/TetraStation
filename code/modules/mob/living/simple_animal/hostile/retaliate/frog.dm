@@ -24,7 +24,7 @@
 	density = FALSE
 	ventcrawler = VENTCRAWLER_ALWAYS
 	faction = list("hostile")
-	attack_sound = 'sound/effects/reee.ogg'
+	attack_sound = 'sound/creatures/frogsqueak.ogg'
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/nugget = 1)
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY

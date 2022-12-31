@@ -106,7 +106,7 @@
 						<a href='?src=[REF(src)];play_sound=airhorn2'>Air Horn</a>
 						<a href='?src=[REF(src)];play_sound=carhorn'>Car Horn</a>
 						<a href='?src=[REF(src)];play_sound=party_horn'>Party Horn</a>
-						<a href='?src=[REF(src)];play_sound=reee'>Reee</a>
+						<a href='?src=[REF(src)];play_sound=squeee'>Squeee</a>
 						<a href='?src=[REF(src)];play_sound=weeoo1'>Siren</a>
 						<a href='?src=[REF(src)];play_sound=hiss1'>Hissing Creature</a>
 						<a href='?src=[REF(src)];play_sound=armbomb'>Armed Grenade</a>
@@ -149,8 +149,8 @@
 				playsound(src, 'sound/items/carhorn.ogg', 80) //soundfile has lower than average volume
 			if("party_horn")
 				playsound(src, 'sound/items/party_horn.ogg', 50)
-			if("reee")
-				playsound(src, 'sound/effects/reee.ogg', 50)
+			if("squeee")
+				playsound(src, 'sound/creatures/frogsqueak.ogg', 50)
 			if("weeoo1")
 				playsound(src, 'sound/items/weeoo1.ogg', 50)
 			if("hiss1")

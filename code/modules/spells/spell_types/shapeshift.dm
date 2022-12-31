@@ -71,7 +71,7 @@
 				for(var/obj/machinery/atmospherics/components/unary/possiblevent in range(10, get_turf(M)))
 					if(possiblevent.parents.len && possiblevent.parents[1] == ourpipeline)
 						new gibtype(get_turf(possiblevent))
-						playsound(possiblevent, 'sound/effects/reee.ogg', 75, TRUE)
+						playsound(possiblevent, 'sound/effects/splat.ogg', 75, TRUE)
 				priority_announce("We detected a pipe blockage around [get_area(get_turf(M))], please dispatch someone to investigate.", "Central Command")
 				M.death()
 				qdel(M)
