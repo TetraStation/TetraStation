@@ -67,7 +67,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 /// If blobs can spawn there and if it counts towards their score.
 #define BLOBS_ALLOWED				(1<<1)
 /// If mining tunnel generation is allowed in this area
-#define TUNNELS_ALLOWED				(1<<2)
+#define CAVES_ALLOWED				(1<<2)
 /// If flora are allowed to spawn in this area randomly through tunnel generation
 #define FLORA_ALLOWED				(1<<3)
 /// If mobs can be spawned by natural random generation
@@ -132,7 +132,7 @@ GLOBAL_LIST_INIT(bitflags, list(1, 2, 4, 8, 16, 32, 64, 128, 256, 512, 1024, 204
 #define ZAP_MOB_DAMAGE			(1<<3)
 #define ZAP_MOB_STUN			(1<<4)
 
-#define ZAP_DEFAULT_FLAGS ZAP_MOB_STUN | ZAP_MOB_DAMAGE | ZAP_OBJ_DAMAGE 
+#define ZAP_DEFAULT_FLAGS ZAP_MOB_STUN | ZAP_MOB_DAMAGE | ZAP_OBJ_DAMAGE
 #define ZAP_FUSION_FLAGS ZAP_OBJ_DAMAGE | ZAP_MOB_DAMAGE | ZAP_MOB_STUN
 #define ZAP_SUPERMATTER_FLAGS NONE
 
