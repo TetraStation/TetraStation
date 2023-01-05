@@ -51,7 +51,7 @@
 	var/has_gravity = FALSE
 
 	var/parallax_movedir = 0
-	
+
 	var/ambience_index = AMBIENCE_GENERIC
 	var/list/ambientsounds
 	flags_1 = CAN_BE_DIRTY_1 | CULT_PERMITTED_1
@@ -69,6 +69,8 @@
 	/// Wire assignment for airlocks in this area
 	var/airlock_wires = /datum/wires/airlock
 
+	///This datum, if set, allows terrain generation behavior to be ran on Initialize()
+	var/datum/map_generator/map_generator
 
 /**
   * A list of teleport locations
@@ -159,6 +161,21 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 /area/LateInitialize()
 	power_change()		// all machines set to current power level, also updates icon
 	update_beauty()
+
+/area/proc/RunGeneration()
+	if(map_generator)
+		map_generator = new map_generator()
+		var/list/turfs = list()
+		for(var/turf/T in contents)
+			turfs += T
+		map_generator.generate_terrain(turfs)
+
+/area/proc/test_gen()
+	if(map_generator)
+		var/list/turfs = list()
+		for(var/turf/T in contents)
+			turfs += T
+		map_generator.generate_terrain(turfs)
 
 /**
   * Register this area as belonging to a z level
