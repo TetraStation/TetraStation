@@ -4,7 +4,6 @@
 	name = "rock"
 	icon = 'icons/turf/mining.dmi'
 	icon_state = "rock"
-	var/smooth_icon = 'icons/turf/smoothrocks.dmi'
 	smoothing_flags = SMOOTH_CORNERS | SMOOTH_BORDER
 	smoothing_groups = list(SMOOTH_GROUP_CLOSED_TURFS, SMOOTH_GROUP_MINERAL_WALLS)
 	canSmoothWith = list(SMOOTH_GROUP_MINERAL_WALLS)

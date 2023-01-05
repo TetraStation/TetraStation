@@ -128,7 +128,7 @@
 
 /area/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
 	icon_state = "danger"
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED | NO_ALERTS
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
 	map_generator = /datum/map_generator/cave_generator/lavaland
 
 /area/lavaland/surface/outdoors/explored
@@ -191,7 +191,7 @@
 /area/icemoon/underground/unexplored // mobs and megafauna and ruins spawn here
 	name = "Icemoon Caves"
 	icon_state = "unexplored"
-	area_flags = CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED | NO_ALERTS
+	area_flags = CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
 
 /area/icemoon/underground/unexplored/rivers // rivers spawn here
 	icon_state = "danger"
