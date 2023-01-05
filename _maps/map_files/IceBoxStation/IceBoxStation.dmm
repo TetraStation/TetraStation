@@ -930,10 +930,7 @@
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/bot,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "acN" = (
@@ -1107,13 +1104,8 @@
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/bot,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "adk" = (
@@ -1128,10 +1120,7 @@
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/bot,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
@@ -1229,9 +1218,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/heads/hop)
 "adx" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/vending/tool,
 /turf/open/floor/plasteel,
 /area/engine/break_room)
@@ -2483,9 +2470,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/fore/secondary)
 "ahm" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/iv_drip,
 /obj/item/reagent_containers/blood,
 /obj/effect/turf_decal/tile/red{
@@ -2544,9 +2529,7 @@
 /area/security/brig)
 "ahu" = (
 /obj/item/storage/box/bodybags,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/item/reagent_containers/syringe{
 	name = "steel point"
 	},
@@ -2916,10 +2899,7 @@
 /area/lawoffice)
 "ais" = (
 /obj/structure/filingcabinet,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -3098,9 +3078,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/security/warden)
 "aiO" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/structure/bed,
 /obj/item/clothing/suit/straight_jacket,
 /obj/effect/turf_decal/tile/red,
@@ -5131,10 +5109,7 @@
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
 "anX" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/camera{
 	c_tag = "Courtroom South";
 	dir = 1
@@ -5364,10 +5339,7 @@
 	c_tag = "Fore Primary Hallway East";
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
@@ -7082,30 +7054,22 @@
 	icon_state = "left";
 	name = "Fitness Ring"
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness)
 "aut" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness)
 "auv" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/east,
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 10
 	},
@@ -7215,9 +7179,7 @@
 /turf/open/floor/plasteel,
 /area/maintenance/department/electrical)
 "auM" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable,
 /turf/open/floor/plasteel,
@@ -7374,19 +7336,14 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "avk" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/fore)
 "avl" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
 	},
@@ -7463,9 +7420,7 @@
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness)
 "avA" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/plasteel/dark,
@@ -8129,9 +8084,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "ayr" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -11511,9 +11464,7 @@
 /area/chapel/office)
 "aID" = (
 /obj/structure/closet/crate/coffin,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/dark,
 /area/chapel/office)
 "aIE" = (
@@ -11579,10 +11530,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aIQ" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "aIR" = (
@@ -11704,9 +11652,7 @@
 /turf/open/floor/plasteel,
 /area/ai_monitored/storage/eva)
 "aJg" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -12288,9 +12234,7 @@
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "aKN" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "aKO" = (
@@ -12519,9 +12463,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aLF" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel,
 /area/security/prison)
 "aLG" = (
@@ -12530,10 +12472,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/port)
 "aLI" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "aLJ" = (
@@ -12744,10 +12683,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = -31
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel,
 /area/hydroponics)
 "aMw" = (
@@ -13413,9 +13349,7 @@
 /area/crew_quarters/kitchen)
 "aOJ" = (
 /obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/wood,
 /area/crew_quarters/theatre)
 "aOK" = (
@@ -14330,10 +14264,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "aRy" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/kitchen)
 "aRz" = (
@@ -14456,9 +14387,7 @@
 /turf/open/floor/plasteel,
 /area/security/prison)
 "aRV" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
@@ -15376,9 +15305,7 @@
 /obj/effect/turf_decal/tile/red{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/structure/table,
 /obj/item/book/manual/wiki/security_space_law,
 /turf/open/floor/plasteel,
@@ -16095,10 +16022,7 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "aWO" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/light,
 /obj/machinery/light_switch{
 	pixel_x = -6;
@@ -16828,9 +16752,7 @@
 "aYH" = (
 /obj/structure/table,
 /obj/item/razor,
-/obj/structure/window{
-	dir = 1
-	},
+/obj/structure/window/spawner/north,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -16947,9 +16869,7 @@
 /obj/structure/closet,
 /obj/item/clothing/under/suit/black/skirt,
 /obj/item/clothing/under/suit/black_really,
-/obj/structure/window{
-	dir = 1
-	},
+/obj/structure/window/spawner/north,
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
@@ -17311,9 +17231,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/bar)
 "bah" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/tile/bar,
 /obj/effect/turf_decal/tile/bar{
 	dir = 1
@@ -17469,9 +17387,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/secondary/entry)
 "baG" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/light{
 	dir = 4
 	},
@@ -17534,9 +17450,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plating,
 /area/security/execution/transfer)
 "baX" = (
@@ -17747,9 +17661,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/open/floor/plating,
 /area/security/execution/transfer)
@@ -17991,10 +17903,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port)
 "bcv" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bcx" = (
@@ -18118,9 +18027,7 @@
 /turf/open/floor/plasteel/white/side,
 /area/hallway/primary/starboard)
 "bdc" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/light,
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/primary/starboard)
@@ -18396,9 +18303,7 @@
 /obj/structure/window/reinforced,
 /obj/effect/spawner/lootdrop/aimodule_harmless,
 /obj/effect/spawner/lootdrop/aimodule_neutral,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
 /obj/item/ai_module/core/full/custom,
 /turf/open/floor/plasteel/dark,
@@ -18447,12 +18352,8 @@
 /obj/item/ai_module/reset/purge,
 /obj/structure/window/reinforced,
 /obj/effect/spawner/lootdrop/aimodule_harmful,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
 /obj/item/ai_module/supplied/protect_station,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai_upload)
@@ -18518,9 +18419,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "ber" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
 "bes" = (
@@ -18616,10 +18515,7 @@
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/secondary/exit)
 "beI" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/effect/turf_decal/tile/red{
 	dir = 8
 	},
@@ -18714,10 +18610,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "beW" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/firealarm/directional/east,
 /obj/structure/table/reinforced,
 /obj/item/stack/wrapping_paper{
@@ -19212,9 +19105,7 @@
 	},
 /obj/structure/table/glass,
 /obj/machinery/reagentgrinder,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
 "bgG" = (
@@ -19711,9 +19602,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/door/window{
 	base_state = "right";
 	dir = 4;
@@ -19823,9 +19712,7 @@
 /turf/open/floor/plasteel/white,
 /area/science/lab)
 "bid" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/blue,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3{
 	dir = 8
@@ -20295,10 +20182,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
 "bjq" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/light{
 	dir = 1
 	},
@@ -20764,10 +20648,7 @@
 	},
 /obj/effect/turf_decal/tile/yellow,
 /obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
@@ -20859,10 +20740,7 @@
 /area/maintenance/central/secondary)
 "ble" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "blf" = (
@@ -21406,10 +21284,7 @@
 	dir = 4
 	},
 /obj/machinery/chem_dispenser,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
@@ -22119,9 +21994,7 @@
 /obj/item/stock_parts/cell/high/plus,
 /obj/item/stock_parts/cell/high/plus,
 /obj/item/crowbar,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/item/radio/headset/headset_sci{
 	pixel_x = -3
 	},
@@ -22181,9 +22054,7 @@
 /area/science/robotics/lab)
 "boG" = (
 /obj/structure/table,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/item/mmi,
 /obj/item/mmi,
 /obj/item/mmi,
@@ -22482,10 +22353,7 @@
 	},
 /obj/structure/bed/roller,
 /obj/machinery/iv_drip,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay)
 "bpv" = (
@@ -22757,10 +22625,7 @@
 /turf/open/floor/plasteel,
 /area/quartermaster/office)
 "bqp" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/table/reinforced,
 /obj/item/dest_tagger,
 /obj/item/dest_tagger,
@@ -22785,9 +22650,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/blue/filled/warning,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/bed/roller,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay)
@@ -22911,10 +22774,7 @@
 /area/hallway/primary/central)
 "bqM" = (
 /obj/effect/turf_decal/bot,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/plasticflaps/opaque,
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -22961,10 +22821,7 @@
 	freq = 1400;
 	location = "Medbay"
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/effect/turf_decal/tile/yellow,
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
@@ -23190,9 +23047,7 @@
 	dir = 4
 	},
 /obj/structure/cable,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/computer/scan_consolenew,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
@@ -23500,10 +23355,7 @@
 /turf/open/floor/plasteel,
 /area/teleporter)
 "bsj" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/structure/table,
 /obj/item/beacon,
 /turf/open/floor/plasteel,
@@ -23736,9 +23588,7 @@
 	dir = 6
 	},
 /obj/item/kirbyplants/random,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -24163,10 +24013,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "btP" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/white,
 /area/science/research)
 "btR" = (
@@ -24199,9 +24046,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/structure/cable,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay/aft)
@@ -25389,9 +25234,7 @@
 	pixel_y = 30;
 	receive_ore_updates = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/computer/rdconsole/core{
 	dir = 8
 	},
@@ -25821,9 +25664,7 @@
 /obj/machinery/computer/robotics{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/hor)
 "byq" = (
@@ -26076,17 +25917,11 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "byV" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "byW" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = -32
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
@@ -26278,10 +26113,7 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -26291,9 +26123,7 @@
 /obj/machinery/computer/mecha{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/cafeteria,
 /area/crew_quarters/heads/hor)
 "bzL" = (
@@ -26564,9 +26394,7 @@
 /obj/machinery/light{
 	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/requests_console{
 	department = "Medbay";
 	departmentType = 1;
@@ -26960,9 +26788,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "bBx" = (
@@ -27201,10 +27027,7 @@
 /area/maintenance/port/aft)
 "bCf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 4
 	},
@@ -27263,9 +27086,7 @@
 /obj/structure/sign/warning/nosmoking{
 	pixel_y = -32
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /mob/living/carbon/monkey,
 /turf/open/floor/engine,
 /area/science/genetics)
@@ -27633,10 +27454,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 2
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "bDb" = (
@@ -28131,10 +27949,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/extinguisher_cabinet{
-	dir = 4;
-	pixel_x = 24
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
 "bEx" = (
@@ -28422,13 +28237,8 @@
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "bFA" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
 /obj/effect/turf_decal/tile/blue,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -28515,9 +28325,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/corner{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
@@ -28591,9 +28399,7 @@
 "bFW" = (
 /obj/machinery/portable_atmospherics/canister,
 /obj/effect/turf_decal/bot,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel,
 /area/science/mixing)
 "bFX" = (
@@ -28931,9 +28737,7 @@
 /turf/open/floor/plasteel/white,
 /area/medical/break_room)
 "bHc" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel/white/side{
 	dir = 5
@@ -29287,9 +29091,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel/white,
 /area/medical/cryo)
@@ -29333,9 +29135,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer{
 	dir = 8
 	},
@@ -29444,10 +29244,7 @@
 /obj/machinery/computer/camera_advanced/xenobio{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
@@ -29652,10 +29449,7 @@
 /area/hallway/primary/central)
 "bJz" = (
 /obj/structure/disposalpipe/segment,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/light{
 	dir = 8
 	},
@@ -29966,10 +29760,7 @@
 /obj/machinery/light{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/chair/sofa/left,
 /turf/open/floor/carpet/blue,
 /area/medical/psychology)
@@ -30061,9 +29852,7 @@
 	req_access_txt = "55"
 	},
 /obj/structure/table/reinforced,
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/effect/turf_decal/stripes/line{
 	dir = 6
 	},
@@ -31166,9 +30955,7 @@
 /area/science/mixing)
 "bOJ" = (
 /obj/item/target,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/icemoon,
 /area/science/test_area)
@@ -31455,10 +31242,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 5
 	},
-/obj/structure/window/reinforced{
-	dir = 4;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/item/paper_bin{
 	pixel_y = 4
 	},
@@ -31869,9 +31653,7 @@
 /obj/machinery/light_switch{
 	pixel_y = 28
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/structure/disposalpipe/trunk,
 /obj/machinery/disposal/bin,
 /turf/open/floor/plasteel/white,
@@ -32687,9 +32469,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/white/corner{
 	dir = 1
 	},
@@ -32784,9 +32564,7 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bUg" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -33090,9 +32868,7 @@
 /obj/machinery/shower{
 	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/purple{
 	dir = 8
 	},
@@ -33569,9 +33345,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "bWS" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/machinery/camera{
 	c_tag = "Atmospherics West";
 	dir = 8
@@ -33584,9 +33358,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "bWT" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Air to Port"
 	},
@@ -36251,10 +36023,7 @@
 /obj/effect/turf_decal/bot{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plasteel/dark,
 /area/engine/engine_smes)
@@ -37266,10 +37035,7 @@
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
 "cnX" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
@@ -37347,10 +37113,7 @@
 	pixel_y = -3
 	},
 /obj/effect/turf_decal/bot,
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "coZ" = (
@@ -38186,10 +37949,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctA" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "ctE" = (
@@ -38399,10 +38159,7 @@
 	pixel_x = 9;
 	pixel_y = 2
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat/atmos)
@@ -38441,10 +38198,7 @@
 	pixel_x = -9;
 	pixel_y = 2
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
 /area/ai_monitored/turret_protected/aisat/service)
@@ -38994,9 +38748,7 @@
 /area/ai_monitored/turret_protected/ai)
 "cwp" = (
 /obj/structure/chair/office,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
 "cwq" = (
@@ -39054,9 +38806,7 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "cwD" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/window/reinforced/spawner/west,
 /obj/machinery/turretid{
 	name = "AI Chamber turret control";
@@ -39066,12 +38816,8 @@
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
 "cwE" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/north,
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/flasher{
 	id = "AI";
 	pixel_x = -11;
@@ -41092,9 +40838,7 @@
 /turf/open/floor/plasteel,
 /area/science/robotics/lab)
 "cIe" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /turf/open/floor/plasteel/dark,
 /area/science/robotics/lab)
 "cIf" = (
@@ -43630,10 +43374,7 @@
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
 "fMP" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 1
 	},
@@ -43731,9 +43472,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/west,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
@@ -44037,9 +43776,7 @@
 /turf/open/floor/wood,
 /area/hallway/secondary/service)
 "gpr" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/effect/turf_decal/tile/brown,
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -44415,10 +44152,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/cmo)
 "gWd" = (
@@ -45091,9 +44825,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/green,
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/dark,
 /area/mine/laborcamp)
 "ibG" = (
@@ -45236,10 +44968,7 @@
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
 "ipe" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
 	},
@@ -46806,10 +46535,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/end{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	layer = 2.9
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/item/radio/intercom/directional/west,
 /turf/open/floor/plasteel,
 /area/medical/medbay/aft)
@@ -46876,10 +46602,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 1
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 2
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
 "kBP" = (
@@ -47013,9 +46736,7 @@
 /turf/open/floor/carpet,
 /area/crew_quarters/heads/captain)
 "kKM" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/machinery/disposal/bin,
 /obj/structure/disposalpipe/trunk{
 	dir = 4
@@ -47212,9 +46933,7 @@
 /turf/open/floor/wood,
 /area/hallway/secondary/service)
 "kXf" = (
-/obj/structure/window/reinforced{
-	dir = 1
-	},
+/obj/structure/window/reinforced/spawner/north,
 /mob/living/carbon/monkey,
 /turf/open/floor/engine,
 /area/science/genetics)
@@ -50760,10 +50479,7 @@
 /turf/open/floor/plasteel,
 /area/engine/atmos)
 "pNG" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/shower{
 	dir = 8
 	},
@@ -51640,10 +51356,7 @@
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
 "rox" = (
-/obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 2
-	},
+/obj/structure/window/reinforced/spawner/north,
 /turf/open/floor/engine,
 /area/science/xenobiology)
 "rpa" = (
@@ -51942,10 +51655,7 @@
 /obj/effect/turf_decal/trimline/blue/filled/line{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27;
-	pixel_y = 1
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/structure/closet/secure_closet/medical3,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
@@ -52100,10 +51810,7 @@
 /turf/open/floor/plasteel,
 /area/science/storage)
 "rWQ" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/machinery/camera,
 /turf/open/floor/plasteel/dark,
 /area/medical/morgue)
@@ -52443,10 +52150,7 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
-/obj/structure/window/reinforced{
-	dir = 1;
-	pixel_y = 2
-	},
+/obj/structure/window/reinforced/spawner/north,
 /obj/structure/disposaloutlet{
 	dir = 8
 	},
@@ -52742,9 +52446,7 @@
 /turf/closed/wall/r_wall,
 /area/mine/laborcamp/security)
 "sZr" = (
-/obj/structure/window/reinforced{
-	dir = 4
-	},
+/obj/structure/window/reinforced/spawner/east,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
 	dir = 4
 	},
@@ -53295,10 +52997,7 @@
 /area/medical/psychology)
 "tGe" = (
 /obj/effect/turf_decal/bot,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/structure/ore_box,
 /turf/open/floor/plasteel,
 /area/mine/production)
@@ -53343,10 +53042,7 @@
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "tKC" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel,
 /area/mine/living_quarters)
 "tKG" = (
@@ -54608,9 +54304,7 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/tile/yellow,
-/obj/structure/extinguisher_cabinet{
-	pixel_y = -30
-	},
+/obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "vEC" = (
@@ -54682,9 +54376,7 @@
 /obj/structure/closet/l3closet/scientist{
 	pixel_x = -2
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plasteel,
 /area/science/misc_lab)
 "vIx" = (
@@ -55020,10 +54712,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -5;
-	pixel_y = 30
-	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /obj/item/reagent_containers/glass/bottle/epinephrine,
 /obj/item/reagent_containers/glass/bottle/multiver{
 	pixel_x = 6
@@ -55715,9 +55404,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/yellow,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/white,
 /area/medical/chemistry)
 "xjD" = (
@@ -55741,9 +55428,7 @@
 /turf/open/floor/plasteel/white,
 /area/science/genetics)
 "xmh" = (
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -27
-	},
+/obj/structure/extinguisher_cabinet/directional/west,
 /obj/machinery/nanite_chamber,
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
@@ -56170,9 +55855,7 @@
 	dir = 4
 	},
 /obj/structure/table/glass,
-/obj/structure/extinguisher_cabinet{
-	pixel_x = 27
-	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /obj/item/reagent_containers/spray/cleaner,
 /turf/open/floor/plasteel/white,
 /area/medical/break_room)
