@@ -878,7 +878,7 @@
 	dir = 1
 	},
 /obj/structure/cable,
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server/upper)
 "aeh" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -3424,7 +3424,7 @@
 	dir = 1
 	},
 /obj/machinery/ntnet_relay,
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server)
 "apY" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -4035,7 +4035,7 @@
 /obj/item/ai_module/toy_ai{
 	pixel_y = 10
 	},
-/turf/open/floor/plasteel/mil/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "asN" = (
 /obj/machinery/light{
@@ -4051,7 +4051,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server)
 "asT" = (
 /obj/structure/railing/corner{
@@ -4456,7 +4456,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server)
 "auJ" = (
 /turf/open/floor/plasteel/dark/edge,
@@ -4637,7 +4637,7 @@
 /obj/machinery/camera/autoname{
 	dir = 9
 	},
-/turf/open/floor/plasteel/mil/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "avK" = (
 /obj/structure/table,
@@ -5702,10 +5702,10 @@
 /area/science/xenobiology)
 "aAP" = (
 /obj/structure/closet/emcloset,
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server/upper)
 "aAS" = (
-/turf/open/floor/plasteel/mil/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "aAT" = (
 /turf/closed/wall/r_wall,
@@ -6110,7 +6110,7 @@
 /area/space/nearstation)
 "aCW" = (
 /obj/structure/cable,
-/turf/open/floor/plasteel/mil/telecomms/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit/telecomms,
 /area/tcommsat/server/upper)
 "aCY" = (
 /obj/effect/landmark/start/atmospheric_technician,
@@ -6840,7 +6840,7 @@
 /area/maintenance/port/aft)
 "aFX" = (
 /obj/machinery/porta_turret/ai,
-/turf/open/floor/plasteel/mil/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "aFZ" = (
 /obj/item/clothing/under/rank/prisoner,
@@ -9237,7 +9237,7 @@
 /obj/machinery/airalarm/directional/north,
 /obj/structure/table/reinforced,
 /obj/item/ai_module/core/full/asimov,
-/turf/open/floor/plasteel/mil/telecomms,
+/turf/open/floor/plasteel/mil/tcomms_circuit,
 /area/ai_monitored/turret_protected/ai_upload)
 "aQL" = (
 /obj/machinery/hydroponics/constructable,
