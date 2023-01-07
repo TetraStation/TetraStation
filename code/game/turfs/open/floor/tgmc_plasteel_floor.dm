@@ -382,8 +382,8 @@ TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/mil/marking/warning)
 TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/mil/marking/warning/corner)
 
 // Telecomms
-/turf/open/floor/plasteel/mil/telecomms
+/turf/open/floor/plasteel/mil/tcomms_circuit
 	icon_state = "tcomms"
 	base_icon_state = "tcomms"
 
-TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/mil/telecomms)
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/plasteel/mil/tcomms_circuit)
