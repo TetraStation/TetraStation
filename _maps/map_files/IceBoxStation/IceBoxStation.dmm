@@ -18397,6 +18397,7 @@
 /obj/effect/turf_decal/tile/brown/anticorner/contrast{
 	dir = 1
 	},
+/obj/item/gps/mining,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "bjz" = (
@@ -21241,10 +21242,12 @@
 /obj/effect/turf_decal/tile/brown/anticorner/contrast{
 	dir = 8
 	},
+/obj/item/gps/mining,
 /turf/open/floor/plasteel,
 /area/quartermaster/miningdock)
 "bsb" = (
 /obj/structure/rack,
+/obj/item/gps/mining,
 /obj/item/pickaxe{
 	pixel_x = 5
 	},
@@ -21293,6 +21296,7 @@
 /obj/effect/turf_decal/tile/brown/half/contrast{
 	dir = 1
 	},
+/obj/item/gps/mining,
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/miningdock)
 "bsh" = (
@@ -42884,6 +42888,7 @@
 	dir = 9
 	},
 /obj/structure/rack,
+/obj/item/gps/mining,
 /turf/open/floor/plasteel/white/corner{
 	dir = 2
 	},
@@ -47810,6 +47815,8 @@
 /obj/machinery/light/small,
 /obj/structure/rack,
 /obj/item/pickaxe,
+/obj/item/gps/mining,
+/obj/item/gps/mining,
 /obj/item/gps/mining,
 /turf/open/floor/plasteel/mil,
 /area/mine/eva)
