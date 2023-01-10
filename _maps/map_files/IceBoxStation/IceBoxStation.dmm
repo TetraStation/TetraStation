@@ -43856,9 +43856,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 6
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 5
-	},
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/mine/lobby)
 "klg" = (
@@ -45456,6 +45454,13 @@
 "myW" = (
 /turf/open/floor/plastic,
 /area/hallway/secondary/service)
+"mzx" = (
+/obj/effect/turf_decal/tile/brown/half/contrast{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel,
+/area/mine/lobby)
 "mAh" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -46088,6 +46093,13 @@
 /obj/effect/turf_decal/tile/yellow/whole/constrast,
 /turf/open/floor/plasteel,
 /area/medical/pharmacy)
+"nlU" = (
+/obj/effect/spawner/structure/window/hollow/reinforced,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/turf/open/floor/plating,
+/area/mine/lobby)
 "nmT" = (
 /obj/structure/disposalpipe/segment{
 	dir = 6
@@ -46920,6 +46932,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/ai_monitored/storage/eva)
+"ojs" = (
+/obj/machinery/atmospherics/components/unary/passive_vent/layer1{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/underground/explored)
 "ojD" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -47491,6 +47509,17 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"oUN" = (
+/obj/effect/turf_decal/stripes/end,
+/obj/machinery/door/airlock/external{
+	req_access_txt = "54"
+	},
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/turf/open/floor/plasteel/mil,
+/area/mine/lobby)
 "oUU" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
@@ -47864,6 +47893,12 @@
 /obj/structure/sign/warning/electricshock,
 /turf/open/floor/plating,
 /area/science/xenobiology)
+"pmL" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
+/turf/open/floor/plasteel,
+/area/mine/lobby)
 "pnj" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -48762,6 +48797,21 @@
 /obj/effect/turf_decal/bot,
 /obj/structure/ore_box,
 /turf/open/floor/plasteel/dark,
+/area/mine/lobby)
+"qow" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/structure/sign/warning/xeno_mining{
+	pixel_x = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 10
+	},
+/turf/open/floor/plasteel/mil,
 /area/mine/lobby)
 "qoE" = (
 /obj/effect/decal/cleanable/dirt,
@@ -72953,7 +73003,7 @@ ibW
 ibW
 ibW
 ibW
-ibW
+ojs
 jYN
 fEV
 feJ
@@ -73210,7 +73260,7 @@ ibW
 ibW
 mjR
 jYN
-hEe
+nlU
 fEV
 qnP
 ghm
@@ -73467,10 +73517,10 @@ ibW
 ibW
 ibW
 gqS
-ohI
-dPP
-kGO
-ghm
+qow
+oUN
+mzx
+pmL
 iiG
 gqS
 ohI
