@@ -3142,6 +3142,9 @@
 /obj/structure/sign/warning/securearea{
 	pixel_y = -32
 	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "ajX" = (
@@ -8532,6 +8535,7 @@
 /turf/open/floor/plating,
 /area/maintenance/disposal)
 "aCV" = (
+/obj/effect/turf_decal/weather/snow,
 /turf/open/floor/plasteel/icemoon,
 /area/icemoon/surface/outdoors)
 "aCW" = (
@@ -9950,6 +9954,9 @@
 	name = "escape pod loader";
 	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
 	width = 3
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -12649,7 +12656,7 @@
 /obj/structure/sign/warning/securearea{
 	pixel_x = 32
 	},
-/turf/closed/mineral/random/snow,
+/turf/open/transparent/openspace/icemoon,
 /area/icemoon/surface/outdoors)
 "aQE" = (
 /turf/open/floor/plating,
@@ -14006,6 +14013,9 @@
 	name = "fore bay 1";
 	roundstart_template = /datum/map_template/shuttle/labour/box;
 	width = 9
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -16503,6 +16513,9 @@
 	roundstart_template = /datum/map_template/shuttle/escape_pod/default;
 	width = 3
 	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bdy" = (
@@ -16651,6 +16664,9 @@
 	id = "emergency_home";
 	name = "BoxStation emergency evac bay";
 	width = 32
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -16870,6 +16886,9 @@
 	id = "ferry_home";
 	name = "port bay 2";
 	width = 5
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -17349,6 +17368,7 @@
 	name = "SS13: Auxiliary Dock, Station-Port";
 	width = 35
 	},
+/obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bgt" = (
@@ -17388,6 +17408,9 @@
 "bgC" = (
 /obj/machinery/light/small{
 	dir = 4
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 10
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/quartermaster/miningdock)
@@ -22401,6 +22424,9 @@
 /area/hallway/primary/central)
 "bvb" = (
 /obj/machinery/atmospherics/components/unary/passive_vent,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bvc" = (
@@ -22474,6 +22500,9 @@
 /obj/structure/disposalpipe/trunk{
 	dir = 4
 	},
+/obj/effect/turf_decal/weather/snow/end{
+	dir = 8
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bvo" = (
@@ -22487,6 +22516,10 @@
 "bvq" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
+	},
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -22524,6 +22557,7 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bvw" = (
@@ -24165,7 +24199,7 @@
 /area/storage/tech)
 "bAN" = (
 /obj/item/weldingtool,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bAP" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25403,7 +25437,7 @@
 /area/maintenance/disposal/incinerator)
 "bEx" = (
 /obj/structure/ladder,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bEy" = (
 /obj/machinery/computer/turbine_computer{
@@ -25854,7 +25888,7 @@
 /obj/item/stack/cable_coil{
 	amount = 5
 	},
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bGc" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -25913,7 +25947,7 @@
 /area/science/mixing)
 "bGl" = (
 /obj/item/clothing/head/hardhat,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bGm" = (
 /obj/structure/fence/corner{
@@ -26705,6 +26739,9 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible{
 	dir = 6
 	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bJc" = (
@@ -26918,6 +26955,12 @@
 /area/science/xenobiology)
 "bJM" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bJN" = (
@@ -26960,11 +27003,18 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
 	},
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bJX" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 9
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 6
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -27346,7 +27396,7 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 5
 	},
-/turf/open/floor/plating/asteroid/snow/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bLp" = (
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
@@ -27375,11 +27425,14 @@
 /obj/machinery/atmospherics/pipe/heat_exchanging/simple{
 	dir = 9
 	},
-/turf/open/floor/plating/asteroid/snow/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/surface/outdoors)
 "bLt" = (
 /obj/structure/transit_tube/curved/flipped{
 	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
@@ -27560,6 +27613,7 @@
 /obj/structure/transit_tube/curved{
 	dir = 4
 	},
+/obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bMa" = (
@@ -27575,6 +27629,10 @@
 /area/medical/virology)
 "bMb" = (
 /obj/structure/transit_tube/crossing/horizontal,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "bMd" = (
@@ -28887,6 +28945,16 @@
 /obj/effect/turf_decal/tile/green/whole/constrast,
 /turf/open/floor/plasteel,
 /area/medical/virology)
+"bQI" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "bQJ" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -29825,6 +29893,9 @@
 	},
 /turf/open/floor/engine/n2o,
 /area/engine/atmos)
+"bUb" = (
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "bUc" = (
 /obj/machinery/requests_console{
 	announcementConsole = 1;
@@ -33800,9 +33871,11 @@
 /turf/open/floor/engine,
 /area/maintenance/disposal/incinerator)
 "cng" = (
-/obj/structure/lattice/catwalk,
-/turf/open/floor/plating/asteroid/snow/icemoon,
-/area/maintenance/aft)
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 6
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "cnj" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -38893,6 +38966,12 @@
 /obj/machinery/atmospherics/pipe/manifold4w/supply/hidden/layer3,
 /turf/open/floor/plasteel,
 /area/security/prison)
+"dHC" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "dHL" = (
 /obj/machinery/suit_storage_unit/cmo,
 /obj/effect/turf_decal/trimline/blue/filled/line{
@@ -39087,7 +39166,7 @@
 /area/mine/maintenance)
 "dRt" = (
 /obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "dSD" = (
 /obj/structure/flora/grass/green,
@@ -39279,6 +39358,12 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/explored)
+"ejE" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "ekN" = (
 /mob/living/carbon/monkey,
 /obj/effect/turf_decal/tile/green/half/contrast,
@@ -39644,6 +39729,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/maintenance/disposal/incinerator)
+"eKe" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "eKh" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
 	dir = 4
@@ -40031,6 +40122,22 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/wood,
 /area/crew_quarters/heads/captain)
+"fkC" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
+"fkS" = (
+/obj/machinery/atmospherics/pipe/simple/orange/visible,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "flc" = (
 /obj/structure/table/reinforced,
 /obj/item/radio/intercom/directional/east,
@@ -40097,6 +40204,15 @@
 /obj/effect/decal/cleanable/ash,
 /turf/open/floor/plating,
 /area/maintenance/starboard/fore)
+"fnW" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "foh" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
@@ -40317,6 +40433,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"fyK" = (
+/obj/structure/transit_tube/horizontal,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "fzg" = (
 /obj/effect/turf_decal/tile/purple/whole/constrast,
 /obj/structure/frame/computer,
@@ -40655,6 +40778,12 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/virology)
+"fRX" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "fSm" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
@@ -41572,7 +41701,7 @@
 /area/icemoon/underground/explored)
 "hdX" = (
 /obj/item/screwdriver,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "hec" = (
 /obj/structure/bed/dogbed/renault,
@@ -42205,11 +42334,29 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
+"hUY" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/icemoon,
+/area/science/test_area)
 "hVs" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/structure/cable,
 /turf/open/floor/plasteel/mil,
 /area/mine/laborcamp/security)
+"hVz" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "hWN" = (
 /obj/structure/table,
 /obj/item/storage/firstaid/regular,
@@ -42388,6 +42535,15 @@
 /obj/item/stack/sheet/metal/fifty,
 /turf/open/floor/plasteel/dark,
 /area/engine/engineering)
+"ijm" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "ijI" = (
 /obj/machinery/light{
 	dir = 1
@@ -42505,6 +42661,15 @@
 /obj/item/beacon,
 /turf/open/floor/engine,
 /area/science/misc_lab)
+"itK" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 6
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "itU" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
@@ -42539,6 +42704,7 @@
 /area/mine/laborcamp)
 "ixN" = (
 /obj/structure/window/reinforced/spawner/north,
+/obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "iya" = (
@@ -42616,6 +42782,13 @@
 	},
 /turf/open/floor/wood,
 /area/vacant_room/office)
+"iDX" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/corner,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "iEp" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "54"
@@ -42812,6 +42985,13 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /turf/open/floor/plasteel/dark,
 /area/mine/mechbay)
+"iQs" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "iQy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
@@ -44418,6 +44598,11 @@
 	},
 /turf/open/floor/plating,
 /area/mine/lobby)
+"kDu" = (
+/obj/machinery/power/tracker,
+/obj/structure/cable,
+/turf/open/floor/plasteel/solarpanel/icemoon,
+/area/icemoon/surface/outdoors)
 "kEf" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -44886,6 +45071,16 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
+"ldI" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "ldK" = (
 /obj/effect/turf_decal/tile/yellow/half/contrast{
 	dir = 8
@@ -44947,6 +45142,9 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/turret_protected/ai)
+"lju" = (
+/turf/closed/wall/r_wall,
+/area/icemoon/surface/outdoors)
 "ljx" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/effect/turf_decal/tile/blue/anticorner/contrast{
@@ -45181,6 +45379,13 @@
 	},
 /turf/open/floor/plasteel/grimy,
 /area/chapel/office)
+"lBC" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "lCi" = (
 /obj/docking_port/stationary/public_mining_dock{
 	dir = 8
@@ -45875,6 +46080,9 @@
 "mDD" = (
 /obj/structure/cable/multilayer/multiz,
 /obj/structure/window/reinforced,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "mEQ" = (
@@ -46580,6 +46788,12 @@
 /obj/effect/spawner/structure/window/hollow/reinforced/middle,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
+"nsz" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/turf/open/floor/plating/asteroid/snow/icemoon,
+/area/icemoon/surface/outdoors)
 "nsK" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 4
@@ -46739,6 +46953,12 @@
 /obj/structure/cable,
 /turf/open/floor/plasteel,
 /area/mine/laborcamp/security)
+"nBE" = (
+/obj/effect/turf_decal/weather/snow/end{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "nCW" = (
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass{
@@ -46799,6 +47019,12 @@
 	},
 /turf/open/floor/plating,
 /area/mine/production)
+"nGX" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "nIb" = (
 /obj/structure/cable,
 /turf/open/floor/carpet,
@@ -46887,7 +47113,7 @@
 /area/chapel/main)
 "nPx" = (
 /obj/structure/ladder,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "nPC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -47216,6 +47442,10 @@
 	dir = 9
 	},
 /area/science/research)
+"odY" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "ofe" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -47902,8 +48132,13 @@
 /turf/open/floor/plasteel/white,
 /area/mine/laborcamp)
 "oUl" = (
-/obj/effect/turf_decal/tile/red/half/contrast,
-/turf/open/floor/plating/asteroid/snow/icemoon,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "oUo" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
@@ -47953,7 +48188,7 @@
 /area/science/xenobiology)
 "oVx" = (
 /obj/item/clothing/suit/hooded/wintercoat/engineering,
-/turf/open/floor/plating/snowed/icemoon,
+/turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "oVT" = (
 /obj/effect/landmark/secequipment,
@@ -48294,6 +48529,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/lobby)
+"pjf" = (
+/obj/machinery/light/small{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/quartermaster/miningdock)
 "pjA" = (
 /obj/machinery/computer/rdconsole/production{
 	dir = 4
@@ -48361,6 +48605,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/mine/laborcamp)
+"pnp" = (
+/obj/structure/marker_beacon{
+	icon_state = "markerburgundy-on"
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 10
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
+"poc" = (
+/obj/effect/turf_decal/weather/snow/end{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "pol" = (
 /obj/structure/cable,
 /obj/machinery/power/terminal{
@@ -48578,6 +48837,15 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel,
 /area/quartermaster/storage)
+"pAh" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 10
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "pAm" = (
 /turf/open/floor/plasteel/freezer,
 /area/mine/lobby)
@@ -48733,6 +49001,15 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
+"pIN" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 10
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "pIS" = (
 /obj/structure/cable,
 /obj/structure/disposalpipe/segment{
@@ -48898,6 +49175,10 @@
 	},
 /turf/open/floor/plating,
 /area/science/xenobiology)
+"pPz" = (
+/obj/effect/turf_decal/weather/snow/corner,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "pQz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 10
@@ -48971,6 +49252,15 @@
 	},
 /turf/open/floor/plasteel/freezer,
 /area/mine/laborcamp)
+"pTW" = (
+/obj/machinery/atmospherics/pipe/simple/yellow/visible{
+	dir = 5
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "pUi" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/cable,
@@ -49089,11 +49379,6 @@
 	dir = 10
 	},
 /area/science/research)
-"qcj" = (
-/obj/machinery/power/tracker,
-/obj/structure/cable,
-/turf/open/floor/plasteel/solarpanel/icemoon,
-/area/icemoon/surface/outdoors)
 "qcH" = (
 /obj/machinery/door/window/northleft{
 	req_access_txt = "54"
@@ -51266,6 +51551,12 @@
 	},
 /turf/open/floor/plating,
 /area/security/main)
+"sYf" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 10
+	},
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "sZr" = (
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
@@ -52213,6 +52504,15 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/brig)
+"uaI" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "ubw" = (
 /obj/effect/turf_decal/bot,
 /obj/machinery/firealarm/directional/south,
@@ -52536,6 +52836,12 @@
 	},
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
+"uyt" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 4
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "uyS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable,
@@ -53048,6 +53354,9 @@
 /obj/effect/turf_decal/caution{
 	dir = 8
 	},
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 8
+	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
 "vdl" = (
@@ -53385,6 +53694,12 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/courtroom)
+"vBl" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "vCd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/newscaster{
@@ -53843,6 +54158,12 @@
 	},
 /turf/open/floor/plasteel/mil,
 /area/quartermaster/warehouse)
+"wfg" = (
+/obj/machinery/atmospherics/pipe/heat_exchanging/simple{
+	dir = 6
+	},
+/turf/open/floor/plating/snowed/smoothed/icemoon,
+/area/icemoon/surface/outdoors)
 "wfU" = (
 /obj/machinery/atmospherics/components/trinary/mixer{
 	dir = 8
@@ -53886,6 +54207,13 @@
 	},
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/underground/unexplored/rivers)
+"wjc" = (
+/obj/machinery/atmospherics/components/unary/passive_vent{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/end,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "wjH" = (
 /obj/structure/girder,
 /obj/effect/spawner/structure/window/hollow/middle,
@@ -53998,6 +54326,12 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/science/nanite)
+"wrr" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 10
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "wsx" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /turf/open/floor/plasteel/white,
@@ -55147,6 +55481,14 @@
 /obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/white,
 /area/medical/medbay)
+"xTk" = (
+/obj/structure/transit_tube/horizontal,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/weather/snow/corner,
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/surface/outdoors)
 "xTq" = (
 /obj/effect/turf_decal/tile/dark/half/contrast{
 	dir = 1
@@ -143631,7 +143973,7 @@ oQN
 oQN
 oQN
 eFx
-ibW
+ooZ
 dRt
 oQN
 ifT
@@ -143887,7 +144229,7 @@ oQN
 kak
 ooZ
 oQN
-ibW
+ooZ
 nPx
 oQN
 oQN
@@ -144145,7 +144487,7 @@ oQN
 oQN
 oQN
 oVx
-ibW
+ooZ
 oQN
 oQN
 ifT
@@ -194194,7 +194536,7 @@ ydz
 ydz
 ydz
 ydz
-bmv
+poc
 ydz
 ydz
 ydz
@@ -194451,7 +194793,7 @@ ydz
 ydz
 ydz
 ydz
-bmv
+iQs
 ydz
 ydz
 ydz
@@ -194708,7 +195050,7 @@ ydz
 ydz
 ydz
 ydz
-bmv
+iQs
 ydz
 ydz
 ydz
@@ -194960,16 +195302,16 @@ boP
 boP
 boP
 boP
-bmv
+poc
 boP
 boP
 boP
 boP
-bmv
+iQs
 boP
-bmv
+nGX
 bdx
-bmv
+wrr
 boP
 boP
 boP
@@ -194981,9 +195323,9 @@ boP
 boP
 boP
 boP
-bmv
+nGX
 bdx
-bmv
+wrr
 boP
 boP
 boP
@@ -195216,13 +195558,13 @@ boP
 boP
 boP
 boP
+nBE
 bmv
-bmv
-bmv
-bmv
-bmv
+fRX
+fRX
+wrr
 boP
-bmv
+iQs
 arB
 asE
 cyb
@@ -195508,8 +195850,8 @@ bmv
 awW
 auP
 awW
-bmv
-bmv
+bUb
+bUb
 boP
 boP
 boP
@@ -195766,7 +196108,7 @@ arB
 sHE
 asE
 aAC
-bmv
+bUb
 boP
 boP
 boP
@@ -195983,7 +196325,7 @@ ydz
 ydz
 boP
 boP
-bmv
+bUb
 apJ
 apN
 apN
@@ -196000,13 +196342,13 @@ ayk
 awW
 aAD
 awW
-bmv
+wrr
 boP
 boP
 boP
 boP
 boP
-bmv
+nGX
 awW
 awW
 awW
@@ -196024,7 +196366,7 @@ ayk
 awW
 aAD
 awW
-bmv
+wrr
 boP
 boP
 boP
@@ -196240,7 +196582,7 @@ ydz
 ydz
 boP
 boP
-bmv
+bUb
 apJ
 apN
 apN
@@ -196257,13 +196599,13 @@ ayl
 azy
 auP
 cIh
-bmv
+pPz
 boP
 boP
 boP
 boP
 boP
-bmv
+eKe
 hFg
 auP
 cIh
@@ -196497,7 +196839,7 @@ ydz
 ydz
 boP
 boP
-bmv
+bUb
 apJ
 apN
 apN
@@ -196514,13 +196856,13 @@ ayk
 awW
 awW
 awW
-bmv
+cng
 boP
 boP
 boP
 boP
 boP
-bmv
+vBl
 awW
 awW
 awW
@@ -196538,7 +196880,7 @@ ayk
 awW
 awW
 awW
-bmv
+cng
 boP
 boP
 boP
@@ -197525,7 +197867,7 @@ ydz
 ydz
 boP
 boP
-bmv
+bUb
 apJ
 apN
 apN
@@ -197799,13 +198141,13 @@ rBL
 awW
 awW
 awW
-bmv
+wrr
 boP
 boP
 boP
 boP
 boP
-bmv
+nGX
 awW
 awW
 awW
@@ -197823,7 +198165,7 @@ phL
 awW
 awW
 awW
-bmv
+wrr
 boP
 boP
 boP
@@ -198056,13 +198398,13 @@ ycI
 azy
 auP
 cIh
-bmv
+pPz
 boP
 boP
 boP
 boP
 boP
-bmv
+eKe
 azy
 auP
 jly
@@ -198070,9 +198412,9 @@ ycI
 aRY
 awW
 boP
-bmv
+nGX
 beC
-bmv
+wrr
 boP
 awW
 awZ
@@ -198080,7 +198422,7 @@ fSm
 beL
 auP
 cyu
-bmv
+pPz
 boP
 boP
 boP
@@ -198298,7 +198640,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 apJ
 asH
 atI
@@ -198313,13 +198655,13 @@ rBL
 awW
 aAD
 awW
-bmv
+cng
 boP
 boP
 boP
 boP
 boP
-bmv
+vBl
 awW
 awW
 awW
@@ -198337,7 +198679,7 @@ phL
 awW
 aAD
 awW
-bmv
+cng
 boP
 boP
 boP
@@ -198593,7 +198935,7 @@ rts
 gqb
 azB
 awW
-bmv
+bUb
 boP
 boP
 boP
@@ -198850,7 +199192,7 @@ bbb
 tqk
 beN
 arB
-bmv
+bUb
 boP
 boP
 boP
@@ -199107,7 +199449,7 @@ aAj
 ngs
 beM
 aAC
-bmv
+bUb
 boP
 boP
 boP
@@ -199327,7 +199669,7 @@ boP
 boP
 boP
 boP
-bmv
+vBl
 bmv
 bmv
 bmv
@@ -199585,7 +199927,7 @@ boP
 boP
 boP
 boP
-bmv
+eKe
 alU
 alU
 alU
@@ -199842,7 +200184,7 @@ boP
 boP
 boP
 boP
-bmv
+eKe
 aqJ
 amC
 gLH
@@ -200611,7 +200953,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 alU
 alU
 apM
@@ -201687,7 +202029,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -201897,7 +202239,7 @@ boP
 boP
 boP
 boP
-bmv
+eKe
 bmv
 ali
 aoX
@@ -201940,7 +202282,7 @@ bkD
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -202154,7 +202496,7 @@ boP
 boP
 boP
 boP
-bmv
+eKe
 bmv
 ali
 amC
@@ -202201,7 +202543,7 @@ bte
 boP
 boP
 boP
-bwo
+ejE
 boP
 boP
 boP
@@ -202454,7 +202796,7 @@ bkF
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -202715,7 +203057,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -202968,7 +203310,7 @@ bkF
 boP
 boP
 boP
-bwo
+ejE
 boP
 boP
 boP
@@ -203229,7 +203571,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -203739,7 +204081,7 @@ bkE
 boP
 boP
 boP
-bwo
+ejE
 boP
 boP
 boP
@@ -203996,11 +204338,11 @@ bkF
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 bnv
-bmv
+bUb
 boP
 boP
 boP
@@ -205295,7 +205637,7 @@ boP
 boP
 boP
 boP
-bgC
+pjf
 vcn
 bgC
 boP
@@ -205564,9 +205906,9 @@ bLv
 bCq
 bCq
 bvN
-bmv
-bmv
-bmv
+fRX
+fRX
+wrr
 boP
 bCq
 bCq
@@ -205754,7 +206096,7 @@ alU
 amC
 alU
 boP
-bmv
+bUb
 alU
 arO
 alU
@@ -206010,7 +206352,7 @@ boP
 ali
 anK
 ali
-bmv
+bUb
 boP
 alU
 alU
@@ -206267,10 +206609,10 @@ boP
 alU
 amC
 alU
-bmv
+bUb
 boP
 boP
-bmv
+bUb
 alU
 ali
 ali
@@ -206506,9 +206848,9 @@ boP
 boP
 boP
 boP
-ydz
-ydz
-ydz
+blq
+blq
+blq
 boP
 boP
 boP
@@ -206526,7 +206868,7 @@ aKY
 ali
 aCV
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -206762,10 +207104,10 @@ boP
 boP
 boP
 boP
-ydz
-ydz
-ydz
-ydz
+blq
+blq
+blq
+blq
 aQB
 boP
 boP
@@ -206782,7 +207124,7 @@ ali
 amC
 ali
 aCV
-bmv
+bUb
 boP
 boP
 boP
@@ -207040,7 +207382,7 @@ amC
 alU
 alU
 alU
-bmv
+bUb
 boP
 boP
 boP
@@ -207381,7 +207723,7 @@ bHE
 bCq
 bCq
 bCq
-bmv
+wrr
 boP
 boP
 boP
@@ -207638,7 +207980,7 @@ bHE
 cqH
 dCG
 lWA
-bmv
+pPz
 boP
 boP
 boP
@@ -207895,7 +208237,7 @@ bCq
 bCq
 bCq
 bCq
-bmv
+cng
 boP
 boP
 boP
@@ -208147,10 +208489,10 @@ bCq
 bCq
 cgG
 bCq
-bmv
-bmv
+bUb
+bUb
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -208382,8 +208724,8 @@ bmu
 nXT
 bsa
 bxy
-bmv
-bmv
+oUl
+oUl
 bCq
 bHE
 bTx
@@ -208585,8 +208927,8 @@ boP
 boP
 boP
 boP
-bmv
-bmv
+nGX
+fRX
 aqQ
 apS
 ayB
@@ -209167,7 +209509,7 @@ boP
 boP
 aan
 boP
-bmv
+bUb
 bGl
 boP
 boP
@@ -209410,8 +209752,8 @@ cBB
 bKo
 bxy
 bxy
-bmv
-bmv
+oUl
+oUl
 bCq
 mUl
 alT
@@ -209423,9 +209765,9 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 bEx
-bmv
+bUb
 boP
 boP
 boP
@@ -209601,13 +209943,13 @@ boP
 boP
 boP
 boP
-bwo
-bmv
-bmv
+hVz
+fRX
+wrr
 boP
-bmv
+nGX
 aVm
-bwo
+pnp
 boP
 boP
 boP
@@ -209682,7 +210024,7 @@ boP
 boP
 bAN
 bGa
-bmv
+bUb
 boP
 boP
 boP
@@ -209937,8 +210279,8 @@ boP
 boP
 boP
 boP
-boP
-bmv
+nsz
+bUb
 boP
 boP
 boP
@@ -209949,7 +210291,7 @@ bLv
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -210195,7 +210537,7 @@ boP
 boP
 boP
 boP
-bmv
+bUb
 boP
 boP
 boP
@@ -211139,7 +211481,7 @@ abd
 boP
 boP
 boP
-oUl
+boP
 aiU
 aju
 vVK
@@ -211501,14 +211843,14 @@ uHt
 cgR
 cqN
 cro
-bKr
+wfg
 bLo
-bKr
-bLw
-bLw
-bLw
-bLw
-bLw
+wfg
+odY
+odY
+odY
+odY
+odY
 bLo
 boP
 boP
@@ -211759,12 +212101,12 @@ cji
 cDZ
 cro
 bLn
-bLn
-bLn
+dHC
+dHC
 bKr
+odY
 bLw
-bLw
-bLw
+odY
 bLw
 bLs
 boP
@@ -212016,12 +212358,12 @@ cDB
 cqP
 cro
 bLn
-bLn
+dHC
 bLn
 bLp
 bLw
 bLw
-bLw
+odY
 bLw
 bLo
 boP
@@ -212272,13 +212614,13 @@ cgR
 cqx
 cqR
 crp
+dHC
 bLn
 bLn
-bLn
-bKr
+wfg
+odY
 bLw
-bLw
-bLw
+odY
 bLw
 bLs
 boP
@@ -212532,8 +212874,8 @@ ccw
 bLn
 bLn
 bLn
-bLp
-bLw
+sYf
+odY
 bLw
 bLw
 bLw
@@ -212788,11 +213130,11 @@ cig
 ccw
 bLn
 bLn
-bLn
+dHC
 bKr
 bLw
-bLw
-bLw
+odY
+odY
 bLw
 bLs
 boP
@@ -213044,8 +213386,8 @@ cig
 cqS
 ccw
 bLn
-bLn
-bLn
+dHC
+dHC
 bLp
 bLw
 bLw
@@ -213300,14 +213642,14 @@ cgR
 cqA
 cqT
 csg
-bLn
-bLp
+dHC
+sYf
 bLs
-bKr
-bLw
-bLw
-bLw
-bLw
+wfg
+odY
+odY
+odY
+odY
 bLs
 boP
 boP
@@ -218700,9 +219042,9 @@ cgR
 cjR
 crW
 csg
-bmv
-bmv
-bmv
+uyt
+uyt
+pPz
 boP
 boP
 boP
@@ -218959,7 +219301,7 @@ crX
 cfK
 boP
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -219216,7 +219558,7 @@ ccw
 cig
 boP
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -219473,7 +219815,7 @@ cig
 boP
 boP
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -219730,7 +220072,7 @@ cig
 boP
 boP
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -219985,9 +220327,9 @@ crA
 crR
 crY
 bLt
-bmv
+wrr
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -220241,10 +220583,10 @@ cqY
 cqY
 cqY
 cig
-bmv
+uyt
 bLZ
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -220501,7 +220843,7 @@ boP
 boP
 bMb
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -220756,9 +221098,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -221013,9 +221355,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -221151,7 +221493,7 @@ ydz
 boP
 boP
 boP
-bmv
+eKe
 acU
 adr
 sXy
@@ -221270,9 +221612,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -221408,7 +221750,7 @@ boP
 boP
 boP
 boP
-bwo
+ijm
 abp
 abp
 abp
@@ -221529,7 +221871,7 @@ boP
 boP
 bMb
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -221669,9 +222011,9 @@ boP
 boP
 boP
 abp
-bmv
+uyt
 aHs
-bmv
+uyt
 ahn
 ydz
 ydz
@@ -221784,9 +222126,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -222025,25 +222367,25 @@ bAi
 bxr
 bxX
 bxr
-bAi
-bAi
-bAi
-bAi
-bAi
-bAi
-bAi
-bAi
-bAi
-bAi
+fkS
+fkS
+fkS
+fkS
+fkS
+fkS
+bQI
+bQI
+bQI
+bQI
 bJX
 boP
 boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -222298,9 +222640,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -222454,9 +222796,9 @@ boP
 boP
 boP
 boP
-bmv
-bmv
-bmv
+vBl
+uyt
+cng
 boP
 boP
 boP
@@ -222541,7 +222883,7 @@ bye
 bMK
 bMK
 bMK
-bmv
+wrr
 boP
 boP
 boP
@@ -222557,7 +222899,7 @@ boP
 boP
 bMb
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -222799,22 +223141,22 @@ bzp
 chg
 bBF
 bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
-bmv
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
+uaI
 bMd
-bmv
-bmv
+oUl
+pPz
 boP
 boP
 boP
@@ -223055,7 +223397,7 @@ chg
 bMK
 bMK
 bMK
-bmv
+pPz
 boP
 boP
 boP
@@ -223069,9 +223411,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -223313,8 +223655,8 @@ bMK
 boP
 bJa
 buv
-buv
-bBE
+lBC
+pIN
 boP
 boP
 boP
@@ -223326,9 +223668,9 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 boP
-bmv
+iDX
 boP
 boP
 boP
@@ -223571,27 +223913,27 @@ bzq
 bBT
 bzq
 bzq
-bug
-buv
-buv
-buv
-buv
-buv
-buv
-buv
-buv
-buv
-buv
-buv
+pAh
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
+ldI
 bMf
+lBC
 buv
-buv
-buv
-buv
-buv
-buv
-buv
-bBE
+lBC
+ldI
+ldI
+ldI
+ldI
+pTW
 ctZ
 ctZ
 cuo
@@ -223840,15 +224182,15 @@ boP
 boP
 boP
 boP
-bMd
-bwo
-bmv
-bwo
+fyK
+fnW
+uyt
+itK
 boP
 boP
 boP
 boP
-bug
+fkC
 ctY
 cuh
 cun
@@ -224090,14 +224432,14 @@ bJM
 bJM
 bJM
 bJM
-bJV
+wjc
 boP
 boP
 boP
 boP
 boP
 boP
-bMd
+xTk
 csD
 cta
 csD
@@ -224354,7 +224696,7 @@ boP
 boP
 boP
 boP
-bMd
+xTk
 csD
 csX
 ctg
@@ -224605,7 +224947,7 @@ cop
 cmd
 cmd
 cqs
-bmv
+wrr
 boP
 boP
 boP
@@ -224862,7 +225204,7 @@ bGJ
 bHB
 cpN
 cqt
-bmv
+pPz
 boP
 boP
 boP
@@ -225119,7 +225461,7 @@ bGS
 cmd
 cmd
 cqs
-bmv
+cng
 boP
 boP
 boP
@@ -225627,14 +225969,14 @@ cmd
 cmd
 cmd
 cmd
-cmd
-cmd
-cmd
-cmd
-cmd
-cmd
-cmd
-cmd
+lju
+lju
+lju
+lju
+lju
+lju
+lju
+lju
 boP
 boP
 boP
@@ -226056,7 +226398,7 @@ boP
 boP
 boP
 boP
-bmv
+nGX
 alO
 arp
 alO
@@ -226313,7 +226655,7 @@ boP
 boP
 boP
 boP
-bmv
+eKe
 cxW
 anf
 aqv
@@ -226570,7 +226912,7 @@ boP
 boP
 boP
 boP
-bmv
+vBl
 alO
 alO
 alO
@@ -227687,7 +228029,7 @@ bzs
 cfn
 bzs
 bzs
-cng
+wrr
 boP
 boP
 boP
@@ -227832,7 +228174,7 @@ ydz
 ydz
 bBM
 boP
-qcj
+kDu
 sHm
 sHm
 bmv
@@ -227944,7 +228286,7 @@ bzs
 bAw
 bAw
 cfn
-cng
+pPz
 boP
 boP
 boP
@@ -231293,7 +231635,7 @@ cNW
 cNW
 cOT
 cOT
-bwo
+pnp
 boP
 boP
 boP
@@ -231550,7 +231892,7 @@ jdH
 keQ
 cOe
 cqu
-bmv
+pPz
 boP
 boP
 boP
@@ -231807,7 +232149,7 @@ cNW
 cNW
 cqu
 cOT
-bmv
+cng
 boP
 boP
 boP
@@ -235315,7 +235657,7 @@ aER
 boP
 boP
 boP
-bmv
+eKe
 blq
 blq
 blq
@@ -235572,7 +235914,7 @@ aER
 boP
 boP
 boP
-bmv
+eKe
 blq
 blq
 blq
@@ -235825,7 +236167,7 @@ boP
 boP
 boP
 boP
-bmv
+iQs
 boP
 boP
 boP
@@ -237144,8 +237486,8 @@ aNa
 boP
 boP
 boP
-bmv
-bmv
+vBl
+uyt
 bky
 bEG
 bmZ
@@ -237899,19 +238241,19 @@ boP
 boP
 boP
 boP
-bmv
-bmv
-bmv
+vBl
+uyt
+uyt
 bdV
-bmv
+cng
 boP
 boP
 boP
-bmv
-bmv
-bmv
-bmv
-bmv
+vBl
+uyt
+uyt
+uyt
+cng
 boP
 boP
 boP
@@ -238448,9 +238790,9 @@ bky
 boP
 boP
 boP
-bwo
-bmv
-bwo
+ijm
+uyt
+itK
 boP
 boP
 boP
@@ -244103,7 +244445,7 @@ boP
 boP
 boP
 bgx
-boq
+hUY
 bgx
 boP
 boP
