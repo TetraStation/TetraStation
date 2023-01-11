@@ -1891,7 +1891,8 @@
 	name = "Port Auxiliary Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plating/snowed/icemoon,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plasteel/solarpanel/icemoon,
 /area/icemoon/surface/outdoors)
 "agj" = (
 /turf/closed/wall,
@@ -6222,7 +6223,8 @@
 	name = "Port Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plating/snowed/icemoon,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plasteel/solarpanel/icemoon,
 /area/icemoon/surface/outdoors)
 "atZ" = (
 /obj/machinery/door/firedoor,
@@ -6256,7 +6258,8 @@
 	name = "Starboard Solar Array"
 	},
 /obj/structure/cable,
-/turf/open/floor/plating/snowed/icemoon,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plasteel/solarpanel/icemoon,
 /area/icemoon/surface/outdoors)
 "auf" = (
 /obj/structure/rack,
@@ -40964,7 +40967,8 @@
 "glY" = (
 /obj/machinery/power/tracker,
 /obj/structure/cable,
-/turf/open/floor/plating/snowed/icemoon,
+/obj/effect/turf_decal/weather/snow,
+/turf/open/floor/plasteel/solarpanel/icemoon,
 /area/icemoon/surface/outdoors)
 "gmn" = (
 /obj/structure/lattice/catwalk,
@@ -49085,6 +49089,11 @@
 	dir = 10
 	},
 /area/science/research)
+"qcj" = (
+/obj/machinery/power/tracker,
+/obj/structure/cable,
+/turf/open/floor/plasteel/solarpanel/icemoon,
+/area/icemoon/surface/outdoors)
 "qcH" = (
 /obj/machinery/door/window/northleft{
 	req_access_txt = "54"
@@ -227823,7 +227832,7 @@ ydz
 ydz
 bBM
 boP
-glY
+qcj
 sHm
 sHm
 bmv
