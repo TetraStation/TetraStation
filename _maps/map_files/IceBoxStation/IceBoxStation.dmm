@@ -38187,7 +38187,10 @@
 /area/medical/medbay/aft)
 "cVo" = (
 /obj/machinery/light,
-/turf/open/floor/plating/asteroid/snow/icemoon,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 9
+	},
+/turf/open/floor/plating/snowed/icemoon,
 /area/storage/mining)
 "cVM" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1{
@@ -39382,6 +39385,12 @@
 	},
 /turf/open/floor/plasteel,
 /area/vacant_room/commissary)
+"eAj" = (
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 1
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/icemoon/underground/explored)
 "eAw" = (
 /obj/machinery/hydroponics/constructable,
 /obj/structure/window/reinforced{
@@ -49864,7 +49873,9 @@
 /turf/open/lava/plasma/ice_moon,
 /area/icemoon/underground/explored)
 "rMz" = (
-/obj/effect/spawner/structure/window/hollow/reinforced,
+/obj/effect/spawner/structure/window/hollow/reinforced/middle{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/storage/mining)
 "rMO" = (
@@ -51969,6 +51980,13 @@
 	},
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
+"usR" = (
+/obj/machinery/light,
+/obj/effect/turf_decal/weather/snow/corner{
+	dir = 5
+	},
+/turf/open/floor/plating/snowed/icemoon,
+/area/storage/mining)
 "usX" = (
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 9
@@ -149192,7 +149210,7 @@ ifT
 ifT
 ifT
 ifT
-ifT
+oQN
 cVo
 xxv
 rMz
@@ -149449,8 +149467,8 @@ ifT
 ifT
 ifT
 ifT
-ifT
 oQN
+eAj
 bsh
 eCu
 tBn
@@ -149706,8 +149724,8 @@ ifT
 ifT
 ifT
 ifT
-ifT
-cVo
+oQN
+usR
 xxv
 rMz
 xxv
