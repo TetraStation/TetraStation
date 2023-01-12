@@ -21939,6 +21939,12 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 10
 	},
+/obj/machinery/button/door{
+	id = "teleporter";
+	name = "Teleporter Access Control";
+	pixel_x = -25;
+	req_access_txt = "17"
+	},
 /turf/open/floor/plasteel,
 /area/teleporter)
 "bte" = (
@@ -22132,9 +22138,6 @@
 "btH" = (
 /obj/structure/chair/stool,
 /obj/structure/cable,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 6
-	},
 /turf/open/floor/plasteel,
 /area/teleporter)
 "btI" = (
@@ -22154,7 +22157,7 @@
 /obj/machinery/holopad,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 4
+	dir = 6
 	},
 /turf/open/floor/plasteel,
 /area/teleporter)
@@ -22601,8 +22604,9 @@
 /turf/open/floor/plasteel,
 /area/teleporter)
 "buW" = (
-/obj/effect/turf_decal/stripes/line,
-/turf/open/floor/plasteel,
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable,
+/turf/open/floor/plating,
 /area/teleporter)
 "buX" = (
 /obj/machinery/power/shieldwallgen,
@@ -23054,6 +23058,7 @@
 /area/maintenance/starboard)
 "bwq" = (
 /obj/machinery/teleport/station,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/teleporter)
 "bwr" = (
@@ -49219,6 +49224,14 @@
 /obj/effect/turf_decal/tile/yellow/whole/constrast,
 /turf/open/floor/plasteel/white,
 /area/medical/pharmacy)
+"pAS" = (
+/obj/machinery/door/poddoor/shutters{
+	id = "teleporter";
+	name = "Teleporter Access"
+	},
+/obj/effect/turf_decal/stripes/line,
+/turf/open/floor/plating,
+/area/teleporter)
 "pBF" = (
 /obj/effect/turf_decal/trimline/blue/filled/line,
 /obj/structure/cable,
@@ -53048,6 +53061,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/medical/medbay)
+"umS" = (
+/obj/effect/turf_decal/stripes/line,
+/obj/structure/cable,
+/turf/open/floor/plasteel,
+/area/teleporter)
 "unH" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
@@ -217935,13 +217953,13 @@ aZV
 aZV
 aZV
 aZV
+aZV
 bqH
 bqH
 bqH
 bqH
 bqH
-bqH
-aJq
+aMm
 aJq
 aXf
 bCv
@@ -218192,13 +218210,13 @@ aZV
 bmz
 bnY
 bpk
-bqH
+aZV
 bsj
 btI
 btd
-bwr
-bqH
-aMm
+bwt
+pAS
+aJq
 aJq
 bBv
 cBy
@@ -218449,12 +218467,12 @@ blb
 cNQ
 kJk
 bpj
-bqH
+aZV
 bsi
 btH
-wWq
+umS
 bwq
-bqH
+buW
 aJq
 aJq
 aXf
@@ -218706,11 +218724,11 @@ aZV
 bmB
 bnZ
 bpl
-bqH
+aZV
 bsl
 btK
-buW
-bwt
+wWq
+bwr
 bqH
 aLY
 aLY
@@ -218963,7 +218981,7 @@ aZV
 bmA
 bmx
 bmx
-bqH
+aZV
 bsk
 btJ
 buV
@@ -219220,7 +219238,7 @@ aZV
 bmC
 boa
 bpm
-bqH
+aZV
 bsn
 btL
 buY
