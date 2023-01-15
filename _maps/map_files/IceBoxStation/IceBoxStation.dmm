@@ -38919,8 +38919,9 @@
 /obj/machinery/door/airlock/external/glass{
 	req_access_txt = "54"
 	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
+	cycle_id = "minemechbaylower"
 	},
 /turf/open/floor/plasteel/mil,
 /area/mine/mechbay)
@@ -39383,9 +39384,8 @@
 /area/hallway/primary/central)
 "dPP" = (
 /obj/effect/turf_decal/stripes/end,
-/obj/machinery/door/airlock/external{
-	req_access_txt = "54"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
@@ -40714,15 +40714,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/mine/eva)
-"fxn" = (
-/obj/machinery/door/airlock/external/glass{
-	req_access_txt = "54"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/turf/open/floor/plasteel/mil,
-/area/mine/mechbay)
 "fxH" = (
 /obj/effect/spawner/structure/window,
 /obj/machinery/pinpointer_dispenser,
@@ -41526,9 +41517,8 @@
 /obj/effect/turf_decal/stripes/end{
 	dir = 1
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "54"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/mil,
 /area/mine/lobby)
@@ -43172,13 +43162,6 @@
 /obj/effect/turf_decal/weather/snow/corner,
 /turf/open/floor/plating/snowed/icemoon,
 /area/icemoon/surface/outdoors)
-"iEp" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "54"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
-/turf/open/floor/plating,
-/area/maintenance/department/cargo)
 "iEJ" = (
 /obj/machinery/door/airlock/external{
 	name = "Escape Pod One"
@@ -44149,12 +44132,11 @@
 /turf/open/floor/plating/asteroid/snow/icemoon,
 /area/icemoon/underground/explored)
 "jJg" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "54"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /turf/open/floor/plating,
 /area/maintenance/department/cargo)
 "jJx" = (
@@ -47914,12 +47896,12 @@
 /area/icemoon/underground/explored)
 "nYe" = (
 /obj/machinery/door/airlock/grunge{
-	req_access_txt = "54";
 	name = "Mining Station Mech Bay"
 	},
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /turf/open/floor/plasteel/dark/textured,
 /area/mine/mechbay)
 "nYh" = (
@@ -48782,13 +48764,12 @@
 /area/hallway/primary/central)
 "oUN" = (
 /obj/effect/turf_decal/stripes/end,
-/obj/machinery/door/airlock/external{
-	req_access_txt = "54"
-	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /turf/open/floor/plasteel/mil,
 /area/mine/lobby)
 "oUU" = (
@@ -51006,14 +50987,13 @@
 /turf/open/floor/plating/snowed/smoothed/icemoon,
 /area/icemoon/underground/explored)
 "rvf" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "54"
-	},
+/obj/machinery/door/airlock/external,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mil,
@@ -53489,15 +53469,14 @@
 /turf/open/floor/plating,
 /area/mine/laborcamp)
 "upo" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "54"
-	},
+/obj/machinery/door/airlock/external,
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
+	},
+/obj/effect/mapping_helpers/airlock/access/any/supply/mining_station,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+	dir = 8
 	},
 /turf/open/floor/plasteel/mil,
 /area/mine/lobby)
@@ -76407,7 +76386,7 @@ sgE
 sgE
 kai
 euV
-iEp
+fnL
 ihY
 rJa
 fsc
@@ -79241,8 +79220,8 @@ gCE
 nEU
 hoe
 hoe
-fxn
-fxn
+doE
+doE
 hoe
 osQ
 ooZ
