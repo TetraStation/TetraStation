@@ -7345,10 +7345,10 @@
 /area/centcom/supplypod)
 "qJ" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Auxillary Shuttle Dock";
-	req_access_txt = "150"
+	name = "Auxillary Shuttle Dock"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/plating,
 /area/syndicate_mothership/control)
 "qK" = (
@@ -8477,9 +8477,9 @@
 	dir = 4
 	},
 /obj/machinery/door/airlock/centcom{
-	name = "Mission Control";
-	req_access_txt = "150"
+	name = "Mission Control"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/mineral/plastitanium,
 /area/syndicate_mothership/control)
 "tf" = (
@@ -9980,8 +9980,7 @@
 /area/syndicate_mothership)
 "wp" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Restroom";
-	req_access_txt = "150"
+	name = "Restroom"
 	},
 /turf/open/floor/plasteel/cafeteria,
 /area/syndicate_mothership/control)
@@ -17500,9 +17499,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
@@ -17880,12 +17878,11 @@
 	},
 /area/syndicate_mothership/control)
 "OB" = (
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -18800,9 +18797,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 8
 	},
@@ -19127,8 +19123,7 @@
 /area/holodeck/rec_center/medical)
 "Ua" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Restroom";
-	req_access_txt = "150"
+	name = "Restroom"
 	},
 /turf/open/floor/plasteel/dark/side{
 	dir = 8
@@ -19274,6 +19269,7 @@
 	dir = 8
 	},
 /obj/machinery/door/airlock/maintenance/external/glass,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/machinery/door/poddoor/shutters{
 	id = "nukeop_ready";
 	name = "shuttle dock"
@@ -19680,9 +19676,9 @@
 	dir = 1
 	},
 /obj/machinery/door/airlock/centcom{
-	name = "Equipment Room";
-	req_access_txt = "150"
+	name = "Equipment Room"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/mineral/plastitanium,
 /area/syndicate_mothership/control)
 "WG" = (
@@ -19709,12 +19705,11 @@
 /turf/open/floor/plasteel,
 /area/centcom/supplypod)
 "WO" = (
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 4
 	},
