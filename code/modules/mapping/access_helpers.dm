@@ -347,6 +347,118 @@
 	access_list += ACCESS_VAULT
 	return access_list
 
+// -------------------- CentCom access helpers
+/obj/effect/mapping_helpers/airlock/access/any/centcom
+	color = COLOR_BLUE
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_GENERAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/thunderdome/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_THUNDER
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/specops/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_SPECOPS
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/medical/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_MEDICAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/living/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_LIVING
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/storage/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_STORAGE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/teleporter/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_TELEPORTER
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/captain/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_CAPTAIN
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/centcom/bar/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_BAR
+	return access_list
+
+// -------------------- Syndicate access helpers
+/obj/effect/mapping_helpers/airlock/access/any/syndicate
+	color = COLOR_MAROON
+
+/obj/effect/mapping_helpers/airlock/access/any/syndicate/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_SYNDICATE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/syndicate/leader/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_SYNDICATE
+	return access_list
+
+// -------------------- Away access helpers
+/obj/effect/mapping_helpers/airlock/access/any/away
+	color = COLOR_PINK
+
+/obj/effect/mapping_helpers/airlock/access/any/away/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/maint/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_MAINT
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/medical/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_MED
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/security/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_SEC
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/engineering/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_ENGINE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/generic1/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC1
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/generic2/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC2
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/generic3/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC3
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/any/away/generic4/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC4
+	return access_list
+
 // -------------------- Req All (Requires ALL of the given accesses to open)
 // -------------------- Command access helpers
 /obj/effect/mapping_helpers/airlock/access/all/command
@@ -659,4 +771,116 @@
 /obj/effect/mapping_helpers/airlock/access/all/supply/vault/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_VAULT
+	return access_list
+
+// -------------------- CentCom access helpers
+/obj/effect/mapping_helpers/airlock/access/all/centcom
+	color = COLOR_BLUE
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_GENERAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/thunderdome/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_THUNDER
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/specops/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_SPECOPS
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/medical/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_MEDICAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/living/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_LIVING
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/storage/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_STORAGE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/teleporter/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_TELEPORTER
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/captain/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_CAPTAIN
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/centcom/bar/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_CENT_BAR
+	return access_list
+
+// -------------------- Syndicate access helpers
+/obj/effect/mapping_helpers/airlock/access/all/syndicate
+	color = COLOR_MAROON
+
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_SYNDICATE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/leader/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_SYNDICATE
+	return access_list
+
+// -------------------- Away access helpers
+/obj/effect/mapping_helpers/airlock/access/all/away
+	color = COLOR_PINK
+
+/obj/effect/mapping_helpers/airlock/access/all/away/general/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERAL
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/maint/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_MAINT
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/medical/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_MED
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/security/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_SEC
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/engineering/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_ENGINE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/generic1/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC1
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/generic2/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC2
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/generic3/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC3
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/away/generic4/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_AWAY_GENERIC4
 	return access_list
