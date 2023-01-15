@@ -82,6 +82,11 @@
 	access_list += ACCESS_ENGINE
 	return access_list
 
+/obj/effect/mapping_helpers/airlock/access/any/engineering/equipment/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_ENGINE_EQUIP
+	return access_list
+
 /obj/effect/mapping_helpers/airlock/access/any/engineering/construction/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_CONSTRUCTION
@@ -234,7 +239,7 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/security/forensics/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_FORENSICS_LOCKERS
 	return access_list
@@ -293,7 +298,7 @@
 	access_list += ACCESS_LIBRARY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/any/service/library/get_access()
+/obj/effect/mapping_helpers/airlock/access/any/service/theatre/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_THEATRE
 	return access_list
@@ -389,6 +394,11 @@
 /obj/effect/mapping_helpers/airlock/access/all/engineering/general/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_ENGINE
+	return access_list
+
+/obj/effect/mapping_helpers/airlock/access/all/engineering/equipment/get_access()
+	var/list/access_list = ..()
+	access_list += ACCESS_ENGINE_EQUIP
 	return access_list
 
 /obj/effect/mapping_helpers/airlock/access/all/engineering/construction/get_access()
@@ -543,7 +553,7 @@
 	access_list += ACCESS_ARMORY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/security/detective/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/security/forensics/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_FORENSICS_LOCKERS
 	return access_list
@@ -602,7 +612,7 @@
 	access_list += ACCESS_LIBRARY
 	return access_list
 
-/obj/effect/mapping_helpers/airlock/access/all/service/library/get_access()
+/obj/effect/mapping_helpers/airlock/access/all/service/theatre/get_access()
 	var/list/access_list = ..()
 	access_list += ACCESS_THEATRE
 	return access_list
