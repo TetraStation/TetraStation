@@ -125,6 +125,16 @@
 	else
 		airlock.cyclelinkeddir = dir
 
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi
+	name = "airlock multi-cyclelink helper"
+	icon_state = "airlock_multicyclelink_helper"
+	var/cycle_id
+
+/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi/payload(obj/machinery/door/airlock/airlock)
+	if(airlock.closeOtherId)
+		log_mapping("[src] at [AREACOORD(src)] tried to set [airlock] closeOtherId, but it's already set!")
+	else
+		airlock.closeOtherId = cycle_id
 
 /obj/effect/mapping_helpers/airlock/locked
 	name = "airlock lock helper"
@@ -154,6 +164,25 @@
 	else
 		airlock.abandoned = TRUE
 
+/obj/effect/mapping_helpers/airlock/cutaiwire
+	name = "airlock cut ai wire helper"
+	icon_state = "airlock_cutaiwire"
+
+/obj/effect/mapping_helpers/airlock/cutaiwire/payload(obj/machinery/door/airlock/airlock)
+	if(airlock.cutAiWire)
+		log_mapping("[src] at [AREACOORD(src)] tried to cut the ai wire on [airlock] but it's already cut!")
+	else
+		airlock.cutAiWire = TRUE
+
+/obj/effect/mapping_helpers/airlock/autoname
+	name = "airlock autoname helper"
+	icon_state = "airlock_autoname"
+
+/obj/effect/mapping_helpers/airlock/autoname/payload(obj/machinery/door/airlock/airlock)
+	if(airlock.autoname)
+		log_mapping("[src] at [AREACOORD(src)] tried to autoname the [airlock] but it's already autonamed!")
+	else
+		airlock.autoname = TRUE
 
 //needs to do its thing before spawn_rivers() is called
 INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
