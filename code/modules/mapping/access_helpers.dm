@@ -68,6 +68,10 @@
 	. = ..()
 	access_list += ACCESS_CONSTRUCTION
 
+/obj/effect/mapping_helpers/airlock/access/any/engineering/equipment/Initialize()
+	. = ..()
+	access_list += ACCESS_ENGINE_EQUIP
+
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance/Initialize()
 	. = ..()
 	access_list += ACCESS_MAINT_TUNNELS
@@ -140,11 +144,11 @@
 	. = ..()
 	access_list += ACCESS_RESEARCH
 
-/obj/effect/mapping_helpers/airlock/access/any/science/ordnance/Initialize()
+/obj/effect/mapping_helpers/airlock/access/any/science/toxins/Initialize()
 	. = ..()
 	access_list += ACCESS_TOXINS
 
-/obj/effect/mapping_helpers/airlock/access/any/science/ordnance_storage/Initialize()
+/obj/effect/mapping_helpers/airlock/access/any/science/toxins_storage/Initialize()
 	. = ..()
 	access_list += ACCESS_TOXINS_STORAGE
 
@@ -183,6 +187,10 @@
 /obj/effect/mapping_helpers/airlock/access/any/security/brig/Initialize()
 	. = ..()
 	access_list += ACCESS_BRIG
+
+/obj/effect/mapping_helpers/airlock/access/any/security/forensics/Initialize()
+	. = ..()
+	access_list += ACCESS_FORENSICS_LOCKERS
 
 /obj/effect/mapping_helpers/airlock/access/any/security/armory/Initialize()
 	. = ..()
@@ -232,7 +240,7 @@
 	. = ..()
 	access_list += ACCESS_LIBRARY
 
-/obj/effect/mapping_helpers/airlock/access/any/service/library/Initialize()
+/obj/effect/mapping_helpers/airlock/access/any/service/theatre/Initialize()
 	. = ..()
 	access_list += ACCESS_THEATRE
 
@@ -317,6 +325,10 @@
 	. = ..()
 	access_list += ACCESS_CONSTRUCTION
 
+/obj/effect/mapping_helpers/airlock/access/all/engineering/equipment/Initialize()
+	. = ..()
+	access_list += ACCESS_ENGINE_EQUIP
+
 /obj/effect/mapping_helpers/airlock/access/all/engineering/maintenance/Initialize()
 	. = ..()
 	access_list += ACCESS_MAINT_TUNNELS
@@ -389,11 +401,11 @@
 	. = ..()
 	access_list += ACCESS_RESEARCH
 
-/obj/effect/mapping_helpers/airlock/access/all/science/ordnance/Initialize()
+/obj/effect/mapping_helpers/airlock/access/all/science/toxins/Initialize()
 	. = ..()
 	access_list += ACCESS_TOXINS
 
-/obj/effect/mapping_helpers/airlock/access/all/science/ordnance_storage/Initialize()
+/obj/effect/mapping_helpers/airlock/access/all/science/toxins_storage/Initialize()
 	. = ..()
 	access_list += ACCESS_TOXINS_STORAGE
 
@@ -432,6 +444,10 @@
 /obj/effect/mapping_helpers/airlock/access/all/security/brig/Initialize()
 	. = ..()
 	access_list += ACCESS_BRIG
+
+/obj/effect/mapping_helpers/airlock/access/all/security/forensics/Initialize()
+	. = ..()
+	access_list += ACCESS_FORENSICS_LOCKERS
 
 /obj/effect/mapping_helpers/airlock/access/all/security/armory/Initialize()
 	. = ..()
@@ -481,7 +497,7 @@
 	. = ..()
 	access_list += ACCESS_LIBRARY
 
-/obj/effect/mapping_helpers/airlock/access/all/service/library/Initialize()
+/obj/effect/mapping_helpers/airlock/access/all/service/theatre/Initialize()
 	. = ..()
 	access_list += ACCESS_THEATRE
 
