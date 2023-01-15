@@ -240,10 +240,10 @@
 /area/security/prison)
 "aaT" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Permabrig Maintenance";
-	req_access_txt = "1"
+	name = "Permabrig Maintenance"
 	},
 /obj/structure/cable,
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/plating,
 /area/security/prison/safe)
 "aaU" = (
@@ -1787,16 +1787,14 @@
 /area/security/brig)
 "afO" = (
 /obj/machinery/door/airlock/command{
-	name = "Command Tool Storage";
-	req_access_txt = "19"
+	name = "Command Tool Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /turf/open/floor/plasteel,
 /area/ai_monitored/storage/eva)
 "afP" = (
 /obj/machinery/door/airlock/command{
-	name = "Command Tool Storage";
-	req_access_txt = "19"
+	name = "Command Tool Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
@@ -4311,9 +4309,7 @@
 /turf/open/floor/plating,
 /area/maintenance/port/fore)
 "ank" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/effect/mapping_helpers/airlock/abandoned,
@@ -5749,9 +5745,7 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/dorms)
 "ash" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -7151,9 +7145,7 @@
 /turf/open/floor/plating,
 /area/maintenance/fore)
 "axn" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -32853,8 +32845,7 @@
 /area/maintenance/aft)
 "cfv" = (
 /obj/machinery/door/airlock/maintenance{
-	name = "Firefighting Equipment";
-	req_access_txt = "12"
+	name = "Firefighting Equipment"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/abandoned,
@@ -36175,8 +36166,7 @@
 /area/hallway/secondary/entry)
 "cyg" = (
 /obj/machinery/door/airlock/command{
-	name = "Command Tool Storage";
-	req_access_txt = "19"
+	name = "Command Tool Storage"
 	},
 /obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
@@ -46950,9 +46940,7 @@
 /turf/open/floor/plasteel,
 /area/mine/eva)
 "nbk" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/effect/mapping_helpers/airlock/unres{
@@ -52036,9 +52024,7 @@
 /turf/open/floor/plasteel,
 /area/tcommsat/computer)
 "sGH" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12"
-	},
+/obj/machinery/door/airlock/maintenance,
 /obj/effect/mapping_helpers/airlock/access/any/engineering/maintenance,
 /obj/effect/mapping_helpers/airlock/autoname,
 /obj/effect/mapping_helpers/airlock/abandoned,
@@ -52225,15 +52211,10 @@
 /area/hallway/secondary/entry)
 "sTp" = (
 /obj/machinery/door/airlock/external/glass{
-	req_access_txt = "32;19";
 	name = "Engineering Foyer Access"
 	},
-/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
-/obj/effect/mapping_helpers/airlock/cyclelink_helper_multi{
-	cycle_id = "engifoyer"
-	},
-/turf/open/floor/plating,
-/area/engine/break_room)
+/turf/open/gen_turf/alt,
+/area/icemoon/underground/unexplored/rivers)
 "sUw" = (
 /obj/machinery/button/door{
 	id = "xenobio4";
@@ -155086,7 +155067,7 @@ oQN
 oQN
 oQN
 ooZ
-sTp
+xKy
 lbO
 fYU
 bYG
@@ -156113,7 +156094,7 @@ oQN
 oQN
 ifT
 ifT
-ifT
+sTp
 ifT
 ifT
 ifT
