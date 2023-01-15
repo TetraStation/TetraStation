@@ -100,17 +100,57 @@
 //airlock helpers
 /obj/effect/mapping_helpers/airlock
 	layer = DOOR_HELPER_LAYER
+	late = TRUE
 
 /obj/effect/mapping_helpers/airlock/Initialize(mapload)
 	. = ..()
 	if(!mapload)
 		log_mapping("[src] spawned outside of mapload!")
 		return
+
 	var/obj/machinery/door/airlock/airlock = locate(/obj/machinery/door/airlock) in loc
 	if(!airlock)
 		log_mapping("[src] failed to find an airlock at [AREACOORD(src)]")
 	else
 		payload(airlock)
+
+/obj/effect/mapping_helpers/airlock/LateInitialize()
+	. = ..()
+	var/obj/machinery/door/airlock/airlock = locate(/obj/machinery/door/airlock) in loc
+	if(!airlock)
+		qdel(src)
+		return
+	if(airlock.cyclelinkeddir)
+		airlock.cyclelinkairlock()
+	if(airlock.closeOtherId)
+		airlock.update_other_id()
+	if(airlock.abandoned)
+		var/outcome = rand(1,100)
+		switch(outcome)
+			if(1 to 9)
+				var/turf/here = get_turf(src)
+				for(var/turf/closed/T in range(2, src))
+					here.PlaceOnTop(T.type)
+					qdel(src)
+					return
+				here.PlaceOnTop(/turf/closed/wall)
+				qdel(src)
+				return
+			if(9 to 11)
+				airlock.lights = FALSE
+				airlock.locked = TRUE
+			if(12 to 15)
+				airlock.locked = TRUE
+			if(16 to 23)
+				airlock.welded = TRUE
+			if(24 to 30)
+				airlock.panel_open = TRUE
+	if(airlock.cutAiWire)
+		airlock.wires.cut(WIRE_AI)
+	if(airlock.autoname)
+		airlock.name = get_area_name(src, TRUE)
+	update_icon()
+	qdel(src)
 
 /obj/effect/mapping_helpers/airlock/proc/payload(obj/machinery/door/airlock/payload)
 	return
