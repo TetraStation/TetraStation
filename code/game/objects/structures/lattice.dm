@@ -100,6 +100,25 @@
 	layer = LOW_OBJ_LAYER
 	plane = GAME_PLANE
 
+/obj/structure/lattice/catwalk/over/plated
+	icon = 'icons/obj/catwalk.dmi'
+	icon_state = "plated_maint"
+	smoothing_flags = NONE
+	smoothing_groups = null
+	canSmoothWith = null
+
+/obj/structure/lattice/catwalk/over/plated/plasteel
+	icon_state = "plated"
+
+/obj/structure/lattice/catwalk/over/plated/plasteel/dark
+	icon_state = "plated_dark"
+
+/obj/structure/lattice/catwalk/over/plated/plasteel/white
+	icon_state = "plated_white"
+
+/obj/structure/lattice/catwalk/over/plated/plasteel/mil
+	icon_state = "plated_tgmc"
+
 /obj/structure/lattice/lava
 	name = "heatproof support lattice"
 	desc = "A specialized support beam for building across lava and flammable operating environments. Watch your step."

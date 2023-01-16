@@ -16,10 +16,10 @@
 
 	switch(signal.data["command"])
 		if("open")
-			open(1)
+			open(TRUE)
 
 		if("close")
-			close(1)
+			close(TRUE)
 
 		if("unlock")
 			locked = FALSE
@@ -34,14 +34,14 @@
 			update_icon()
 
 			sleep(2)
-			open(1)
+			open(TRUE)
 
 			locked = TRUE
 			update_icon()
 
 		if("secure_close")
 			locked = FALSE
-			close(1)
+			close(TRUE)
 
 			locked = TRUE
 			sleep(2)
