@@ -115,8 +115,7 @@
 /area/shuttle/escape)
 "am" = (
 /obj/machinery/door/airlock/command{
-	name = "Emergency Recovery Airlock";
-	req_access_txt = "19"
+	name = "Emergency Recovery Airlock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -124,6 +123,8 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/plasteel,
 /area/shuttle/escape)
 "an" = (
@@ -176,8 +177,7 @@
 /area/shuttle/escape)
 "aq" = (
 /obj/machinery/door/airlock/shuttle{
-	name = "Emergency Shuttle Airlock";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Airlock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -185,6 +185,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plasteel/white,
 /area/shuttle/escape)
 "ar" = (
@@ -248,9 +249,9 @@
 /area/shuttle/escape)
 "av" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Holding Area";
-	req_access_txt = "2"
+	name = "Holding Area"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "aw" = (
@@ -259,13 +260,13 @@
 /area/shuttle/escape)
 "ax" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Cockpit";
-	req_access_txt = "19"
+	name = "Cockpit"
 	},
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/plasteel,
 /area/shuttle/escape)
 "ay" = (
@@ -857,6 +858,10 @@
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating/airless,
 /area/shuttle/escape)
+"mo" = (
+/obj/effect/spawner/structure/window/shuttle,
+/turf/open/floor/plating,
+/area/shuttle/escape)
 
 (1,1,1) = {"
 aa
@@ -866,9 +871,9 @@ aq
 ac
 ay
 aa
-ab
-ab
-ab
+mo
+mo
+mo
 aa
 aP
 ac
@@ -884,7 +889,7 @@ aa
 ad
 ak
 al
-ab
+mo
 az
 aD
 aJ
@@ -892,7 +897,7 @@ aJ
 aJ
 aD
 az
-ab
+mo
 az
 bd
 bj
@@ -901,7 +906,7 @@ br
 bv
 "}
 (3,1,1) = {"
-ab
+mo
 ae
 al
 al
@@ -917,16 +922,16 @@ aT
 aW
 be
 bk
-ab
+mo
 bs
 bv
 "}
 (4,1,1) = {"
-ab
+mo
 ae
 al
 al
-ab
+mo
 aA
 aF
 aK
@@ -938,7 +943,7 @@ aT
 aX
 bf
 bl
-ab
+mo
 bt
 bv
 "}
@@ -947,7 +952,7 @@ aa
 af
 al
 ar
-ab
+mo
 aA
 aG
 aL
@@ -955,7 +960,7 @@ aI
 aM
 aG
 aQ
-ab
+mo
 aY
 bg
 bm
@@ -967,7 +972,7 @@ bv
 ac
 ab
 am
-ab
+mo
 aw
 aB
 aH
@@ -978,7 +983,7 @@ aH
 aR
 aU
 aZ
-ab
+mo
 aZ
 aZ
 br
@@ -989,7 +994,7 @@ aa
 ag
 an
 as
-ab
+mo
 aA
 aI
 aM
@@ -997,7 +1002,7 @@ aG
 aL
 aI
 aQ
-ab
+mo
 ba
 bh
 bn
@@ -1006,7 +1011,7 @@ bt
 bv
 "}
 (8,1,1) = {"
-ab
+mo
 ah
 ao
 an
@@ -1022,16 +1027,16 @@ aV
 bb
 bb
 bo
-ab
+mo
 bt
 bv
 "}
 (9,1,1) = {"
-ab
+mo
 ai
 an
 at
-ab
+mo
 aA
 aE
 aE
@@ -1043,12 +1048,12 @@ aV
 bb
 bb
 bp
-ab
+mo
 bt
 bv
 "}
 (10,1,1) = {"
-ab
+mo
 aj
 ap
 au
@@ -1060,7 +1065,7 @@ aF
 aF
 aF
 aS
-ab
+mo
 bc
 bi
 bq
@@ -1070,16 +1075,16 @@ bv
 "}
 (11,1,1) = {"
 aa
-ab
-ab
+mo
+mo
 aa
 ac
 aa
-ab
-ab
-ab
-ab
-ab
+mo
+mo
+mo
+mo
+mo
 aa
 ac
 aa

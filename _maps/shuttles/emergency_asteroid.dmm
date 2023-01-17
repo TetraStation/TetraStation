@@ -5,11 +5,6 @@
 "ac" = (
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
-"ad" = (
-/obj/structure/window/shuttle,
-/obj/structure/grille,
-/turf/open/floor/plating,
-/area/shuttle/escape)
 "ae" = (
 /obj/machinery/door/airlock/titanium{
 	name = "Emergency Shuttle Airlock"
@@ -41,9 +36,9 @@
 /area/shuttle/escape)
 "al" = (
 /obj/machinery/door/airlock/titanium{
-	name = "Emergency Shuttle Airlock";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Airlock"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "am" = (
@@ -157,9 +152,9 @@
 /area/shuttle/escape)
 "aP" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Emergency Shuttle Brig";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Brig"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "aQ" = (
@@ -256,9 +251,9 @@
 /area/shuttle/escape)
 "bg" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Emergency Shuttle Cockpit";
-	req_access_txt = "19"
+	name = "Emergency Shuttle Cockpit"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/mineral/titanium,
 /area/shuttle/escape)
 "bi" = (
@@ -306,9 +301,9 @@
 /area/shuttle/escape)
 "bq" = (
 /obj/machinery/door/airlock/medical/glass{
-	name = "Escape Shuttle Infirmary";
-	req_access_txt = "5"
+	name = "Escape Shuttle Infirmary"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/medical/general,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
 "br" = (
@@ -414,11 +409,6 @@
 /obj/item/surgical_drapes,
 /turf/open/floor/mineral/titanium/white,
 /area/shuttle/escape)
-"bI" = (
-/obj/structure/window/shuttle,
-/obj/structure/grille,
-/turf/open/floor/mineral/titanium/blue,
-/area/shuttle/escape)
 "bJ" = (
 /obj/machinery/light,
 /turf/open/floor/mineral/titanium/yellow,
@@ -461,9 +451,9 @@ aa
 ac
 am
 ac
-ad
-ad
-bI
+ah
+ah
+ah
 ac
 am
 ac
@@ -516,7 +506,7 @@ ac
 ac
 "}
 (5,1,1) = {"
-ad
+ah
 ap
 aq
 bJ
@@ -528,7 +518,7 @@ ac
 bN
 bu
 bE
-ad
+ah
 "}
 (6,1,1) = {"
 ae
@@ -546,7 +536,7 @@ ac
 ac
 "}
 (7,1,1) = {"
-ad
+ah
 ar
 aq
 aq
@@ -558,7 +548,7 @@ ac
 Jx
 bu
 bE
-ad
+ah
 "}
 (8,1,1) = {"
 ac
@@ -653,7 +643,7 @@ aa
 (14,1,1) = {"
 aa
 aa
-ad
+ah
 aK
 at
 aZ
@@ -661,14 +651,14 @@ ah
 aK
 at
 aZ
-ad
+ah
 aa
 aa
 "}
 (15,1,1) = {"
 aa
 aa
-ad
+ah
 aK
 at
 at
@@ -676,14 +666,14 @@ at
 at
 at
 aZ
-ad
+ah
 aa
 aa
 "}
 (16,1,1) = {"
 aa
 aa
-ad
+ah
 aK
 at
 aZ
@@ -691,7 +681,7 @@ ah
 aK
 at
 aZ
-ad
+ah
 aa
 aa
 "}
@@ -774,13 +764,13 @@ aa
 ac
 ac
 ac
-ad
+ah
 aP
-ad
+ah
 bi
-ad
+ah
 br
-ad
+ah
 ac
 ac
 ac
@@ -807,13 +797,13 @@ aw
 aw
 aw
 aw
-ad
+ah
 Jx
 Jx
 Jx
 Jx
 bG
-ad
+ah
 "}
 (25,1,1) = {"
 ac
@@ -835,11 +825,11 @@ ac
 ac
 ac
 ac
-ad
+ah
 aP
 ac
 bq
-ad
+ah
 JM
 ac
 ac
@@ -852,7 +842,7 @@ ac
 ac
 aQ
 aw
-ad
+ah
 Jx
 bs
 ac
@@ -866,9 +856,9 @@ aa
 aa
 ac
 ac
-ad
+ah
 ac
-ad
+ah
 ac
 ac
 aa
