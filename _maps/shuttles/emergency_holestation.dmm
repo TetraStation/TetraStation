@@ -34,6 +34,15 @@
 /obj/structure/chair/comfy/shuttle,
 /turf/open/floor/carpet/purple,
 /area/shuttle/escape)
+"eV" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 1
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 10
+	},
+/turf/open/floor/carpet/royalblue,
+/area/shuttle/escape)
 "ga" = (
 /obj/effect/turf_decal/bot,
 /obj/structure/closet/crate,
@@ -46,6 +55,13 @@
 	pixel_x = -26
 	},
 /turf/open/floor/plasteel/white,
+/area/shuttle/escape)
+"gS" = (
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/turf/open/floor/pod/dark,
 /area/shuttle/escape)
 "hB" = (
 /obj/structure/flora/ausbushes/leafybush,
@@ -94,6 +110,19 @@
 	pixel_y = 24
 	},
 /turf/open/floor/pod/dark,
+/area/shuttle/escape)
+"jH" = (
+/obj/structure/fans/tiny,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/obj/machinery/door/airlock/survival_pod/glass,
+/obj/structure/fans/tiny,
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
+/turf/open/floor/plating,
 /area/shuttle/escape)
 "kr" = (
 /obj/structure/table/wood,
@@ -152,6 +181,7 @@
 /area/shuttle/escape)
 "np" = (
 /obj/machinery/door/airlock/security/glass,
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "pF" = (
@@ -209,6 +239,7 @@
 /area/shuttle/escape)
 "rU" = (
 /obj/machinery/computer/emergency_shuttle,
+/obj/effect/turf_decal/siding/wood,
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 "sQ" = (
@@ -298,6 +329,9 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 1
 	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 6
+	},
 /turf/open/floor/carpet/royalblue,
 /area/shuttle/escape)
 "zn" = (
@@ -343,6 +377,10 @@
 "Cu" = (
 /obj/machinery/light/small{
 	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
 	},
 /turf/open/floor/pod/dark,
 /area/shuttle/escape)
@@ -396,11 +434,11 @@
 /turf/open/floor/grass,
 /area/shuttle/escape)
 "HX" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /obj/machinery/door/airlock/command/glass{
-	req_access_txt = "19";
 	name = "Bridge"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/wood,
 /area/shuttle/escape)
 "Iv" = (
@@ -461,6 +499,9 @@
 /obj/machinery/light{
 	dir = 8
 	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "MP" = (
@@ -486,6 +527,9 @@
 	},
 /obj/machinery/light{
 	dir = 4
+	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
 	},
 /turf/open/floor/carpet/red,
 /area/shuttle/escape)
@@ -593,15 +637,18 @@
 /obj/machinery/computer/crew{
 	dir = 4
 	},
+/obj/effect/turf_decal/siding/wood{
+	dir = 4
+	},
 /turf/open/floor/carpet/green,
 /area/shuttle/escape)
 "Yd" = (
+/obj/machinery/door/airlock/command/glass{
+	name = "Bridge"
+	},
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
-	},
-/obj/machinery/door/airlock/command/glass{
-	req_access_txt = "19";
-	name = "Bridge"
 	},
 /turf/open/floor/wood,
 /area/shuttle/escape)
@@ -612,6 +659,9 @@
 /area/shuttle/escape)
 "ZB" = (
 /obj/machinery/computer/communications{
+	dir = 8
+	},
+/obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
 /turf/open/floor/carpet/red,
@@ -639,7 +689,7 @@ ZC
 CJ
 CJ
 CJ
-EB
+jH
 CJ
 QT
 CJ
@@ -753,7 +803,7 @@ Tk
 "}
 (6,1,1) = {"
 rn
-yX
+eV
 OH
 OH
 HX
@@ -782,7 +832,7 @@ OH
 OH
 rn
 li
-pT
+gS
 Rj
 rn
 pT

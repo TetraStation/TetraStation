@@ -14,15 +14,16 @@
 /area/shuttle/assault_pod)
 "e" = (
 /obj/machinery/door/airlock/centcom{
-	aiControlDisabled = 1;
-	name = "Assault Pod";
-	req_access_txt = "150"
+	name = "Assault Pod"
 	},
 /obj/docking_port/mobile/assault_pod{
 	name = "steel rain";
 	port_direction = 4;
 	preferred_direction = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "h" = (
@@ -31,14 +32,6 @@
 /area/shuttle/assault_pod)
 "p" = (
 /turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/assault_pod)
-"t" = (
-/obj/machinery/door/airlock/centcom{
-	aiControlDisabled = 1;
-	name = "Assault Pod";
-	req_access_txt = "150"
-	},
-/turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "D" = (
 /obj/structure/chair/comfy/shuttle,
@@ -62,9 +55,11 @@
 /area/shuttle/assault_pod)
 "R" = (
 /obj/machinery/door/airlock/centcom{
-	name = "Assault Pod";
-	req_access_txt = "150"
+	name = "Assault Pod"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cutaiwire,
 /turf/open/floor/plating,
 /area/shuttle/assault_pod)
 "V" = (
@@ -75,7 +70,7 @@
 V
 b
 d
-t
+R
 d
 b
 V
@@ -129,7 +124,7 @@ b
 V
 b
 d
-t
+R
 d
 b
 V

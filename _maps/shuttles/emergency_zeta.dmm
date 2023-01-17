@@ -100,9 +100,9 @@
 /area/shuttle/escape)
 "t" = (
 /obj/machinery/door/airlock/abductor{
-	name = "Command Center";
-	req_access_txt = "19"
+	name = "Command Center"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/plating/abductor,
 /area/shuttle/escape)
 "u" = (
@@ -130,9 +130,9 @@
 /area/shuttle/escape)
 "x" = (
 /obj/machinery/door/airlock/abductor{
-	name = "Holding Facility";
-	req_access_txt = "2"
+	name = "Holding Facility"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plating/abductor,
 /area/shuttle/escape)
 "y" = (
@@ -220,6 +220,10 @@
 "J" = (
 /obj/machinery/sleeper/survival_pod,
 /turf/open/floor/plating/abductor,
+/area/shuttle/escape)
+"L" = (
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
+/turf/open/floor/plating/abductor2,
 /area/shuttle/escape)
 "N" = (
 /obj/machinery/abductor/pad{
@@ -318,11 +322,11 @@ a
 b
 b
 v
-c
+L
 b
-c
+L
 b
-c
+L
 A
 b
 b
@@ -412,7 +416,7 @@ l
 l
 b
 b
-c
+L
 b
 b
 l
@@ -494,7 +498,7 @@ U
 b
 "}
 (9,1,1) = {"
-c
+L
 e
 l
 l
@@ -509,7 +513,7 @@ o
 l
 l
 l
-c
+L
 l
 l
 l
@@ -517,7 +521,7 @@ V
 c
 "}
 (10,1,1) = {"
-c
+L
 f
 k
 l
@@ -532,7 +536,7 @@ o
 l
 l
 l
-c
+L
 l
 l
 l
@@ -540,7 +544,7 @@ W
 c
 "}
 (11,1,1) = {"
-c
+L
 g
 m
 l
@@ -550,7 +554,7 @@ l
 l
 l
 m
-c
+L
 o
 l
 l
@@ -563,7 +567,7 @@ X
 c
 "}
 (12,1,1) = {"
-c
+L
 f
 k
 l
@@ -578,7 +582,7 @@ o
 l
 l
 l
-c
+L
 l
 l
 l
@@ -586,7 +590,7 @@ Y
 c
 "}
 (13,1,1) = {"
-c
+L
 h
 l
 l
@@ -601,7 +605,7 @@ o
 l
 l
 l
-c
+L
 l
 l
 l
@@ -663,11 +667,11 @@ p
 u
 u
 u
-c
+L
 l
 l
 l
-c
+L
 B
 l
 G
@@ -686,11 +690,11 @@ l
 l
 l
 l
-c
+L
 l
 l
 l
-c
+L
 l
 l
 l
@@ -732,11 +736,11 @@ b
 r
 l
 l
-c
+L
 l
 l
 l
-c
+L
 l
 D
 I
@@ -755,11 +759,11 @@ b
 b
 r
 w
-c
+L
 r
 r
 r
-c
+L
 C
 E
 b
@@ -779,9 +783,9 @@ b
 b
 b
 b
-c
-c
-c
+L
+L
+L
 b
 b
 b

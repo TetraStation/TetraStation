@@ -27,12 +27,6 @@
 /obj/structure/table/reinforced,
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/labor)
-"f" = (
-/obj/structure/grille,
-/obj/structure/cable,
-/obj/structure/window/shuttle,
-/turf/open/floor/plating,
-/area/shuttle/labor)
 "g" = (
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/labor)
@@ -56,8 +50,7 @@
 /area/shuttle/labor)
 "j" = (
 /obj/machinery/door/airlock/shuttle{
-	name = "Labor Shuttle Airlock";
-	req_access_txt = "2"
+	name = "Labor Shuttle Airlock"
 	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -65,14 +58,15 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plating,
 /area/shuttle/labor)
 "k" = (
 /obj/machinery/door/airlock/shuttle{
-	name = "Labor Shuttle Airlock";
-	req_access_txt = "2"
+	name = "Labor Shuttle Airlock"
 	},
 /obj/effect/turf_decal/stripes/line,
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plasteel/white,
 /area/shuttle/labor)
 "l" = (
@@ -269,10 +263,10 @@
 (1,1,1) = {"
 a
 a
-f
+b
 a
 a
-f
+b
 a
 a
 a

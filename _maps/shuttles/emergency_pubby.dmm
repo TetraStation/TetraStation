@@ -599,8 +599,7 @@
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "bv" = (
-/obj/structure/window/plasma/reinforced/plastitanium,
-/obj/structure/grille,
+/obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bw" = (
@@ -627,9 +626,8 @@
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "bA" = (
-/obj/machinery/door/airlock/public/glass{
-	req_access_txt = "2"
-	},
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "bB" = (
@@ -694,9 +692,9 @@
 /area/shuttle/escape)
 "bO" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Cockpit";
-	req_access_txt = "19"
+	name = "Cockpit"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bQ" = (
@@ -707,9 +705,9 @@
 /area/shuttle/escape)
 "bT" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Brig";
-	req_access_txt = "2"
+	name = "Brig"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "xt" = (

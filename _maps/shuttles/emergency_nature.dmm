@@ -710,9 +710,9 @@
 /area/shuttle/escape)
 "zE" = (
 /obj/machinery/door/airlock/security{
-	name = "Brig";
-	req_access_txt = "63; 42"
+	name = "Brig"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/escape)
 "Ai" = (
@@ -740,9 +740,9 @@
 /area/shuttle/escape)
 "Bm" = (
 /obj/machinery/door/airlock/command/glass{
-	name = "Cockpit";
-	req_access_txt = "19"
+	name = "Cockpit"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/escape)
 "Bo" = (
