@@ -17,10 +17,9 @@
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "g" = (
-/obj/machinery/door/airlock/titanium{
-	name = "Supply Shuttle Airlock";
-	req_access_txt = "31"
-	},
+/obj/machinery/door/airlock/titanium,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "h" = (
@@ -42,11 +41,10 @@
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/supply)
 "i" = (
-/obj/machinery/door/airlock/titanium{
-	name = "Supply Shuttle Airlock";
-	req_access_txt = "31"
-	},
+/obj/machinery/door/airlock/titanium,
 /obj/docking_port/mobile/supply,
+/obj/effect/mapping_helpers/airlock/access/all/supply/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plating,
 /area/shuttle/supply)
 "j" = (

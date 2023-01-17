@@ -38,9 +38,9 @@
 /area/shuttle/escape/luxury)
 "af" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Escape Shuttle Cell";
-	req_access_txt = "2"
+	name = "Escape Shuttle Cell"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape/luxury)
 "ag" = (
@@ -55,9 +55,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/shuttle/escape/luxury)
-"ai" = (
-/turf/closed/indestructible/riveted/plastinum,
-/area/shuttle/escape)
 "aj" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/closet/crate/large,
@@ -76,13 +73,6 @@
 "ao" = (
 /turf/open/floor/carpet/blue,
 /area/shuttle/escape/luxury)
-"ap" = (
-/obj/structure/chair/comfy/teal{
-	icon_state = "comfychair";
-	dir = 4
-	},
-/turf/open/floor/mineral/diamond,
-/area/shuttle/escape)
 "aq" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/reagent_dispensers/fueltank,
@@ -388,7 +378,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/mineral/titanium/blue,
-/area/shuttle/escape)
+/area/shuttle/escape/luxury)
 "bn" = (
 /obj/effect/turf_decal/delivery,
 /obj/structure/closet/crate/engineering/electrical,
@@ -462,6 +452,7 @@
 /obj/machinery/door/airlock/silver{
 	name = "Flight Control"
 	},
+/obj/effect/mapping_helpers/airlock/access/all/command/general,
 /turf/open/floor/mineral/titanium/blue,
 /area/shuttle/escape/luxury)
 "by" = (
@@ -513,7 +504,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/titanium/blue,
-/area/shuttle/escape)
+/area/shuttle/escape/luxury)
 "bF" = (
 /obj/item/bikehorn/rubberducky,
 /obj/item/bikehorn/rubberducky,
@@ -967,10 +958,10 @@
 /area/shuttle/escape/luxury)
 "Lt" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Escape Shuttle Cell";
-	req_access_txt = "2"
+	name = "Escape Shuttle Cell"
 	},
 /obj/machinery/scanner_gate/luxury_shuttle,
+/obj/effect/mapping_helpers/airlock/access/all/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape/luxury)
 
@@ -1311,7 +1302,7 @@ cM
 ag
 "}
 (22,1,1) = {"
-ai
+ag
 bm
 aw
 aw
@@ -1327,7 +1318,7 @@ aS
 ag
 "}
 (23,1,1) = {"
-ai
+ag
 bE
 aw
 aw
@@ -1343,8 +1334,8 @@ aS
 ag
 "}
 (24,1,1) = {"
-ai
-ap
+ag
+aM
 aM
 aM
 aM

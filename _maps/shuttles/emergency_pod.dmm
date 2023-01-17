@@ -9,13 +9,12 @@
 /turf/closed/wall/mineral/titanium,
 /area/shuttle/escape)
 "c" = (
-/obj/structure/grille,
-/obj/structure/window/shuttle,
+/obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "d" = (
-/turf/open/space/basic,
-/area/space)
+/turf/template_noop,
+/area/template_noop)
 "e" = (
 /obj/machinery/door/airlock/titanium{
 	name = "Shuttle Airlock"

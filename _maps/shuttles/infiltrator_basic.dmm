@@ -182,9 +182,8 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 4
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/syndicate/airlock)
 "ay" = (
@@ -197,12 +196,11 @@
 /turf/open/floor/plasteel/dark/half,
 /area/shuttle/syndicate/bridge)
 "az" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Cockpit";
-	req_access_txt = "150"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper,
+/obj/machinery/door/airlock/hatch,
 /obj/effect/turf_decal/siding/thinplating_new/dark,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/bridge)
 "aA" = (
@@ -399,14 +397,13 @@
 /turf/open/floor/plating/airless,
 /area/shuttle/syndicate/eva)
 "cj" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Cockpit";
-	req_access_txt = "150"
-	},
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
+/obj/machinery/door/airlock/hatch,
+/obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/thinplating_new/dark{
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
+/obj/effect/mapping_helpers/airlock/cyclelink_helper{
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -729,10 +726,9 @@
 /turf/closed/wall/r_wall/syndicate,
 /area/shuttle/syndicate/eva)
 "vk" = (
-/obj/machinery/door/airlock/glass{
-	name = "Medbay";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/glass,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/dark/side,
 /area/shuttle/syndicate/medical)
 "vw" = (
@@ -753,10 +749,9 @@
 	},
 /area/shuttle/syndicate/airlock)
 "xk" = (
-/obj/machinery/door/airlock/hatch{
-	name = "EVA";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/dark/whole,
 /area/shuttle/syndicate/eva)
 "yd" = (
@@ -835,13 +830,12 @@
 	},
 /area/shuttle/syndicate/medical)
 "Cm" = (
-/obj/machinery/door/airlock/hatch{
-	name = "EVA";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/hatch,
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 1
 	},
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/syndicate/eva)
 "CH" = (
@@ -872,9 +866,8 @@
 /obj/effect/turf_decal/siding/thinplating_new/dark{
 	dir = 8
 	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/external,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
 /turf/open/floor/mineral/plastitanium,
 /area/shuttle/syndicate/airlock)
 "Ds" = (
@@ -1150,10 +1143,9 @@
 /turf/open/floor/plasteel/mil/sterile/plain,
 /area/shuttle/syndicate/medical)
 "Ss" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Armory";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/syndicate/armory)
 "SG" = (
@@ -1286,10 +1278,9 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/shuttle/syndicate/eva)
 "Zg" = (
-/obj/machinery/door/airlock/hatch{
-	name = "Armory";
-	req_access_txt = "150"
-	},
+/obj/machinery/door/airlock/hatch,
+/obj/effect/mapping_helpers/airlock/access/all/syndicate/general,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/dark/whole,
 /area/shuttle/syndicate/armory)
 "ZA" = (

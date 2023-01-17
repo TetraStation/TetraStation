@@ -478,9 +478,9 @@
 /area/shuttle/escape)
 "aR" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Emergency Shuttle Cockpit";
-	req_access_txt = "19"
+	name = "Emergency Shuttle Cockpit"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/command/general,
 /turf/open/floor/plasteel/dark,
 /area/shuttle/escape)
 "aS" = (
@@ -573,9 +573,9 @@
 /area/shuttle/escape)
 "bn" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Emergency Shuttle Brig";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Brig"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "bo" = (
@@ -595,9 +595,9 @@
 /area/shuttle/escape)
 "bq" = (
 /obj/machinery/door/airlock/public/glass{
-	name = "Emergency Shuttle Brig";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Brig"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/mineral/plastitanium/red/brig,
 /area/shuttle/escape)
 "bs" = (
@@ -641,9 +641,9 @@
 /area/shuttle/escape)
 "bv" = (
 /obj/machinery/door/airlock/shuttle{
-	name = "Emergency Shuttle Airlock";
-	req_access_txt = "2"
+	name = "Emergency Shuttle Airlock"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/plating,
 /area/shuttle/escape)
 "bw" = (
@@ -1419,8 +1419,7 @@
 /area/shuttle/escape)
 "cP" = (
 /obj/machinery/door/airlock/engineering/glass{
-	name = "Engine Room";
-	req_one_access_txt = "10;24"
+	name = "Engine Room"
 	},
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -1432,6 +1431,8 @@
 /obj/effect/turf_decal/tile/yellow{
 	dir = 8
 	},
+/obj/effect/mapping_helpers/airlock/access/any/engineering/general,
+/obj/effect/mapping_helpers/airlock/access/any/engineering/atmos,
 /turf/open/floor/plasteel,
 /area/shuttle/escape)
 "cQ" = (
