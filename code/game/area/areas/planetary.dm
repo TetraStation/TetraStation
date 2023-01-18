@@ -1,26 +1,48 @@
-/**********************Mine areas**************************/
+/// PLANETARY AREAS ///
 
-/area/mine
+/// Asteroid
+
+/area/asteroid
+	name = "Asteroid"
+	icon_state = "asteroid"
+	requires_power = FALSE
+	has_gravity = STANDARD_GRAVITY
+	area_flags = UNIQUE_AREA
+	ambience_index = AMBIENCE_MINING
+	flags_1 = CAN_BE_DIRTY_1
+
+/area/asteroid/nearstation
+	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
+	ambience_index = AMBIENCE_RUINS
+	always_unpowered = FALSE
+	requires_power = TRUE
+	area_flags = UNIQUE_AREA | BLOBS_ALLOWED
+
+/area/asteroid/nearstation/bomb_site
+	name = "Bomb Testing Asteroid"
+
+/// Lavaland
+
+/area/planetary/lavaland
 	icon_state = "mining"
 	has_gravity = STANDARD_GRAVITY
+	flags_1 = NONE
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 
-/area/mine/explored
-	name = "Mine"
+/area/planetary/lavaland/surface
+	name = "Lavaland"
 	icon_state = "explored"
 	always_unpowered = TRUE
-	requires_power = TRUE
 	poweralm = FALSE
 	power_environ = FALSE
 	power_equip = FALSE
 	power_light = FALSE
-	outdoors = TRUE
-	flags_1 = NONE
+	requires_power = TRUE
 	ambience_index = AMBIENCE_MINING
-	area_flags = VALID_TERRITORY | UNIQUE_AREA
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
 
-/area/mine/unexplored
-	name = "Mine"
+/area/planetary/lavaland/underground
+	name = "Lavaland Caves"
 	icon_state = "unexplored"
 	always_unpowered = TRUE
 	requires_power = TRUE
@@ -28,64 +50,27 @@
 	power_environ = FALSE
 	power_equip = FALSE
 	power_light = FALSE
+	ambience_index = AMBIENCE_MINING
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
+
+/area/planetary/lavaland/surface/outdoors
+	name = "Lavaland Wastes"
 	outdoors = TRUE
-	flags_1 = NONE
-	ambientsounds = AMBIENCE_MINING
-	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED
 
-/area/mine/lobby
-	name = "Mining Station"
-	icon_state = "mining_lobby"
+/area/planetary/lavaland/surface/outdoors/unexplored //monsters and ruins spawn here
+	icon_state = "unexplored"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
 
-/area/mine/storage
-	name = "Mining Station Storage"
-	icon_state = "mining_storage"
+/area/planetary/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
+	icon_state = "danger"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/cave_generator/lavaland
 
-/area/mine/production
-	name = "Mining Station Starboard Wing"
-	icon_state = "mining_production"
+/area/planetary/lavaland/surface/outdoors/explored
+	name = "Lavaland Labor Camp"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA
 
-/area/mine/abandoned
-	name = "Abandoned Mining Station"
-
-/area/mine/living_quarters
-	name = "Mining Station Port Wing"
-	icon_state = "mining_living"
-
-/area/mine/eva
-	name = "Mining Station EVA"
-	icon_state = "mining_eva"
-
-/area/mine/maintenance
-	name = "Mining Station Communications"
-
-/area/mine/cafeteria
-	name = "Mining Station Cafeteria"
-	icon_state = "mining_labor_cafe"
-
-/area/mine/hydroponics
-	name = "Mining Station Hydroponics"
-	icon_state = "mining_labor_hydro"
-
-/area/mine/sleeper
-	name = "Mining Station Emergency Sleeper"
-
-/area/mine/mechbay
-	name = "Mining Station Mech Bay"
-	icon_state = "mechbay"
-
-/area/mine/laborcamp
-	name = "Labor Camp"
-	icon_state = "mining_labor"
-
-/area/mine/laborcamp/security
-	name = "Labor Camp Security"
-	icon_state = "security"
-	ambience_index = AMBIENCE_DANGER
-
-
-
-/**********************Ice Moon Areas**************************/
+/// Icemoon
 
 /area/planetary/icemoon
 	icon_state = "mining"
