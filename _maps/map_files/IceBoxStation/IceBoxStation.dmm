@@ -13251,9 +13251,9 @@
 /area/library)
 "aRL" = (
 /obj/machinery/door/airlock/security/glass{
-	name = "Holding Area";
-	req_access_txt = "2"
+	name = "Holding Area"
 	},
+/obj/effect/mapping_helpers/airlock/access/any/security/general,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "aRM" = (
@@ -16678,6 +16678,8 @@
 	pixel_y = 32;
 	dir = 4
 	},
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "bcz" = (
@@ -16932,6 +16934,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
 	dir = 4
 	},
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel,
 /area/hallway/secondary/exit)
 "bdx" = (
@@ -17314,6 +17318,8 @@
 /area/hallway/primary/starboard)
 "beG" = (
 /obj/machinery/door/firedoor,
+/obj/machinery/door/airlock/public/glass,
+/obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plasteel/white/corner,
 /area/hallway/secondary/exit)
 "beH" = (
@@ -42772,12 +42778,12 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/research/glass{
 	name = "Kill Chamber";
-	normalspeed = 0;
-	req_access_txt = "55"
+	normalspeed = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/general/visible{
 	dir = 4
 	},
+/obj/effect/mapping_helpers/airlock/access/any/science/xenobio,
 /turf/open/floor/plasteel/freezer,
 /area/science/xenobiology)
 "hHv" = (
