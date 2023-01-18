@@ -25,18 +25,18 @@
 	idle_power_usage = 10
 	active_power_usage = 50
 
-	var/area/holodeck/linked
-	var/area/holodeck/program
-	var/area/holodeck/last_program
-	var/area/offline_program = /area/holodeck/rec_center/offline
+	var/area/special/holodeck/linked
+	var/area/special/holodeck/program
+	var/area/special/holodeck/last_program
+	var/area/offline_program = /area/special/holodeck/rec_center/offline
 
 	var/list/program_cache
 	var/list/emag_programs
 
 	// Splitting this up allows two holodecks of the same size
 	// to use the same source patterns.  Y'know, if you want to.
-	var/holodeck_type = /area/holodeck/rec_center	// locate(this) to get the target holodeck
-	var/program_type = /area/holodeck/rec_center	// subtypes of this (but not this itself) are loadable programs
+	var/holodeck_type = /area/special/holodeck/rec_center	// locate(this) to get the target holodeck
+	var/program_type = /area/special/holodeck/rec_center	// subtypes of this (but not this itself) are loadable programs
 
 	var/active = FALSE
 	var/damaged = FALSE
@@ -59,7 +59,7 @@
 		qdel(src)
 		return
 	var/area/AS = get_area(src)
-	if(istype(AS, /area/holodeck))
+	if(istype(AS, /area/special/holodeck))
 		log_mapping("Holodeck computer cannot be in a holodeck, This would cause circular power dependency.")
 		qdel(src)
 		return
@@ -195,7 +195,7 @@
 
 /obj/machinery/computer/holodeck/proc/generate_program_list()
 	for(var/typekey in subtypesof(program_type))
-		var/area/holodeck/A = GLOB.areas_by_type[typekey]
+		var/area/special/holodeck/A = GLOB.areas_by_type[typekey]
 		if(!A || !A.contents.len)
 			continue
 		var/list/info_this = list()

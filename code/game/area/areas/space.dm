@@ -1,6 +1,3 @@
-
-// The contents of this file are gradually being moved out to other files, to finally deprecate it. Avoid adding stuff here unless it's unavoidable.
-
 /area/space
 	icon_state = "space"
 	requires_power = TRUE

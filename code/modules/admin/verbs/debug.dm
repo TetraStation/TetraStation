@@ -323,7 +323,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 	var/list/areas_with_LS = list()
 	var/list/areas_with_intercom = list()
 	var/list/areas_with_camera = list()
-	var/list/station_areas_blacklist = typecacheof(list(/area/holodeck/rec_center, /area/shuttle, /area/station/engineering/supermatter, /area/station/science/test_area, /area/space, /area/station/solar_array, /area/mine, /area/ruin, /area/asteroid))
+	var/list/station_areas_blacklist = typecacheof(list(/area/special/holodeck/rec_center, /area/shuttle, /area/station/engineering/supermatter, /area/station/science/test_area, /area/space, /area/station/solar_array, /area/mine, /area/ruin, /area/planetary/asteroid))
 
 	if(SSticker.current_state == GAME_STATE_STARTUP)
 		to_chat(usr, "Game still loading, please hold!", confidential = TRUE)

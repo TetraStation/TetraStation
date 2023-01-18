@@ -21,7 +21,7 @@
 		/area/ai_monitored/turret_protected/ai_upload,
 		/area/station/engineering,
 		/area/station/solar_array,
-		/area/holodeck,
+		/area/special/holodeck,
 		/area/shuttle,
 		/area/station/maintenance,
 		/area/station/science/test_area)

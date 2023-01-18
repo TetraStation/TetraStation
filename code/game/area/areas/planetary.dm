@@ -2,7 +2,7 @@
 
 /// Asteroid
 
-/area/asteroid
+/area/planetary/asteroid
 	name = "Asteroid"
 	icon_state = "asteroid"
 	requires_power = FALSE
@@ -11,14 +11,14 @@
 	ambience_index = AMBIENCE_MINING
 	flags_1 = CAN_BE_DIRTY_1
 
-/area/asteroid/nearstation
+/area/planetary/asteroid/nearstation
 	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
 	ambience_index = AMBIENCE_RUINS
 	always_unpowered = FALSE
 	requires_power = TRUE
 	area_flags = UNIQUE_AREA | BLOBS_ALLOWED
 
-/area/asteroid/nearstation/bomb_site
+/area/planetary/asteroid/nearstation/bomb_site
 	name = "Bomb Testing Asteroid"
 
 /// Lavaland
