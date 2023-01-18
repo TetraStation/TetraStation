@@ -26,7 +26,7 @@
 		MF = create_mafia_game()
 	MF.ui_interact(user)
 
-/area/mafia
+/area/special/mafia
 	name = "Mafia Minigame"
 	icon_state = "mafia"
 	dynamic_lighting = DYNAMIC_LIGHTING_DISABLED

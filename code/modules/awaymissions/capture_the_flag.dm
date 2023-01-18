@@ -51,7 +51,7 @@
 		forceMove(get_turf(src.reset))
 		for(var/mob/M in GLOB.player_list)
 			var/area/mob_area = get_area(M)
-			if(istype(mob_area, /area/ctf))
+			if(istype(mob_area, /area/special/ctf))
 				to_chat(M, "<span class='userdanger'>\The [src] has been returned to base!</span>")
 		STOP_PROCESSING(SSobj, src)
 
@@ -75,7 +75,7 @@
 	user.status_flags &= ~CANPUSH
 	for(var/mob/M in GLOB.player_list)
 		var/area/mob_area = get_area(M)
-		if(istype(mob_area, /area/ctf))
+		if(istype(mob_area, /area/special/ctf))
 			to_chat(M, "<span class='userdanger'>\The [src] has been taken!</span>")
 	STOP_PROCESSING(SSobj, src)
 	..()
@@ -88,7 +88,7 @@
 	START_PROCESSING(SSobj, src)
 	for(var/mob/M in GLOB.player_list)
 		var/area/mob_area = get_area(M)
-		if(istype(mob_area, /area/ctf))
+		if(istype(mob_area, /area/special/ctf))
 			to_chat(M, "<span class='userdanger'>\The [src] has been dropped!</span>")
 	anchored = TRUE
 
@@ -291,7 +291,7 @@
 			points++
 			for(var/mob/M in GLOB.player_list)
 				var/area/mob_area = get_area(M)
-				if(istype(mob_area, /area/ctf))
+				if(istype(mob_area, /area/special/ctf))
 					to_chat(M, "<span class='userdanger [team_span]'>[user.real_name] has captured \the [flag], scoring a point for [team] team! They now have [points]/[points_to_win] points!</span>")
 		if(points >= points_to_win)
 			victory()
@@ -299,7 +299,7 @@
 /obj/machinery/capture_the_flag/proc/victory()
 	for(var/mob/M in GLOB.mob_list)
 		var/area/mob_area = get_area(M)
-		if(istype(mob_area, /area/ctf))
+		if(istype(mob_area, /area/special/ctf))
 			to_chat(M, "<span class='narsie [team_span]'>[team] team wins!</span>")
 			to_chat(M, "<span class='userdanger'>Teams have been cleared. Click on the machines to vote to begin another round.</span>")
 			for(var/obj/item/ctf/W in M)
@@ -696,7 +696,7 @@
 				icon_state = "dominator-[CTF.team]"
 				for(var/mob/M in GLOB.player_list)
 					var/area/mob_area = get_area(M)
-					if(istype(mob_area, /area/ctf))
+					if(istype(mob_area, /area/special/ctf))
 						to_chat(M, "<span class='userdanger'>[user.real_name] has captured \the [src], claiming it for [CTF.team]! Go take it back!</span>")
 				break
 

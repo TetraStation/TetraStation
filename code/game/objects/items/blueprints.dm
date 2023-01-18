@@ -152,12 +152,12 @@
 		return AREA_SPACE
 	var/list/SPECIALS = list(
 		/area/shuttle,
-		/area/centcom,
-		/area/asteroid,
-		/area/tdome,
-		/area/wizard_station,
-		/area/hilbertshotel,
-		/area/hilbertshotelstorage
+		/area/special/centcom,
+		/area/planetary/asteroid,
+		/area/special/centcom/tdome,
+		/area/special/wizard_station,
+		/area/special/hilbertshotel,
+		/area/special/hilbertshotelstorage
 	)
 	for (var/type in SPECIALS)
 		if ( istype(A,type) )

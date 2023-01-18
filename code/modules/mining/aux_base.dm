@@ -156,7 +156,7 @@ interface with the mining shuttle at the landing site if a mobile beacon is also
 			var/turf/place = colony_turfs[i]
 			if(!place)
 				return BAD_COORDS
-			if(!istype(place.loc, /area/lavaland/surface))
+			if(!istype(place.loc, /area/planetary/lavaland/surface))
 				return BAD_AREA
 			if(disallowed_turf_types[place.type])
 				return BAD_TURF
@@ -257,7 +257,7 @@ interface with the mining shuttle at the landing site if a mobile beacon is also
 	dwidth = 3
 	width = 7
 	height = 5
-	area_type = /area/construction/mining/aux_base
+	area_type = /area/station/engineering/construction/mining/aux_base
 
 /obj/structure/mining_shuttle_beacon
 	name = "mining shuttle beacon"

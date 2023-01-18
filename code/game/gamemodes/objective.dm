@@ -60,7 +60,7 @@ GLOBAL_LIST(admin_objective_list) //Prefilled admin assignable objective list
 	if(SSshuttle.emergency.mode != SHUTTLE_ENDGAME)
 		return FALSE
 	var/turf/location = get_turf(M.current)
-	if(!location || istype(location, /turf/open/floor/plasteel/shuttle/red) || istype(location, /turf/open/floor/mineral/plastitanium/red/brig)) // Fails if they are in the shuttle brig
+	if(!location || istype(location, /turf/open/floor/iron/shuttle/red) || istype(location, /turf/open/floor/mineral/plastitanium/red/brig)) // Fails if they are in the shuttle brig
 		return FALSE
 	return location.onCentCom() || location.onSyndieBase()
 
@@ -652,7 +652,7 @@ GLOBAL_LIST_EMPTY(possible_items_special)
 
 /datum/objective/capture/check_completion()//Basically runs through all the mobs in the area to determine how much they are worth.
 	var/captured_amount = 0
-	var/area/centcom/holding/A = GLOB.areas_by_type[/area/centcom/holding]
+	var/area/special/centcom/holding/A = GLOB.areas_by_type[/area/special/centcom/holding]
 	for(var/mob/living/carbon/human/M in A)//Humans.
 		if(M.stat == DEAD)//Dead folks are worth less.
 			captured_amount+=0.5

@@ -85,7 +85,7 @@
 /obj/structure/closet/supplypod/Initialize(turf/spawn_location)
 	. = ..()
 	if (!spawn_location)
-		var/shippingLane = GLOB.areas_by_type[/area/centcom/supplypod/supplypod_temp_holding] //temporary holder for supplypods mid-transit
+		var/shippingLane = GLOB.areas_by_type[/area/special/centcom/supplypod/supplypod_temp_holding] //temporary holder for supplypods mid-transit
 		forceMove(shippingLane)
 	setStyle(style, TRUE) //Upon initialization, give the supplypod an iconstate, name, and description based on the "style" variable. This system is important for the centcom_podlauncher to function correctly
 
@@ -191,10 +191,10 @@
 	stay_after_drop = FALSE
 	holder.pixel_z = initial(holder.pixel_z)
 	holder.alpha = initial(holder.alpha)
-	var/shippingLane = GLOB.areas_by_type[/area/centcom/supplypod/supplypod_temp_holding]
+	var/shippingLane = GLOB.areas_by_type[/area/special/centcom/supplypod/supplypod_temp_holding]
 	forceMove(shippingLane) //Move to the centcom-z-level until the pod_landingzone says we can drop back down again
 	if (!reverse_dropoff_turf) //If we're centcom-launched, the reverse dropoff turf will be a centcom loading bay. If we're an extraction pod, it should be the ninja jail.
-		reverse_dropoff_turf = locate(/area/centcom/supplypod/loading/one) in GLOB.sortedAreas
+		reverse_dropoff_turf = locate(/area/special/centcom/supplypod/loading/one) in GLOB.sortedAreas
 	landingDelay = initial(landingDelay) //Reset the landing timers so we land on whatever turf we're aiming at normally. Will be changed to be editable later (tm)
 	fallDuration = initial(fallDuration) //This is so if someone adds a really long dramatic landing time they don't have to sit through it twice on the pod's return trip
 	openingDelay = initial(openingDelay)

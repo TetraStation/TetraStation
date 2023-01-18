@@ -323,7 +323,7 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 	var/list/areas_with_LS = list()
 	var/list/areas_with_intercom = list()
 	var/list/areas_with_camera = list()
-	var/list/station_areas_blacklist = typecacheof(list(/area/holodeck/rec_center, /area/shuttle, /area/engine/supermatter, /area/science/test_area, /area/space, /area/solar, /area/mine, /area/ruin, /area/asteroid))
+	var/list/station_areas_blacklist = typecacheof(list(/area/special/holodeck/rec_center, /area/shuttle, /area/station/engineering/supermatter, /area/station/science/test_area, /area/space, /area/station/solar_array, /area/mine, /area/ruin, /area/planetary/asteroid))
 
 	if(SSticker.current_state == GAME_STATE_STARTUP)
 		to_chat(usr, "Game still loading, please hold!", confidential = TRUE)
@@ -760,13 +760,13 @@ But you can call procs that are of type /mob/living/carbon/human/proc/ for that 
 		names[name] = list(SSmapping.space_ruins_templates[name], ZTRAIT_SPACE_RUINS, list(/area/space))
 	names += "---- Lava Ruins ----"
 	for(var/name in SSmapping.lava_ruins_templates)
-		names[name] = list(SSmapping.lava_ruins_templates[name], ZTRAIT_LAVA_RUINS, list(/area/lavaland/surface/outdoors/unexplored))
+		names[name] = list(SSmapping.lava_ruins_templates[name], ZTRAIT_LAVA_RUINS, list(/area/planetary/lavaland/surface/outdoors/unexplored))
 	names += "---- Ice Ruins ----"
 	for(var/name in SSmapping.ice_ruins_templates)
-		names[name] = list(SSmapping.ice_ruins_templates[name], ZTRAIT_ICE_RUINS, list(/area/icemoon/surface/outdoors/unexplored, /area/icemoon/underground/unexplored))
+		names[name] = list(SSmapping.ice_ruins_templates[name], ZTRAIT_ICE_RUINS, list(/area/planetary/icemoon/surface/outdoors/unexplored, /area/planetary/icemoon/underground/unexplored))
 	names += "---- Ice Underground Ruins ----"
 	for(var/name in SSmapping.ice_ruins_underground_templates)
-		names[name] = list(SSmapping.ice_ruins_underground_templates[name], ZTRAIT_ICE_RUINS_UNDERGROUND, list(/area/icemoon/underground/unexplored))
+		names[name] = list(SSmapping.ice_ruins_underground_templates[name], ZTRAIT_ICE_RUINS_UNDERGROUND, list(/area/planetary/icemoon/underground/unexplored))
 
 	var/ruinname = input("Select ruin", "Spawn Ruin") as null|anything in sortList(names)
 	var/data = names[ruinname]
