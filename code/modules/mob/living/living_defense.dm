@@ -260,7 +260,7 @@
 
 
 /mob/living/attack_paw(mob/living/carbon/monkey/M)
-	if(isturf(loc) && istype(loc.loc, /area/start))
+	if(isturf(loc) && istype(loc.loc, /area/special/start))
 		to_chat(M, "No attacking people at spawn, you jackass.")
 		return FALSE
 

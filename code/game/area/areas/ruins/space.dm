@@ -279,7 +279,7 @@
 	name = "Beta Station Storage"
 	icon_state = "storage"
 
-/area/solar/ancientstation
+/area/station/solar_array/ancientstation
 	name = "Charlie Station Solar Array"
 	icon_state = "panelsP"
 
@@ -336,11 +336,11 @@
 	name = "Derelict Chapel"
 	icon_state = "chapel"
 
-/area/solar/derelict_starboard
+/area/station/solar_array/derelict_starboard
 	name = "Derelict Starboard Solar Array"
 	icon_state = "panelsS"
 
-/area/solar/derelict_aft
+/area/station/solar_array/derelict_aft
 	name = "Derelict Aft Solar Array"
 	icon_state = "yellow"
 
@@ -377,7 +377,7 @@
 
 //OLD AI SAT
 
-/area/tcommsat/oldaisat
+/area/station/engineering/tcommsat/oldaisat
 	name = "Abandoned Satellite"
 	icon_state = "tcomsatcham"
 

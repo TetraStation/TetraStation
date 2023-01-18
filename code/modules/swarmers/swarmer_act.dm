@@ -89,7 +89,7 @@
 			to_chat(actor, "<span class='warning'>Destroying this object has the potential to cause a hull breach. Aborting.</span>")
 			actor.target = null
 			return FALSE
-		else if(istype(turf_area, /area/engine/supermatter))
+		else if(istype(turf_area, /area/station/engineering/supermatter))
 			to_chat(actor, "<span class='warning'>Disrupting the containment of a supermatter crystal would not be to our benefit. Aborting.</span>")
 			actor.target = null
 			return FALSE
@@ -170,7 +170,7 @@
 			to_chat(actor, "<span class='warning'>Destroying this object has the potential to cause a hull breach. Aborting.</span>")
 			actor.target = null
 			return TRUE
-		else if(istype(turf_area, /area/engine/supermatter))
+		else if(istype(turf_area, /area/station/engineering/supermatter))
 			to_chat(actor, "<span class='warning'>Disrupting the containment of a supermatter crystal would not be to our benefit. Aborting.</span>")
 			actor.target = null
 			return TRUE
@@ -184,7 +184,7 @@
 			to_chat(actor, "<span class='warning'>Destroying this object has the potential to cause a hull breach. Aborting.</span>")
 			actor.target = null
 			return TRUE
-		if(istype(adj_area, /area/engine/supermatter))
+		if(istype(adj_area, /area/station/engineering/supermatter))
 			to_chat(actor, "<span class='warning'>Disrupting the containment of a supermatter crystal would not be to our benefit. Aborting.</span>")
 			actor.target = null
 			return TRUE
