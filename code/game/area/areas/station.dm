@@ -1150,6 +1150,9 @@
 	name = "AI Satellite"
 	icon_state = "ai"
 
+/area/ai_monitored/turret_protected/aisat/exterior
+	name = "AI Satellite Exterior"
+
 /area/ai_monitored/turret_protected/aisat/atmos
 	name = "AI Satellite Atmos"
 	icon_state = "ai"
@@ -1165,11 +1168,6 @@
 /area/ai_monitored/turret_protected/aisat/hallway
 	name = "AI Satellite Hallway"
 	icon_state = "ai"
-
-/area/aisat
-	name = "AI Satellite Exterior"
-	icon_state = "ai"
-	airlock_wires = /datum/wires/airlock/ai
 
 /area/ai_monitored/turret_protected/aisat_interior
 	name = "AI Satellite Antechamber"

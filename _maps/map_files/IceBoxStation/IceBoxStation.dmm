@@ -27446,7 +27446,7 @@
 	dir = 9
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "bJS" = (
 /obj/machinery/door/poddoor/incinerator_atmos_aux,
 /turf/open/floor/engine/vacuum,
@@ -35418,10 +35418,10 @@
 /obj/machinery/atmospherics/pipe/simple/yellow/visible,
 /obj/machinery/meter,
 /turf/closed/wall/r_wall,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "ctZ" = (
 /turf/closed/wall/r_wall,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cua" = (
 /turf/closed/wall,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -35466,7 +35466,7 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "cuf" = (
 /turf/closed/wall/r_wall,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cug" = (
 /obj/machinery/status_display/ai{
 	pixel_y = -32
@@ -35491,11 +35491,11 @@
 /obj/item/crowbar/red,
 /obj/item/clothing/head/welding,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cui" = (
 /obj/machinery/atmospherics/components/unary/tank/air,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuj" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/aisat_interior)
@@ -35513,20 +35513,20 @@
 "cum" = (
 /obj/machinery/recharge_station,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cun" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Mix to MiniSat"
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuo" = (
 /obj/machinery/portable_atmospherics/canister/air,
 /obj/machinery/firealarm/directional/west,
 /obj/effect/turf_decal/stripes/corner,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cup" = (
 /obj/structure/showcase/cyborg/old{
 	dir = 8;
@@ -35536,14 +35536,14 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuq" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	name = "Air Out"
 	},
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cur" = (
 /obj/structure/showcase/cyborg/old{
 	dir = 4;
@@ -35575,11 +35575,11 @@
 /obj/structure/extinguisher_cabinet/directional/north,
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuw" = (
 /obj/effect/turf_decal/stripes/line,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cux" = (
 /obj/structure/table,
 /obj/item/stack/sheet/metal/fifty,
@@ -35593,14 +35593,14 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuy" = (
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/aisat_interior)
 "cuz" = (
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuA" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -35617,7 +35617,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuB" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -35628,12 +35628,12 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuC" = (
 /obj/machinery/holopad/secure,
 /obj/machinery/atmospherics/pipe/layer_manifold,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuD" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -35645,7 +35645,7 @@
 	start_active = 1
 	},
 /obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/aisat/atmos";
+	control_area = "/area/ai_monitored/turret_protected/aisat/exterior/atmos";
 	name = "Atmospherics Turret Control";
 	pixel_x = -27;
 	req_access = null;
@@ -35661,7 +35661,7 @@
 	dir = 4
 	},
 /obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/aisat/service";
+	control_area = "/area/ai_monitored/turret_protected/aisat/exterior/service";
 	name = "Service Bay Turret Control";
 	pixel_x = 27;
 	req_access = null;
@@ -35691,14 +35691,14 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuI" = (
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuJ" = (
 /obj/machinery/holopad/secure,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuK" = (
 /obj/machinery/light/small{
 	dir = 4
@@ -35721,7 +35721,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuL" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -35729,7 +35729,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuM" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /obj/effect/turf_decal/stripes/line{
@@ -35738,7 +35738,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuO" = (
 /obj/machinery/ai_slipper{
 	uses = 10
@@ -35749,7 +35749,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuP" = (
 /obj/structure/cable,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -35803,7 +35803,7 @@
 "cuV" = (
 /obj/structure/cable,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuW" = (
 /obj/machinery/ai_slipper{
 	uses = 10
@@ -35813,7 +35813,7 @@
 	dir = 10
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuX" = (
 /obj/machinery/power/port_gen/pacman,
 /obj/effect/turf_decal/stripes/line{
@@ -35822,7 +35822,7 @@
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cuY" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -35838,12 +35838,12 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cuZ" = (
 /obj/effect/turf_decal/tile/blue,
 /mob/living/simple_animal/bot/floorbot,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "cva" = (
 /turf/closed/wall/r_wall,
 /area/ai_monitored/turret_protected/ai)
@@ -35882,7 +35882,7 @@
 /area/ai_monitored/turret_protected/aisat_interior)
 "cve" = (
 /obj/machinery/turretid{
-	control_area = "/area/ai_monitored/turret_protected/aisat/hallway";
+	control_area = "/area/ai_monitored/turret_protected/aisat/exterior/hallway";
 	name = "Chamber Hallway Turret Control";
 	pixel_x = 32;
 	pixel_y = -24;
@@ -35904,7 +35904,7 @@
 	},
 /mob/living/simple_animal/bot/cleanbot,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cvh" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -35920,13 +35920,13 @@
 	dir = 8
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "cvj" = (
 /turf/closed/wall,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvk" = (
 /turf/closed/wall/r_wall,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvl" = (
 /turf/open/floor/iron/dark,
 /area/ai_monitored/turret_protected/ai)
@@ -35939,7 +35939,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /obj/effect/mapping_helpers/airlock/access/any/science/minisat,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvp" = (
 /turf/open/floor/circuit,
 /area/ai_monitored/turret_protected/ai)
@@ -35948,7 +35948,7 @@
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/any/science/minisat,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvr" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4
@@ -35958,23 +35958,23 @@
 "cvs" = (
 /obj/machinery/portable_atmospherics/scrubber,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvt" = (
 /obj/structure/sign/warning/securearea{
 	pixel_x = 32
 	},
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvu" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvv" = (
 /turf/closed/wall,
 /area/ai_monitored/turret_protected/ai)
 "cvw" = (
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvx" = (
 /obj/effect/landmark/start/ai/secondary,
 /obj/item/radio/intercom{
@@ -36002,7 +36002,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvA" = (
 /obj/effect/landmark/start/ai/secondary,
 /obj/item/radio/intercom{
@@ -36030,19 +36030,19 @@
 /obj/item/crowbar/red,
 /obj/item/wrench,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvC" = (
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvD" = (
 /obj/structure/reagent_dispensers/watertank,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvE" = (
 /obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvG" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4;
@@ -36052,7 +36052,7 @@
 	dir = 8
 	},
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvJ" = (
 /obj/machinery/porta_turret/ai{
 	dir = 4;
@@ -36062,7 +36062,7 @@
 	dir = 4
 	},
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvM" = (
 /obj/machinery/camera/motion{
 	c_tag = "MiniSat Core Hallway";
@@ -36071,14 +36071,14 @@
 	},
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvN" = (
 /obj/structure/sign/warning/securearea{
 	pixel_x = -32
 	},
 /obj/structure/cable,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvO" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -36089,30 +36089,30 @@
 /obj/machinery/door/airlock/maintenance_hatch,
 /obj/effect/mapping_helpers/airlock/access/any/science/minisat,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvT" = (
 /obj/structure/cable,
 /obj/machinery/holopad/secure,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvV" = (
 /obj/structure/cable,
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvX" = (
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cvZ" = (
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cwa" = (
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/circuit,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cwe" = (
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall/r_wall,
@@ -36169,7 +36169,7 @@
 "cwq" = (
 /obj/structure/grille,
 /turf/open/floor/plating,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cwr" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -37116,7 +37116,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/hallway)
+/area/ai_monitored/turret_protected/aisat/exterior/hallway)
 "cBT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small{
@@ -39945,7 +39945,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "evH" = (
 /obj/structure/table,
 /obj/structure/bedsheetbin,
@@ -45152,7 +45152,7 @@
 	dir = 1
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/service)
+/area/ai_monitored/turret_protected/aisat/exterior/service)
 "kux" = (
 /obj/structure/table/glass,
 /obj/item/storage/backpack/duffelbag/med/surgery,
@@ -52996,7 +52996,7 @@
 	dir = 5
 	},
 /turf/open/floor/iron/dark,
-/area/ai_monitored/turret_protected/aisat/atmos)
+/area/ai_monitored/turret_protected/aisat/exterior/atmos)
 "tmI" = (
 /obj/machinery/piratepad/civilian,
 /obj/effect/turf_decal/tile/brown,
