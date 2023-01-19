@@ -1845,9 +1845,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "61"
-	},
+/obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -19462,9 +19460,7 @@
 /turf/open/floor/iron,
 /area/station/crew_quarters/dorms)
 "vYK" = (
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "61"
-	},
+/obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/effect/mapping_helpers/airlock/autoname,
