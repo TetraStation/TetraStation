@@ -1845,9 +1845,7 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "61"
-	},
+/obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -2474,7 +2472,7 @@
 /obj/machinery/door/firedoor,
 /obj/machinery/door/airlock/public/glass,
 /obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron,
+/turf/open/floor/iron/textured,
 /area/station/hallway/secondary/exit)
 "alN" = (
 /obj/effect/turf_decal/stripes/line{
@@ -14221,6 +14219,9 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 4
 	},
+/obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
 /turf/open/floor/iron,
 /area/station/hallway/secondary/entry)
 "iKH" = (
@@ -15858,6 +15859,9 @@
 	dir = 6
 	},
 /obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /turf/open/floor/iron,
@@ -17508,6 +17512,7 @@
 /area/station/crew_quarters/heads/hop)
 "roD" = (
 /obj/effect/turf_decal/siding/white,
+/obj/machinery/door/firedoor/border_only,
 /turf/open/floor/iron/half,
 /area/station/hallway/secondary/entry)
 "rpy" = (
@@ -18814,7 +18819,7 @@
 	},
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/autoname,
-/turf/open/floor/iron,
+/turf/open/floor/iron/textured,
 /area/station/hallway/secondary/exit)
 "unA" = (
 /obj/effect/landmark/start/assistant,
@@ -19462,9 +19467,7 @@
 /turf/open/floor/iron,
 /area/station/crew_quarters/dorms)
 "vYK" = (
-/obj/machinery/door/airlock/engineering{
-	req_access_txt = "61"
-	},
+/obj/machinery/door/airlock/engineering,
 /obj/structure/cable,
 /obj/effect/mapping_helpers/airlock/access/all/engineering/tcoms,
 /obj/effect/mapping_helpers/airlock/autoname,
@@ -20365,6 +20368,9 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/siding/white{
+	dir = 1
+	},
+/obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
 /turf/open/floor/iron,
