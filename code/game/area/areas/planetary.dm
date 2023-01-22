@@ -5,21 +5,24 @@
 /area/planetary/asteroid
 	name = "Asteroid"
 	icon_state = "asteroid"
-	requires_power = FALSE
+	always_unpowered = TRUE
+	poweralm = FALSE
+	power_environ = FALSE
+	power_equip = FALSE
+	power_light = FALSE
+	requires_power = TRUE
 	has_gravity = STANDARD_GRAVITY
-	area_flags = UNIQUE_AREA
-	ambience_index = AMBIENCE_MINING
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
+	ambience_index = AMBIENCE_RUINS
 	flags_1 = CAN_BE_DIRTY_1
 
-/area/planetary/asteroid/nearstation
-	dynamic_lighting = DYNAMIC_LIGHTING_FORCED
-	ambience_index = AMBIENCE_RUINS
-	always_unpowered = FALSE
-	requires_power = TRUE
-	area_flags = UNIQUE_AREA | BLOBS_ALLOWED
-
-/area/planetary/asteroid/nearstation/bomb_site
+/area/planetary/asteroid/bomb_site
 	name = "Bomb Testing Asteroid"
+
+/area/planetary/asteroid/unexplored
+	icon_state = "unexplored"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/cave_generator
 
 /// Lavaland
 
@@ -60,11 +63,11 @@
 /area/planetary/lavaland/surface/outdoors/unexplored //monsters and ruins spawn here
 	icon_state = "unexplored"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/cave_generator/lavaland
 
 /area/planetary/lavaland/surface/outdoors/unexplored/danger //megafauna will also spawn here
 	icon_state = "danger"
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
-	map_generator = /datum/map_generator/cave_generator/lavaland
 
 /area/planetary/lavaland/surface/outdoors/explored
 	name = "Lavaland Labor Camp"
@@ -133,3 +136,26 @@
 /area/planetary/icemoon/underground/explored // ruins can't spawn here
 	name = "Icemoon Underground"
 	area_flags = UNIQUE_AREA
+
+/// Jungle
+/area/planetary/jungle/surface
+	name = "Jungle Planetoid Surface"
+	icon_state = "explored"
+	always_unpowered = TRUE
+	poweralm = FALSE
+	power_environ = FALSE
+	power_equip = FALSE
+	power_light = FALSE
+	requires_power = TRUE
+	ambience_index = AMBIENCE_HOLY
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
+	outdoors = TRUE
+
+/area/planetary/jungle/surface/unexplored //monsters and ruins spawn here
+	icon_state = "unexplored"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED
+	map_generator = /datum/map_generator/jungle_generator
+
+/area/planetary/jungle/surface/unexplored/danger //megafauna will also spawn here
+	icon_state = "danger"
+	area_flags = VALID_TERRITORY | UNIQUE_AREA | CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
