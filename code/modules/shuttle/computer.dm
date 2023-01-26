@@ -18,12 +18,6 @@
 	/// Authorization request cooldown to prevent request spam to admin staff
 	COOLDOWN_DECLARE(request_cooldown)
 
-
-/obj/machinery/computer/shuttle/Initialize(mapload)
-	. = ..()
-	if(!mapload)
-		connect_to_shuttle(SSshuttle.get_containing_shuttle(src))
-
 /obj/machinery/computer/shuttle/ui_interact(mob/user, datum/tgui/ui)
 	ui = SStgui.try_update_ui(user, src, ui)
 	if(!ui)
@@ -48,7 +42,7 @@
 	else
 		data["status"] = M.mode == SHUTTLE_IGNITING ? "Igniting" : M.mode != SHUTTLE_IDLE ? "In Transit" : "Idle"
 	for(var/obj/docking_port/stationary/S in SSshuttle.stationary)
-		if(!options.Find(S.port_destinations))
+		if(!options.Find(S.id))
 			continue
 		if(!M.check_dock(S, silent = TRUE))
 			continue
@@ -88,8 +82,7 @@
 					to_chat(usr, "<span class='warning'>Shuttle already in transit.</span>")
 					return
 			var/list/options = params2list(possible_destinations)
-			var/obj/docking_port/stationary/S = SSshuttle.getDock(params["shuttle_id"])
-			if(!(S.port_destinations in options))
+			if(!(params["shuttle_id"] in options))
 				log_admin("[usr] attempted to href dock exploit on [src] with target location \"[params["shuttle_id"]]\"")
 				message_admins("[usr] just attempted to href dock exploit on [src] with target location \"[params["shuttle_id"]]\"")
 				return
@@ -126,4 +119,3 @@
 /obj/machinery/computer/shuttle/connect_to_shuttle(obj/docking_port/mobile/port, obj/docking_port/stationary/dock, idnum, override=FALSE)
 	if(port && (shuttleId == initial(shuttleId) || override))
 		shuttleId = port.id
-		possible_destinations += ";[port.id]_custom"

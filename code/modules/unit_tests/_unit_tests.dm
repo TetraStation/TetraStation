@@ -26,7 +26,6 @@
 #include "machine_disassembly.dm"
 #include "medical_wounds.dm"
 #include "metabolizing.dm"
-#include "ntnetwork_tests.dm"
 #include "outfit_sanity.dm"
 #include "plantgrowth_tests.dm"
 #include "reagent_id_typos.dm"

@@ -32,7 +32,6 @@
 	bot_core_type = /obj/machinery/bot_core/mulebot
 	hud_possible = list(DIAG_STAT_HUD, DIAG_BOT_HUD, DIAG_HUD, DIAG_BATT_HUD, DIAG_PATH_HUD = HUD_LIST_LIST) //Diagnostic HUD views
 
-	var/network_id = NETWORK_BOTS_CARGO
 	/// unique identifier in case there are multiple mulebots.
 	var/id
 
@@ -89,8 +88,9 @@
 	D.set_vehicle_dir_layer(WEST, layer)
 	diag_hud_set_mulebotcell()
 
-	if(network_id)
-		AddComponent(/datum/component/ntnet_interface, network_id)
+/mob/living/simple_animal/bot/mulebot/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/ntnet_interface)
 
 /mob/living/simple_animal/bot/mulebot/handle_atom_del(atom/A)
 	if(A == load)

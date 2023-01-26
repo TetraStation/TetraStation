@@ -16,8 +16,6 @@
 	/// stationary ports and whatnot to tell them your ship's mobile
 	/// port can be used in these places, or the docking port is compatible, etc.
 	var/id
-	/// Possible destinations
-	var/port_destinations
 	///Common standard is for this to point -away- from the dockingport door, ie towards the ship
 	dir = NORTH
 	///size of covered area, perpendicular to dir. You shouldn't modify this for mobile dockingports, set automatically.
@@ -35,15 +33,6 @@
 
 	///Delete this port after ship fly off.
 	var/delete_after = FALSE
-
-/obj/docking_port/proc/register()
-	return
-
-/obj/docking_port/proc/unregister()
-	return
-
-/obj/docking_port/proc/Check_id()
-	return
 
 	//these objects are indestructible
 /obj/docking_port/Destroy(force)
@@ -154,13 +143,11 @@
 /obj/docking_port/proc/get_docked()
 	return locate(/obj/docking_port/stationary) in loc
 
-// Return id of the docked docking_port
 /obj/docking_port/proc/getDockedId()
 	var/obj/docking_port/P = get_docked()
 	if(P)
 		return P.id
 
-// Say that A in the absolute (rectangular) bounds of this shuttle or no.
 /obj/docking_port/proc/is_in_shuttle_bounds(atom/A)
 	var/turf/T = get_turf(A)
 	if(T.z != z)
@@ -184,32 +171,13 @@
 	var/datum/map_template/shuttle/roundstart_template
 	var/json_key
 
-/obj/docking_port/stationary/register()
-	if(!id)
-		id = "dock"
-	else
-		port_destinations = id
-
-	if(!name)
-		name = "dock"
-
-	var/counter = SSshuttle.assoc_stationary[id]
-	if(counter)
-		counter++
-		SSshuttle.assoc_stationary[id] = counter
-		id = "[id]_[counter]"
-		name = "[name] [counter]"
-	else
-		SSshuttle.assoc_stationary[id] = 1
-
-	if(!port_destinations)
-		port_destinations = id
-
-	SSshuttle.stationary += src
-
 /obj/docking_port/stationary/Initialize(mapload)
 	. = ..()
-	register()
+	SSshuttle.stationary += src
+	if(!id)
+		id = "[SSshuttle.stationary.len]"
+	if(name == "dock")
+		name = "dock[SSshuttle.stationary.len]"
 	if(!area_type)
 		var/area/place = get_area(src)
 		area_type = place?.type // We might be created in nullspace
@@ -222,12 +190,9 @@
 	highlight("#f00")
 	#endif
 
-/obj/docking_port/stationary/unregister()
-	SSshuttle.stationary -= src
-
 /obj/docking_port/stationary/Destroy(force)
 	if(force)
-		unregister()
+		SSshuttle.stationary -= src
 	. = ..()
 
 /obj/docking_port/stationary/Moved(atom/oldloc, dir, forced)
@@ -329,31 +294,12 @@
 	var/can_move_docking_ports = FALSE
 	var/list/hidden_turfs = list()
 
-/obj/docking_port/mobile/register(replace = FALSE)
-	if(!id)
-		id = "shuttle"
-
-	if(!name)
-		name = "shuttle"
-
-	if(!replace)
-		var/counter = SSshuttle.assoc_mobile[id]
-		if(counter)
-			counter++
-			SSshuttle.assoc_mobile[id] = counter
-			id = "[id]_[counter]"
-			name = "[name] [counter]"
-		else
-			SSshuttle.assoc_mobile[id] = 1
-
+/obj/docking_port/mobile/proc/register()
 	SSshuttle.mobile += src
-
-/obj/docking_port/mobile/unregister()
-	SSshuttle.mobile -= src
 
 /obj/docking_port/mobile/Destroy(force)
 	if(force)
-		unregister()
+		SSshuttle.mobile -= src
 		destination = null
 		previous = null
 		QDEL_NULL(assigned_transit)		//don't need it where we're goin'!
@@ -365,16 +311,9 @@
 	. = ..()
 
 	if(!id)
-		id = "shuttle"
-	if(!name)
-		name = "shuttle"
-	var/counter = 1
-	var/tmp_id = id
-	var/tmp_name = name
-	while(Check_id(id))
-		counter++
-		id = "[tmp_id]_[counter]"
-		name = "[tmp_name] [counter]"
+		id = "[SSshuttle.mobile.len]"
+	if(name == "shuttle")
+		name = "shuttle[SSshuttle.mobile.len]"
 
 	shuttle_areas = list()
 	var/list/all_turfs = return_ordered_turfs(x, y, z, dir)
@@ -393,12 +332,19 @@
 
 // Called after the shuttle is loaded from template
 /obj/docking_port/mobile/proc/linkup(datum/map_template/shuttle/template, obj/docking_port/stationary/dock)
+	var/list/static/shuttle_id = list()
+	var/idnum = ++shuttle_id[template]
+	if(idnum > 1)
+		if(id == initial(id))
+			id = "[id][idnum]"
+		if(name == initial(name))
+			name = "[name] [idnum]"
 	for(var/place in shuttle_areas)
 		var/area/area = place
-		area.connect_to_shuttle(src, dock, id, FALSE)
+		area.connect_to_shuttle(src, dock, idnum, FALSE)
 		for(var/each in place)
 			var/atom/atom = each
-			atom.connect_to_shuttle(src, dock, id, FALSE)
+			atom.connect_to_shuttle(src, dock, idnum, FALSE)
 
 
 //this is a hook for custom behaviour. Maybe at some point we could add checks to see if engines are intact
@@ -505,7 +451,7 @@
 	if(S1)
 		if(initiate_docking(S1) != DOCKING_SUCCESS)
 			WARNING("shuttle \"[id]\" could not enter transit space. Docked at [S0 ? S0.id : "null"]. Transit dock [S1 ? S1.id : "null"].")
-		else if(S0)
+		else
 			if(S0.delete_after)
 				qdel(S0, TRUE)
 			else

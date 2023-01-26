@@ -156,7 +156,7 @@
 	var/do_initialize = SSatoms.initialized
 	if(do_initialize != INITIALIZATION_INSSATOMS)
 		args[1] = do_initialize == INITIALIZATION_INNEW_MAPLOAD
-		if(SSatoms.InitAtom(src, FALSE, args))
+		if(SSatoms.InitAtom(src, args))
 			//we were deleted
 			return
 

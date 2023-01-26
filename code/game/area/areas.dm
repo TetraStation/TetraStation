@@ -72,11 +72,6 @@
 	///This datum, if set, allows terrain generation behavior to be ran on Initialize()
 	var/datum/map_generator/map_generator
 
-	/// Default network root for this area aka station, lavaland, etc
-	var/network_root_id = null
-	/// Area network id when you want to find all devices hooked up to this area
-	var/network_area_id = null
-
 /**
   * A list of teleport locations
   *
@@ -130,7 +125,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
   *
   * returns INITIALIZE_HINT_LATELOAD
   */
-/area/Initialize(mapload)
+/area/Initialize()
 	icon_state = ""
 	if(!ambientsounds)
 		ambientsounds = GLOB.ambience_assoc[ambience_index]
@@ -157,11 +152,6 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 		add_overlay(/obj/effect/fullbright)
 
 	reg_in_areas_in_z()
-
-	if(!mapload)
-		if(!network_root_id)
-			network_root_id = STATION_NETWORK_ROOT // default to station root because this might be created with a blueprint
-		SSnetworks.assign_area_network_id(src)
 
 	return INITIALIZE_HINT_LATELOAD
 
