@@ -6308,11 +6308,9 @@
 /turf/open/floor/iron/solarpanel/icemoon,
 /area/planetary/icemoon/surface/outdoors)
 "auf" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance/two,
-/obj/machinery/light/small,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
+/obj/machinery/airalarm/directional/east,
+/turf/open/floor/iron,
+/area/station/crew_quarters/fitness)
 "aug" = (
 /obj/machinery/firealarm/directional/south,
 /obj/structure/chair/comfy/brown{
@@ -6424,13 +6422,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron,
 /area/station/crew_quarters/dorms)
-"auz" = (
-/obj/machinery/camera{
-	c_tag = "Holodeck"
-	},
-/obj/machinery/airalarm/directional/north,
-/turf/open/floor/iron,
-/area/station/crew_quarters/fitness)
 "auA" = (
 /obj/machinery/light/small{
 	dir = 1
@@ -7681,11 +7672,12 @@
 /turf/open/floor/iron,
 /area/station/crew_quarters/fitness)
 "azr" = (
-/obj/structure/rack,
-/obj/item/pressure_plate,
-/obj/item/pressure_plate,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
+/obj/machinery/camera{
+	c_tag = "Holodeck";
+	dir = 8
+	},
+/turf/open/floor/iron,
+/area/station/crew_quarters/fitness)
 "azu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/camera{
@@ -8346,12 +8338,14 @@
 /turf/open/floor/iron,
 /area/station/cargo)
 "aBE" = (
-/obj/item/clothing/under/misc/mailman,
-/obj/item/clothing/head/mailman,
-/obj/structure/closet,
-/obj/effect/landmark/blobstart,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
+/obj/machinery/camera{
+	c_tag = "Holodeck - Fore";
+	name = "holodeck camera"
+	},
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "aBF" = (
 /obj/machinery/space_heater,
 /turf/open/floor/plating,
@@ -41612,12 +41606,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron/white,
 /area/station/medical/chemistry)
-"gjD" = (
-/obj/structure/window,
-/obj/structure/rack,
-/obj/item/assembly/signaler,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
 "gjL" = (
 /obj/effect/turf_decal/weather/snow/corner,
 /obj/machinery/light/small{
@@ -50117,10 +50105,6 @@
 	},
 /turf/open/floor/iron/dark,
 /area/station/science/nanite)
-"pKr" = (
-/obj/structure/fermenting_barrel,
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
 "pLk" = (
 /obj/structure/chair{
 	dir = 1
@@ -52905,12 +52889,15 @@
 /turf/open/floor/plating,
 /area/station/maintenance/port)
 "tdZ" = (
-/obj/structure/frame/computer{
-	anchored = 1;
-	dir = 4
+/obj/machinery/camera{
+	c_tag = "Holodeck - Aft";
+	dir = 1;
+	name = "holodeck camera"
 	},
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "tes" = (
 /obj/machinery/power/apc/auto_name/west,
 /obj/structure/cable,
@@ -225928,6 +225915,7 @@ boP
 boP
 boP
 auB
+aBE
 aro
 aro
 aro
@@ -225936,8 +225924,7 @@ aro
 aro
 aro
 aro
-aro
-aro
+tdZ
 auB
 cVb
 ijI
@@ -226185,16 +226172,16 @@ boP
 boP
 boP
 auB
-auB
-auB
-auB
-atZ
-auB
-auB
-atZ
-auB
-auB
-auB
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
 auB
 dJS
 xLr
@@ -226441,18 +226428,18 @@ boP
 boP
 boP
 boP
-boP
-arj
-arj
-arj
-auA
-avD
-awC
-ayb
-arj
-boP
-boP
-boP
+auB
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+auB
 fPh
 qkI
 hxq
@@ -226698,18 +226685,18 @@ boP
 boP
 boP
 boP
-boP
-boP
-boP
-arj
-auz
-avC
-avC
-ayb
-arj
-boP
-boP
-boP
+auB
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+auB
 dJS
 qzO
 pHJ
@@ -226955,18 +226942,18 @@ boP
 boP
 boP
 boP
-boP
-boP
-boP
-arj
 auB
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
+aro
 auB
-alP
-asx
-alP
-alP
-boP
-boP
 fPh
 qzO
 aGB
@@ -227212,18 +227199,18 @@ boP
 boP
 boP
 boP
-boP
-boP
-boP
-boP
-boP
-boP
-alP
-anf
-azr
-alP
-boP
-boP
+auB
+auB
+auB
+auB
+atZ
+auB
+auB
+atZ
+auB
+auB
+auB
+auB
 cVb
 qzO
 eAT
@@ -227471,14 +227458,14 @@ boP
 boP
 boP
 boP
-boP
-boP
-boP
-boP
-alO
-anf
-pKr
-alO
+arj
+auA
+ayb
+avD
+awC
+ayb
+ayb
+arj
 boP
 boP
 cVb
@@ -227728,15 +227715,15 @@ boP
 boP
 boP
 boP
-alO
-alO
-alO
-alP
-alP
-anf
+auB
+azr
 auf
-alP
-alP
+avC
+avC
+ayb
+ayb
+auB
+boP
 alP
 alP
 alP
@@ -227986,15 +227973,15 @@ nGX
 alO
 arp
 alO
-awD
-anf
-gjD
-anf
-anf
-anf
-aBE
 alP
-tdZ
+alP
+alP
+alP
+asx
+alP
+alP
+alP
+alP
 aDX
 alP
 aFs

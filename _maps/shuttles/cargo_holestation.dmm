@@ -25,11 +25,7 @@
 /area/shuttle/supply)
 "H" = (
 /obj/machinery/door/airlock/titanium,
-/obj/docking_port/mobile/supply{
-	dwidth = 4;
-	height = 6;
-	width = 11
-	},
+/obj/docking_port/mobile/supply,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plating,

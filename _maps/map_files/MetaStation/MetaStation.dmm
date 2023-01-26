@@ -6096,23 +6096,21 @@
 /area/station/crew_quarters/fitness/recreation)
 "amE" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
-/turf/closed/wall,
-/area/station/crew_quarters/fitness/recreation)
+/turf/closed/wall/r_wall,
+/area/station/maintenance/starboard/fore)
 "amG" = (
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 6
-	},
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden,
+/turf/closed/wall,
 /area/station/maintenance/starboard/fore)
 "amH" = (
-/obj/machinery/door/airlock/external{
-	req_one_access_txt = "13,8"
+/obj/machinery/camera{
+	c_tag = "Holodeck - Fore";
+	name = "holodeck camera"
 	},
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "amI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
@@ -7252,36 +7250,11 @@
 "apc" = (
 /turf/open/floor/plating,
 /area/station/maintenance/starboard)
-"apd" = (
-/obj/structure/table,
-/obj/item/tank/internals/emergency_oxygen{
-	pixel_x = -8
-	},
-/obj/item/tank/internals/emergency_oxygen{
-	pixel_x = -8
-	},
-/obj/item/clothing/mask/breath{
-	pixel_x = 4
-	},
-/obj/item/clothing/mask/breath{
-	pixel_x = 4
-	},
-/obj/effect/decal/cleanable/cobweb,
-/obj/structure/sign/warning/vacuum/external{
-	pixel_y = 32
-	},
-/turf/open/floor/plating,
-/area/station/maintenance/starboard/fore)
 "ape" = (
-/obj/structure/rack,
-/obj/item/clothing/gloves/color/fyellow,
-/obj/structure/sink/kitchen{
-	desc = "A sink used for washing one's hands and face. It looks rusty and home-made";
-	name = "old sink";
-	pixel_y = 28
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 9
 	},
-/obj/effect/spawner/lootdrop/maintenance/two,
-/turf/open/floor/plating,
+/turf/closed/wall,
 /area/station/maintenance/starboard/fore)
 "apf" = (
 /turf/open/floor/plating{
@@ -7794,19 +7767,13 @@
 	dir = 5
 	},
 /turf/closed/wall,
-/area/station/crew_quarters/fitness/recreation)
+/area/station/maintenance/starboard/fore)
 "aqo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
 	dir = 4
 	},
 /turf/closed/wall,
-/area/station/crew_quarters/fitness/recreation)
-"aqp" = (
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
-	dir = 9
-	},
-/turf/closed/wall,
-/area/station/crew_quarters/fitness/recreation)
+/area/station/maintenance/starboard/fore)
 "aqq" = (
 /obj/item/cigbutt,
 /turf/open/floor/plating,
@@ -8455,7 +8422,7 @@
 	dir = 6
 	},
 /turf/closed/wall/r_wall,
-/area/station/engineering/gravity_generator)
+/area/station/maintenance/starboard/fore)
 "arO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -23702,11 +23669,15 @@
 /turf/open/floor/iron,
 /area/station/security/checkpoint/engineering)
 "bcO" = (
-/obj/structure/easel,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/machinery/camera{
+	c_tag = "Holodeck - Aft";
+	dir = 1;
+	name = "holodeck camera"
 	},
-/area/station/maintenance/starboard/fore)
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "bcP" = (
 /obj/machinery/light{
 	dir = 8
@@ -64935,11 +64906,13 @@
 /turf/open/floor/iron/dark,
 /area/station/crew_quarters/fitness/recreation)
 "dht" = (
-/obj/item/cigbutt,
 /obj/structure/sign/poster/contraband/random{
 	pixel_x = -32
 	},
-/turf/open/floor/plating,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
+	dir = 4
+	},
+/turf/closed/wall,
 /area/station/maintenance/starboard/fore)
 "dhu" = (
 /obj/structure/reagent_dispensers/fueltank,
@@ -66395,9 +66368,6 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
-"dBu" = (
-/turf/closed/wall,
-/area/station/engineering/gravity_generator)
 "dBw" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
@@ -118145,13 +118115,13 @@ amD
 amD
 amD
 aqn
-arB
-arB
-arB
-arB
-arB
-arB
-arB
+dnh
+dnh
+dnh
+dnh
+dnh
+dnh
+dnh
 aBC
 arB
 arB
@@ -119419,6 +119389,7 @@ aaa
 aag
 aaa
 aeC
+amH
 afD
 afD
 afD
@@ -119427,8 +119398,7 @@ afD
 afD
 afD
 afD
-afD
-afD
+bcO
 aqo
 arI
 atd
@@ -119675,18 +119645,18 @@ aaa
 aaa
 aai
 aaa
-aeE
-afC
-afC
-aho
-aic
-acQ
-acQ
-aln
-amE
-amE
-amE
-aqp
+aeC
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+aqo
 dnh
 dnR
 aus
@@ -119932,17 +119902,17 @@ aaa
 aaa
 aaf
 aaa
-aaa
-aaf
-aaa
-acP
-aid
-aiZ
-ajX
-alo
-acP
-dnz
-dnR
+aeC
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
 dht
 dnh
 dnh
@@ -120189,19 +120159,19 @@ aaa
 aaa
 aaf
 aaf
-aaf
-aaf
-aaa
-acP
-aie
-aja
-ajY
-alp
-dtE
-anN
-dnS
-doh
-dnS
+aeC
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+aqo
+dpk
 dnS
 dCi
 dnS
@@ -120446,18 +120416,18 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaf
-aaa
-acP
-acQ
-acQ
-acQ
-acP
-acP
-dnh
-dnh
-dnh
+aeC
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+afD
+aqo
 dnh
 dnh
 dnh
@@ -120703,18 +120673,18 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaf
-aaa
-aaa
-aaa
-aaa
-aaf
-dni
+aeE
+afC
+afC
+aho
+aic
+acQ
+acQ
+aln
 amG
-amH
-anN
-dnS
+amG
+amG
+ape
 arJ
 arI
 dnh
@@ -120962,15 +120932,15 @@ aaa
 aaa
 aaa
 aaf
-aaf
-aaf
-aaf
-aaf
-aaf
+aaa
+acP
+aid
+aiZ
+ajX
+alo
 dnh
-amH
-dnh
-apd
+dnz
+dnR
 dnS
 arK
 dnS
@@ -121217,17 +121187,17 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+aaf
 aaf
 aaa
-aaf
-aaa
-ack
-dnh
-ape
+acP
+aie
+aja
+ajY
+alp
+dtE
+anN
+dnS
 dnS
 arL
 ate
@@ -121475,16 +121445,16 @@ aaa
 aaa
 aaa
 aaa
+aaf
 aaa
-aaa
-aaa
-aaf
-aaf
-aaf
-aaf
-ack
-dni
-bcO
+acP
+acQ
+acQ
+acQ
+acP
+dnh
+dnh
+dnh
 dnS
 dnS
 dnS
@@ -121744,8 +121714,8 @@ dnh
 apg
 aqs
 arM
-dBu
-dBu
+dnh
+dnh
 avv
 axY
 axU
@@ -121997,11 +121967,11 @@ ajb
 ajb
 ajb
 ajb
-ajb
-ajb
-ajb
+dqT
+dqT
+dqT
 arN
-atf
+amE
 auu
 avw
 atf

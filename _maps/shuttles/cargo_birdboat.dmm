@@ -101,10 +101,7 @@
 /area/shuttle/supply)
 "q" = (
 /obj/machinery/door/airlock/titanium,
-/obj/docking_port/mobile/supply{
-	dwidth = 3;
-	width = 10
-	},
+/obj/docking_port/mobile/supply,
 /obj/effect/mapping_helpers/airlock/access/all/supply/general,
 /obj/effect/mapping_helpers/airlock/autoname,
 /turf/open/floor/plating,
