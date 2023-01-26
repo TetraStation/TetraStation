@@ -153,7 +153,6 @@
 	var/list/SPECIALS = list(
 		/area/shuttle,
 		/area/special/centcom,
-		/area/planetary/asteroid,
 		/area/special/centcom/tdome,
 		/area/special/wizard_station,
 		/area/special/hilbertshotel,
