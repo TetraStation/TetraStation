@@ -6,7 +6,8 @@
 @use 'sass:color';
 @use 'sass:meta';
 
-$nanotrasen: #384e68;
+/* $nanotrasen: #384e68;*/
+$nanotrasen: #3B3632;
 
 @use '../colors.scss' with (
   $fg-map-keys: (),
@@ -20,7 +21,7 @@ $nanotrasen: #384e68;
   // Components
   @include meta.load-css('../components/Button.scss', $with: (
     'color-default': $nanotrasen,
-    'color-transparent-text': rgba(227, 240, 255, 0.75),
+    'color-transparent-text': rgba(240, 175, 91, 0.75),
   ));
   @include meta.load-css('../components/ProgressBar.scss', $with: (
     'color-default-fill': $nanotrasen,

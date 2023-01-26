@@ -36,7 +36,7 @@ export const Smes = (props, context) => {
   return (
     <Window
       width={340}
-      height={350}>
+      height={400}>
       <Window.Content>
         <Section title="Stored Energy">
           <ProgressBar
