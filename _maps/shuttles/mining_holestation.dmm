@@ -5,12 +5,9 @@
 /area/shuttle/mining)
 "b" = (
 /obj/docking_port/mobile{
-	dwidth = 1;
-	height = 4;
 	id = "mining";
 	name = "mining shuttle";
-	port_direction = 2;
-	width = 3
+	port_direction = 2
 	},
 /obj/machinery/door/airlock/survival_pod/glass,
 /obj/structure/fans/tiny,
