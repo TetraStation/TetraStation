@@ -164,6 +164,7 @@
 	has_gravity = STANDARD_GRAVITY
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
+	network_root_id = "MAGIC_NET"
 
 /area/special/abductor_ship
 	name = "Abductor Ship"
@@ -172,6 +173,7 @@
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
 	has_gravity = STANDARD_GRAVITY
 	flags_1 = NONE
+	network_root_id = "ALIENS"
 
 /area/special/syndicate_mothership
 	name = "Syndicate Mothership"
@@ -181,6 +183,7 @@
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | NOTELEPORT
 	flags_1 = NONE
 	ambience_index = AMBIENCE_DANGER
+	network_root_id = SYNDICATE_NETWORK_ROOT
 
 /area/special/syndicate_mothership/control
 	name = "Syndicate Control Room"

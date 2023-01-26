@@ -638,6 +638,7 @@
 	ambientsounds = list('sound/ambience/ambisin2.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/signal.ogg', 'sound/ambience/ambigen10.ogg', 'sound/ambience/ambitech.ogg',\
 											'sound/ambience/ambitech2.ogg', 'sound/ambience/ambitech3.ogg', 'sound/ambience/ambimystery.ogg')
 	airlock_wires = /datum/wires/airlock/engineering
+	network_root_id = STATION_NETWORK_ROOT	// They should of unpluged the router before they left
 
 /area/station/engineering/tcommsat/server
 	name = "Telecomms Server Room"
