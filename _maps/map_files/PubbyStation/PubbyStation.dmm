@@ -12308,35 +12308,22 @@
 /turf/open/floor/iron/freezer,
 /area/station/crew_quarters/toilet/restrooms)
 "aFf" = (
-/obj/structure/rack,
-/obj/effect/spawner/lootdrop/maintenance,
-/turf/open/floor/plating,
-/area/station/maintenance/department/cargo)
+/obj/machinery/camera{
+	c_tag = "Holodeck - Aft";
+	dir = 1;
+	name = "holodeck camera"
+	},
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "aFg" = (
 /obj/structure/sign/warning/vacuum/external{
 	pixel_y = 32
 	},
-/turf/open/floor/plating,
-/area/station/maintenance/department/cargo)
-"aFh" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 4
-	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
-/turf/open/floor/plating,
-/area/station/maintenance/department/cargo)
+/turf/closed/wall,
+/area/station/crew_quarters/fitness/recreation)
 "aFi" = (
-/turf/open/floor/plating,
-/area/station/maintenance/department/cargo)
-"aFj" = (
-/obj/effect/mapping_helpers/airlock/cyclelink_helper{
-	dir = 8
-	},
-/obj/machinery/door/airlock/external{
-	req_access_txt = "13"
-	},
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "aFk" = (
@@ -12597,11 +12584,14 @@
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
 "aFR" = (
-/obj/machinery/light/small{
-	dir = 4
+/obj/machinery/camera{
+	c_tag = "Holodeck - Fore";
+	name = "holodeck camera"
 	},
-/turf/open/floor/plating,
-/area/station/maintenance/department/cargo)
+/turf/open/floor/engine{
+	name = "Holodeck Projector Floor"
+	},
+/area/special/holodeck/rec_center)
 "aFU" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 8
@@ -44384,10 +44374,10 @@
 /area/station/engineering)
 "cju" = (
 /turf/closed/mineral,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cjv" = (
 /turf/closed/wall,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cjw" = (
 /obj/structure/sign/warning/securearea{
 	desc = "A warning sign which reads 'BOMB RANGE";
@@ -44398,10 +44388,10 @@
 	icon_state = "riveted";
 	name = "hyper-reinforced wall"
 	},
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cjx" = (
 /turf/open/floor/plating/asteroid/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cjB" = (
 /obj/docking_port/stationary{
 	dir = 8;
@@ -44460,7 +44450,7 @@
 "cjV" = (
 /obj/machinery/camera/preset/toxins,
 /turf/open/floor/plating/asteroid/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cjZ" = (
 /obj/structure/table,
 /obj/item/storage/crayons,
@@ -44550,7 +44540,7 @@
 "ckt" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/open/floor/plating/asteroid/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cku" = (
 /obj/structure/chair/wood,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -44641,11 +44631,11 @@
 /area/station/engineering)
 "ckK" = (
 /turf/closed/mineral/random/low_chance,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "ckL" = (
 /obj/item/beacon,
 /turf/open/floor/plating/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "ckM" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -44767,7 +44757,7 @@
 	icon_state = "lantern-on"
 	},
 /turf/open/floor/plating/asteroid/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "clk" = (
 /obj/machinery/light/small{
 	dir = 8
@@ -44791,10 +44781,10 @@
 "cls" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/closed/mineral,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "clv" = (
 /turf/closed/mineral/iron,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "clw" = (
 /turf/closed/wall/r_wall,
 /area/station/engineering/tcommsat)
@@ -44825,7 +44815,7 @@
 "clF" = (
 /obj/effect/spawner/lootdrop/maintenance,
 /turf/closed/mineral/random/low_chance,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "clG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /turf/open/floor/plating,
@@ -45370,14 +45360,14 @@
 	dir = 1
 	},
 /turf/open/floor/plating/asteroid/airless,
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cnq" = (
 /turf/closed/indestructible{
 	desc = "A wall impregnated with Fixium, able to withstand massive explosions with ease";
 	icon_state = "riveted";
 	name = "hyper-reinforced wall"
 	},
-/area/planetary/asteroid/bomb_site)
+/area/planetary/asteroid/nearstation/bomb_site)
 "cnr" = (
 /obj/structure/table,
 /obj/item/stock_parts/subspace/amplifier,
@@ -102729,6 +102719,7 @@ aaa
 aiT
 akn
 atn
+aFR
 aur
 aur
 aur
@@ -102737,8 +102728,7 @@ aur
 aur
 aur
 aur
-aur
-aur
+aFf
 atn
 aFQ
 aGN
@@ -102986,16 +102976,16 @@ aaa
 aiS
 akn
 atn
-atn
-avm
-avm
-vzz
-avm
-avm
-vzz
-avm
-avm
-atn
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
 atn
 aEj
 aEj
@@ -103240,20 +103230,20 @@ aaa
 aaa
 aaa
 aaa
-aiS
+aiT
 akn
-ato
-aiS
 atn
-awC
-axz
-ayw
-azE
-aAT
-aBY
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
 atn
-aEj
-aFf
 hUt
 aFi
 aFi
@@ -103498,19 +103488,19 @@ aaa
 aaa
 aaa
 aiS
-asn
-ale
-ale
-avn
-awD
-axA
-ayx
-azF
-aAU
-aBZ
-aDl
-aEk
-aEk
+akn
+atn
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+atn
 aEk
 aEk
 aEk
@@ -103754,20 +103744,20 @@ aaa
 aaa
 aaa
 aaa
-aiS
 aiT
-aiS
-aiS
+akn
 atn
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
+aur
 atn
-avm
-avm
-avm
-avm
-atn
-atn
-aEj
-aEj
 aEj
 aEj
 aHu
@@ -104011,21 +104001,21 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-abI
-aaa
-aaa
-aaa
-abI
-abI
-abI
-aEj
+aiS
+akn
+atn
+atn
+avm
+avm
+vzz
+avm
+avm
+vzz
+avm
+avm
+atn
 aFg
-aFR
+aFi
 aGO
 aFi
 aGO
@@ -104268,21 +104258,21 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-abI
-aaa
+aiS
+akn
+ato
+aiS
+atn
+awC
+axz
+ayw
+azE
+aAT
+aBY
 aEj
-aFh
-aEj
+aFi
+aIp
+aFi
 aGP
 aEj
 aIp
@@ -104525,22 +104515,22 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aEl
+aiS
+asn
+ale
+ale
+avn
+awD
+axA
+ayx
+azF
+aAU
+aBZ
+aDl
 aFi
-aEj
-aEj
+aFi
+aFi
+aFi
 aEj
 aIq
 aJw
@@ -104782,20 +104772,20 @@ aaa
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
-aaa
+aiS
+aiT
+aiS
+aiS
+atn
+atn
+avm
+avm
+avm
+avm
+atn
 aEj
-aFj
+aEj
+aEj
 aEj
 aEj
 aEj
@@ -105044,13 +105034,13 @@ aaa
 aaa
 aaa
 aaa
+abI
 aaa
 aaa
 aaa
-aaa
-aaa
-aaa
-aaa
+abI
+abI
+abI
 ahi
 ahi
 ahi
@@ -105302,11 +105292,11 @@ aaa
 aaa
 aaa
 aaa
-abN
 aaa
 aaa
 aaa
 aaa
+abI
 aaa
 aaa
 aaa
