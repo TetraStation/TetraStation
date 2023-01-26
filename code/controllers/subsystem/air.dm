@@ -403,14 +403,13 @@ GLOBAL_LIST_EMPTY(colored_images)
 		GLOB.colored_images += shiny
 
 /datum/controller/subsystem/air/proc/setup_template_machinery(list/atmos_machines)
-	var/obj/machinery/atmospherics/AM
-	for(var/A in 1 to atmos_machines.len)
-		AM = atmos_machines[A]
+	for(var/A in atmos_machines)
+		var/obj/machinery/atmospherics/AM = A
 		AM.atmosinit()
 		CHECK_TICK
 
-	for(var/A in 1 to atmos_machines.len)
-		AM = atmos_machines[A]
+	for(var/A in atmos_machines)
+		var/obj/machinery/atmospherics/AM = A
 		AM.build_network()
 		CHECK_TICK
 
