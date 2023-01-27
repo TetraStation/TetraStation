@@ -174,8 +174,8 @@
 		var/turf/new_ceiling = get_step_multiz(new_turf, UP) // check if a ceiling is needed
 		if(new_ceiling)
 			// generate ceiling
-			if(istype(new_ceiling, /turf/open/transparent/openspace))
-				new_ceiling.ChangeTurf(/turf/open/floor/engine/hull/ceiling, list(/turf/open/transparent/openspace))
+			if(istype(new_ceiling, /turf/open/openspace))
+				new_ceiling.ChangeTurf(/turf/open/floor/engine/hull/ceiling, list(/turf/open/openspace))
 		var/turf/old_ceiling = get_step_multiz(old_turf, UP)
 		if(old_ceiling && istype(old_ceiling, /turf/open/floor/engine/hull/ceiling)) // check if a ceiling was generated previously
 			// remove old ceiling
