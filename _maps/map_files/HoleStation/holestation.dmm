@@ -902,7 +902,8 @@
 /area/station/service/library)
 "aet" = (
 /obj/structure/cable/multilayer/connected,
-/turf/open/floor/engine/hull/reinforced,
+/obj/structure/lattice/catwalk/over/plated,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aeu" = (
 /obj/structure/cable,
@@ -2276,7 +2277,7 @@
 /area/station/hallway/primary/central)
 "akQ" = (
 /obj/structure/bonfire,
-/turf/open/floor/engine/hull,
+/turf/open/floor/glass/reinforced/airless,
 /area/space/nearstation)
 "akR" = (
 /obj/structure/displaycase/trophy,
@@ -3956,7 +3957,6 @@
 /area/station/service/library/lounge)
 "asu" = (
 /obj/structure/chair/stool,
-/obj/structure/cable,
 /turf/open/floor/engine/hull,
 /area/space/nearstation)
 "asv" = (
@@ -5974,7 +5974,8 @@
 /area/station/hallway/primary/central)
 "aCc" = (
 /obj/structure/cable/layer3,
-/turf/open/floor/engine/hull,
+/obj/structure/lattice/catwalk/over/plated,
+/turf/open/floor/plating/airless,
 /area/space/nearstation)
 "aCe" = (
 /obj/machinery/computer/atmos_control/tank/nitrous_tank{
@@ -6596,6 +6597,10 @@
 /obj/effect/mapping_helpers/airlock/unres,
 /turf/open/floor/plating,
 /area/station/maintenance/port/aft)
+"aEY" = (
+/obj/structure/railing,
+/turf/open/floor/engine/hull,
+/area/space/nearstation)
 "aEZ" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/cable,
@@ -9672,7 +9677,7 @@
 "aSg" = (
 /obj/structure/chair/stool,
 /obj/item/instrument/banjo,
-/turf/open/floor/engine/hull,
+/turf/open/floor/glass/reinforced/airless,
 /area/space/nearstation)
 "aSh" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
@@ -12762,6 +12767,9 @@
 /obj/structure/cable,
 /turf/open/floor/plating,
 /area/station/bridge)
+"fgG" = (
+/turf/open/floor/glass/reinforced/airless,
+/area/space/nearstation)
 "fhG" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
@@ -13151,7 +13159,7 @@
 /turf/open/floor/plating,
 /area/station/medical)
 "fSz" = (
-/turf/open/floor/plating/foam,
+/turf/open/floor/glass,
 /area/station/maintenance/port/aft)
 "fSO" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
@@ -14272,7 +14280,7 @@
 /area/station/cargo/warehouse)
 "iSi" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plating/foam,
+/turf/open/floor/glass,
 /area/station/maintenance/port/aft)
 "iSt" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -15399,6 +15407,11 @@
 	},
 /turf/open/floor/plating,
 /area/station/maintenance/central/secondary)
+"lBC" = (
+/obj/structure/cable,
+/obj/structure/railing,
+/turf/open/floor/engine/hull,
+/area/space/nearstation)
 "lBP" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -15710,6 +15723,12 @@
 /obj/machinery/computer/med_data/laptop,
 /turf/open/floor/wood,
 /area/station/medical/psychology)
+"mBh" = (
+/obj/effect/turf_decal/trimline/yellow/warning{
+	dir = 8
+	},
+/turf/open/floor/engine/hull,
+/area/space/nearstation)
 "mBW" = (
 /obj/effect/turf_decal/bot_red,
 /obj/effect/landmark/start/roboticist,
@@ -16634,10 +16653,6 @@
 	},
 /turf/open/floor/iron/dark/textured,
 /area/station/cargo/qm)
-"oFW" = (
-/mob/living/simple_animal/parrot/poly,
-/turf/open/floor/engine/hull/reinforced,
-/area/space/nearstation)
 "oHO" = (
 /obj/effect/turf_decal/tile/brown{
 	dir = 4
@@ -19330,6 +19345,12 @@
 	},
 /turf/open/floor/iron/dark/whole,
 /area/station/hallway/secondary/entry)
+"vKR" = (
+/obj/effect/turf_decal/trimline/yellow/warning{
+	dir = 4
+	},
+/turf/open/floor/engine/hull,
+/area/space/nearstation)
 "vKT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/structure/cable,
@@ -19634,6 +19655,12 @@
 /obj/structure/cable/multilayer/multiz,
 /turf/open/floor/plating,
 /area/station/maintenance/starboard/aft)
+"wlm" = (
+/obj/effect/turf_decal/trimline/yellow/filled/line{
+	dir = 4
+	},
+/turf/open/floor/engine/hull,
+/area/space/nearstation)
 "wls" = (
 /obj/structure/lattice/catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
@@ -20195,6 +20222,11 @@
 	},
 /turf/open/floor/iron/white,
 /area/station/medical)
+"xst" = (
+/obj/structure/cable,
+/obj/structure/lattice/catwalk/over/plated,
+/turf/open/floor/plating/airless,
+/area/space/nearstation)
 "xvT" = (
 /turf/open/openspace,
 /area/ai_monitored/turret_protected/ai)
@@ -114961,8 +114993,8 @@ ckA
 ckA
 ckA
 eLx
-lFz
-lFz
+aHo
+fgG
 agh
 abL
 agh
@@ -115004,10 +115036,10 @@ aku
 jHN
 aUw
 aay
-lFz
-lFz
-lFz
-lFz
+wlm
+wlm
+wlm
+wlm
 aLW
 abx
 aPv
@@ -115261,9 +115293,9 @@ aay
 aMc
 aay
 aay
-eLx
-bym
-bym
+sEm
+sEm
+lBC
 aet
 mIQ
 anz
@@ -115520,7 +115552,7 @@ gUO
 sEm
 sEm
 asu
-lFz
+aEY
 aCc
 aLW
 aQd
@@ -115753,8 +115785,8 @@ lFz
 eLx
 lFz
 lFz
-eLx
-eLx
+lFz
+lFz
 asm
 iRn
 iRn
@@ -115774,10 +115806,10 @@ aSr
 sEm
 aRU
 eLx
-lFz
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
+fgG
 aCc
 aLW
 aJm
@@ -116010,7 +116042,7 @@ lFz
 eLx
 lFz
 lFz
-eLx
+lFz
 lFz
 asm
 dri
@@ -116030,11 +116062,11 @@ afu
 aSr
 sEm
 aaZ
-oFW
+eLx
 aSg
-lFz
+fgG
 akQ
-lFz
+fgG
 aCc
 aqz
 auH
@@ -116288,10 +116320,10 @@ aSr
 sEm
 aaZ
 eLx
-lFz
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
+fgG
 aCc
 aqz
 amE
@@ -117312,9 +117344,9 @@ aGq
 aSE
 eQp
 eLx
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
 eLx
 lFz
 awC
@@ -117569,11 +117601,11 @@ cyP
 scH
 tAX
 eLx
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
 eLx
-lFz
+vKR
 aMy
 aSq
 aej
@@ -117826,11 +117858,11 @@ aSE
 aSE
 gUO
 bym
-sEm
-sEm
-sEm
+xst
+xst
+xst
 bym
-sEm
+xst
 aMy
 ana
 rIr
@@ -118083,11 +118115,11 @@ lFz
 lFz
 lFz
 eLx
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
 eLx
-lFz
+mBh
 aMy
 aVR
 aSS
@@ -118340,9 +118372,9 @@ aHA
 aaf
 aHA
 aHA
-lFz
-lFz
-lFz
+fgG
+fgG
+fgG
 eLx
 lFz
 awC
@@ -120615,8 +120647,8 @@ ckA
 ckA
 ckA
 eLx
-lFz
-lFz
+aHo
+fgG
 aev
 jPF
 aev

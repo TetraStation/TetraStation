@@ -14,6 +14,8 @@
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/glass)
+
 /turf/open/floor/glass/Initialize()
 	icon_state = "" //Prevent the normal icon from appearing behind the smooth overlays
 	..()
@@ -27,3 +29,5 @@
 	name = "Reinforced glass floor"
 	desc = "Do jump on it, it can take it."
 	icon = 'icons/turf/floors/reinf_glass.dmi'
+
+TURF_ATMOS_SUBTYPE_HELPER(/turf/open/floor/glass/reinforced)
