@@ -158,10 +158,7 @@
 		icon_empty = icon_state
 
 	if(hud?.mymob && slot_id && icon_full)
-		if(hud.mymob.get_item_by_slot(slot_id))
-			icon_state = icon_full
-		else
-			icon_state = icon_empty
+		icon_state = hud.mymob.get_item_by_slot(slot_id) ? icon_full : icon_empty
 
 /obj/screen/inventory/proc/add_overlays()
 	var/mob/user = hud?.mymob
@@ -210,7 +207,7 @@
 				. += blocked_overlay
 
 	if(held_index == hud.mymob.active_hand_index)
-		. += "hand_active"
+		. += (held_index % 2) ? "lhandactive" : "rhandactive"
 
 
 /obj/screen/inventory/hand/Click(location, control, params)
