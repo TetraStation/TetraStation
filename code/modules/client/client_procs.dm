@@ -439,6 +439,11 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 		if (menuitem)
 			menuitem.Load_checked(src)
 
+/client/proc/open_filter_editor(atom/in_atom)
+	if(holder)
+		holder.filteriffic = new /datum/filter_editor(in_atom)
+		holder.filteriffic.ui_interact(mob)
+
 	view_size = new(src, getScreenSize(prefs.widescreenpref))
 	view_size.resetFormat()
 	view_size.setZoomMode()
