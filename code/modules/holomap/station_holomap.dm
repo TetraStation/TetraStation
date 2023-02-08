@@ -3,11 +3,12 @@
 #define HOLOMAP_LIGHT_OFF 0
 
 // Wall mounted holomap of the station
-// Credit to polaris for the code which this current map was originally based off of, and credit to VG for making it in the first place.
+// This code's travelled far - we got it from Bee, who got it from NSV (Technically also Bee), who got it from Skyrat, who got it from Polaris, who got it from /vg/.
+// Essentially: Here be dragons.
 
 /obj/machinery/station_map
-	name = "\improper ship holomap"
-	desc = "A virtual map of the surrounding ship."
+	name = "\improper station holomap"
+	desc = "A virtual map of the surrounding station."
 	icon = 'icons/holomap/stationmap.dmi'
 	icon_state = "station_map"
 	layer = ABOVE_WINDOW_LAYER
@@ -105,8 +106,6 @@
 
 	if(bogus)
 		to_chat(user, "<span class='warning'>The holomap failed to initialize. This area of space cannot be mapped.</span>")
-	else
-		to_chat(user, "<span class='warning'>A hologram of the station appears before your eyes.</span>")
 
 	return TRUE
 
