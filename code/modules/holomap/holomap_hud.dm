@@ -45,26 +45,3 @@
 		disabled_overlays += overlay_data["[selected_entry]"]
 
 	used_station_map.holomap_datum.update_map(used_station_map.handle_overlays())
-
-/atom/movable/screen/holomap/MouseEntered(location, control, params)
-	. = ..()
-	MouseMove(location, control, params)
-
-/atom/movable/screen/holomap/MouseMove(location, control, params)
-	if(!used_station_map)
-		return
-
-	var/list/modifiers = params2list(params)
-	var/icon_x = text2num(LAZYACCESS(modifiers, ICON_X))
-	var/icon_y = text2num(LAZYACCESS(modifiers, ICON_Y))
-	var/list/position_to_name = SSholomaps.holomap_position_to_name["[used_station_map.current_z_level]"]
-
-	if(!position_to_name || !usr.hud_used)
-		return
-
-	var/text_for_screentip = position_to_name["[icon_x]:[icon_y]"]
-
-	maptext = "<span class='maptext' style='text-align: center; font-size: 32px'>[text_for_screentip]</span>"
-	maptext_x = icon_x
-	maptext_y = icon_y
-	maptext_width = 96
