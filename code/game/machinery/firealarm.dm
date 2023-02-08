@@ -52,9 +52,12 @@ INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/firealarm, 28)
 	update_icon()
 	myarea = get_area(src)
 	LAZYADD(myarea.firealarms, src)
+	if(istype(get_area(src), /area/station))
+		LAZYADD(GLOB.station_fire_alarms["[z]"], src)
 
 /obj/machinery/firealarm/Destroy()
 	LAZYREMOVE(myarea.firealarms, src)
+	LAZYREMOVE(GLOB.station_fire_alarms["[z]"], src)
 	return ..()
 
 /obj/machinery/firealarm/update_icon_state()

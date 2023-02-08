@@ -252,3 +252,14 @@ GLOBAL_LIST_INIT(shove_disarming_types, typecacheof(list(
 #define BULLET_ACT_TURF				"TURF"		//It hit us but it should hit something on the same turf too. Usually used for turfs.
 
 #define NICE_SHOT_RICOCHET_BONUS	10			//if the shooter has the NICE_SHOT trait and they fire a ricocheting projectile, add this to the ricochet chance and auto aim angle
+
+/// Alternate attack defines. Return these at the end of procs like afterattack_alt.
+/// Calls the normal attack proc. For example, if returned in afterattack_alt, will call afterattack.
+/// Will continue the chain depending on the return value of the non-alternate proc, like with normal attacks.
+#define ALT_ATTACK_CALL_NORMAL 1
+
+/// Cancels the attack chain entirely.
+#define ALT_ATTACK_CANCEL_ATTACK_CHAIN 2
+
+/// Proceed with the attack chain, but don't call the normal methods.
+#define ALT_ATTACK_CONTINUE_CHAIN 3

@@ -79,22 +79,22 @@
 		return
 
 	var/list/modifiers = params2list(params)
-	if(modifiers["shift"] && modifiers["middle"])
-		ShiftMiddleClickOn(A)
-		return
-	if(modifiers["shift"] && modifiers["ctrl"])
-		CtrlShiftClickOn(A)
-		return
-	if(modifiers["middle"])
-		MiddleClickOn(A)
-		return
-	if(modifiers["shift"])
+	if(LAZYACCESS(modifiers, SHIFT_CLICK))
+		if(LAZYACCESS(modifiers, MIDDLE_CLICK))
+			ShiftMiddleClickOn(A)
+			return
+		if(LAZYACCESS(modifiers, CTRL_CLICK))
+			CtrlShiftClickOn(A)
+			return
 		ShiftClickOn(A)
 		return
-	if(modifiers["alt"]) // alt and alt-gr (rightalt)
+	if(LAZYACCESS(modifiers, MIDDLE_CLICK))
+		MiddleClickOn(A)
+		return
+	if(LAZYACCESS(modifiers, ALT_CLICK)) // alt and alt-gr (rightalt)
 		AltClickOn(A)
 		return
-	if(modifiers["ctrl"])
+	if(LAZYACCESS(modifiers, CTRL_CLICK))
 		CtrlClickOn(A)
 		return
 
@@ -106,7 +106,7 @@
 	if(next_move > world.time) // in the year 2000...
 		return
 
-	if(!modifiers["catcher"] && A.IsObscured())
+	if(!LAZYACCESS(modifiers, "catcher") && A.IsObscured())
 		return
 
 	if(ismecha(loc))
@@ -411,14 +411,14 @@
 			setDir(WEST)
 
 //debug
-/obj/screen/proc/scale_to(x1,y1)
+/atom/movable/screen/proc/scale_to(x1,y1)
 	if(!y1)
 		y1 = x1
 	var/matrix/M = new
 	M.Scale(x1,y1)
 	transform = M
 
-/obj/screen/click_catcher
+/atom/movable/screen/click_catcher
 	icon = 'icons/mob/screen_gen.dmi'
 	icon_state = "catcher"
 	plane = CLICKCATCHER_PLANE
@@ -428,7 +428,7 @@
 #define MAX_SAFE_BYOND_ICON_SCALE_TILES (MAX_SAFE_BYOND_ICON_SCALE_PX / world.icon_size)
 #define MAX_SAFE_BYOND_ICON_SCALE_PX (33 * 32)			//Not using world.icon_size on purpose.
 
-/obj/screen/click_catcher/proc/UpdateGreed(view_size_x = 15, view_size_y = 15)
+/atom/movable/screen/click_catcher/proc/UpdateGreed(view_size_x = 15, view_size_y = 15)
 	var/icon/newicon = icon('icons/mob/screen_gen.dmi', "catcher")
 	var/ox = min(MAX_SAFE_BYOND_ICON_SCALE_TILES, view_size_x)
 	var/oy = min(MAX_SAFE_BYOND_ICON_SCALE_TILES, view_size_y)
@@ -443,13 +443,13 @@
 	M.Scale(px/sx, py/sy)
 	transform = M
 
-/obj/screen/click_catcher/Click(location, control, params)
+/atom/movable/screen/click_catcher/Click(location, control, params)
 	var/list/modifiers = params2list(params)
-	if(modifiers["middle"] && iscarbon(usr))
+	if(LAZYACCESS(modifiers, MIDDLE_CLICK) && iscarbon(usr))
 		var/mob/living/carbon/C = usr
 		C.swap_hand()
 	else
-		var/turf/T = params2turf(modifiers["screen-loc"], get_turf(usr.client ? usr.client.eye : usr), usr.client)
+		var/turf/T = params2turf(LAZYACCESS(modifiers, SCREEN_LOC), get_turf(usr.client ? usr.client.eye : usr), usr.client)
 		params += "&catcher=1"
 		if(T)
 			T.Click(location, control, params)
@@ -460,8 +460,8 @@
 	return
 
 /mob/dead/observer/MouseWheelOn(atom/A, delta_x, delta_y, params)
-	var/list/modifier = params2list(params)
-	if(modifier["shift"])
+	var/list/modifiers = params2list(params)
+	if(LAZYACCESS(modifiers, SHIFT_CLICK))
 		var/view = 0
 		if(delta_y > 0)
 			view = -1

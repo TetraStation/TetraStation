@@ -73,7 +73,6 @@
 	item_flags = NOBLUDGEON | ABSTRACT | DROPDEL
 	//inhand_icon_state = null
 	w_class = WEIGHT_CLASS_GIGANTIC
-	layer = ABOVE_HUD_LAYER
 	plane = ABOVE_HUD_PLANE
 
 	var/atom/movable/focus

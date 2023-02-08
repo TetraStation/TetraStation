@@ -45,7 +45,6 @@
 			if(observe.client)
 				observe.client.screen -= I
 	I.forceMove(src)
-	I.layer = ABOVE_HUD_LAYER
 	I.plane = ABOVE_HUD_PLANE
 	I.appearance_flags |= NO_CLIENT_COLOR
 	var/not_handled = FALSE
@@ -175,7 +174,7 @@
 	for(var/mob/living/carbon/C in orange(1, src))
 		if(!CanReach(C))
 			continue
-		var/obj/screen/alert/give/G = C.throw_alert("[src]", /obj/screen/alert/give)
+		var/atom/movable/screen/alert/give/G = C.throw_alert("[src]", /atom/movable/screen/alert/give)
 		if(!G)
 			continue
 		G.setup(C, src, receiving)

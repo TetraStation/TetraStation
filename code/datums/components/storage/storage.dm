@@ -42,8 +42,8 @@
 
 	var/display_numerical_stacking = FALSE			//stack things of the same type and show as a single object with a number.
 
-	var/obj/screen/storage/boxes					//storage display object
-	var/obj/screen/close/closer						//close button object
+	var/atom/movable/screen/storage/boxes					//storage display object
+	var/atom/movable/screen/close/closer						//close button object
 
 	var/allow_big_nesting = FALSE					//allow storage objects of the same or greater size.
 
@@ -360,7 +360,6 @@
 			ND.sample_object.mouse_opacity = MOUSE_OPACITY_OPAQUE
 			ND.sample_object.screen_loc = "[cx]:[screen_pixel_x],[cy]:[screen_pixel_y]"
 			ND.sample_object.maptext = "<font color='white'>[(ND.number > 1)? "[ND.number]" : ""]</font>"
-			ND.sample_object.layer = ABOVE_HUD_LAYER
 			ND.sample_object.plane = ABOVE_HUD_PLANE
 			cx++
 			if(cx - screen_start_x >= cols)
@@ -376,7 +375,6 @@
 			O.mouse_opacity = MOUSE_OPACITY_OPAQUE //This is here so storage items that spawn with contents correctly have the "click around item to equip"
 			O.screen_loc = "[cx]:[screen_pixel_x],[cy]:[screen_pixel_y]"
 			O.maptext = ""
-			O.layer = ABOVE_HUD_LAYER
 			O.plane = ABOVE_HUD_PLANE
 			cx++
 			if(cx - screen_start_x >= cols)
@@ -446,7 +444,6 @@
 		if(QDELETED(O))
 			continue
 		O.screen_loc = "[cx],[cy]"
-		O.layer = ABOVE_HUD_LAYER
 		O.plane = ABOVE_HUD_PLANE
 		cx++
 		if(cx > mx)
@@ -575,14 +572,14 @@
 	// this must come before the screen objects only block, dunno why it wasn't before
 	if(over_object == M)
 		user_show_to_mob(M)
-	if(!istype(over_object, /obj/screen))
+	if(!istype(over_object, /atom/movable/screen))
 		dump_content_at(over_object, M)
 		return
 	if(A.loc != M)
 		return
 	playsound(A, "rustle", 50, TRUE, -5)
-	if(istype(over_object, /obj/screen/inventory/hand))
-		var/obj/screen/inventory/hand/H = over_object
+	if(istype(over_object, /atom/movable/screen/inventory/hand))
+		var/atom/movable/screen/inventory/hand/H = over_object
 		M.putItemFromInventoryInHandIfPossible(A, H.held_index)
 		return
 	A.add_fingerprint(M)

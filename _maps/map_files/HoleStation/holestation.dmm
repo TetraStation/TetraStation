@@ -2109,6 +2109,7 @@
 "akj" = (
 /obj/machinery/vending/tool,
 /obj/effect/turf_decal/bot,
+/obj/machinery/station_map/directional/north,
 /turf/open/floor/iron/mil,
 /area/station/hallway/primary/central)
 "akm" = (
@@ -7601,6 +7602,7 @@
 /area/station/maintenance/central)
 "aJm" = (
 /obj/structure/cable/layer1,
+/obj/machinery/station_map/engineering/directional/north,
 /turf/open/floor/iron,
 /area/station/engineering/engine_smes)
 "aJo" = (
@@ -9989,6 +9991,7 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
+/obj/machinery/station_map/directional/south,
 /turf/open/floor/iron,
 /area/station/crew_quarters/dorms)
 "aTG" = (
@@ -10399,6 +10402,7 @@
 /area/station/crew_quarters/heads/chief)
 "aVS" = (
 /obj/structure/chair/sofa/right,
+/obj/machinery/station_map/directional/north,
 /turf/open/floor/iron/mil,
 /area/station/service/bar/atrium)
 "aVT" = (
@@ -11367,6 +11371,14 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3,
 /turf/open/floor/iron/textured/whole,
 /area/station/crew_quarters/dorms)
+"bcr" = (
+/obj/structure/bookcase/random/adult,
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/station_map/directional/east,
+/turf/open/floor/iron/dark,
+/area/station/service/library)
 "bcu" = (
 /obj/effect/turf_decal/plaque{
 	icon_state = "L11"
@@ -12508,6 +12520,11 @@
 /obj/structure/cable,
 /turf/open/floor/wood,
 /area/station/service/library)
+"ewr" = (
+/obj/machinery/atmospherics/pipe/simple/supplymain/visible,
+/obj/machinery/station_map/engineering/directional/east,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
 "ewx" = (
 /obj/structure/lattice/catwalk,
 /obj/structure/cable,
@@ -13784,6 +13801,16 @@
 /obj/machinery/power/apc/auto_name/north,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
+"hHp" = (
+/obj/structure/closet/emcloset/anchored,
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/machinery/station_map/directional/west,
+/turf/open/floor/iron/edge{
+	dir = 8
+	},
+/area/station/hallway/secondary/entry)
 "hHr" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1{
 	dir = 8
@@ -14856,6 +14883,10 @@
 /obj/structure/cable,
 /turf/open/floor/iron,
 /area/station/hallway/primary/central)
+"kdh" = (
+/obj/machinery/station_map/engineering/directional/south,
+/turf/open/floor/iron,
+/area/station/engineering/storage)
 "kdk" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
@@ -15305,6 +15336,13 @@
 /obj/machinery/newscaster/directional/east,
 /turf/open/floor/iron,
 /area/station/security/prison)
+"lks" = (
+/obj/machinery/atmospherics/pipe/simple/orange/hidden{
+	dir = 4
+	},
+/obj/machinery/station_map/engineering/directional/south,
+/turf/open/floor/plating,
+/area/station/engineering/atmos)
 "lku" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer3{
@@ -17035,6 +17073,20 @@
 /obj/effect/spawner/structure/window/hollow,
 /turf/open/floor/plating,
 /area/station/maintenance/department/cargo)
+"pUC" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer3{
+	dir = 4
+	},
+/obj/structure/cable,
+/obj/machinery/station_map/directional/north,
+/turf/open/floor/iron,
+/area/station/hallway/primary/central)
 "pUO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 4
@@ -18420,6 +18472,7 @@
 /obj/machinery/camera/autoname{
 	dir = 6
 	},
+/obj/machinery/station_map/directional/north,
 /turf/open/floor/iron,
 /area/station/hallway/secondary/exit)
 "tuZ" = (
@@ -47937,7 +47990,7 @@ kmH
 kmH
 jFA
 abV
-fTZ
+pUC
 aCb
 apk
 azO
@@ -50003,7 +50056,7 @@ gfp
 xIs
 ata
 amM
-aBQ
+kdh
 aIU
 aJA
 nQT
@@ -54115,7 +54168,7 @@ aDj
 aUD
 aGH
 ajq
-adc
+ewr
 aeM
 aXl
 atU
@@ -110902,7 +110955,7 @@ aYS
 aFx
 aaF
 aZc
-aaF
+hHp
 aYS
 nLT
 aoF
@@ -119400,7 +119453,7 @@ aXO
 aXO
 aCY
 aXO
-aZF
+lks
 aqP
 axq
 lSu
@@ -122446,7 +122499,7 @@ aFs
 adD
 adD
 aFs
-aFU
+bcr
 aFU
 aBk
 afB

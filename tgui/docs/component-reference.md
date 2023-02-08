@@ -105,6 +105,7 @@ Just a block quote, just like this example in markdown:
 **Props:**
 
 - See inherited props: [Box](#box)
+- See inherited props: [Icon](#icon)
 
 ### `Box`
 
@@ -364,8 +365,11 @@ and displays selected entry.
 dropdown when open
 - `selected: string` - Currently selected entry
 - `width: number` - Width of dropdown button and resulting menu
-- `over: boolean` - dropdown renders over instead of below
-- `color: string` - color of dropdown button
+- `over: boolean` - Dropdown renders over instead of below
+- `color: string` - Color of dropdown button
+- `nochevron: boolean` - Whether or not the arrow on the right hand side of the dropdown button is visible
+- `noscroll: boolean` - Whether or not the dropdown menu should have a scroll bar
+- `displayText: string` - Text to always display in place of the selected text
 - `onClick: (e) => void` - Called when dropdown button is clicked
 - `onSelected: (value) => void` - Called when a value is picked from the list, `value` is the value that was picked
 

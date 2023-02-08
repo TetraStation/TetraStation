@@ -4,7 +4,9 @@
 	icon_state = "mining"
 	has_gravity = STANDARD_GRAVITY
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
+/// TODO - DEPRECATE BELOW ///
 /area/mine/explored
 	name = "Mine"
 	icon_state = "explored"
@@ -33,6 +35,8 @@
 	ambientsounds = AMBIENCE_MINING
 	area_flags = VALID_TERRITORY | UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED
 
+/// TODO - DEPRECATE ABOVE ///
+
 /area/mine/lobby
 	name = "Mining Station"
 	icon_state = "mining_lobby"
@@ -58,6 +62,7 @@
 
 /area/mine/maintenance
 	name = "Mining Station Communications"
+	holomap_color = HOLOMAP_AREACOLOR_MAINTENANCE
 
 /area/mine/cafeteria
 	name = "Mining Station Cafeteria"
@@ -66,85 +71,23 @@
 /area/mine/hydroponics
 	name = "Mining Station Hydroponics"
 	icon_state = "mining_labor_hydro"
+	holomap_color = HOLOMAP_AREACOLOR_SERVICE
 
 /area/mine/sleeper
-	name = "Mining Station Emergency Sleeper"
+	name = "Mining Station Medbay"
+	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
 
 /area/mine/mechbay
 	name = "Mining Station Mech Bay"
 	icon_state = "mechbay"
+	holomap_color = HOLOMAP_AREACOLOR_SCIENCE
 
 /area/mine/laborcamp
 	name = "Labor Camp"
 	icon_state = "mining_labor"
+	holomap_color = HOLOMAP_AREACOLOR_SECURITY
 
 /area/mine/laborcamp/security
 	name = "Labor Camp Security"
 	icon_state = "security"
 	ambience_index = AMBIENCE_DANGER
-
-
-
-/**********************Ice Moon Areas**************************/
-
-/area/planetary/icemoon
-	icon_state = "mining"
-	has_gravity = STANDARD_GRAVITY
-	flags_1 = NONE
-	area_flags = UNIQUE_AREA | FLORA_ALLOWED
-
-/area/planetary/icemoon/surface
-	name = "Icemoon"
-	icon_state = "explored"
-	always_unpowered = TRUE
-	poweralm = FALSE
-	power_environ = FALSE
-	power_equip = FALSE
-	power_light = FALSE
-	requires_power = TRUE
-	ambience_index = AMBIENCE_MINING
-	area_flags = UNIQUE_AREA | FLORA_ALLOWED
-
-/area/planetary/icemoon/surface/outdoors // weather happens here
-	name = "Icemoon Wastes"
-	outdoors = TRUE
-
-/area/planetary/icemoon/surface/outdoors/labor_camp
-	name = "Icemoon Labor Camp"
-	area_flags = UNIQUE_AREA
-
-/area/planetary/icemoon/surface/outdoors/unexplored //monsters and ruins spawn here
-	icon_state = "unexplored"
-	area_flags = UNIQUE_AREA | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | CAVES_ALLOWED
-
-/area/planetary/icemoon/surface/outdoors/unexplored/rivers // rivers spawn here
-	icon_state = "danger"
-	map_generator = /datum/map_generator/cave_generator/icemoon/surface
-
-/area/planetary/icemoon/surface/outdoors/unexplored/rivers/no_monsters
-	area_flags = UNIQUE_AREA | FLORA_ALLOWED | CAVES_ALLOWED
-
-/area/planetary/icemoon/underground
-	name = "Icemoon Caves"
-	outdoors = TRUE
-	always_unpowered = TRUE
-	requires_power = TRUE
-	poweralm = FALSE
-	power_environ = FALSE
-	power_equip = FALSE
-	power_light = FALSE
-	ambience_index = AMBIENCE_MINING
-	area_flags = UNIQUE_AREA | FLORA_ALLOWED
-
-/area/planetary/icemoon/underground/unexplored // mobs and megafauna and ruins spawn here
-	name = "Icemoon Caves"
-	icon_state = "unexplored"
-	area_flags = CAVES_ALLOWED | FLORA_ALLOWED | MOB_SPAWN_ALLOWED | MEGAFAUNA_SPAWN_ALLOWED
-
-/area/planetary/icemoon/underground/unexplored/rivers // rivers spawn here
-	icon_state = "danger"
-	map_generator = /datum/map_generator/cave_generator/icemoon
-
-/area/planetary/icemoon/underground/explored // ruins can't spawn here
-	name = "Icemoon Underground"
-	area_flags = UNIQUE_AREA

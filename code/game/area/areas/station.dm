@@ -6,6 +6,7 @@
 	ambience_index = AMBIENCE_MAINT
 	area_flags = BLOBS_ALLOWED | UNIQUE_AREA
 	airlock_wires = /datum/wires/airlock/maint
+	holomap_color = HOLOMAP_AREACOLOR_MAINTENANCE
 
 // Departmental Maintenance
 
@@ -178,10 +179,12 @@
 /area/station/maintenance/disposal
 	name = "Waste Disposal"
 	icon_state = "disposal"
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/station/maintenance/disposal/incinerator
 	name = "Incinerator"
 	icon_state = "incinerator"
+	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/station/maintenance/electronic_marketing_den
 	name = "Electronic Marketing Den"
@@ -199,6 +202,7 @@
 /area/station/maintenance/solars
 	name = "Solar Maintenance"
 	icon_state = "yellow"
+	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/station/maintenance/solars/port
 	name = "Port Solar Maintenance"
@@ -225,6 +229,9 @@
 	icon_state = "SolarcontrolFS"
 
 /// Hallways ///
+
+/area/station/hallway
+	holomap_color = HOLOMAP_AREACOLOR_HALLWAYS
 
 /area/station/hallway/primary/aft
 	name = "Aft Primary Hallway"
@@ -254,10 +261,12 @@
 /area/station/hallway/secondary/command
 	name = "Command Hallway"
 	icon_state = "bridge_hallway"
+	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/station/hallway/secondary/construction
 	name = "Construction Area"
 	icon_state = "construction"
+	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/station/hallway/secondary/exit
 	name = "Escape Shuttle Hallway"
@@ -266,14 +275,17 @@
 /area/station/hallway/secondary/exit/departure_lounge
 	name = "Departure Lounge"
 	icon_state = "escape_lounge"
+	holomap_color = HOLOMAP_AREACOLOR_ESCAPE
 
 /area/station/hallway/secondary/entry
 	name = "Arrival Shuttle Hallway"
 	icon_state = "entry"
+	holomap_color = HOLOMAP_AREACOLOR_ARRIVALS
 
 /area/station/hallway/secondary/service
 	name = "Service Hallway"
 	icon_state = "hall_service"
+	holomap_color = HOLOMAP_AREACOLOR_SERVICE
 
 /// Command ///
 
@@ -282,6 +294,7 @@
 	icon_state = "bridge"
 	ambientsounds = list('sound/ambience/signal.ogg')
 	airlock_wires = /datum/wires/airlock/command
+	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/station/bridge/meeting_room
 	name = "Heads of Staff Meeting Room"
@@ -323,6 +336,7 @@
 /area/station/crew_quarters/heads/captain
 	name = "Captain's Office"
 	icon_state = "captain"
+	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/station/crew_quarters/heads/captain/private
 	name = "Captain's Quarters"
@@ -331,26 +345,33 @@
 /area/station/crew_quarters/heads/chief
 	name = "Chief Engineer's Office"
 	icon_state = "ce_office"
+	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/station/crew_quarters/heads/cmo
 	name = "Chief Medical Officer's Office"
 	icon_state = "cmo_office"
+	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
 
 /area/station/crew_quarters/heads/hop
 	name = "Head of Personnel's Office"
 	icon_state = "hop_office"
+	holomap_color = HOLOMAP_AREACOLOR_SERVICE
 
 /area/station/crew_quarters/heads/hos
 	name = "Head of Security's Office"
 	icon_state = "hos_office"
+	holomap_color = HOLOMAP_AREACOLOR_SECURITY
 
 /area/station/crew_quarters/heads/research_director
 	name = "Research Director's Office"
 	icon_state = "rd_office"
+	holomap_color = HOLOMAP_AREACOLOR_SCIENCE
 
 /// Public ///
 
 /// Crew Quarters
+/area/station/crew_quarters
+	holomap_color = HOLOMAP_AREACOLOR_DORMS
 
 /area/station/crew_quarters/dorms
 	name = "Dormitories"
@@ -433,6 +454,7 @@
 
 /area/station/service
 	airlock_wires = /datum/wires/airlock/service
+	holomap_color = HOLOMAP_AREACOLOR_SERVICE
 
 /area/station/service/kitchen
 	name = "Kitchen"
@@ -559,6 +581,7 @@
 	icon_state = "engine"
 	ambience_index = AMBIENCE_ENGI
 	airlock_wires = /datum/wires/airlock/engineering
+	holomap_color = HOLOMAP_AREACOLOR_ENGINEERING
 
 /area/station/engineering/engine_smes
 	name = "Engineering SMES"
@@ -707,6 +730,7 @@
 	icon_state = "medbay1"
 	ambience_index = AMBIENCE_MEDICAL
 	airlock_wires = /datum/wires/airlock/medbay
+	holomap_color = HOLOMAP_AREACOLOR_MEDICAL
 
 /area/station/medical/abandoned
 	name = "Abandoned Medbay"
@@ -825,6 +849,7 @@
 	icon_state = "security"
 	ambience_index = AMBIENCE_DANGER
 	airlock_wires = /datum/wires/airlock/security
+	holomap_color = HOLOMAP_AREACOLOR_SECURITY
 
 /area/station/security/main
 	name = "Security Office"
@@ -962,6 +987,7 @@
 	icon_state = "armory"
 	ambience_index = AMBIENCE_DANGER
 	airlock_wires = /datum/wires/airlock/security
+	holomap_color = HOLOMAP_AREACOLOR_SECURITY
 
 /area/ai_monitored/security/armory/upper
 	name = "Upper Armory"
@@ -972,6 +998,7 @@
 	name = "Cargo Bay"
 	icon_state = "cargo_bay"
 	airlock_wires = /datum/wires/airlock/service // TODO: Cargo wires
+	holomap_color = HOLOMAP_AREACOLOR_CARGO
 
 /area/station/cargo/sorting
 	name = "Delivery Office"
@@ -1010,6 +1037,7 @@
 	name = "Science Division"
 	icon_state = "science"
 	airlock_wires = /datum/wires/airlock/science
+	holomap_color = HOLOMAP_AREACOLOR_SCIENCE
 
 /area/station/science/lab
 	name = "Research and Development"
@@ -1121,6 +1149,8 @@
 	icon_state = "mining"
 
 /// AI ///
+/area/ai_monitored
+	holomap_color = HOLOMAP_AREACOLOR_COMMAND
 
 /area/ai_monitored/storage/satellite
 	name = "AI Satellite Maint"
