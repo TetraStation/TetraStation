@@ -203,18 +203,6 @@
 		return
 	..()
 
-/datum/action/item_action/toggle_holomap
-	name = "Toggle Holomap"
-	icon_icon = 'icons/obj/decals.dmi'
-	button_icon_state = "map-pubby"
-
-/datum/action/item_action/toggle_holomap/Trigger()
-	if(istype(target, /obj/item/pda))
-		var/obj/item/pda/P = target
-		P.toggle_holomap(owner)
-		return
-	..()
-
 /datum/action/item_action/toggle_hood
 	name = "Toggle Hood"
 
