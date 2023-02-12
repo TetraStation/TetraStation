@@ -320,3 +320,4 @@
 	desc = initial(I.desc)
 	icon_state = initial(I.icon_state)
 	inhand_icon_state = initial(I.inhand_icon_state)
+	vis_contents.Cut() // Yarr matey, this be a codin' skill issue
