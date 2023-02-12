@@ -141,4 +141,5 @@
 	worth += gases[/datum/gas/bz][MOLES]*4
 	worth += gases[/datum/gas/miasma][MOLES]*2
 	worth += gases[/datum/gas/hydrogen][MOLES]*1
+	worth += gases[/datum/gas/radon][MOLES]*5
 	return worth

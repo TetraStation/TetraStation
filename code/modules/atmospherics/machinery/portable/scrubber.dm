@@ -24,6 +24,7 @@
 		/datum/gas/water_vapor,
 		/datum/gas/freon,
 		/datum/gas/hydrogen,
+		/datum/gas/radon
 	)
 
 /obj/machinery/portable_atmospherics/scrubber/Destroy()

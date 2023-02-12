@@ -99,7 +99,7 @@
 
 	var/list/breath_gases = breath.gases
 
-	breath.assert_gases(/datum/gas/oxygen, /datum/gas/plasma, /datum/gas/carbon_dioxide, /datum/gas/nitrous_oxide, /datum/gas/bz, /datum/gas/nitrogen, /datum/gas/tritium, /datum/gas/nitryl, /datum/gas/pluoxium, /datum/gas/stimulum, /datum/gas/freon, /datum/gas/hypernoblium)
+	breath.assert_gases(/datum/gas/oxygen, /datum/gas/plasma, /datum/gas/carbon_dioxide, /datum/gas/nitrous_oxide, /datum/gas/bz, /datum/gas/nitrogen, /datum/gas/tritium, /datum/gas/nitryl, /datum/gas/pluoxium, /datum/gas/stimulum, /datum/gas/freon, /datum/gas/hypernoblium, /datum/gas/radon)
 
 	//Partial pressures in our breath
 	var/O2_pp = breath.get_breath_partial_pressure(breath_gases[/datum/gas/oxygen][MOLES])+(8*breath.get_breath_partial_pressure(breath_gases[/datum/gas/pluoxium][MOLES]))
@@ -375,6 +375,30 @@
 		// Clear out moods when no miasma at all
 		else
 			SEND_SIGNAL(owner, COMSIG_CLEAR_MOOD_EVENT, "smell")
+
+		var/radon_pp=breath.get_breath_partial_pressure(breath_gases[/datum/gas/radon][MOLES])
+		switch(radon_pp)
+			if(0.1 to 5)
+				owner.adjustFireLoss(1)
+				owner.radiation += 5
+			if(5 to 15)
+				owner.adjustFireLoss(2)
+				owner.radiation += 10
+			if(15 to 30)
+				owner.adjustFireLoss(3)
+				owner.radiation += 20
+			if(30 to INFINITY)
+				owner.adjustFireLoss(4)
+				owner.radiation += 30
+		if(prob(radon_pp/4))
+			to_chat(owner, "<span class='warning'>Your lungs feel like they are burning</span>")
+			if(prob(radon_pp))
+				owner.emote("gasp")
+			if(radon_pp > 15)
+				if(prob(2))
+					to_chat(owner, "<span class='userdanger'>Your lungs feel like they are disintegrating!</span>")
+					src.Remove(owner, 1)
+					QDEL_NULL(src)
 
 		handle_breath_temperature(breath, H)
 		breath.garbage_collect()

@@ -101,7 +101,8 @@
 		/datum/gas/nitryl			= new/datum/tlv/dangerous,
 		/datum/gas/pluoxium			= new/datum/tlv(-1, -1, 1000, 1000), // Unlike oxygen, pluoxium does not fuel plasma/tritium fires
 		/datum/gas/freon			= new/datum/tlv/dangerous,
-		/datum/gas/hydrogen			= new/datum/tlv/dangerous
+		/datum/gas/hydrogen			= new/datum/tlv/dangerous,
+		/datum/gas/radon			= new/datum/tlv/dangerous
 	)
 
 /// Pixel offsets are overwritten by new() ATM
@@ -126,7 +127,8 @@ INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm, 28)
 		/datum/gas/nitryl			= new/datum/tlv/no_checks,
 		/datum/gas/pluoxium			= new/datum/tlv/no_checks,
 		/datum/gas/freon			= new/datum/tlv/no_checks,
-		/datum/gas/hydrogen			= new/datum/tlv/no_checks
+		/datum/gas/hydrogen			= new/datum/tlv/no_checks,
+		/datum/gas/radon			= new/datum/tlv/no_checks
 	)
 
 INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/no_alarm, 28)
@@ -150,7 +152,8 @@ INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/no_alarm, 28)
 		/datum/gas/nitryl			= new/datum/tlv/dangerous,
 		/datum/gas/pluoxium			= new/datum/tlv(-1, -1, 1000, 1000), // Unlike oxygen, pluoxium does not fuel plasma/tritium fires
 		/datum/gas/freon			= new/datum/tlv/dangerous,
-		/datum/gas/hydrogen			= new/datum/tlv/dangerous
+		/datum/gas/hydrogen			= new/datum/tlv/dangerous,
+		/datum/gas/radon			= new/datum/tlv/dangerous
 	)
 
 INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/kitchen_cold_room, 28)
@@ -537,7 +540,8 @@ INVERTED_MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/airalarm/ruin_access, 28)
 						/datum/gas/stimulum,
 						/datum/gas/pluoxium,
 						/datum/gas/freon,
-						/datum/gas/hydrogen
+						/datum/gas/hydrogen,
+						/datum/gas/radon
 					),
 					"scrubbing" = 1,
 					"widenet" = 1

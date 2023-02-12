@@ -170,6 +170,14 @@ GLOBAL_LIST_INIT(nonreactive_gases, typecacheof(list(/datum/gas/oxygen, /datum/g
 	dangerous = TRUE
 	rarity = 700
 
+/datum/gas/radon
+	id = "radon"
+	specific_heat = 180
+	name = "Radon"
+	gas_overlay = "radon"
+	moles_visible = MOLES_GAS_VISIBLE
+	fusion_power = 1
+
 /obj/effect/overlay/gas
 	icon = 'icons/effects/atmospherics.dmi'
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT

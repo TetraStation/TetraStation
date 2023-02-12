@@ -64,7 +64,8 @@
 		"caution" = /obj/machinery/portable_atmospherics/canister,
 		"miasma" = /obj/machinery/portable_atmospherics/canister/miasma,
 		"freon" = /obj/machinery/portable_atmospherics/canister/freon,
-		"hydrogen" = /obj/machinery/portable_atmospherics/canister/hydrogen
+		"hydrogen" = /obj/machinery/portable_atmospherics/canister/hydrogen,
+		"radon" = /obj/machinery/portable_atmospherics/canister/radon
 	)
 
 /obj/machinery/portable_atmospherics/canister/interact(mob/user)
@@ -194,6 +195,13 @@
 	gas_type = /datum/gas/hydrogen
 	filled = 1
 
+/obj/machinery/portable_atmospherics/canister/radon
+	name = "radon canister"
+	desc = "Radon. Ingestion may cause irradiation."
+	icon_state = "radon"
+	base_icon_state = "radon"
+	gas_type = /datum/gas/radon
+	filled = 1
 
 /obj/machinery/portable_atmospherics/canister/fusion_test
 	name = "fusion test canister"
