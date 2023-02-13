@@ -58,10 +58,12 @@
 	data["control_rods"] = 0
 	data["k"] = 0
 	data["desiredK"] = 0
+	data["maxK"] = 0
 	if(reactor)
 		data["k"] = reactor.K
 		data["desiredK"] = reactor.desired_k
 		data["control_rods"] = 100 - (reactor.desired_k / 3 * 100) //Rod insertion is extrapolated as a function of the percentage of K
+		data["maxK"] = RBMK_MAX_CRITICALITY
 	return data
 
 /obj/machinery/computer/reactor/stats
