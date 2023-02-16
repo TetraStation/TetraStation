@@ -1,6 +1,7 @@
 import { Fragment } from 'inferno';
+import { toFixed } from 'common/math';
 import { useBackend, useLocalState } from '../backend';
-import { Button, Flex, Section, ProgressBar, Slider } from '../components';
+import { Button, Flex, Section, ProgressBar, Slider, LabeledList } from '../components';
 import { Window } from '../layouts';
 
 export const RbmkControlRods = (props, context) => {
@@ -14,7 +15,7 @@ export const RbmkControlRods = (props, context) => {
       resizable
       theme="ntos"
       width={300}
-      height={300}>
+      height={360}>
       <Window.Content>
         <Section title="Control Rod Management:">
           Control Rod Insertion:
@@ -78,6 +79,63 @@ export const RbmkControlRods = (props, context) => {
                   { target: maxK })} />
             </Flex.Item>
           </Flex>
+        </Section>
+        <Section title="Reactor Status">
+          <LabeledList>
+            <LabeledList.Item label="Reactor Power">
+              <ProgressBar
+                value={data.power}
+                minValue={0}
+                maxValue={120}
+                ranges={{
+                  good: [30, 70],
+                  average: [0, 30],
+                  bad: [70, Infinity],
+                }}>
+                {toFixed(data.power) + ' (%)'}
+              </ProgressBar>
+            </LabeledList.Item>
+            <LabeledList.Item label="Reactor Pressure">
+              <ProgressBar
+                value={data.reactorPressure}
+                minValue={0}
+                maxValue={data.pressureMax}
+                ranges={{
+                  good: [0, 5000],
+                  average: [5000, 10000],
+                  bad: [10000, Infinity],
+                }}>
+                {toFixed(data.reactorPressure) + ' (kPa)'}
+              </ProgressBar>
+            </LabeledList.Item>
+
+            <LabeledList.Item label="Coolant Temperature">
+              <ProgressBar
+                value={data.coolantInput}
+                minValue={0}
+                maxValue={data.temperatureMax}
+                ranges={{
+                  good: [0, 273],
+                  average: [274, 373],
+                  bad: [374, Infinity],
+                }}>
+                {toFixed(data.coolantInput) + ' (K)'}
+              </ProgressBar>
+            </LabeledList.Item>
+            <LabeledList.Item label="Outlet Temperature">
+              <ProgressBar
+                value={data.coolantOutput}
+                minValue={0}
+                maxValue={data.temperatureMax}
+                ranges={{
+                  good: [573, 1073],
+                  average: [0, 573],
+                  bad: [1073, Infinity],
+                }}>
+                {toFixed(data.coolantOutput) + ' (K)'}
+              </ProgressBar>
+            </LabeledList.Item>
+          </LabeledList>
         </Section>
       </Window.Content>
     </Window>

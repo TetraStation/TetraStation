@@ -55,15 +55,18 @@
 
 /obj/machinery/computer/reactor/control_rods/ui_data(mob/user)
 	var/list/data = list()
-	data["control_rods"] = 0
-	data["k"] = 0
-	data["desiredK"] = 0
-	data["maxK"] = 0
-	if(reactor)
-		data["k"] = reactor.K
-		data["desiredK"] = reactor.desired_k
-		data["control_rods"] = 100 - (reactor.desired_k / 3 * 100) //Rod insertion is extrapolated as a function of the percentage of K
-		data["maxK"] = RBMK_MAX_CRITICALITY
+	data["power"] = reactor ? reactor.power : 0
+	data["reactorPressure"] = reactor ? reactor.pressure : 0
+	data["pressureMax"] = RBMK_PRESSURE_CRITICAL
+	data["temperatureMax"] = RBMK_TEMPERATURE_MELTDOWN
+	data["coolantInput"] = reactor ? reactor.last_coolant_temperature : 0
+	data["coolantOutput"] = reactor ? reactor.last_output_temperature : 0
+	data["maxK"] = RBMK_MAX_CRITICALITY
+	data["k"] = reactor ? reactor.K : 0
+	data["desiredK"] = reactor ? reactor.desired_k : 0
+
+	//Rod insertion is extrapolated as a function of the percentage of K
+	data["control_rods"] = reactor ? (100 - (reactor.desired_k / 3 * 100)) : 0
 	return data
 
 /obj/machinery/computer/reactor/stats
@@ -92,7 +95,7 @@
 
 /obj/machinery/computer/reactor/stats/process()
 	if(world.time >= next_stat_interval)
-		next_stat_interval = world.time + 1 SECONDS //You only get a slow tick.
+		next_stat_interval = world.time + 5 SECONDS //You only get a slow tick.
 		pressureData += (reactor) ? reactor.pressure : 0
 		if(pressureData.len > 100) //Only lets you track over a certain timeframe.
 			pressureData.Cut(1, 2)
