@@ -317,7 +317,7 @@ The reactor CHEWS through moderator. It does not do this slowly. Be very careful
 		moderator_input.assert_gas(/datum/gas/oxygen)
 
 		var/total_fuel_moles = moderator_input.gases[/datum/gas/plasma][MOLES] + (moderator_input.gases[/datum/gas/tritium][MOLES]*10)
-		var/power_modifier = max((moderator_input.gases[/datum/gas/oxygen] / moderator_input.total_moles() * 10), 1) //You can never have negative IPM. For now.
+		var/power_modifier = max((moderator_input.gases[/datum/gas/oxygen][MOLES] / moderator_input.total_moles() * 10), 1) //You can never have negative IPM. For now.
 		if(total_fuel_moles >= minimum_coolant_level) //You at least need SOME fuel.
 			var/power_produced = max((total_fuel_moles / moderator_input.total_moles() * 50), 1)
 			last_power_produced = max(0,((power_produced*power_modifier)*moderator_input.total_moles()))
