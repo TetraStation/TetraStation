@@ -201,3 +201,6 @@
 
 /area/shuttle/caravan/freighter3
 	name = "Tiny Freighter"
+
+/area/shuttle/commsagent
+	name = "Syndicate Recon Vessel"

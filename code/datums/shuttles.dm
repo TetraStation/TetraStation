@@ -625,6 +625,11 @@
 	suffix = "syndicate_fighter_shiv"
 	name = "Syndicate Fighter"
 
+/datum/map_template/shuttle/ruin/syndicate_listening_ship
+	suffix = "syndicate_listening_ship"
+	name = "Syndicate Listening Ship"
+	admin_notes = "It has a ghost spawner. Please be very fucking careful with how you use this."
+
 /datum/map_template/shuttle/snowdin/mining
 	suffix = "mining"
 	name = "Snowdin Mining Elevator"
