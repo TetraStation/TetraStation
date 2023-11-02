@@ -204,3 +204,4 @@
 
 /area/shuttle/commsagent
 	name = "Syndicate Recon Vessel"
+	requires_power = TRUE
