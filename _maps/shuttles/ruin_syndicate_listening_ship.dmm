@@ -63,9 +63,6 @@
 	},
 /turf/open/floor/plating,
 /area/shuttle/commsagent)
-"fB" = (
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/commsagent)
 "fK" = (
 /obj/machinery/computer/message_monitor,
 /obj/effect/decal/cleanable/dirt,
@@ -103,7 +100,7 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron/showroomfloor,
 /area/shuttle/commsagent)
-"hu" = (
+"hr" = (
 /obj/effect/turf_decal/syndicateemblem/bottom/left{
 	dir = 8
 	},
@@ -362,6 +359,12 @@
 /obj/item/clothing/under/syndicate/camo,
 /turf/open/floor/iron/grimy,
 /area/shuttle/commsagent)
+"yC" = (
+/obj/effect/turf_decal/syndicateemblem/top/right{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/commsagent)
 "yU" = (
 /obj/machinery/power/smes{
 	charge = 5e+006
@@ -389,6 +392,12 @@
 	dir = 8
 	},
 /obj/structure/cable,
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/commsagent)
+"zI" = (
+/obj/effect/turf_decal/syndicateemblem/bottom/right{
+	dir = 8
+	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/shuttle/commsagent)
 "zU" = (
@@ -431,12 +440,6 @@
 	desc = "Used to control a room's automated defenses. This one has been upgraded with a special protective casing to prevent AI interfacing."
 	},
 /obj/effect/turf_decal/syndicateemblem/top/left{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/commsagent)
-"Cy" = (
-/obj/effect/turf_decal/syndicateemblem/top/right{
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -597,6 +600,9 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/iron,
 /area/shuttle/commsagent)
+"Ha" = (
+/turf/open/floor/mineral/plastitanium/red,
+/area/shuttle/commsagent)
 "Ir" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/fancy/donut_box,
@@ -744,12 +750,6 @@
 /obj/machinery/airalarm/syndicate/directional/west,
 /turf/open/floor/iron,
 /area/shuttle/commsagent)
-"Pk" = (
-/obj/effect/turf_decal/syndicateemblem/bottom/right{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/shuttle/commsagent)
 "Py" = (
 /obj/machinery/firealarm/directional/north,
 /obj/machinery/atmospherics/components/unary/tank/air{
@@ -802,7 +802,7 @@
 /area/shuttle/commsagent)
 "Si" = (
 /obj/machinery/door/window/brigdoor/eastleft{
-	req_access = list(ACCESS_SYNDICATE);
+	req_access = list(150);
 	name = "Self-Destruct Access"
 	},
 /obj/machinery/syndicatebomb/self_destruct,
@@ -1230,9 +1230,9 @@ Jv
 wV
 aA
 MH
-hu
+hr
 WD
-Pk
+zI
 Zb
 aA
 wV
@@ -1262,8 +1262,8 @@ fK
 Qk
 Cv
 lA
-Cy
-fB
+yC
+Ha
 Zg
 zk
 Jv
