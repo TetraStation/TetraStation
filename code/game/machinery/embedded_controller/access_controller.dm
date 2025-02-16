@@ -349,7 +349,6 @@
 	playsound(src, 'sound/machines/buzz-two.ogg', 50, FALSE, 3)
 
 /obj/machinery/door_buttons/airlock_controller/poddoor/proc/syncDoors()
-	. = ..()
 	for(var/obj/machinery/door/poddoor/D in GLOB.machines)
 		if(D.id == idExterior)
 			exteriorDoors += D

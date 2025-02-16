@@ -357,7 +357,6 @@
 /datum/mafia_role/lawyer/proc/release(datum/mafia_controller/game)
 	SIGNAL_HANDLER
 
-	. = ..()
 	if(current_target)
 		UnregisterSignal(current_target, COMSIG_MAFIA_CAN_PERFORM_ACTION)
 		current_target = null
