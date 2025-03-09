@@ -31,7 +31,7 @@
 
 /datum/action/proc/link_to(Target)
 	target = Target
-	RegisterSignal(Target, COMSIG_ATOM_UPDATED_ICON, .proc/OnUpdatedIcon)
+	RegisterSignal(Target, COMSIG_ATOM_UPDATED_ICON, TYPE_PROC_REF(/datum/action, OnUpdatedIcon))
 
 /datum/action/Destroy()
 	if(owner)
@@ -282,7 +282,7 @@
 
 /datum/action/item_action/toggle_spacesuit/New(Target)
 	. = ..()
-	RegisterSignal(target, COMSIG_SUIT_SPACE_TOGGLE, .proc/toggle)
+	RegisterSignal(target, COMSIG_SUIT_SPACE_TOGGLE, TYPE_PROC_REF(/datum/action/item_action/toggle_spacesuit, toggle))
 
 /datum/action/item_action/toggle_spacesuit/Destroy()
 	UnregisterSignal(target, COMSIG_SUIT_SPACE_TOGGLE)
