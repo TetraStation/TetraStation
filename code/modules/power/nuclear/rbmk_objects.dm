@@ -144,10 +144,18 @@
 				<li><b>Plutonium-239 rod:</b> This is what happens when the Uranium on fuel rods gets used up in the reactions in a Reactor.
 				These rods are much more radioactive, and can generate much more power. .</li>
 				<li><b>Depleted fuel rod:</b> This is created when a Plutonium fuel rod loses all of the useful Plutonium on it. Highly radioactive, but very weak.</li>
-				<li><b>Bananium fuel rod:</b> Made with that space clown magic.
-				A special material rod variant that "grows" bananium ore when it is reacting with Neutrons in a Reactor.
-				Noticably radioactive and extremely hillarious. </li>
-
 				</body>
 				</html>
 			"}
+
+
+/obj/structure/closet/crate/radiation/fuel_storage
+	name = "\improper fuel rod storage crate"
+	desc = "A heavily shielded crate for storing a nuclear fuel rod"
+
+	// todo: new icon that makes it more obvious this is a heavy shielded box
+
+	rad_insulation   = RAD_EXTREME_INSULATION
+	can_weld_shut    = TRUE // So you can seal away your nuclear waste
+	storage_capacity = 3    // All that shielding takes up room, so you can't put as much stuff in it.
+	drag_slowdown    = 1.5  // Shielding's heavy!

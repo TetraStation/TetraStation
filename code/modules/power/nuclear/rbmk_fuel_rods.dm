@@ -19,6 +19,7 @@
 	var/depletion_speed_modifier = 1
 	var/depleted_final = FALSE // depletion_final should run only once
 	var/depletion_conversion_type = "plutonium"
+	var/last_grustle
 
 /obj/item/fuel_rod/Initialize()
 	.=..()
@@ -74,6 +75,19 @@
 	if(depletion >= depletion_threshold && !depleted_final)
 		depleted_final = TRUE
 		depletion_final(depletion_conversion_type)
+
+/obj/item/fuel_rod/rad_act(intensity)
+	var/obj/machinery/atmospherics/components/trinary/nuclear_reactor/N = loc
+	if(istype(N))
+		return  // If we're inside a reactor, we're doing our radioactive job, so things are fine
+
+	// Not inside a reactor, maybe we should react grumpily to being irradiated?
+	// Give off another pulse of radiation, and maybe get hotter? Creates risks due to close proximity of fuel rods, outside of the reactor.
+	if(!src.last_grustle || src.last_grustle > (world.time + 3 SECONDS))
+		spawn(0)
+			radiation_pulse(src, src.fuel_power * 10)
+		src.last_grustle = world.time
+
 
 /obj/item/fuel_rod/plutonium
 	fuel_power = 0.20
