@@ -416,7 +416,8 @@
 	if(!check_rights(0))
 		return
 
-	var/dat = {"
+	var/dat = {"<html><head><meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+		<title>Game Panel</title></head><body>
 		<center><B>Game Panel</B></center><hr>\n
 		<A href='?src=[REF(src)];[HrefToken()];c_mode=1'>Change Game Mode</A><br>
 		"}
@@ -451,6 +452,7 @@
 	if(marked_datum && istype(marked_datum, /atom))
 		dat += "<A href='?src=[REF(src)];[HrefToken()];dupe_marked_datum=1'>Duplicate Marked Datum</A><br>"
 
+	dat += "</body></html>"
 	usr << browse(dat, "window=admin2;size=240x280")
 	return
 
