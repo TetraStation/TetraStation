@@ -228,7 +228,6 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	if(isnull(old_runlevel))
 		old_runlevel = "NULL"
 
-	testing("MC: Runlevel changed from [old_runlevel] to [new_runlevel]")
 	current_runlevel = log(2, new_runlevel) + 1
 	if(current_runlevel < 1)
 		CRASH("Attempted to set invalid runlevel: [new_runlevel]")
@@ -259,7 +258,9 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	//all this shit is here so that flag edits can be refreshed by restarting the MC. (and for speed)
 	var/list/tickersubsystems = list()
-	var/list/runlevel_sorted_subsystems = list(list())	//ensure we always have at least one runlevel
+	var/list/runlevel_sorted_subsystems = list()	//ensure we always have at least one runlevel
+	var/datum/controller/subsystem/null/nowt = new
+	runlevel_sorted_subsystems += nowt
 	var/timer = world.time
 	for (var/thing in subsystems)
 		var/datum/controller/subsystem/SS = thing
@@ -280,23 +281,26 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 		for(var/I in 1 to GLOB.bitflags.len)
 			if(ss_runlevels & GLOB.bitflags[I])
 				while(runlevel_sorted_subsystems.len < I)
-					runlevel_sorted_subsystems += list(list())
-				runlevel_sorted_subsystems[I] += SS
+					runlevel_sorted_subsystems.Add(nowt)
+				runlevel_sorted_subsystems.Insert(I, SS)
 				added_to_any = TRUE
 		if(!added_to_any)
 			WARNING("[SS.name] subsystem is not SS_NO_FIRE but also does not have any runlevels set!")
 
 	queue_head = null
 	queue_tail = null
+
+	var/cached_runlevel = current_runlevel
+	var/list/current_runlevel_subsystems
 	//these sort by lower priorities first to reduce the number of loops needed to add subsequent SS's to the queue
 	//(higher subsystems will be sooner in the queue, adding them later in the loop means we don't have to loop thru them next queue add)
 	sortTim(tickersubsystems, GLOBAL_PROC_REF(cmp_subsystem_priority))
-	for(var/I in runlevel_sorted_subsystems)
-		sortTim(runlevel_sorted_subsystems, GLOBAL_PROC_REF(cmp_subsystem_priority))
-		I += tickersubsystems
+	for(var/datum/controller/subsystem/I in runlevel_sorted_subsystems)
+//		sortTim(runlevel_sorted_subsystems, GLOBAL_PROC_REF(cmp_subsystem_priority))
+		if(I.runlevels & cached_runlevel)
+			current_runlevel_subsystems?.Add(I)
 
-	var/cached_runlevel = current_runlevel
-	var/list/current_runlevel_subsystems = runlevel_sorted_subsystems[cached_runlevel]
+	runlevel_sorted_subsystems.Insert(1, tickersubsystems)
 
 	init_timeofday = REALTIMEOFDAY
 	init_time = world.time
@@ -304,7 +308,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 	iteration = 1
 	var/error_level = 0
 	var/sleep_delta = 1
-	var/list/subsystems_to_check
+	var/list/subsystems_to_check = list()
 	//the actual loop.
 
 	while (1)
@@ -343,19 +347,19 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 		//now do the actual stuff
 		if (!skip_ticks)
+			// Figure out which subsystems need to run.
 			var/checking_runlevel = current_runlevel
 			if(cached_runlevel != checking_runlevel)
 				//resechedule subsystems
 				cached_runlevel = checking_runlevel
-				current_runlevel_subsystems = runlevel_sorted_subsystems[cached_runlevel]
-				var/stagger = world.time
-				for(var/I in current_runlevel_subsystems)
-					var/datum/controller/subsystem/SS = I
-					if(SS.next_fire <= world.time)
-						stagger += world.tick_lag * rand(1, 5)
-						SS.next_fire = stagger
-
-			subsystems_to_check = current_runlevel_subsystems
+			for(var/I in runlevel_sorted_subsystems)
+				var/datum/controller/subsystem/SS = I
+				if(SS.runlevels & cached_runlevel)
+					subsystems_to_check?.Add(SS)
+				if(SS.next_fire <= world.time)
+					// We've already passed when this should have fired.
+					// So now move it up to now + (1 to 3 ticks)
+					SS.next_fire = world.time + (world.tick_lag * rand(1, 3))
 		else
 			subsystems_to_check = tickersubsystems
 
@@ -369,6 +373,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 			current_ticklimit = TICK_LIMIT_RUNNING
 			sleep(10)
 			continue
+		subsystems_to_check.Cut()
 
 		if (queue_head)
 			if (RunQueue() <= 0)
@@ -415,7 +420,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 			continue
 		if (SS.can_fire <= 0)
 			continue
-		if (SS.next_fire > world.time)
+		if (SS.next_fire > (world.time + 5))
 			continue
 		SS_flags = SS.flags
 		if (SS_flags & SS_NO_FIRE)
