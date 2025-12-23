@@ -259,7 +259,9 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 
 	//all this shit is here so that flag edits can be refreshed by restarting the MC. (and for speed)
 	var/list/tickersubsystems = list()
-	var/list/runlevel_sorted_subsystems = list(list())	//ensure we always have at least one runlevel
+	var/list/runlevel_sorted_subsystems = list()	//ensure we always have at least one runlevel
+	var/datum/controller/subsystem/null/nowt = new
+	runlevel_sorted_subsystems += nowt
 	var/timer = world.time
 	for (var/thing in subsystems)
 		var/datum/controller/subsystem/SS = thing
@@ -280,7 +282,7 @@ GLOBAL_REAL(Master, /datum/controller/master) = new
 		for(var/I in 1 to GLOB.bitflags.len)
 			if(ss_runlevels & GLOB.bitflags[I])
 				while(runlevel_sorted_subsystems.len < I)
-					runlevel_sorted_subsystems += list(list())
+					runlevel_sorted_subsystems.Add(nowt)
 				runlevel_sorted_subsystems[I] += SS
 				added_to_any = TRUE
 		if(!added_to_any)
